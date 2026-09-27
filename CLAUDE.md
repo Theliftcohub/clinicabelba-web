@@ -59,5 +59,7 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - 28/09 · El panel Plesk (theliftco.nubaltec.net) está detrás de Cloudflare y su WAF bloquea cualquier petición que lleve `wp-config.php` (el editor de archivos devuelve la página de Cloudflare en rojo) · para tocar wp-config.php entrar por la IP de origen `https://49.12.238.251:8443/` (aviso de certificado, cifrado igual). NUNCA por `http://…:8880` (va sin cifrar). Avisar a Nubaltec de que 8880 está abierto al exterior.
 - 28/09 · Restos del hackeo de agosto en httpdocs: `_CUARENTENA_HACK_20260806/`, `hitam.html.quar0903`, `wp-singup.php` (0 B, 02/09), `mantenimiento.html`, `clinicabelba.com_all.zip` (5,1 GB) · no tocar en la migración; anotar como posible siguiente paso (limpieza + revisar wp-login.php/wp-signup.php modificados el 03/09).
 
+- 28/09 · La fase 1 marcó `/test-paciente/` (y 4 traducciones) como 410 por el patrón `test-`, pero es el botón "Test paciente" del menú de todas las páginas · antes de un 410, comprobar que la URL no está enlazada desde cabecera, pie o páginas `mantener` (el conversor lo avisa como "enlace a URL 410").
+
 ## Modelos
-Opus para fases 0-2 y decisiones de arquitectura. Sonnet para fases 3-7.
+Decisión Oscar 28/09: TODA la migración con Opus 5.5 (también fases 3-7). Sin subagentes.

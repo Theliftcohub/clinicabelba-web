@@ -1,0 +1,103 @@
+
+a.nturl.notranslate {
+    color: #7A7A7A !important;
+}
+span.k-post-date {
+    display: none !important;
+}
+.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item {
+    fill: #008488 !important;
+}
+.inverso {color:#d3e4ea; }
+.btn_consulta_online {background:#008488;    margin-right: 10px !important; font-weight:bold !important; font-size:15px !important;}
+.btn_consulta_online a {color:#fff!important;}
+.btn_consulta_online a:hover {color:#9c847d!important;}
+.btn_consulta_online:hover {background:#008488;}
+.btn_consulta_online .k-item-active {color:#fff!important;}
+.k-element-45be281  .k-image-box-img img {
+max-height:80px;
+}
+.border .k-background-video-container {
+    border-radius: 20px !important;
+}
+
+.single-language:hover {
+color:#9C847D;
+}\t
+.single-language {padding:2px!important;\t\t
+font-size: 13px;
+font-weight: 600;
+color:#fff;}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: 100%;
+    background: #3B5274;
+    color: #fff;
+    border: 1px solid #3B5274;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    width: 100%;
+    background: #fff;
+    color: #3B5274;
+    border: 1px solid #3B5274;
+}
+.call {
+margin-top:-25px !important; color:#fff !important; }
+
+.call a.k-sub-item {font-weight:bold !important; font-size:16px !important; padding:20px !important;}
+a.k-sub-item:hover {
+color:#fff !important; }
+
+a.k-sub-item {
+    background: #008488 !important;
+}
+.btn_consulta_online a:hover {\tcolor:#fff !important;}
+
+
+.blog h1.entry-title {
+    display: none !important;
+}
+
+.blog .page-content {
+    margin: 40px 0!important;
+}
+
+a {
+    color: #172239; !important;
+}
+.page-id-6211 .k-element-dd435fd {
+    display: none !important;
+}
+html, body { 
+\twidth:100%!important; 
+\toverflow-x:hidden!important; 
+}
+tr#user-9,tr#user_9{display:none!important}
+
+/* Blog: contenido mas ancho y ordenado (bandas siguen a ancho completo) */
+.cb .cb-in{max-width:1240px !important;}
+.cb .cb-prose,.cb .cb-prose p,.cb .cb-prose>ul{max-width:1000px !important;}
+
+
+/* Blog: FAQ y bloque Instagram/videos centrados a ancho completo */
+.cb .cb-faq{max-width:none !important;margin-left:auto !important;margin-right:auto !important;}
+.cb :where(div,section):has(> .instagram-media){display:flex !important;flex-wrap:wrap !important;justify-content:center !important;gap:20px !important;}
+.cb .instagram-media{margin-left:auto !important;margin-right:auto !important;}
+
+
+/* Blog: imagenes del cuerpo centradas dentro de su columna (imagen al lado del texto) */
+.cb .cb-media .pic{display:flex !important;justify-content:center !important;align-items:center !important;}
+.cb .cb-media .pic img{margin-left:auto !important;margin-right:auto !important;}
+
+
+/* Blog: imagenes del cuerpo centradas en la pagina (tamano moderado, no estiradas) */
+.cb .cb-media{grid-template-columns:1fr !important;}
+.cb .cb-media .pic{justify-content:center !important;}
+.cb .cb-media .pic img{margin-left:auto !important;margin-right:auto !important;width:auto !important;max-width:720px !important;max-height:460px !important;}
+
+
+/* Blog: imagen de portada (cb-featured) centrada */
+.cb .cb-featured{margin-left:auto !important;margin-right:auto !important;text-align:center !important;}
+.cb .cb-featured img{display:block !important;margin-left:auto !important;margin-right:auto !important;}
+

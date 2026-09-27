@@ -1,0 +1,22 @@
+---
+import { LANGS, LANG_NAME, FLAG } from '../lib/data.mjs';
+const { doc } = Astro.props;
+const alts = doc.alternates || {};
+const cur = doc.lang;
+const others = LANGS.filter((l) => l !== cur);
+const home = (l) => (l === 'es' ? '/' : `/${l}/`);
+---
+<nav class="trp-language-switcher trp-floating-switcher trp-ls-dropdown trp-switcher-position-bottom" style="--bg:#FFFFFF;--bg-hover:#000000;--text:#143852;--text-hover:#ffffff;--border:1px solid #143852;--border-radius:8px 8px 0px 0px;--flag-radius:2px;--flag-size:18px;--aspect-ratio:4/3;--font-size:14px;--switcher-width:auto;--switcher-padding:10px 0;--transition-duration:0.2s;--bottom:0px;--right:10vw" aria-label="Idioma">
+  <div class="trp-language-switcher-inner">
+    <div class="trp-language-item trp-language-item__current" title={LANG_NAME[cur]} role="button" tabindex="0" aria-expanded="false" aria-controls="trp-switcher-dropdown-list">
+      <img src={`/flags/${FLAG[cur]}.svg`} class="trp-flag-image" alt="" width="18" height="14" /><span class="trp-language-item-name">{LANG_NAME[cur]}</span>
+    </div>
+    <div class="trp-switcher-dropdown-list" id="trp-switcher-dropdown-list" hidden>
+      {others.map((l) => (
+        <a href={alts[l] || home(l)} class="trp-language-item" title={LANG_NAME[l]} hreflang={l}>
+          <img src={`/flags/${FLAG[l]}.svg`} class="trp-flag-image" alt="" width="18" height="14" loading="lazy" /><span class="trp-language-item-name">{LANG_NAME[l]}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

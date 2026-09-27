@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { layoutFor } from '../lib/data.mjs';
+const lay = layoutFor('es');
+const doc = { lang: 'es', kind: 'page', seo: { title: 'Página no encontrada | Clínica Belba', description: '', canonical: '', robots: 'noindex, follow' }, alternates: null, css: '', bodyClass: 'k-default k-kit-5', jsonld: [] };
+---
+<Base doc={doc}>
+  <Fragment set:html={lay.header} />
+  <main id="content" style="max-width:900px;margin:0 auto;padding:80px 20px;text-align:center;font-family:Montserrat,sans-serif;color:#172239">
+    <h1 style="color:#008488">Esta página no existe</h1>
+    <p>Puede que el enlace esté mal escrito o que la página haya cambiado de dirección.</p>
+    <p><a href="/" style="color:#008488;font-weight:600">Ir a la portada</a> · <a href="/contacto/" style="color:#008488;font-weight:600">Contacto</a> · <a href="/blog/" style="color:#008488;font-weight:600">Blog</a></p>
+  </main>
+  <Fragment set:html={lay.footer} />
+</Base>

@@ -1,0 +1,568 @@
+{
+ "aa3e4c7": {
+  "post": 11366,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "e2de0b0": {
+  "post": 18862,
+  "form_name": "New Form",
+  "actions": [
+   "save-to-database"
+  ],
+  "email_to": "alejandro@theliftco.eu",
+  "email_subject": "New message from &quot;Clinica Belba&quot;",
+  "email_to_2": "alejandro@theliftco.eu",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    null,
+    null
+   ],
+   [
+    "email",
+    "tel",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "email@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "5ff55c52": {
+  "post": 18896,
+  "form_name": "New Form",
+  "actions": null,
+  "email_to": "nicols@theliftco.eu",
+  "email_subject": "Consulta ginecomastia — más información",
+  "email_to_2": "alejandro@theliftco.eu",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    "text",
+    "Nombre",
+    "true"
+   ],
+   [
+    "tel",
+    "tel",
+    "Teléfono",
+    "true"
+   ]
+  ],
+  "email_from": "email@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "a3aa38a": {
+  "post": 3121,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "4cdb1f81": {
+  "post": 16908,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "7669add9": {
+  "post": 11221,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "2892be87": {
+  "post": 3131,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "3e5f3c7e": {
+  "post": 15692,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "4aba9df7": {
+  "post": 9263,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "7d6b6661": {
+  "post": 15706,
+  "form_name": "Consulta online",
+  "actions": null,
+  "email_to": "info@clinicabelba.com",
+  "email_subject": "Nuevo mensaje desde Consulta Online",
+  "email_to_2": "trabajos@comp1.gestionespowerdns.com",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    "Nombre",
+    "true"
+   ],
+   [
+    "field_384dfb5",
+    null,
+    "Apellidos",
+    "true"
+   ],
+   [
+    "email",
+    "email",
+    "Email",
+    "true"
+   ],
+   [
+    "field_9d6e8f4",
+    null,
+    "Teléfono",
+    "true"
+   ],
+   [
+    "field_abf2e61",
+    "select",
+    "Elige al doctor",
+    "true"
+   ],
+   [
+    "message",
+    "textarea",
+    "Mensaje",
+    "true"
+   ],
+   [
+    "field_5ada86d",
+    "acceptance",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "info@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "75a0c2af": {
+  "post": 15804,
+  "form_name": "New Form",
+  "actions": null,
+  "email_to": "alejandro@theliftco.eu",
+  "email_subject": "New message from &quot;Clinica Belba&quot;",
+  "email_to_2": "alejandro@theliftco.eu",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    null,
+    null
+   ],
+   [
+    "email",
+    "tel",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "email@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ },
+ "7cb4277f": {
+  "post": 15917,
+  "form_name": "New Form",
+  "actions": null,
+  "email_to": "alejandro@theliftco.eu",
+  "email_subject": "New message from &quot;Clinica Belba&quot;",
+  "email_to_2": "alejandro@theliftco.eu",
+  "redirect": "",
+  "success": "The form was sent successfully.",
+  "fields": [
+   [
+    "name",
+    null,
+    null,
+    null
+   ],
+   [
+    "email",
+    "tel",
+    null,
+    "true"
+   ]
+  ],
+  "email_from": "email@clinicabelba.com",
+  "reply_to": null,
+  "webhooks": null
+ }
+}

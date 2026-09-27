@@ -1,0 +1,51 @@
+---
+import { SITE, HREFLANG, LANGS } from '../lib/data.mjs';
+const { doc } = Astro.props;
+const prod = SITE.entorno === 'produccion';
+const seo = doc.seo;
+// robots: en preview/staging siempre noindex; en producción el de la página (+ extensiones de snippet si indexable)
+let robots = (seo.robots || '').trim();
+const indexable = !/noindex/i.test(robots);
+if (!prod) robots = 'noindex, nofollow';
+else if (indexable) robots = [robots || 'index, follow', 'max-image-preview:large', 'max-snippet:-1', 'max-video-preview:-1'].join(', ');
+const alts = doc.alternates || null;
+const ogImage = seo.ogImage ? (seo.ogImage.startsWith('http') ? seo.ogImage : SITE.domain + seo.ogImage) : SITE.domain + SITE.logo;
+const htmlLang = HREFLANG[doc.lang] || 'es-ES';
+const ld = doc.jsonld || [];
+---
+<!doctype html>
+<html lang={htmlLang}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{seo.title}</title>
+{seo.description && <meta name="description" content={seo.description} />}
+{seo.canonical && <link rel="canonical" href={seo.canonical} />}
+<meta name="robots" content={robots} />
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png" />
+<link rel="icon" href="/favicon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:locale" content={htmlLang.replace('-', '_')} />
+<meta property="og:type" content={doc.kind === 'post' ? 'article' : 'website'} />
+<meta property="og:title" content={seo.title} />
+{seo.description && <meta property="og:description" content={seo.description} />}
+<meta property="og:url" content={seo.canonical} />
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:image" content={ogImage} />
+<meta name="twitter:card" content="summary_large_image" />
+{alts && LANGS.filter((l) => alts[l]).map((l) => <link rel="alternate" hreflang={HREFLANG[l]} href={SITE.domain + alts[l]} />)}
+{alts && alts.es && <link rel="alternate" hreflang="x-default" href={SITE.domain + alts.es} />}
+<link rel="preload" href="/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/css/site.css" />
+{doc.needs && doc.needs.includes('trustindex') && <link rel="stylesheet" href="/css/trustindex-google-widget.css" />}
+{doc.needs && doc.needs.includes('blocks') && <link rel="stylesheet" href="/css/style.min.css" />}
+<style is:inline set:html={doc.css}></style>
+{ld.map((o) => <script type="application/ld+json" is:inline set:html={JSON.stringify(o)} />)}
+<script is:inline set:html={`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${SITE.gtm}');`}></script>
+</head>
+<body class={doc.bodyClass || 'k-default'} data-entorno={SITE.entorno}>
+<noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${SITE.gtm}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<slot />
+<script src="/js/site.js" defer></script>
+</body>
+</html>

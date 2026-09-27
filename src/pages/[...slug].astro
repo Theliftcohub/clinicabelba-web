@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import LangSwitcher from '../components/LangSwitcher.astro';
+import { allPages, layoutFor } from '../lib/data.mjs';
+
+export function getStaticPaths() {
+  return allPages().map((doc) => {
+    const p = decodeURIComponent(doc.path).replace(/^\/|\/$/g, '');
+    return { params: { slug: p || undefined }, props: { doc } };
+  });
+}
+const { doc } = Astro.props;
+const lay = doc.layout === 'default' ? layoutFor(doc.lang) : null;
+const rootCls = doc.root?.class || 'k';
+---
+<Base doc={doc}>
+  {lay && <Fragment set:html={lay.header} />}
+  <main id="content">
+    <div class={rootCls} data-kt={doc.root?.['data-kt']}>
+      {doc.blocks.map((b) => <Fragment set:html={b.html} />)}
+    </div>
+  </main>
+  {lay && <Fragment set:html={lay.footer} />}
+  <LangSwitcher doc={doc} />
+</Base>

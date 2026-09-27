@@ -6,3 +6,5 @@ dist/
 extract.log
 .fetchcache/
 prefetch.log
+migracion/media_orig/
+.astro/
