@@ -54,6 +54,8 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - 27/09 · 4 páginas EN del hreflang están hoy en bucle de redirecciones (TranslatePress) · no copiar redirecciones del WP a ciegas: resolver siempre el destino final.
 - 27/09 · Screaming Frog exporta URLs decodificadas y el sitemap en %xx · comparar siempre normalizado (unquote + lower).
 - 27/09 · `/wp-admin` devuelve 404 (login oculto por plugin de seguridad) · no dar por roto el WordPress; pedir la URL de login real.
+- 27/09 · La BD `wp_ducla` (14 tablas) resultó ser la del subsitio `/presupuesto/` (siteurl=home=`https://clinicabelba.com/presupuesto`), no la principal · antes de dar una BD de Plesk por buena, comprobar `siteurl`/`home` en `wp_options`, no solo el número de tablas. La BD real es `wordpress_3` (confirmado 28/09: siteurl=https://clinicabelba.com).
+- 28/09 · CAÍDA DE LA WEB causada por Claude: cambié en Plesk la contraseña de `wordpress_5` para poder exportar; ese usuario es el que usa WordPress en `wp-config.php` → "Error establishing a database connection" · NUNCA cambiar la contraseña de un usuario de BD sin haber leído antes `wp-config.php` (DB_USER). Si Plesk no exporta, se pide a hosting o se usa otra vía; no se tocan credenciales en uso.
 
 ## Modelos
 Opus para fases 0-2 y decisiones de arquitectura. Sonnet para fases 3-7.
