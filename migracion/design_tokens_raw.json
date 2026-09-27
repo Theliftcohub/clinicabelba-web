@@ -1,0 +1,533 @@
+{
+ "home": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "40px",
+   "weight": "700",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "500",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "15px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "servicio": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "40px",
+   "weight": "500",
+   "color": "rgb(0, 0, 0)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "700",
+   "color": "rgb(0, 132, 136)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "15px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "precio": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "40px",
+   "weight": "700",
+   "color": "rgb(156, 132, 125)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "700",
+   "color": "rgb(0, 132, 136)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "15px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "categoria": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "40px",
+   "weight": "500",
+   "color": "rgb(0, 0, 0)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "700",
+   "color": "rgb(0, 132, 136)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "15px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "post": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "40px",
+   "weight": "700",
+   "color": "rgb(60, 60, 60)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Poppins, sans-serif",
+   "size": "21.6px",
+   "weight": "500",
+   "color": "rgb(139, 117, 115)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "18px",
+   "weight": "700",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "blog": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "69px",
+   "weight": "700",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "22px",
+   "weight": "700",
+   "color": "rgb(0, 132, 136)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "18px",
+   "weight": "700",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "contacto": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "48px",
+   "weight": "700",
+   "color": "rgb(156, 132, 125)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "500",
+   "color": "rgb(156, 132, 125)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "18px",
+   "weight": "700",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(156, 132, 125)"
+  }
+ },
+ "equipo": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "35px",
+   "weight": "700",
+   "color": "rgb(0, 132, 136)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "700",
+   "color": "rgb(156, 132, 125)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(20, 56, 82)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "16px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ },
+ "en_servicio": {
+  "vars": {
+   "--e-global-color-primary": "#6EC1E4",
+   "--e-global-color-secondary": "#54595F",
+   "--e-global-color-text": "#7A7A7A",
+   "--e-global-color-accent": "#61CE70",
+   "--e-global-color-dca9c6e": "#172239",
+   "--e-global-color-36989a5": "#D3E4EA",
+   "--e-global-color-6b98a13": "#9C847D",
+   "--e-global-color-df59760": "#172239",
+   "--e-global-color-57f23bb": "#F3F5F4",
+   "--e-global-color-00efaa2": "#FFFFFF",
+   "--e-global-color-e230cff": "#0E1624",
+   "--e-global-color-237d7ec": "#EEEEEE",
+   "--e-global-typography-primary-font-family": "\"Montserrat\"",
+   "--e-global-typography-primary-font-weight": "700",
+   "--e-global-typography-secondary-font-family": "\"Roboto Slab\"",
+   "--e-global-typography-secondary-font-weight": "700",
+   "--e-global-typography-text-font-family": "\"Montserrat\"",
+   "--e-global-typography-text-font-weight": "400",
+   "--e-global-typography-accent-font-family": "\"Montserrat\"",
+   "--e-global-typography-accent-font-weight": "400"
+  },
+  "body": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(51, 51, 51)",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "h1": {
+   "font": "Montserrat, sans-serif",
+   "size": "40px",
+   "weight": "700",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "h2": {
+   "font": "Montserrat, sans-serif",
+   "size": "32px",
+   "weight": "500",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "a": {
+   "font": "Montserrat, sans-serif",
+   "size": "17px",
+   "weight": "400",
+   "color": "rgb(23, 34, 57)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "Montserrat, sans-serif",
+   "size": "15px",
+   "weight": "400",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgb(0, 132, 136)"
+  }
+ }
+}

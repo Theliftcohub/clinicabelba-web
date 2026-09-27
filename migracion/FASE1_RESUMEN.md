@@ -12,15 +12,16 @@ Datos vivos consultados hoy: sitio en vivo, Screaming Frog (export del equipo), 
 ## 2. Contrato de URLs (`urls.csv`): 1.335 filas
 | Decisión | Filas |
 |---|---|
-| mantener | 1.137 |
+| mantener | 1.065 |
 | 301 | 163 (146 son redirecciones que ya existen hoy y siguen recibiendo clics o impresiones; 17 son archivos de autor y paginación) |
-| REVISAR | 35 (bloquean el lanzamiento) |
+| REVISAR | 107 (bloquean el lanzamiento) |
 | 410 | 0 |
 
 Detalle de las REVISAR:
 - **16 URLs que hoy dan 404 y Google sigue mostrando.** Ejemplos: `/en/rib-removal-surgery/`, `/en/tummy-tuck-recovery/` y `/en/what-is-bbl-brazilian-butt-lift/` (1.870 impresiones). También `/presupuesto/`, `/medicina-estetica/` y `/ca/botox/`, que tienen backlinks. Propuesta: 301 a su equivalente. Es SEO que hoy se está perdiendo.
 - **3 páginas huérfanas que responden 200**: `/uk/liposuccion/`, `/ru/liposuccion/` y `/ca/liposuccio/`. Son slugs sin traducir o duplicados.
 - **9 formularios de MetForm indexados por error.** Propuesta: 410.
+- **72 páginas de prueba, plantilla o duplicadas** (en todos los idiomas): `test-paciente`, `test-post-…`, `elementor-3065`, `prueba-belba-bnb`, `wpbc-booking`, `…-plantilla-facial`. También **unas 10 variantes casi idénticas de "testimonios / opiniones / experiencias / valoraciones Dr. Félix Chavarría"** (varias con `-2`). Propuesta: 410 para las de prueba (0 clics y 0 backlinks). Las de testimonios se migran tal cual; consolidarlas sería un encargo SEO aparte.
 - Los archivos de autor. `/author/webbelba/` es en realidad "Artículos del Dr. Mike Dewever" y recibe clics: propuesta, mantenerlo como página de autor.
 
 ## 3. Idiomas: datos para decidir
