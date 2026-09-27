@@ -1,0 +1,4543 @@
+{
+ "gtm": [
+  "GTM-M6RC6ST",
+  "GTM-TCR5FXL"
+ ],
+ "ga4": [
+  "G-ED",
+  "G-K8WB1WZK6H"
+ ],
+ "ads": [],
+ "meta_pixel": [
+  "1101212624029420"
+ ],
+ "hotjar": [],
+ "clarity": [],
+ "linkedin": [],
+ "cmp": [
+  "Cookiebot"
+ ],
+ "google_site_verification": [],
+ "msvalidate": [],
+ "verificaciones_archivo": {
+  "bingsiteauth": false,
+  "google_html_files": []
+ },
+ "formularios": {
+  "https://clinicabelba.com/rinoplastia-en-barcelona-plantilla-facial/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/blefaroplastia-en-barcelona-plantilla-facial/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/aumento-pecho-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/blefaroplastia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/otoplastia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/lifting-de-brazos/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/lifting-de-muslos/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/mini-lifting-facial-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/lifting-facial-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/rinomodelacion-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/mentoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/aumento-de-gluteos-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/lobuloplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/aumento-de-pecho-tecnica-brst/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/aumento-pecho-preserve/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/abdominoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/rinoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ginecomastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/liposuccion-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/mommy-makeover-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/galeria-cirugia-de-pechos/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/rinoplastia-antes-y-despues/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ginecomastia-antes-y-despues/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/lipovaser-antes-y-despues/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/blefaroplastia-antes-y-despues/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/abdominoplastia-antes-y-despues/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/rinoplastia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/lipo-vaser/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/abdominoplastia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/liposuccion/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/liposuccion-de-alta-definicion/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/recambio-de-protesis/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/reduccion-de-areola/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/reduccion-de-mama/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/elevacion-de-mama/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/aumento-de-mama/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/aumento-de-mama-hibrido/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/minimal-scar/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/consulta-online/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b3%d0%b8%d0%bd%d0%b5%d0%ba%d0%be%d0%bc%d0%b0%d1%81%d1%82%d0%b8%d1%8f-%d0%b4%d0%be-%d0%b8-%d0%bf%d0%be%d1%81%d0%bb%d0%b5/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b3%d1%96%d0%bd%d0%b5%d0%ba%d0%be%d0%bc%d0%b0%d1%81%d1%82%d1%96%d1%8f-%d0%b4%d0%be-%d1%96-%d0%bf%d1%96%d1%81%d0%bb%d1%8f/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/ginekomastie-vorher-und-nachher/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/ginecomastia-prima-e-dopo/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/ginecomastie-voor-en-na/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/ginecomastia-abans-i-despres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/gynecomastie-avant-et-apres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/gynecomastia-before-and-after/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b1%d0%bb%d0%b5%d1%84%d0%b0%d1%80%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b4%d0%be-%d0%b8-%d0%bf%d0%be%d1%81%d0%bb%d0%b5/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b1%d0%bb%d0%b5%d1%84%d0%b0%d1%80%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b4%d0%be-%d1%96-%d0%bf%d1%96%d1%81%d0%bb%d1%8f/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/blepharoplastik-vorher-und-nachher/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/blefaroplastica-prima-e-dopo/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/blefaroplastiek-voor-en-na/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/blefaroplastia-abans-i-despres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/blepharoplastie-avant-et-apres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bb%d0%b8%d0%bf%d0%be%d1%81%d0%b0%d0%ba%d1%86%d0%b8%d1%8f-%d0%b4%d0%be-%d0%b8-%d0%bf%d0%be%d1%81%d0%bb%d0%b5/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/lipovaser-%d0%b4%d0%be-%d1%96-%d0%bf%d1%96%d1%81%d0%bb%d1%8f/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/lipovaser-davor-und-danach/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/lipovaser-prima-e-dopo/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/lipovaser-voor-en-na/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/lipovaser-abans-i-despres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/lipovaser-avant-et-apres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/lipolaser-before-and-after/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b4%d0%be-%d0%b8-%d0%bf%d0%be%d1%81%d0%bb%d0%b5/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b4%d0%be-%d1%96-%d0%bf%d1%96%d1%81%d0%bb%d1%8f/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/rhinoplastik-davor-und-danach/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/rinoplastica-prima-e-dopo/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/rinoplastiek-voor-en-na/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/rinoplastia-abans-i-despres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/rhinoplastie-avant-et-apres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/rhinoplasty-before-and-after/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b0%d0%b1%d0%b4%d0%be%d0%bc%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b4%d0%be-%d0%b8-%d0%bf%d0%be%d1%81%d0%bb%d0%b5/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b0%d0%b1%d0%b4%d0%be%d0%bc%d1%96%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b4%d0%be-%d1%96-%d0%bf%d1%96%d1%81%d0%bb%d1%8f/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/bauchdeckenstraffung-vorher-und-nachher/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/addominoplastica-prima-e-dopo/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/buikwandcorrectie-voor-en-na/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/abdominoplastia-abans-i-despres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/abdominoplastie-avant-et-apres/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/abdominoplasty-before-and-after/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b3%d1%80%d1%83%d0%b4%d0%b8-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%b1%d1%96%d0%bb%d1%8c%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%b9-%d1%83-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/brustvergroserung-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/aumento-seno-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/borstvergroting-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/augment-de-pit-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/augmentation-mammaire-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/breast-augmentation-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%8f%d0%b3%d0%be/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%b1%d1%96%d0%bb%d1%8c%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d1%81%d1%96%d0%b4%d0%bd%d0%b8%d1%86%d1%8c-%d1%83-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/gesasvergroserung-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/aumento-di-glutei-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/biljartkeu-grens/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/augment-de-glutis-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/augmentation-des-fessiers-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d0%b3%d1%80%d1%83%d0%b4%d1%8c-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0-brst/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%b1%d1%96%d0%bb%d1%8c%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%b9-%d0%b7%d0%b0-%d0%b4%d0%be%d0%bf%d0%be%d0%bc%d0%be%d0%b3%d0%be%d1%8e-%d1%82%d0%b5%d1%85%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/brustvergroserungstechnik/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/mastoplastica-additiva-tecnica-b-r-s-t/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/borstvergroting-techniek-brst/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/augment-de-pit-tecnica-brst/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/augmentation-mammaire-technique-brst/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/breast-augmentation-brst-technique/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bb%d0%b8%d0%bf%d0%be%d1%81%d0%b0%d0%ba%d1%86%d0%b8%d1%8f-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bb%d1%96%d0%bf%d0%be%d1%81%d0%b0%d0%ba%d1%86%d1%96%d1%8f-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/fettabsaugung-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/liposuzione-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/liposuctie-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/liposuccio-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/liposuccion-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/liposuction-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bb%d0%b8%d0%bf%d0%be%d1%81%d0%b0%d0%ba%d1%86%d0%b8%d1%8f-%d0%b2%d1%8b%d1%81%d0%be%d0%ba%d0%be%d0%b9-%d1%87%d0%b5%d1%82%d0%ba%d0%be%d1%81%d1%82%d0%b8/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bb%d1%96%d0%bf%d0%be%d1%81%d0%b0%d0%ba%d1%86%d1%96%d1%8f-%d0%b2%d0%b8%d1%81%d0%be%d0%ba%d0%be%d1%97-%d1%87%d1%96%d1%82%d0%ba%d0%be%d1%81%d1%82%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/hochdefinitions-fettabsaugung/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/lipoaspirazione-ad-alta-definizione/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/high-definition-liposuctie/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/liposuccio-dalta-definicio/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/liposuccion-haute-definition/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/high-definition-liposuction/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b6%d0%b8%d0%bc-%d1%80%d1%83%d0%ba%d0%b0%d0%bc%d0%b8/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bf%d1%96%d0%b4%d1%82%d1%8f%d0%b6%d0%ba%d0%b0-%d1%80%d1%83%d0%ba/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/armheben/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/sollevamento-delle-braccia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/armen-heffen/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/elevacio-de-bracos/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/lifting-des-bras/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bc%d0%b0%d0%bc%d0%be%d1%87%d0%ba%d0%b8%d0%bd-%d0%bc%d0%b0%d0%ba%d0%b8%d1%8f%d0%b6-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bc%d0%b0%d0%bc%d0%b8%d0%bd%d0%b5-%d0%be%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8f-%d1%83-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/mutti-umstyling-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/mommy-makeover-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/mommy-makeover-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/mommy-makeover-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/maman-relooking-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/mommy-makeover-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bf%d0%be%d0%b4%d1%82%d1%8f%d0%b6%d0%ba%d0%b0-%d0%b1%d0%b5%d0%b4%d0%b5%d1%80/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bf%d1%96%d0%b4%d1%82%d1%8f%d0%b6%d0%ba%d0%b0-%d1%81%d1%82%d0%b5%d0%b3%d0%be%d0%bd/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/oberschenkelstraffung/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/lifting-delle-cosce/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/lifting-van-de-dijen/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/elevacio-de-cuixes/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/lifting-de-cuisse/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/thigh-lift/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bb%d0%b8%d0%bf%d0%be-%d0%b2%d0%b0%d0%b7%d0%b5%d1%80/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bb%d1%96%d0%bf%d0%be-%d0%b2%d0%b0%d0%b7%d0%b5%d1%80/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/lipo-vaser/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/lipo-vaser/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/lipo-vaser/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/lipo-vaser/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/lipo-vaser/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/vaser-liposuction/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b3%d0%b8%d0%bd%d0%b5%d0%ba%d0%be%d0%bc%d0%b0%d1%81%d1%82%d0%b8%d1%8f-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b3%d1%96%d0%bd%d0%b5%d0%ba%d0%be%d0%bc%d0%b0%d1%81%d1%82%d1%96%d1%8f-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/ginekomastie-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/ginecomastia-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/gynecomastie-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/ginecomastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/ginecomastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/rhinoplastik-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/rinoplastica-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/rinoplastiek-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/rinoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/rhinoplastie-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/rhinoplasty-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b1%d0%bb%d0%b5%d1%84%d0%b0%d1%80%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b1%d0%bb%d0%b5%d1%84%d0%b0%d1%80%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/blepharoplastik/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/blefaroplastica/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/blefaroplastiek/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/blefaroplastia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/blepharoplastie/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/blepharoplasty/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%be%d1%82%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%be%d1%82%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/ohrenkorrektur/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/otoplastica/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/otoplastie/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/otoplastia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/otoplastie/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/otoplasty/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bb%d0%b8%d1%84%d1%82%d0%b8%d0%bd%d0%b3-%d0%bb%d0%b8%d1%86%d0%b0-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bf%d1%96%d0%b4%d1%82%d1%8f%d0%b6%d0%ba%d0%b0-%d0%be%d0%b1%d0%bb%d0%b8%d1%87%d1%87%d1%8f-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/gesichtsstraffung-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/lifting-facciale-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/gezichtsbehandeling-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/lifting-facial-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/lifting-facial-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/facelift-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bc%d0%b8%d0%bd%d0%b8-%d0%bb%d0%b8%d1%84%d1%82%d0%b8%d0%bd%d0%b3-%d0%bb%d0%b8%d1%86%d0%b0-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bc%d1%96%d0%bd%d1%96-%d0%bb%d1%96%d1%84%d1%82%d0%b8%d0%bd%d0%b3-%d0%be%d0%b1%d0%bb%d0%b8%d1%87%d1%87%d1%8f-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/mini-lifting-gesicht-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/mini-lifting-facciale-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/mini-facelift-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/mini-lifting-facial-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/mini-lifting-facial-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/mini-lifting-facial-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bb%d0%be%d0%b1%d1%83%d0%bb%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bb%d0%be%d0%b1%d1%83%d0%bb%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/lobuloplastik-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/lobuloplastica-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/lobuloplastiek-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/lobuloplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/lobuloplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/lobuloplasty-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bc%d0%b5%d0%bd%d1%82%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bc%d0%b5%d0%bd%d1%82%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/mentoplastik-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/mentoplastica-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/mentoplastiek-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/mentoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/mentoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/mentoplasty-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%80%d0%b8%d0%bd%d0%be%d0%bc%d0%be%d0%b4%d0%b5%d0%bb%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96-2/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/rinomodellierung-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/rinoplastica-a-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/rinomodelacion-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/rinomodelacio-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/rinomodelacion-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/rhinomodeling-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b0%d0%b1%d0%b4%d0%be%d0%bc%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b0%d0%b1%d0%b4%d0%be%d0%bc%d1%96%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d1%96/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/bauchdeckenstraffung-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/addominoplastica-barcellona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/buikwandcorrectie-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/abdominoplastia-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/abdominoplastie-barcelone/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/tummy-tuck-barcelona/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[name]",
+     "form_fields[tel]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%80%d0%b5%d0%b4%d1%83%d0%ba%d1%86%d0%b8%d1%8f-%d0%b0%d1%80%d0%b5%d0%be%d0%bb%d1%8b/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%bc%d0%b5%d0%bd%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b0%d1%80%d0%b5%d0%be%d0%bb%d0%b8/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/brustwarzenhofverkleinerung/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/riduzione-dellareola/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/reductie-van-de-areola/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/reduccio-dareola/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/reduction-dareole/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/areola-reduction/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bc%d0%b8%d0%bd%d0%b8%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%88%d1%80%d0%b0%d0%bc/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bc%d1%96%d0%bd%d1%96%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d0%b8%d0%b9-%d1%80%d1%83%d0%b1%d0%b5%d1%86%d1%8c/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/minimale-narbe/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/cicatrice-minima/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/minimale-litteken/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/cicatritz-minima/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/cicatrice-minimale/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/minimal-scar/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%b7%d0%b0%d0%bc%d0%b5%d0%bd%d0%b0-%d0%bf%d1%80%d0%be%d1%82%d0%b5%d0%b7%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%b0%d0%bc%d1%96%d0%bd%d0%b0-%d0%bf%d1%80%d0%be%d1%82%d0%b5%d0%b7%d0%b0/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/prothesenersatz/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/ricambio-di-protesi/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/prothese-wisseling/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/recanvi-de-protesi/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/remplacement-de-prothese/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/prosthesis-replacement/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d0%bf%d0%be%d0%b4%d1%82%d1%8f%d0%b6%d0%ba%d0%b0-%d0%b3%d1%80%d1%83%d0%b4%d0%b8/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%bf%d1%96%d0%b4%d1%82%d1%8f%d0%b6%d0%ba%d0%b0-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%b9/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/bruststraffung/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/mastopessi/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/borstvergroting/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/elevacio-de-mama/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/mastopexie/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/breast-lift/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%80%d0%b5%d0%b4%d1%83%d0%ba%d1%86%d0%b8%d1%8f-%d0%b3%d1%80%d1%83%d0%b4%d0%b8/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%bc%d0%b5%d0%bd%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%b9/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/brustverkleinerung/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/riduzione-mammaria/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/borstverkleining/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/reduccio-de-mama/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/reduction-mammaire/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/breast-reduction/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d0%b3%d1%80%d1%83%d0%b4%d1%8c-%d1%81%d0%be%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%8c/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/%d0%b7%d0%b1%d1%96%d0%bb%d1%8c%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%b9-%d0%b7-%d0%b7%d0%b1%d0%b5%d1%80%d0%b5%d0%b6%d0%b5%d0%bd%d0%bd%d1%8f%d0%bc-%d1%84%d0%be%d1%80%d0%bc/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/brustvergroserung-erhalten/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/aumento-del-seno-preservato/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/borstvergroting-bewaren/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/augment-de-pit-preserve/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/augmentation-mammaire-sans-alteration-de-laspect-naturel/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/breast-augmentation-preserve/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/metformin-form/neues-formular-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/metform-form/new-form-1777668110/": [
+   {
+    "plugin": "desconocido/genérico",
+    "campos": [],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/nl/online-consult/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/uk/онлайн-консультація/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ru/онлайн-консультация/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/fr/consultation-en-ligne/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/de/online-beratung/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/en/online-consultation/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/ca/consulta-en-linia/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ],
+  "https://clinicabelba.com/it/consultazione-online/": [
+   {
+    "plugin": "Elementor Forms",
+    "campos": [
+     "form_fields[email]",
+     "form_fields[field_384dfb5]",
+     "form_fields[field_5ada86d]",
+     "form_fields[field_9d6e8f4]",
+     "form_fields[field_abf2e61]",
+     "form_fields[message]",
+     "form_fields[name]",
+     "form_id",
+     "post_id",
+     "queried_id",
+     "referer_title",
+     "trp-form-language"
+    ],
+    "gracias_detectada": ""
+   }
+  ]
+ }
+}

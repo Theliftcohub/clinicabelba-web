@@ -1,0 +1,425 @@
+---
+url: "https://clinicabelba.com/ca/preu-cirurgia-estetica-barcelona/"
+type: "sitemap_only"
+title: "Precios de Cirugía Plástica Barcelona | Guía de precios"
+meta_description: "Consulta los precios de cirugía plástica en Barcelona y accede a nuestra guía de tratamientos: pecho, rostro, abdomen con valoración personalizada"
+canonical: "https://clinicabelba.com/ca/preu-cirurgia-estetica-barcelona/"
+robots: ""
+og_image: "https://clinicabelba.com/wp-content/uploads/2026/01/cirugia-estetica-barcelona.jpg"
+date: null
+modified: null
+---
+
+[Saltar al contingut](#content)
+
+[![Clinica Cirugía Plástica Barcelona](https://clinicabelba.com/wp-content/uploads/2024/12/clinica-belba-200.png)](https://clinicabelba.com/ca)
+
+* [Qui som](https://clinicabelba.com/ca/qui-som/)
+  + [Cirurgians plàstics Barcelona](https://clinicabelba.com/ca/cirurgians-plastics-barcelona/)
+* [Cirurgia Plàstica](#)
+  + [Cirurgia de mama](https://clinicabelba.com/ca/cirurgia-de-mama/)
+    - [Augment de pit](https://clinicabelba.com/ca/augment-de-pit-barcelona/)
+    - [Augment de Pit Preserve](https://clinicabelba.com/ca/augment-de-pit-preserve/)
+    - [Augment de pit tècnica BRST](https://clinicabelba.com/ca/augment-de-pit-tecnica-brst/)
+    - [Elevació de pits](https://clinicabelba.com/ca/elevacio-de-mama/)
+    - [Cicatritz mínima](https://clinicabelba.com/ca/cicatritz-minima/)
+    - [Reducció d'areola](https://clinicabelba.com/ca/reduccio-dareola/)
+    - [Recanvi de pròtesi mamària](https://clinicabelba.com/ca/recanvi-de-protesi/)
+    - [Reducció mamària](https://clinicabelba.com/ca/reduccio-de-mama/)
+  + [Cirurgia corporal](https://clinicabelba.com/ca/cirugia-corporal/)
+    - [Abdominoplàstia](https://clinicabelba.com/ca/abdominoplastia-barcelona/)
+      * [Abdominoplàstia Abans i Després](https://clinicabelba.com/ca/abdominoplastia-abans-i-despres/)
+    - [Ginecomàstia](https://clinicabelba.com/ca/ginecomastia-barcelona/)
+      * [Ginecomàstia Abans i Després](https://clinicabelba.com/ca/ginecomastia-abans-i-despres/)
+    - [Llevar els braços](https://clinicabelba.com/ca/elevacio-de-bracos/)
+    - [Elevació de cuixes](https://clinicabelba.com/ca/elevacio-de-cuixes/)
+    - [Mommy Makeover](https://clinicabelba.com/ca/mommy-makeover-barcelona/)
+    - [Augment de glutis](https://clinicabelba.com/ca/augment-de-glutis-barcelona/)
+    - [Liposucció](https://clinicabelba.com/ca/liposuccio-barcelona/)
+    - [Lliposucció d'alta definició](https://clinicabelba.com/ca/liposuccio-dalta-definicio/)
+    - [Lipo Vaser](https://clinicabelba.com/ca/lipo-vaser/)
+      * [Lipovàser abans i després](https://clinicabelba.com/ca/lipovaser-abans-i-despres/)
+  + [Cirurgia facial](https://clinicabelba.com/ca/cirurgia-facial/)
+    - [Blefaroplàstia](https://clinicabelba.com/ca/blefaroplastia/)
+      * [Blefaroplàstia Abans i Després](https://clinicabelba.com/ca/blefaroplastia-abans-i-despres/)
+    - [Otoplàstia](https://clinicabelba.com/ca/otoplastia/)
+    - [Estirament facial](https://clinicabelba.com/ca/lifting-facial-barcelona/)
+    - [Mini Lifting Facial](https://clinicabelba.com/ca/mini-lifting-facial-barcelona/)
+    - [Lobuloplàstia](https://clinicabelba.com/ca/lobuloplastia-barcelona/)
+    - [Mentoplastia](https://clinicabelba.com/ca/mentoplastia-barcelona/)
+    - [Rinomodelació](https://clinicabelba.com/ca/rinomodelacio-barcelona/)
+    - [Rinoplàstia](https://clinicabelba.com/ca/rinoplastia-barcelona/)
+      * [Rinoplàstia Abans i Després](https://clinicabelba.com/ca/rinoplastia-abans-i-despres/)
+  + [Cirurgia íntima](https://clinicabelba.com/ca/cirurgia-intima/)
+    - [Labioplàstia](https://clinicabelba.com/ca/labioplastia/)
+    - [Liposucció del mont de Venus](https://clinicabelba.com/ca/liposuccio-del-mont-de-venus/)
+    - [Vaginoplàstia](https://clinicabelba.com/ca/vaginoplastia/)
+* [Contacte](https://clinicabelba.com/ca/contacte/)
+* [Guia del pacient](https://clinicabelba.com/ca/guia-del-pacient/)
+* [Bloc](https://clinicabelba.com/ca/bloc/)
+* [Consulta en línia](https://clinicabelba.com/ca/consulta-en-linia/)
+  + [TRUCAR al +34 613 16 34 47](tel:34613163447)
+* [Prova del pacient](https://clinicabelba.com/ca/prova-pacient/)
+
+* [Qui som](https://clinicabelba.com/ca/qui-som/)
+  + [Cirurgians plàstics Barcelona](https://clinicabelba.com/ca/cirurgians-plastics-barcelona/)
+* [Cirurgia Plàstica](#)
+  + [Cirurgia de mama](https://clinicabelba.com/ca/cirurgia-de-mama/)
+    - [Augment de pit](https://clinicabelba.com/ca/augment-de-pit-barcelona/)
+    - [Augment de Pit Preserve](https://clinicabelba.com/ca/augment-de-pit-preserve/)
+    - [Augment de pit tècnica BRST](https://clinicabelba.com/ca/augment-de-pit-tecnica-brst/)
+    - [Elevació de pits](https://clinicabelba.com/ca/elevacio-de-mama/)
+    - [Cicatritz mínima](https://clinicabelba.com/ca/cicatritz-minima/)
+    - [Reducció d'areola](https://clinicabelba.com/ca/reduccio-dareola/)
+    - [Recanvi de pròtesi mamària](https://clinicabelba.com/ca/recanvi-de-protesi/)
+    - [Reducció mamària](https://clinicabelba.com/ca/reduccio-de-mama/)
+  + [Cirurgia corporal](https://clinicabelba.com/ca/cirugia-corporal/)
+    - [Abdominoplàstia](https://clinicabelba.com/ca/abdominoplastia-barcelona/)
+      * [Abdominoplàstia Abans i Després](https://clinicabelba.com/ca/abdominoplastia-abans-i-despres/)
+    - [Ginecomàstia](https://clinicabelba.com/ca/ginecomastia-barcelona/)
+      * [Ginecomàstia Abans i Després](https://clinicabelba.com/ca/ginecomastia-abans-i-despres/)
+    - [Llevar els braços](https://clinicabelba.com/ca/elevacio-de-bracos/)
+    - [Elevació de cuixes](https://clinicabelba.com/ca/elevacio-de-cuixes/)
+    - [Mommy Makeover](https://clinicabelba.com/ca/mommy-makeover-barcelona/)
+    - [Augment de glutis](https://clinicabelba.com/ca/augment-de-glutis-barcelona/)
+    - [Liposucció](https://clinicabelba.com/ca/liposuccio-barcelona/)
+    - [Lliposucció d'alta definició](https://clinicabelba.com/ca/liposuccio-dalta-definicio/)
+    - [Lipo Vaser](https://clinicabelba.com/ca/lipo-vaser/)
+      * [Lipovàser abans i després](https://clinicabelba.com/ca/lipovaser-abans-i-despres/)
+  + [Cirurgia facial](https://clinicabelba.com/ca/cirurgia-facial/)
+    - [Blefaroplàstia](https://clinicabelba.com/ca/blefaroplastia/)
+      * [Blefaroplàstia Abans i Després](https://clinicabelba.com/ca/blefaroplastia-abans-i-despres/)
+    - [Otoplàstia](https://clinicabelba.com/ca/otoplastia/)
+    - [Estirament facial](https://clinicabelba.com/ca/lifting-facial-barcelona/)
+    - [Mini Lifting Facial](https://clinicabelba.com/ca/mini-lifting-facial-barcelona/)
+    - [Lobuloplàstia](https://clinicabelba.com/ca/lobuloplastia-barcelona/)
+    - [Mentoplastia](https://clinicabelba.com/ca/mentoplastia-barcelona/)
+    - [Rinomodelació](https://clinicabelba.com/ca/rinomodelacio-barcelona/)
+    - [Rinoplàstia](https://clinicabelba.com/ca/rinoplastia-barcelona/)
+      * [Rinoplàstia Abans i Després](https://clinicabelba.com/ca/rinoplastia-abans-i-despres/)
+  + [Cirurgia íntima](https://clinicabelba.com/ca/cirurgia-intima/)
+    - [Labioplàstia](https://clinicabelba.com/ca/labioplastia/)
+    - [Liposucció del mont de Venus](https://clinicabelba.com/ca/liposuccio-del-mont-de-venus/)
+    - [Vaginoplàstia](https://clinicabelba.com/ca/vaginoplastia/)
+* [Contacte](https://clinicabelba.com/ca/contacte/)
+* [Guia del pacient](https://clinicabelba.com/ca/guia-del-pacient/)
+* [Bloc](https://clinicabelba.com/ca/bloc/)
+* [Consulta en línia](https://clinicabelba.com/ca/consulta-en-linia/)
+  + [TRUCAR al +34 613 16 34 47](tel:34613163447)
+* [Prova del pacient](https://clinicabelba.com/ca/prova-pacient/)
+
+# Precios de cirugía plástica en Barcelona
+
+Conèixer els **precios de cirugía plástica en Barcelona** és un dels primers passos abans de valorar un tractament. Cada procediment té un cost diferent segons la tècnica, la complexitat del cas, el quiròfan, l'anestèsia i el seguiment postoperatori.
+
+En **Clínica Belba** creiem que el preu s'ha d'entendre dins d'un context mèdic i personalitzat. Per això hem reunit en aquesta pàgina una guia dels principals tractaments de [**cirurgia plàstica a Barcelona**](https://clinicabelba.com/ca/), amb accés directe a cada procediment perquè puguis informar-te sobre el seu preu, quins factors hi influeixen i què inclou habitualment cada intervenció.
+
+Si estàs buscant una clínica especialitzada en **cirurgia plàstica a Barcelona**, aquí trobareu un punt de partida clar per comparar tractaments i resoldre dubtes freqüents abans d'una valoració mèdica.
+
+![precio cirugía plástica](https://clinicabelba.com/wp-content/uploads/2026/04/precio cirugía plástica.webp)
+
+![Clinica Cirugía Plástica Barcelona](https://clinicabelba.com/wp-content/uploads/2024/12/clinica-belba-200.png)
+
+![Quiron-Salud-Tekon](https://clinicabelba.com/wp-content/uploads/2025/12/quiron-salud-tekon.webp)
+
+## Qué influye en los precios de cirugía plástica en Barcelona
+
+El precio de una cirugía plástica no depende solo del nombre del tratamiento. En Barcelona, el presupuesto puede variar según diferentes factores clínicos y técnicos:
+
+* El tipus d'intervenció
+* La complexitat anatòmica del cas
+* La tècnica quirúrgica emprada
+* El tipus d'anestèsia
+* La durada de la cirurgia
+* El quiròfan i l'hospitalització
+* El seguiment postoperatori
+* Si el procediment es combina amb altres cirurgies
+
+Per això, més que buscar una xifra aïllada, el important és entendre **Què inclou el preu** I si el tractament està realment adaptat a les teves necessitats.
+
+![precio cirugía plástica](https://clinicabelba.com/wp-content/uploads/2026/04/precio cirugía plástica-barcelona.webp)
+
+## Guía de precios de cirugía plástica en Barcelona por tratamiento
+
+A continuació podeu consultar els principals tractaments de **cirurgia plàstica a Barcelona** i accedir a la informació específica de preu de cadascun.
+
+![Pacients satisfetes d'augment de pit](https://clinicabelba.com/wp-content/uploads/2026/04/aumento-de-pecho-pacientes-satisfechas-2.webp)
+
+### Cirurgia de pit
+
+* [Augment de pit preu](https://clinicabelba.com/ca/augment-de-pits-preu/)
+* Preu reducció de pit
+* Preu elevació de pit
+* Reducció de l'areola preu
+* Preu recanvi pròtesi pit
+
+![preu de mini lifting facial a Barcelona](https://clinicabelba.com/wp-content/uploads/2026/04/precio-de-mini-lifting-facial-barcelona.webp)
+
+### Cirurgia facial
+
+* [Rinoplàstia ultrasònica preu](https://clinicabelba.com/ca/preu-rinoplastia-ultrasonica/)
+* [Preu del minilifting facial](https://clinicabelba.com/ca/mini-lifting-facial-preu/)
+* Preu blefaroplàstia superior
+* Blefaroplàstia inferior
+* Preu del modelatge facial profund
+
+![Preu-de-liposucció](https://clinicabelba.com/wp-content/uploads/2026/04/Precio-de-liposuccion.jpg)
+
+### Cirurgia corporal
+
+* [Preu abdominoplàstia](https://clinicabelba.com/ca/preu-abdominoplastia/)
+* [Preu de la lipoescultura](https://clinicabelba.com/ca/preu-de-la-lipoescultura/)
+* Preu Lipo Vaser
+* Preu del lifting de braços
+* Preu de lifting de cuixes
+* Preu mommy makeover
+* Augment de glutis preu
+* Preu de remodelació costal
+
+![liposucció-munt de venus-preu-barcelona](https://clinicabelba.com/wp-content/uploads/2026/04/liposuccion-monte-de-venus-precio-barcelona.webp)
+
+### Cirurgia íntima i masculina
+
+* [Preu de la lipoescultura del mont de Venus](https://clinicabelba.com/ca/liposuccio-mont-imperi-preu/)
+* [Ginecomàstia preu](https://clinicabelba.com/ca/preu-de-la-ginecomastia/)
+
+## Precios orientativos de cirugía plástica en Barcelona
+
+Els **precios de cirugía plástica en Barcelona** poden variar notablement segons el procediment. No costa el mateix una cirurgia facial menor que una cirurgia corporal complexa o una intervenció combinada.
+
+De forma general, el cost final sol dependre de:
+
+* Si la cirurgia és primària o de revisió
+* Si requereix hospitalització
+* Si es combina amb altres tractaments
+* Si l'abordatge quirúrgic és més o menys complex
+* El nivell de personalització del cas
+
+Por este motivo, en cirugía plástica la forma más precisa de conocer el precio real es siempre una [**valoració mèdica personalitzada**](https://clinicabelba.com/ca/prova-pacient/).
+
+![guia de precios cirugía plástica](https://clinicabelba.com/wp-content/uploads/2026/04/guia-de-precios-cirugia-estetica.webp)
+
+## Qué suele incluir el precio de una cirugía plástica
+
+Quan una pacient busca **precios de cirugía plástica en Barcelona**, no només cal saber quant costa una intervenció, sinó també què inclou aquest pressupost.
+
+Habitualment, el preu pot contemplar:
+
+* Primera consulta de valoració
+* Planificació mèdica i quirúrgica
+* Honoraris del [cirurgià plàstic](https://clinicabelba.com/ca/cirurgians-plastics-barcelona/)
+* Anestèsia
+* Sala d'operacions
+* Revisions postoperatòries
+* Seguiment clínic
+
+En alguns tractaments també es poden incloure proves preoperatòries, sostenidor o peça postquirúrgica i controls addicionals, segons el tipus de cirurgia.
+
+## Cómo elegir un tratamiento de cirugía plástica según tus objetivos
+
+No totes les persones busquen el mateix resultat. Algunes volen millorar una zona concreta, altres desitgen una cirurgia combinada i altres necessiten una solució de revisió o recanvi.
+
+Per això, a més del preu, convé valorar:
+
+* quin resultat esperes
+* quina tècnica és la més adequada
+* si el tractament es pot combinar amb un altre
+* el temps de recuperació
+* si busques una millora facial, corporal, mamària o íntima
+
+Una guia de preus és útil, però la decisió correcta sempre parteix d'una avaluació mèdica individual.
+
+![cuanto cuesta una cirugía plástica en barcelona](https://clinicabelba.com/wp-content/uploads/2026/04/cuanto-cuesta-cirugia-estetica-barcelona.webp)
+
+![cirugías plásticas precios](https://clinicabelba.com/wp-content/uploads/2026/04/cirugias-estetica-precios.webp)
+
+## Solicita información sobre precios de cirugía plástica en Barcelona
+
+Si estàs valorant una intervenció i vols saber quin tractament encaixa millor amb tu, pots consultar cada procediment des d'aquesta guia o sol·licitar una valoració personalitzada.
+
+En **Clínica Belba** t'ajudem a entendre:
+
+* quina cirurgia pot adaptar-se millor al teu cas
+* Quins factors influeixen en el preu
+* què inclou cada procediment
+* i quines expectatives són realistes segons el tractament
+
+**Sol·licita la teva** [**valoració personalitzada**](https://clinicabelba.com/ca/prova-pacient/) **a Barcelona** i rep una orientació mèdica adaptada a les teves necessitats.
+
+Després de la valoració, et atendrem per WhatsApp per resoldre els teus dubtes amb calma.
+
+![seguretat"}](https://clinicabelba.com/wp-content/uploads/2025/10/secpre.png)
+
+![Quiron](https://clinicabelba.com/wp-content/uploads/2025/10/quiron.png)
+
+![](https://clinicabelba.com/wp-content/uploads/2025/10/tekon.png)
+
+![Google-reseña](https://clinicabelba.com/wp-content/uploads/2025/10/google-review.png)
+
+## Preguntas frecuentes sobre precios de cirugía plástica en Barcelona
+
+### ¿Cuál es el precio de una cirugía plástica en Barcelona?
+
+Depende del tratamiento, de la complejidad del caso, de la técnica quirúrgica, de la anestesia y de los servicios incluidos en el presupuesto. No existe un único precio general para toda la cirugía plástica.
+
+### ¿Qué incluye normalmente el precio de una cirugía plástica?
+
+Sol incloure valoració mèdica, planificació, honoraris quirúrgics, anestèsia, quiròfan i revisions postoperatòries, encara que pot variar segons la intervenció.
+
+### Per què els preus canvien tant entre els tractaments?
+
+Perquè cada cirurgia té una complexitat diferent. No requereix el mateix una blefaroplàstia que una abdominoplàstia, una rinoplàstia o un mommy makeover.
+
+### És millor consultar una pàgina general de preus o la de cada tractament?
+
+El més útil és començar per una guia general i després accedir a la pàgina de cada procediment, on s'expliquen millor el rang de preu, els factors de cost i el que inclou.
+
+### Es pot saber el preu exacte sense consulta?
+
+Solo de forma orientativa. El precio exacto de una cirugía plástica debe ajustarse al caso concreto de cada paciente.
+
+### ¿Qué tratamientos de cirugía plástica tienen más demanda en Barcelona?
+
+Entre els més buscats solen estar l'augment de pit, la rinoplàstia, la blefaroplàstia, la liposucció, l'abdominoplàstia i els tractaments de rejoveniment facial.
+
+Feu el primer pas amb una valoració mèdica honesta
+
+Resoldre els teus dubtes és el primer pas per prendre una decisió segura.
+ El nostre equip mèdic és aquí per ajudar-te, sense compromís.
+
+Informació de contacte
+
+* Cirurgians Plàstics Barcelona | Clínica Belba
+* [Via Augusta, 281, planta 4A, Districte de Sarrià-Sant Gervasi, 08017 Barcelona, Espanya](https://www.google.com.ar/maps/place/Cirujano+Pl%C3%A1stico+Barcelona+-+Cl%C3%ADnica+Belba/@41.3975168,2.1273671,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a3ee246f334d:0x2588af9f9008aa3b!8m2!3d41.3975128!4d2.129942!16s%2Fg%2F11h60f9631?entry=ttu)
+* +34 613 16 34 47
+* [O truca'ns per Whatsapp](https://api.whatsapp.com/send?phone=34936293550)
+* [info@clinicabelba.com](mailto:info@clinicabelba.com)
+* Aparcament proper
+* Aparcament NN Geigle Barcelona: Via Augusta 281
+* Com arribar:
+* En metro: Les Tres Torres L6, S7, S7T
+* Autobús: 68, V9, V7, 70, H6, V11
+
+[Sol·licitar valoració mèdica](https://clinicabelba.com/ca/consulta-en-linia/)
+
+* [Augmentació de pit](https://clinicabelba.com/ca/augment-de-pit-barcelona/)
+* [AUGMENT DE MAMA PRESERVAT](https://clinicabelba.com/ca/augment-de-pit-preserve/)
+* [AUGMENTACIÓ DE MAMES TÈCNICA BRST](https://clinicabelba.com/ca/augment-de-pit-tecnica-brst/)
+* [TIPUS D'AUGMENT DE PIT](https://clinicabelba.com/ca/tipus-daugment-de-pit/)
+* [ESPECIALLISTA EN LES DONES](https://clinicabelba.com/ca/elevacio-de-mama/)
+* [REDUCCIÓ DE PIT](https://clinicabelba.com/ca/reduccio-de-mama/)
+* [PRECIO DE CIRUGÍAS PLÁSTICAS](https://clinicabelba.com/ca/precio%20cirugía%20plástica-barcelona/)
+* [REDUCCIÓ D'AREOLA](https://clinicabelba.com/ca/reduccio-dareola/)
+* [CANVI DE PRÒTESI](https://clinicabelba.com/ca/recanvi-de-protesi/)
+
+* [REMODELACIÓ COSTERA](https://clinicabelba.com/ca/remodelacio-costal/)
+* [ABDOMINOPLÀSTIA](https://clinicabelba.com/ca/abdominoplastia-barcelona/)
+* [Ginecomàstia](https://clinicabelba.com/ca/ginecomastia-barcelona/)
+* [LIPOESCULTURA 360°](https://clinicabelba.com/ca/liposuccio-barcelona/)
+* [LIPOVASER](https://clinicabelba.com/ca/lipo-vaser/)
+* [LIPO HD](https://clinicabelba.com/ca/liposuccio-dalta-definicio/)
+* [LIFTING DE CUXa](https://clinicabelba.com/ca/elevacio-de-cuixes/)
+* [Rinoplàstia](https://clinicabelba.com/ca/rinoplastia-barcelona/)
+* [Transformació de mare](https://clinicabelba.com/ca/mommy-makeover-barcelona/)
+
+* [Blefaroplàstia](https://clinicabelba.com/ca/blefaroplastia/)
+* [Estirament facial](https://clinicabelba.com/ca/lifting-facial/)
+* [MINI LIFTING FACIAL](https://clinicabelba.com/ca/mini-lifting-facial-barcelona/)
+* [LOBULoplàstia](https://clinicabelba.com/ca/lobuloplastia-barcelona/)
+* [Plastia de mentó](https://clinicabelba.com/ca/mentoplastia-barcelona/)
+* [Otoplàstia](https://clinicabelba.com/ca/otoplastia/)
+* [Rinoplàstia](https://clinicabelba.com/ca/rinoplastia-barcelona/)
+* [LAABIOPLÀSTIA](https://clinicabelba.com/ca/labioplastia/)
+* [Vaginoplàstia](https://clinicabelba.com/ca/vaginoplastia/)
+
+* [+34 613 16 34 47](https://api.whatsapp.com/send?phone=34613163447)
+* [info@clinicabelba.com](mailto:info@clinicabelba.com)
+
+* [Avís legal](https://clinicabelba.com/ca/avis-legal/)
+* [Política de galetes](https://clinicabelba.com/ca/politica-de-cookies/)
+* [Política de privacitat](https://clinicabelba.com/ca/politica-de-privadesa/)
+* [Mapa del lloc](https://clinicabelba.com/page-sitemap.xml)
+* [Bloc](https://clinicabelba.com/ca/bloc/)
+
+* [Avís legal](https://clinicabelba.com/ca/avis-legal/)
+* [Política de galetes](https://clinicabelba.com/ca/politica-de-cookies/)
+* [Política de privacitat](https://clinicabelba.com/ca/politica-de-privadesa/)
+* [Mapa del lloc](https://clinicabelba.com/page-sitemap.xml)
+* [Bloc](https://clinicabelba.com/ca/bloc/)
+
+Clínica Belba © Tots els drets 2026.
+
+![Finançat per la Unió Europea - NextGenerationEU.](https://clinicabelba.com/wp-content/uploads/2022/12/financiado-por-la-union-europea.jpg)
+
+php
+$host= $\_SERVER["HTTP\_HOST"];
+$url= $\_SERVER["REQUEST\_URI"];
+if ($url=="/drdewevercirugiaplastica/") {
+echo " ";
+}
+else {
+?
+php
+;
+}
+?
+
+We've detected you might be speaking a different language. Do you want to change to:
+
+![Canvia l'idioma a Spanish](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg) Spanish
+
+![Canvia l'idioma a Spanish](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg) Spanish
+
+![Canvia l'idioma a Spanish](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg) Spanish
+
+![Canvia l'idioma a Russian](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/ru_RU.svg) Russian
+
+![Canvia l'idioma a Ukrainian](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/uk.svg) Ukrainian
+
+![Canvia l'idioma a German](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg) German
+
+![Canvia l'idioma a Italian](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg) Italian
+
+![Canvia l'idioma a Dutch](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/nl_NL.svg) Dutch
+
+![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/ca.svg) Catalan
+
+![Canvia l'idioma a French](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/fr_FR.svg) French
+
+![Canvia l'idioma a English](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg) English
+
+[Change Language](https://clinicabelba.com)
+
+[Close and do not switch language](#)
+
+We've detected you might be speaking a different language. Do you want to change to:
+
+![Canvia l'idioma a Spanish](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg) Spanish
+
+![Canvia l'idioma a Spanish](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg) Spanish
+
+![Canvia l'idioma a Spanish](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg) Spanish
+
+![Canvia l'idioma a Russian](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/ru_RU.svg) Russian
+
+![Canvia l'idioma a Ukrainian](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/uk.svg) Ukrainian
+
+![Canvia l'idioma a German](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg) German
+
+![Canvia l'idioma a Italian](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg) Italian
+
+![Canvia l'idioma a Dutch](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/nl_NL.svg) Dutch
+
+![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/ca.svg) Catalan
+
+![Canvia l'idioma a French](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/fr_FR.svg) French
+
+![Canvia l'idioma a English](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg) English
+
+[Change Language](https://clinicabelba.com)
+
+Close and do not switch language
+
+![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/ca.svg)Catalan
+
+[![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg)Spanish](https://clinicabelba.com/precio-cirugia-estetica-barcelona/ "Spanish") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/ru_RU.svg)Russian](https://clinicabelba.com/ru/%d1%86%d0%b5%d0%bd%d0%b0-%d0%ba%d0%be%d1%81%d0%bc%d0%b5%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%be%d0%b9-%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d0%b8-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be/ "Russian") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/uk.svg)Ukrainian](https://clinicabelba.com/uk/%d1%86%d1%96%d0%bd%d0%b0-%d0%bd%d0%b0-%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d1%87%d0%bd%d1%83-%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%86%d1%96%d1%8e-%d0%b2-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd/ "Ukrainian") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg)German](https://clinicabelba.com/de/preis-schonheitsoperation-barcelona/ "German") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg)Italian](https://clinicabelba.com/it/prezzo-chirurgia-estetica-barcelona/ "Italian") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/nl_NL.svg)Dutch](https://clinicabelba.com/nl/prijs-cosmetische-chirurgie-barcelona/ "Dutch") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/fr_FR.svg)French](https://clinicabelba.com/fr/prix-chirurgie-esthetique-barcelone/ "French") [![](https://clinicabelba.com/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg)English](https://clinicabelba.com/en/cosmetic-surgery-prices-barcelona/ "English")
