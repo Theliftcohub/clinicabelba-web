@@ -3,7 +3,7 @@
 Este archivo es el contrato del proyecto. Se lee al empezar cada sesión. Cuando cometas un error y lo corrijas, añade aquí la regla que lo evita. Cuando el usuario tome una decisión, apúntala aquí.
 
 ## Qué es este proyecto
-Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yoast SEO, TranslatePress) a Astro. Preview de aprobación en Netlify (noindex); producción en Plesk (Apache + nginx) detrás de Cloudflare. Repositorio: PENDIENTE (GitHub privado de The Lift). Sin CMS: el contenido vive en `src/content/` y se edita con Claude Code. Agencia: The Lift Co. Playbook: skill `migracion-wp-theliftv2`. Item Monday: https://liftcorp.monday.com/boards/2067844042/pulses/13144641815
+Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yoast SEO, TranslatePress) a Astro. Preview de aprobación en Netlify (noindex); producción en Plesk (Apache + nginx) detrás de Cloudflare. Repositorio: https://github.com/Theliftcohub/clinicabelba-web (privado). Sin CMS: el contenido vive en `src/content/` y se edita con Claude Code. Agencia: The Lift Co. Playbook: skill `migracion-wp-theliftv2`. Item Monday: https://liftcorp.monday.com/boards/2067844042/pulses/13144641815
 
 ## Decisiones fijas
 - Dominio canónico: `https://clinicabelba.com/` (sin www, barra final: sí). Cloudflare delante: el DNS se cambia en Cloudflare.
