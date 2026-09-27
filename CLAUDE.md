@@ -7,7 +7,7 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 
 ## Decisiones fijas
 - Dominio canónico: `https://clinicabelba.com/` (sin www, barra final: sí). Cloudflare delante: el DNS se cambia en Cloudflare.
-- Idiomas actuales: es (por defecto, sin prefijo), ca, en, fr, de, it, nl, ru, uk con prefijo `/xx/`. Slugs traducidos: sí (TranslatePress). **Qué idiomas se conservan: PENDIENTE, se decide con datos de GSC + Ahrefs por idioma (decisión Oscar 27/09).**
+- Idiomas: se conservan LOS 9 (decisión Oscar 27/09, vistos los datos de GSC): es (por defecto, sin prefijo), ca, en, fr, de, it, nl, ru, uk con prefijo `/xx/`. Slugs traducidos: sí (TranslatePress). Mapa en `migracion/i18n-map.json`. hreflang recíproco + x-default → es.
 - Tipo de negocio para schema: MedicalClinic (confirmar sede principal y NAP con la ficha de Google Business Profile).
 - Formularios: hoy MetForm → Kommo (integración a replicar y probar antes del DNS; detalle PENDIENTE).
 - Analítica actual: GTM-M6RC6ST + GTM-TCR5FXL (dos contenedores: decidir cuál queda), GA4 G-K8WB1WZK6H, píxel de Meta, Cookiebot como CMP.
@@ -51,6 +51,8 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 
 ## Errores ya cometidos y sus reglas
 <!-- fecha · qué pasó · regla -->
+- 27/09 · 4 páginas EN del hreflang están hoy en bucle de redirecciones (TranslatePress) · no copiar redirecciones del WP a ciegas: resolver siempre el destino final.
+- 27/09 · Screaming Frog exporta URLs decodificadas y el sitemap en %xx · comparar siempre normalizado (unquote + lower).
 - 27/09 · `/wp-admin` devuelve 404 (login oculto por plugin de seguridad) · no dar por roto el WordPress; pedir la URL de login real.
 
 ## Modelos
