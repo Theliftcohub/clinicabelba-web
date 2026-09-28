@@ -7,6 +7,7 @@ rm -rf src/content/pages
 python3 scripts/convert.py > migracion/convert.out 2>&1 && tail -1 migracion/convert.out
 python3 scripts/fetch_media.py | tail -1
 python3 scripts/postprocess.py | head -3
+python3 scripts/home_nueva.py
 python3 scripts/build_assets.py
 python3 scripts/build_form_handler.py
 PUBLIC_ENTORNO="$ENT" npx astro build 2>&1 | tail -1

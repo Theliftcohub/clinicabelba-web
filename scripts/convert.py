@@ -205,6 +205,11 @@ def clean(soup, page_path, lang, warn, posts_index):
         s.decompose()
     for t in soup.find_all(['noscript', 'link', 'meta']):
         t.decompose()
+    for st in soup.find_all('style'):
+        if st.string is not None:
+            st.string = ren_css(st.string)
+        else:
+            txt = ren_css(st.get_text()); st.clear(); st.append(txt)
     # widgets especiales antes de limpiar atributos
     for w in soup.find_all(attrs={'data-widget_type': True}):
         wt = w['data-widget_type']
@@ -335,7 +340,7 @@ def clean(soup, page_path, lang, warn, posts_index):
         for k, v in t.attrs.items():
             if k in ('data-settings', 'data-e-type', 'data-widget_type', 'data-id', 'data-elementor-id',
                      'data-elementor-post-type', 'data-elementor-settings', 'data-no-translation', 'data-trp-original-href', 'data-model-cid',
-                     'data-trp-placeholder', 'data-trpgettextoriginal', 'data-rocket-lazyload', 'srcset', 'sizes', 'data-alt-src', 'data-srcset') and not (k == 'sizes' and t.name == 'source'):
+                     'data-trp-placeholder', 'data-trpgettextoriginal', 'data-rocket-lazyload', 'srcset', 'sizes', 'data-alt-src', 'data-srcset', 'data-e-action-hash', 'data-elementor-open-lightbox', 'data-elementor-lightbox-slideshow') and not (k == 'sizes' and t.name == 'source'):
                 if k == 'data-elementor-type':
                     pass
                 continue
@@ -349,6 +354,10 @@ def clean(soup, page_path, lang, warn, posts_index):
                 continue
             if k in ('id', 'aria-controls', 'aria-labelledby', 'for', 'data-tab-title-id') and isinstance(v, str):
                 v = v.replace('elementor-', 'k-')
+            if k == 'href' and isinstance(v, str) and v.startswith('#elementor-'):
+                v = '#k-' + v[11:]
+            if k == 'data-css-url':
+                v = '/css/trustindex-google-widget.css'
             if k in ('href',) and isinstance(v, str):
                 nv = rewrite_url(v)
                 if nv is None:

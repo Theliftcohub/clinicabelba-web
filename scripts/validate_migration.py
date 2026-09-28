@@ -24,7 +24,7 @@ Añade:
      FAIL/WARN/PASS, diff de schema y bloque de Lighthouse si se pasa --lighthouse.
 """
 import argparse, base64, csv, html, json, os, random, re, sys, urllib.request, urllib.error
-from urllib.parse import urlparse, urljoin
+from urllib.parse import unquote, urlparse, urljoin
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from crawl_lib import crawl_grafo  # noqa: E402  (compartida con extract_wp.py)
@@ -182,8 +182,10 @@ def perdida_aceptable(tipo, it):
 # ---------------------------------------------------------------------------
 def referencias_propias(h, url, base_netloc):
     refs = []
-    for v in REF_ATTR_RE.findall(h or ""):
+    for attr, v in re.findall(r'\b(href|src|content)="([^"]+)"', h or "", re.I):
         v = v.strip()
+        if attr.lower() == "content" and not (v.startswith("http") or v.startswith("/")):
+            continue  # og:title, description, etc. no son referencias
         if not v or v.startswith(("mailto:", "tel:", "javascript:", "data:", "#")):
             continue
         if v.startswith("http://") or v.startswith("https://"):
@@ -459,6 +461,8 @@ def validar_formularios_tracking(tracking_fn, base, entorno):
     for url_vieja in (tracking.get("formularios") or {}):
         path = urlparse(url_vieja).path
         st, h, _ = get(base + path)
+        if st in (301, 308, 410):
+            continue  # la URL ya no existe por contrato (410) o redirige: el formulario vive en el destino
         if st != 200 or "<form" not in (h or "").lower():
             destino.append((path, ["formulario perdido: la URL no tiene <form> en la web nueva"]))
             continue
@@ -747,7 +751,7 @@ def main():
             want, dst = expected[path]
             if want == "410" and code != 410:
                 F.append(f"esperaba 410, da {code}")
-            if want == "301" and (code not in (301, 308) or urlparse(loc).path != dst):
+            if want == "301" and (code not in (301, 308) or unquote(urlparse(loc).path).lower() != unquote(dst).lower()):
                 F.append(f"esperaba 301→{dst}, da {code}→{loc}")
         else:
             st, h, hdr = get(url)
@@ -756,8 +760,8 @@ def main():
             elif st == 200:
                 if a.entorno == "preview" and not noindex_presente(hdr, h):
                     F.append("preview SIN noindex (X-Robots-Tag ni meta robots): no debe indexarse nunca")
-                elif a.entorno in ("staging", "produccion") and noindex_presente(hdr, h):
-                    F.append(f"{a.entorno.upper()} con noindex: debe ser indexable")
+                elif a.entorno in ("staging", "produccion") and noindex_presente(hdr, h) and "noindex" not in (it.get("seo") or {}).get("robots", "").lower():
+                    F.append(f"{a.entorno.upper()} con noindex: debe ser indexable")  # salvo que ya fuera noindex en el WordPress (literal)
                 td = ew.detectar_tracking(h, base)
                 for k in tracking_nuevo:
                     tracking_nuevo[k] |= td[k]
@@ -777,7 +781,7 @@ def main():
                 if seo.get("meta_description") == "" and nd == "":
                     W.append("sin metadescripción (tampoco la tenía)")
                 canon = m(h, r'<link\s+rel="canonical"\s+href="([^"]*)"')
-                if canon and urlparse(canon).path != path:
+                if canon and unquote(urlparse(canon).path).lower() != unquote(path).lower():
                     F.append(f"canonical apunta a {canon}")
                 if not canon:
                     W.append("sin canonical")
@@ -836,8 +840,9 @@ def main():
                 if i18n:
                     want_i18n = {k: v for g in i18n.values() for k, v in g.items() if path in g.values()}
                     have = dict(re.findall(r'hreflang="([^"]+)"[^>]*href="([^"]+)"', h) + re.findall(r'href="([^"]+)"[^>]*hreflang="([^"]+)"', h)[::-1])
+                    have_langs = {k.lower().split("-")[0] for k in have}
                     for lang, p in want_i18n.items():
-                        if lang not in have:
+                        if lang not in have and lang.lower().split("-")[0] not in have_langs:  # es-ES vale por es
                             F.append(f"falta hreflang {lang}")
                     if want_i18n and "x-default" not in have:
                         F.append("falta x-default")

@@ -8,7 +8,9 @@ for (const p of pages) {
     const errs = [];
     pg.on('response', r => { if (r.status() >= 400 && r.url().includes('localhost')) errs.push(r.status() + ' ' + r.url()); });
     await pg.route(/googletagmanager|typeform|trustindex|youtube|google\.com\/maps|maps\.google/, r => r.abort());
-    await pg.goto('https://clinicabelba-web-preview.netlify.app' + p, { waitUntil: 'load', timeout: 60000 });
+    await pg.goto('http://localhost:4321' + p, { waitUntil: 'load', timeout: 60000 });
+    await pg.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 120)); } window.scrollTo(0, 0); });
+    await pg.waitForTimeout(600);
     const name = (p.replace(/\//g, '_') || 'home');
     await pg.screenshot({ path: `/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/new${name}-${dev}.jpg`, fullPage: false, type: 'jpeg', quality: 60 });
     await pg.screenshot({ path: `/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/new${name}-${dev}-full.jpg`, fullPage: true, type: 'jpeg', quality: 40 });

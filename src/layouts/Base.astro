@@ -38,6 +38,7 @@ const ld = doc.jsonld || [];
 <link rel="preload" href="/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="/css/site.css" />
 {doc.needs && doc.needs.includes('trustindex') && <link rel="stylesheet" href="/css/trustindex-google-widget.css" />}
+{doc.needs && doc.needs.includes('trustindex') && <script async is:inline src="https://cdn.trustindex.io/loader.js"></script>}
 {doc.needs && doc.needs.includes('blocks') && <link rel="stylesheet" href="/css/style.min.css" />}
 <style is:inline set:html={doc.css}></style>
 {ld.map((o) => <script type="application/ld+json" is:inline set:html={JSON.stringify(o)} />)}
