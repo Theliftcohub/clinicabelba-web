@@ -17,7 +17,7 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - Fecha de lanzamiento prevista: PENDIENTE.
 - Datos médicos en schema (colegiado, credenciales): solo si figuran literalmente en la web.
 
-- Home nueva (decisión Oscar 28/09, a partir de su diseño de Figma): se construye como `/home-nueva/` (noindex) con `scripts/home_nueva.py`; pasará a `/` cuando la apruebe, ya con la migración lanzada. Hero = foto real de quirófano + asistente conversacional (las preguntas literales del Typeform "Belba Gral" precedidas de Mujer/Hombre → `sel_persona`), selector que filtra procedimientos y manda `home_selector` al dataLayer. Cero datos inventados: el diseño traía médicos, dirección, teléfono, cifras y reseñas falsos; se sustituyeron por los reales. Pendiente de la clínica: fotos de hombre (no hay ninguna) y quirófano en alta resolución.
+- Home nueva (decisión Oscar 28/09, a partir de su diseño de Figma): se construye como `/home-nueva/` (noindex, `layout: header` = cabecera del WP + pie compacto propio con los mismos enlaces y datos reales; el resto de páginas conservan el pie literal) con `scripts/home_nueva.py`; pasará a `/` cuando la apruebe, ya con la migración lanzada. Hero = foto real de quirófano + asistente conversacional (las preguntas literales del Typeform "Belba Gral" precedidas de Mujer/Hombre → `sel_persona`), selector que filtra procedimientos y manda `home_selector` al dataLayer. Cero datos inventados: el diseño traía médicos, dirección, teléfono, cifras y reseñas falsos; se sustituyeron por los reales. Pendiente de la clínica: fotos de hombre (no hay ninguna) y quirófano en alta resolución.
 - 184 traducciones de páginas `noindex` no estaban en sitemap ni rastreo (solo en hreflang); se añadieron al inventario/contrato con la misma decisión que su versión ES (48 → 410, resto → mantener noindex). Entre ellas las páginas de gracias por idioma, que GTM usa como conversión.
 
 ## Reglas de contenido
@@ -68,3 +68,8 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 
 ## Modelos
 Decisión Oscar 28/09: TODA la migración con Opus 5.5 (también fases 3-7). Sin subagentes.
+
+## Reglas de copy (decisión Oscar 28/09)
+- El equipo NO llama a los leads: les escribe para asesorarles. Nunca "te llamamos / te llama nuestro equipo"; siempre "nuestro equipo te escribirá para asesorarte".
+- Home y landings "conversacionales": el visitante avanza respondiendo preguntas (formulario por pasos) y entra en Kommo vía n8n; todo lead lleva atribución orgánico/pago.
+- En la web actual NO existe ningún logo de red.es/Kit Digital: solo la imagen "Financiado por la Unión Europea + Plan de Recuperación". Si hay que añadir red.es, la clínica tiene que enviar el logo.
