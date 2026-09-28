@@ -88,9 +88,10 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
             opts = []
             seen = set()
             for j, c in enumerate(x['choices']):
-                if c in seen: continue
-                seen.add(c)
-                opts.append(f'<label class="bf-choice"><input type="radio" name="{name}" value="{e(c)}"{req if j == 0 else ""}><span>{e(c)}</span></label>')
+                val, lbl = (c if isinstance(c, (tuple, list)) else (c, c))  # (valor, etiqueta): el valor va a n8n, la etiqueta se traduce
+                if val in seen: continue
+                seen.add(val)
+                opts.append(f'<label class="bf-choice"><input type="radio" name="{name}" value="{e(val)}"{req if j == 0 else ""}><span>{e(lbl)}</span></label>')
             body = f'<fieldset class="bf-fieldset">{head}<div class="bf-choices">{"".join(opts)}</div></fieldset>'
         elif t == 'contact_info':
             subs = []

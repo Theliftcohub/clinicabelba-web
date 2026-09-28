@@ -9,6 +9,17 @@ from bs4 import BeautifulSoup
 B = '/home/claude/belba'
 sys.path.insert(0, B + '/scripts')
 import forms_native
+from home_i18n import T
+I18N = json.load(open(B + '/migracion/i18n-map.json'))
+def href(es_path, lang):
+    return I18N.get(es_path, {}).get(lang) or es_path
+def menu_labels(header_html):
+    from urllib.parse import unquote
+    out = {}
+    for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', header_html, re.S):
+        t = re.sub(r'<[^>]+>', '', m.group(2)).strip()
+        if t: out.setdefault(unquote(m.group(1)).lower(), t)
+    return out
 
 home = json.load(open(glob.glob(B + '/src/content/pages/es/home-*.json')[0]))
 H = ''.join(b['html'] for b in home['blocks'])
@@ -109,53 +120,59 @@ WA_FLOTANTE = str(_wa) if _wa else ''
 def card(t, href, img):
     return f'<a class="hn-card" href="{href}"><img src="{img}" alt="{e(t)}" loading="lazy" decoding="async"><span>{e(t)}</span></a>'
 
-def body():
-    form = forms_native.render('iOSo1PBX', 'es', '/home-nueva/', uid='hnform')
-    form_hero = forms_native.render('iOSo1PBX', 'es', '/home-nueva/', uid='hero', compact=True, pre_steps=[('¿Para quién buscas información?', ['Mujer', 'Hombre'], 'sel_persona')])
-    cards_m = ''.join(card(*c) for c in CARDS_MUJER)
-    cards_h = ''.join(card(*c) for c in CARDS_HOMBRE)
+def body(lang, t, lb, ti_html, n_res, page_path):
+    """t = textos del idioma (home_i18n.T), lb = etiquetas del menú traducido (href -> texto)."""
+    H = lambda p: href(p, lang)
+    L = lambda p, fb: lb.get(__import__('urllib.parse').parse.unquote(H(p)).lower(), fb)
+    form = forms_native.render('iOSo1PBX', lang, page_path, uid='hnform')
+    form_hero = forms_native.render('iOSo1PBX', lang, page_path, uid='hero', compact=True,
+                                    pre_steps=[(t['pre_q'], [('Mujer', t['mujer']), ('Hombre', t['hombre'])], 'sel_persona')])
+    cards_m = ''.join(card(n, H(h), img) for n, (_, h, img) in zip(t['cards_m'], CARDS_MUJER))
+    cards_h = ''.join(card(n, H(h), img) for n, (_, h, img) in zip(t['cards_h'], CARDS_HOMBRE))
     trat = ''.join(
-        f'<article class="hn-trat"><a href="{href}" class="hn-trat__img"><img src="{img}" alt="{e(t)}" loading="lazy" decoding="async"></a>'
-        f'<h3><a href="{href}">{e(t)}</a></h3>' + (f'<p class="hn-trat__claim">{e(claim)}</p>' if claim else '') +
-        '<ul>' + ''.join(f'<li><a href="{h2}">{e(n)}</a></li>' for n, h2 in items) + '</ul></article>'
-        for t, href, claim, img, items in TRAT)
+        f'<article class="hn-trat"><a href="{H(hr)}" class="hn-trat__img"><img src="{img}" alt="{e(L(hr, name))}" loading="lazy" decoding="async"></a>'
+        f'<h3><a href="{H(hr)}">{e(L(hr, name))}</a></h3>' + (f'<p class="hn-trat__claim">{e(claim)}</p>' if claim else '') +
+        '<ul>' + ''.join(f'<li><a href="{H(h2)}">{e(L(h2, n))}</a></li>' for n, h2 in items) + '</ul></article>'
+        for (name, hr, _, img, items), claim in zip(TRAT, t['claims']))
     docs = ''.join(
-        f'<article class="hn-doc"><a href="{href}"><img src="{img}" alt="{e(n)}" loading="lazy" decoding="async"></a>'
-        f'<h3><a href="{href}">{e(n)}</a></h3><p class="hn-doc__rol">{e(rol)}</p>' + (f'<p class="hn-doc__cita">{e(cita)}</p>' if cita else '') +
-        f'<p class="hn-doc__bio">{e(bio)}</p></article>' for n, rol, img, href, cita, bio in DOCS)
-    return f'''
+        f'<article class="hn-doc"><a href="{H(hr)}"><img src="{img}" alt="{e(n)}" loading="lazy" decoding="async"></a>'
+        f'<h3><a href="{H(hr)}">{e(n)}</a></h3><p class="hn-doc__rol">{e(rol)}</p>' + (f'<p class="hn-doc__cita">{e(cita)}</p>' if cita else '') +
+        f'<p class="hn-doc__bio">{e(bio)}</p></article>'
+        for (n, _, img, hr, _, _), (rol, cita, bio) in zip(DOCS, t['docs']))
+    hosp_p = e(t['hosp_p']).replace('{teknon}', f'<a href="{H("/cirujanos-plasticos-barcelona/")}">{e(t["teknon"])}</a>')
+    return f"""
 <div class="hn">
 <section class="hn-hero">
   <div class="hn-hero__bg" aria-hidden="true"></div>
   <div class="hn-wrap hn-hero__grid">
     <div class="hn-hero__txt">
-      <p class="hn-eyebrow">Barcelona · Grupo Teknon · Cirujanos certificados SECPRE</p>
-      <h1>{e(HERO_H1)}</h1>
-      <p class="hn-hero__sub">{e(HERO_SUB)}</p>
-      <p class="hn-hero__p">{e(HERO_P)}</p>
-      <nav class="hn-pills" aria-label="Áreas de cirugía">
-        <a href="/cirugia-facial/">Cirugía facial</a><a href="/cirugia-de-la-mama/">Cirugía de la mama</a><a href="/cirugia-corporal/">Cirugía corporal</a><a href="/cirugia-intima/" data-only="mujer">Cirugía íntima</a><a href="/ginecomastia-barcelona/" data-only="hombre">Ginecomastia</a>
+      <p class="hn-eyebrow">{e(t['hero_eyebrow'])}</p>
+      <h1>{e(t['hero_h1'])}</h1>
+      <p class="hn-hero__sub">{e(t['hero_sub'])}</p>
+      <p class="hn-hero__p">{e(t['hero_p'])}</p>
+      <nav class="hn-pills" aria-label="{e(t['areas'])}">
+        <a href="{H('/cirugia-facial/')}">{e(L('/cirugia-facial/', 'Cirugía facial'))}</a><a href="{H('/cirugia-de-la-mama/')}">{e(L('/cirugia-de-la-mama/', 'Cirugía de la mama'))}</a><a href="{H('/cirugia-corporal/')}">{e(L('/cirugia-corporal/', 'Cirugía corporal'))}</a><a href="{H('/cirugia-intima/')}" data-only="mujer">{e(L('/cirugia-intima/', 'Cirugía íntima'))}</a><a href="{H('/ginecomastia-barcelona/')}" data-only="hombre">{e(t['gineco'])}</a>
       </nav>
-      <p class="hn-hero__proof"><a href="#resenas">Excelente · {N_RESENAS} reseñas en Google</a> · <a href="#procedimientos">Ver procedimientos</a></p>
+      <p class="hn-hero__proof"><a href="#resenas">{e(t['proof'].format(n=n_res))}</a> · <a href="#procedimientos">{e(t['ver_proc'])}</a></p>
     </div>
     <div class="hn-hero__form" id="valoracion">
-      <p class="hn-hero__formtitle">{e(CTA)}</p>
-      <p class="hn-hero__formsub">Unas preguntas rápidas y nuestro equipo te escribirá para asesorarte. Sin compromiso.</p>
+      <p class="hn-hero__formtitle">{e(t['cta'])}</p>
+      <p class="hn-hero__formsub">{e(t['form_sub'])}</p>
       {form_hero}
     </div>
   </div>
-  <div class="hn-wrap hn-logos"><span>Colaboramos con</span><img src="/images/2025/12/quiron-salud-tekon.webp" alt="Quirónsalud y Centro Médico Teknon" loading="lazy" decoding="async"></div>
+  <div class="hn-wrap hn-logos"><span>{e(t['logos'])}</span><img src="/images/2025/12/quiron-salud-tekon.webp" alt="Quirónsalud y Centro Médico Teknon" loading="lazy" decoding="async"></div>
 </section>
 
 <section class="hn-filo">
   <div class="hn-wrap hn-filo__grid">
-    <figure class="hn-filo__img"><img src="/images/2026/04/Primera-consulta-de-cirugia-estetica-BELBA.webp" alt="Primera consulta de cirugía estética en Clínica Belba" loading="lazy" decoding="async"></figure>
+    <figure class="hn-filo__img"><img src="/images/2026/04/Primera-consulta-de-cirugia-estetica-BELBA.webp" alt="{e(t['filo_alt'])}" loading="lazy" decoding="async"></figure>
     <div>
-      <p class="hn-eyebrow">Nuestra filosofía</p>
-      <h2>{e(FILO_H)}</h2>
-      {''.join(f'<p>{e(p)}</p>' for p in FILO_P)}
-      <ul class="hn-checks">{''.join(f'<li>{e(x)}</li>' for x in FILO_LIST)}</ul>
-      <p class="hn-strong">{e(FILO_FIN)}</p>
+      <p class="hn-eyebrow">{e(t['filo_eyebrow'])}</p>
+      <h2>{e(t['filo_h'])}</h2>
+      {''.join(f'<p>{e(p)}</p>' for p in t['filo_p'])}
+      <ul class="hn-checks">{''.join(f'<li>{e(x)}</li>' for x in t['filo_list'])}</ul>
+      <p class="hn-strong">{e(t['filo_fin'])}</p>
     </div>
   </div>
 </section>
@@ -163,9 +180,9 @@ def body():
 <section class="hn-proc" id="procedimientos">
   <div class="hn-wrap">
     <div class="hn-proc__head">
-      <div><p class="hn-eyebrow">Especialidades</p><h2>{e(PROC_H)}</h2></div>
-      <div><p>{e(PROC_P)}</p>
-        <div class="hn-sel hn-sel--sm" role="tablist"><button type="button" class="hn-sel__btn is-on" data-sel="mujer" role="tab" aria-selected="true">Mujer</button><button type="button" class="hn-sel__btn" data-sel="hombre" role="tab" aria-selected="false">Hombre</button></div>
+      <div><p class="hn-eyebrow">{e(t['proc_eyebrow'])}</p><h2>{e(t['proc_h'])}</h2></div>
+      <div><p>{e(t['proc_p'])}</p>
+        <div class="hn-sel hn-sel--sm" role="tablist"><button type="button" class="hn-sel__btn is-on" data-sel="mujer" role="tab" aria-selected="true">{e(t['mujer'])}</button><button type="button" class="hn-sel__btn" data-sel="hombre" role="tab" aria-selected="false">{e(t['hombre'])}</button></div>
       </div>
     </div>
     <div class="hn-cards" data-for="mujer">{cards_m}</div>
@@ -175,9 +192,9 @@ def body():
 
 <section class="hn-trats">
   <div class="hn-wrap">
-    <p class="hn-eyebrow">Tratamientos</p>
-    <h2>{e(TRAT_H)}</h2>
-    <p class="hn-lead">{e(TRAT_SUB)}</p>
+    <p class="hn-eyebrow">{e(t['trat_eyebrow'])}</p>
+    <h2>{e(t['trat_h'])}</h2>
+    <p class="hn-lead">{e(t['trat_sub'])}</p>
     <div class="hn-trats__grid">{trat}</div>
   </div>
 </section>
@@ -185,40 +202,40 @@ def body():
 <section class="hn-hosp">
   <div class="hn-wrap hn-hosp__grid">
     <div>
-      <p class="hn-eyebrow">Presentación</p>
-      <h2>{e(HOSP_H)}</h2>
-      <h3>{e(HOSP_SUB)}</h3>
-      <p>{HOSP_P}</p>
-      <a class="k-button k-button-link k-size-sm hn-cta" href="/consulta-online/"><span class="k-button-text">Pide cita online</span></a>
+      <p class="hn-eyebrow">{e(t['hosp_eyebrow'])}</p>
+      <h2>{e(t['hosp_h'])}</h2>
+      <h3>{e(t['hosp_sub'])}</h3>
+      <p>{hosp_p}</p>
+      <a class="k-button k-button-link k-size-sm hn-cta" href="{H('/consulta-online/')}"><span class="k-button-text">{e(t['cita'])}</span></a>
     </div>
-    <figure><img src="/images/2025/12/centro-medico-teknon-1.webp" alt="Clínica de cirugía plastica en Barcelona" loading="lazy" decoding="async"></figure>
+    <figure><img src="/images/2025/12/centro-medico-teknon-1.webp" alt="{e(t['hosp_alt'])}" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
 <section class="hn-equipo">
   <div class="hn-wrap">
-    <p class="hn-eyebrow">Profesionales</p>
-    <h2>{e(EQUIPO_H)}</h2>
-    <p class="hn-lead">{' '.join(e(p) for p in EQUIPO_P)}</p>
+    <p class="hn-eyebrow">{e(t['equipo_eyebrow'])}</p>
+    <h2>{e(t['equipo_h'])}</h2>
+    <p class="hn-lead">{e(t['equipo_p'])}</p>
     <div class="hn-docs">{docs}</div>
   </div>
 </section>
 
 <section class="hn-resenas" id="resenas">
-  <div class="hn-wrap"><p class="hn-eyebrow">Reseñas</p><h2>Lo que dicen nuestros pacientes</h2>{TRUSTINDEX}</div>
+  <div class="hn-wrap"><p class="hn-eyebrow">{e(t['res_eyebrow'])}</p><h2>{e(t['res_h'])}</h2>{ti_html}</div>
 </section>
 
 <section class="hn-form" id="contacto-rapido">
   <div class="hn-wrap hn-form__grid">
     <div>
-      <p class="hn-eyebrow">Primer paso</p>
-      <h2>Da el primer paso con una valoración médica honesta</h2>
-      <p>Resolver tus dudas es el primer paso para tomar una decisión segura. Nuestro equipo médico está aquí para ayudarte, sin compromiso.</p>
+      <p class="hn-eyebrow">{e(t['form_eyebrow'])}</p>
+      <h2>{e(t['form_h'])}</h2>
+      <p>{e(t['form_p'])}</p>
       <ul class="hn-nap">
         <li><a href="{NAP['maps']}" target="_blank" rel="noopener">{e(NAP['dir1'])}, {e(NAP['dir2'])}</a></li>
         <li><a href="{NAP['tel_href']}">{e(NAP['tel'])}</a> · <a href="{NAP['wa']}" target="_blank" rel="noopener">WhatsApp</a></li>
         <li><a href="mailto:{NAP['email']}">{NAP['email']}</a></li>
-        <li>{e(NAP['horario'])}</li>
+        <li>{e(t['horario'])}</li>
       </ul>
     </div>
     {form}
@@ -228,53 +245,16 @@ def body():
 <section class="hn-mapa">
   <div class="hn-wrap hn-mapa__grid">
     <div>
-      <p class="hn-eyebrow">Cómo llegar</p>
-      <h2>Encuéntranos en Via Augusta, 281</h2>
-      <p>Parking cercano: Parking NN Geigle Barcelona, Via Augusta 281. En metro: Les Tres Torres L6, S7, S7T. Autobús: 68, V9, V7, 70, H6, V11.</p>
-      <a class="k-button k-button-link k-size-sm hn-cta" href="{NAP['maps']}" target="_blank" rel="noopener"><span class="k-button-text">Ver en Google Maps</span></a>
+      <p class="hn-eyebrow">{e(t['mapa_eyebrow'])}</p>
+      <h2>{e(t['mapa_h'])}</h2>
+      <p>{e(t['mapa_p'])}</p>
+      <a class="k-button k-button-link k-size-sm hn-cta" href="{NAP['maps']}" target="_blank" rel="noopener"><span class="k-button-text">{e(t['ver_maps'])}</span></a>
     </div>
-    <iframe class="hn-mapa__iframe" loading="lazy" src="{NAP['embed']}" title="Clínica Belba en Google Maps" aria-label="Clínica Belba"></iframe>
+    <iframe class="hn-mapa__iframe" loading="lazy" src="{NAP['embed']}" title="{e(t['mapa_title'])}" aria-label="Clínica Belba"></iframe>
   </div>
 </section>
-
-<footer class="hn-footer">
-  <div class="hn-wrap hn-footer__grid">
-    <div class="hn-footer__brand">
-      <a href="/"><img src="/images/2024/12/clinica-belba-200.webp" alt="Clinica Cirugía Plástica Barcelona" width="192" height="58" loading="lazy" decoding="async"></a>
-      <p>Cirujanos Plásticos Barcelona | Clínica Belba</p>
-      <p><a href="{NAP['maps']}" target="_blank" rel="noopener">{e(NAP['dir1'])}, {e(NAP['dir2'])}</a></p>
-    </div>
-    <div><p class="hn-footer__h">Cirugía plástica</p><ul>
-      <li><a href="/cirugia-de-la-mama/">Cirugía de la mama</a></li>
-      <li><a href="/cirugia-corporal/">Cirugía corporal</a></li>
-      <li><a href="/cirugia-facial/">Cirugía facial</a></li>
-      <li><a href="/cirugia-intima/">Cirugía intima</a></li>
-      <li><a href="/precio-cirugia-estetica-barcelona/">Precio de cirugías plásticas</a></li>
-    </ul></div>
-    <div><p class="hn-footer__h">Clínica</p><ul>
-      <li><a href="/quienes-somos/">Quienes somos</a></li>
-      <li><a href="/cirujanos-plasticos-barcelona/">Cirujanos plásticos Barcelona</a></li>
-      <li><a href="/guia-del-paciente/">Guía del paciente</a></li>
-      <li><a href="/test-paciente/">Test paciente</a></li>
-      <li><a href="/consulta-online/">Consulta online</a></li>
-      <li><a href="/blog/">Blog</a></li>
-    </ul></div>
-    <div><p class="hn-footer__h">Contacto</p><ul>
-      <li><a href="{NAP['tel_href']}">{e(NAP['tel'])}</a></li>
-      <li><a href="{NAP['wa']}" target="_blank" rel="noopener">O Llámanos vía Whatsapp</a></li>
-      <li><a href="mailto:{NAP['email']}">{NAP['email']}</a></li>
-      <li>{e(NAP['horario'])}</li>
-    </ul></div>
-  </div>
-  <div class="hn-wrap hn-footer__bottom">
-    <p>Clínica Belba © Todos los derechos {YEAR}.</p>
-    <ul class="hn-footer__legal"><li><a href="/aviso-legal/">Aviso legal</a></li><li><a href="/politica-de-cookies/">Política de cookies</a></li><li><a href="/politica-de-privacidad/">Política de privacidad</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul>
-  </div>
-  <div class="hn-wrap hn-footer__eu-row"><img class="hn-footer__eu" src="/images/2022/12/financiado-por-la-union-europea.webp" alt="Financiado por la Unión Europea - NextGenerationEU." width="250" height="63" loading="lazy" decoding="async"></div>
-</footer>
-{WA_FLOTANTE}
 </div>
-'''
+"""
 
 CSS = '''
 .hn{--navy:#172239;--navy2:#143852;--teal:#008488;--sky:#D3E4EA;--grey:#F3F5F4;--text:#333;font-family:Montserrat,sans-serif;color:var(--text);line-height:1.6}
@@ -355,22 +335,10 @@ CSS = '''
 .hn-mapa__grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center}
 .hn-mapa .hn-cta{background:#fff;color:var(--teal)}
 .hn-mapa__iframe{width:100%;height:380px;border:0;border-radius:20px;display:block}
-/* pie compacto (solo en esta página; el resto de la web conserva el pie literal del WordPress) */
-.hn-footer{background:var(--navy);color:#c9d3df;padding:56px 0 90px;font-size:14px}
-.hn-footer a{color:#e6f2f2;text-decoration:none}.hn-footer a:hover{color:#9fd8d9}
-.hn-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
-.hn-footer__brand img{height:44px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px}
-.hn-footer__brand p{margin:0 0 6px}
-.hn-footer__h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#9fd8d9;font-weight:700;margin:0 0 12px}
-.hn-footer ul{list-style:none;margin:0;padding:0}.hn-footer li{padding:4px 0}
-.hn-footer__bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:13px}
-.hn-footer__bottom p{margin:0}.hn-footer__legal{display:flex;flex-wrap:wrap;gap:6px 18px}
-.hn .hn-footer__eu{height:56px!important;width:auto!important;max-width:none;background:#fff;border-radius:8px;padding:6px 10px;flex:0 0 auto}
-.hn-footer__eu-row{margin-top:18px}
 @media(max-width:1024px){.hn-cards{grid-template-columns:repeat(3,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:820px){.hn h1{font-size:32px}.hn h2{font-size:26px}.hn section{padding:52px 0}
 .hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-hosp__grid,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
-.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}.hn-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
+.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}}
 '''
 
 JS = '''
@@ -385,18 +353,44 @@ var s=null;try{s=localStorage.getItem('belba_sel');}catch(e){}if(s==='hombre')se
 var pre=d.querySelector('.hn input[name=sel_persona][value='+(s==='hombre'?'Hombre':'Mujer')+']');if(pre&&s){pre.checked=true;}})();
 '''
 
+def ti_of(doc):
+    """Widget de reseñas de Google (Trustindex) literal de la portada de ese idioma."""
+    Sd = BeautifulSoup(''.join(b['html'] for b in doc['blocks']), 'html.parser')
+    w = Sd.find(class_='ti-widget')
+    if not w: return TRUSTINDEX, N_RESENAS
+    h = re.sub(r'data-css-url="[^"]*"', 'data-css-url="/css/trustindex-google-widget.css"', str(w.find_parent(class_='k-widget-container') or w))
+    m = re.search(r'(\d{2,4})\s', BeautifulSoup(h, 'html.parser').get_text(' ', strip=True))
+    return h, (m.group(1) if m else N_RESENAS)
+
 def main():
-    doc = {
-        'path': '/home-nueva/', 'lang': 'es', 'kind': 'page', 'layout': 'header',
-        'seo': {'title': home['seo']['title'], 'description': home['seo']['description'], 'canonical': 'https://clinicabelba.com/home-nueva/',
-                'robots': 'noindex, nofollow', 'ogImage': '/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp'},
-        'alternates': None, 'post': None, 'root': {'class': 'k', 'data-kt': 'wp-page'},
-        'css': CSS, 'blocks': [{'type': 'seccion', 'html': body() + '<script>' + JS + '</script>'}],
-        'bodyClass': 'home page k-default k-kit-5 k-page', 'jsonld': home['jsonld'], 'needs': ['trustindex'],
-    }
-    os.makedirs(B + '/src/content/pages/es', exist_ok=True)
-    json.dump(doc, open(B + '/src/content/pages/es/zz-home-nueva.json', 'w'), ensure_ascii=False)
-    print('home-nueva ok · reseñas Google:', N_RESENAS)
+    from urllib.parse import unquote
+    rows = []
+    for f in glob.glob(B + '/src/content/pages/*/*.json'):
+        doc = json.load(open(f))
+        if not re.fullmatch(r'/(\w\w/)?', doc['path']): continue
+        lang = doc['lang']
+        t = T.get(lang) or T['es']
+        lay = json.load(open(B + f'/src/content/layout/{lang}.json'))
+        lb = menu_labels(lay['header'])
+        ti_html, n_res = ti_of(doc)
+        doc['layout'] = 'default'
+        doc['css'] = CSS
+        doc['blocks'] = [{'type': 'seccion', 'html': body(lang, t, lb, ti_html, n_res, doc['path']) + '<script>' + JS + '</script>'}]
+        doc['root'] = {'class': 'k', 'data-kt': 'wp-page'}
+        doc['bodyClass'] = 'home page k-default k-kit-5 k-page'
+        doc['needs'] = sorted(set((doc.get('needs') or []) + ['trustindex']))
+        doc['seo']['ogImage'] = '/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp'
+        json.dump(doc, open(f, 'w'), ensure_ascii=False)
+        rows.append('| %s | página completa | portada del WordPress | home nueva (diseño Figma de Oscar, datos reales) %s | decisión Oscar 28/09; %s |' % (
+            unquote(doc['path']), '' if lang == 'es' else 'traducida por Claude', 'textos originales en ES' if lang == 'es' else 'traducción pendiente de revisión de la clínica'))
+    for f in glob.glob(B + '/src/content/pages/*/zz-home-nueva.json'):
+        os.remove(f)
+    nl = B + '/NO_LITERAL.md'
+    cur = open(nl).read() if os.path.exists(nl) else ''
+    with open(nl, 'a') as fo:
+        for r in rows:
+            if r + '\n' not in cur: fo.write(r + '\n')
+    print('home nueva en', len(rows), 'idiomas · reseñas Google (ES):', N_RESENAS)
 
 if __name__ == '__main__':
     main()
