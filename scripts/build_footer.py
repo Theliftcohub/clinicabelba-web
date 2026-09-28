@@ -82,6 +82,13 @@ def main():
         S = BeautifulSoup(L['footer_wp'], 'html.parser')
         wa = S.select_one('section.k-element-1a3720f')
         L['footer'] = render(lang, L['header'], str(wa) if wa else '')
+        # Selector de idioma en la cabecera (arriba a la derecha, tras el menú): marca <!--LS--> que [...slug].astro sustituye por el componente
+        if '<!--LS-->' not in L['header']:
+            Hs = BeautifulSoup(L['header'], 'html.parser')
+            nav = Hs.select_one('.k-widget-nav-menu')
+            if nav:
+                nav.insert_after(BeautifulSoup('<!--LS-->', 'html.parser'))
+                L['header'] = str(Hs)
         json.dump(L, open(p, 'w'), ensure_ascii=False)
         rows.append('| %s | pie de página | pie del WordPress (CTA + contacto + mapa + 27 enlaces) | pie compacto: marca, 3 columnas de enlaces, legal, logo UE, WhatsApp | decisión Oscar 28/09: toda la web con el estilo de la home nueva; textos traducidos por Claude, revisar |' % href('/', lang))
     nl = B + '/NO_LITERAL.md'

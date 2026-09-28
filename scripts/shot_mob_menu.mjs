@@ -1,0 +1,12 @@
+import { chromium } from 'playwright';
+const SC = '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/qa/';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const m = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m.route(/googletagmanager|trustindex/, (r) => r.abort());
+await m.goto('http://localhost:4321/en/breast-surgery/', { waitUntil: 'load' });
+await m.evaluate(() => scrollTo(0, 900)); await m.waitForTimeout(400);
+await m.screenshot({ path: SC + 'mob_sticky.jpg', type: 'jpeg', quality: 60, clip: { x: 0, y: 0, width: 390, height: 200 } });
+await m.locator('.k-menu-toggle').first().click(); await m.waitForTimeout(400);
+await m.locator('.k-nav-menu--dropdown > ul > .menu-item-has-children > a .sub-arrow').nth(1).click(); await m.waitForTimeout(400);
+await m.screenshot({ path: SC + 'mob_menu.jpg', type: 'jpeg', quality: 60 });
+await b.close();

@@ -16,12 +16,18 @@ const withFooter = doc.layout === 'default';
 const rootCls = doc.root?.class || 'k';
 ---
 <Base doc={doc}>
-  {lay && <Fragment set:html={lay.header} />}
+  {lay && lay.header.includes('<!--LS-->') ? (
+    <Fragment>
+      <Fragment set:html={lay.header.split('<!--LS-->')[0]} />
+      <LangSwitcher doc={doc} />
+      <Fragment set:html={lay.header.split('<!--LS-->')[1]} />
+    </Fragment>
+  ) : (lay && <Fragment set:html={lay.header} />)}
   <main id="content">
     <div class={rootCls} data-kt={doc.root?.['data-kt']}>
       {doc.blocks.map((b) => <Fragment set:html={b.html} />)}
     </div>
   </main>
   {lay && withFooter && <Fragment set:html={lay.footer} />}
-  <LangSwitcher doc={doc} />
+  {!lay && <LangSwitcher doc={doc} />}
 </Base>

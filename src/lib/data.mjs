@@ -50,5 +50,5 @@ export const SITE = {
 
 export const LANGS = ['es', 'ca', 'en', 'fr', 'de', 'it', 'nl', 'ru', 'uk'];
 export const HREFLANG = { es: 'es-ES', ca: 'ca', en: 'en-US', fr: 'fr-FR', de: 'de-DE', it: 'it-IT', nl: 'nl-NL', ru: 'ru-RU', uk: 'uk' };
-export const LANG_NAME = { es: 'Spanish', ca: 'Catalan', en: 'English', fr: 'French', de: 'German', it: 'Italian', nl: 'Dutch', ru: 'Russian', uk: 'Ukrainian' };
+export const LANG_NAME = { es: 'Español', ca: 'Català', en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano', nl: 'Nederlands', ru: 'Русский', uk: 'Українська' };
 export const FLAG = { es: 'es_ES', ca: 'ca', en: 'en_US', fr: 'fr_FR', de: 'de_DE', it: 'it_IT', nl: 'nl_NL', ru: 'ru_RU', uk: 'uk' };

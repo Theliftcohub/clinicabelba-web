@@ -1062,6 +1062,31 @@ main .e-n-accordion-item{border:1px solid #e6ecee;border-radius:12px;margin-bott
 main .e-n-accordion-item-title{padding:16px 20px;font-weight:600;color:var(--b-navy)}
 main .k-widget-table-of-contents .k-toc__header{border-radius:12px 12px 0 0}
 main .k-widget-table-of-contents{border-radius:12px;border-color:#e6ecee}
+/* cabecera: sin el margen negativo (compensaba la barra de TranslatePress, que ya no existe); sticky en tablet/móvil como en el WP */
+.k-38 .k-element.k-element-ce67a94{margin-top:0!important}
+@media(max-width:1024px){header.k-38{position:sticky;top:0;z-index:9998;background:#fff;box-shadow:0 2px 12px rgba(23,34,57,.08)}
+/* menú móvil a todo el ancho bajo la cabecera (lo hacía el JS de Elementor) */
+header.k-38 .k-section,header.k-38 .k-container,header.k-38 .k-column,header.k-38 .k-widget-wrap,header.k-38 .k-widget-nav-menu,header.k-38 .k-widget-nav-menu>.k-widget-container{position:static}
+header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--dropdown{position:absolute;left:0;right:0;width:100%;top:100%;margin-top:0!important;max-height:calc(100vh - 90px);overflow:auto;z-index:9999}
+.k-nav-menu--dropdown .menu-item-has-children>.sub-menu{position:static;width:100%;min-width:0;max-width:none;display:none;background:rgba(0,0,0,.08)}
+.k-nav-menu--dropdown li.open>.sub-menu{display:block}}
+/* desplegables del menú: ancho al contenido (el JS de Elementor lo hacía en tiempo real) y sin cortes */
+.k-nav-menu--main .k-nav-menu ul{width:auto;min-width:12em;max-width:22em}
+.k-nav-menu--main .k-nav-menu--dropdown a{white-space:nowrap;padding:12px 18px}
+.k-nav-menu--main li.open>.sub-menu{display:block}
+.k-nav-menu--main .sub-menu{box-shadow:0 12px 32px rgba(23,34,57,.16);border-radius:0 0 10px 10px;overflow:hidden}
+/* selector de idioma en la cabecera */
+.k-38 .ls-widget{width:auto;margin-left:12px;position:relative;z-index:101}
+.ls{position:relative;font-family:Montserrat,sans-serif}
+.ls__cur{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1.5px solid #D3E4EA;border-radius:10px;padding:7px 10px;font:600 13px Montserrat,sans-serif;color:#143852;cursor:pointer;line-height:1}
+.ls__cur:hover,.ls.is-open .ls__cur{border-color:#008488}
+.ls__cur img,.ls__list img{width:20px;height:15px;border-radius:2px;object-fit:cover;display:block}
+.ls__chev{width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:-3px 2px 0}
+.ls__list{position:absolute;right:0;top:calc(100% + 8px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #e6ecee;border-radius:12px;box-shadow:0 12px 32px rgba(23,34,57,.14);min-width:170px}
+.ls__list[hidden]{display:none}
+.ls__list a{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;color:#172239;text-decoration:none;font-size:14px;white-space:nowrap}
+.ls__list a:hover{background:#E9F5F5;color:#008488}
+@media(max-width:1024px){.k-38 .ls-widget{margin-left:8px}.ls__code{display:none}.ls__cur{padding:7px 8px}}
 /* pie compacto global (build_footer.py) */
 .hn-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .hn-footer{background:var(--b-navy);color:#c9d3df;padding:56px 0 90px;font-size:14px;font-family:Montserrat,sans-serif;line-height:1.6}

@@ -1,0 +1,17 @@
+import { chromium } from 'playwright';
+const SC = '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/qa/';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const pg = await b.newPage({ viewport: { width: 1366, height: 700 } });
+await pg.route(/googletagmanager|trustindex/, (r) => r.abort());
+await pg.goto('http://localhost:4321/aumento-pecho-barcelona/', { waitUntil: 'load' });
+await pg.locator('.k-nav-menu--main .menu-item-has-children > a').nth(1).hover(); await pg.waitForTimeout(500);
+await pg.screenshot({ path: SC + 'menu_new2.jpg', type: 'jpeg', quality: 60, clip: { x: 0, y: 0, width: 1366, height: 700 } });
+await pg.mouse.move(700, 300); await pg.waitForTimeout(150);
+console.log('open after 150ms off-hover:', await pg.locator('.k-nav-menu--main li.open').count());
+await pg.locator('.ls__cur').click(); await pg.waitForTimeout(300);
+await pg.screenshot({ path: SC + 'ls_open.jpg', type: 'jpeg', quality: 60, clip: { x: 900, y: 0, width: 466, height: 420 } });
+const m = await b.newPage({ viewport: { width: 390, height: 844 } });
+await m.goto('http://localhost:4321/aumento-pecho-barcelona/', { waitUntil: 'load' });
+await m.evaluate(() => scrollTo(0, 600)); await m.waitForTimeout(400);
+await m.screenshot({ path: SC + 'mob_header.jpg', type: 'jpeg', quality: 60, clip: { x: 0, y: 0, width: 390, height: 300 } });
+await b.close();

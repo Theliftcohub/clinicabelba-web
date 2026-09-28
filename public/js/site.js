@@ -8,6 +8,14 @@
     t.addEventListener('click', tog);
     t.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(); } });
   });
+  // Desplegables del menú de escritorio: abrir al pasar y cerrar con retardo (como SmartMenus en el WP), sin parpadeos
+  d.querySelectorAll('.k-nav-menu--main .menu-item-has-children').forEach(function (li) {
+    var t;
+    li.addEventListener('mouseenter', function () { clearTimeout(t); li.classList.add('open'); });
+    li.addEventListener('mouseleave', function () { t = setTimeout(function () { li.classList.remove('open'); }, 350); });
+    li.addEventListener('focusin', function () { li.classList.add('open'); });
+    li.addEventListener('focusout', function () { setTimeout(function () { if (!li.contains(d.activeElement)) li.classList.remove('open'); }, 100); });
+  });
   // Submenús en el menú desplegable (móvil)
   d.querySelectorAll('.k-nav-menu--dropdown .menu-item-has-children > a').forEach(function (a) {
     var arrow = a.querySelector('.sub-arrow');
@@ -18,14 +26,14 @@
   });
   d.querySelectorAll('a.k-item-anchor[href="#"]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); }); });
   // Selector de idioma
-  d.querySelectorAll('.trp-language-switcher').forEach(function (n) {
-    var cur = n.querySelector('.trp-language-item__current'), list = n.querySelector('.trp-switcher-dropdown-list');
-    if (!cur || !list) return;
-    function tog() { var open = list.hasAttribute('hidden'); if (open) list.removeAttribute('hidden'); else list.setAttribute('hidden', ''); cur.setAttribute('aria-expanded', open ? 'true' : 'false'); n.classList.toggle('is-open', open); }
-    cur.addEventListener('click', tog);
-    cur.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(); } });
+  // Selector de idioma de la cabecera (sustituye al flotante de TranslatePress)
+  d.querySelectorAll('.ls').forEach(function (n) {
+    var btn = n.querySelector('.ls__cur'), list = n.querySelector('.ls__list');
+    function tog(open) { if (open === undefined) open = list.hidden; list.hidden = !open; btn.setAttribute('aria-expanded', open ? 'true' : 'false'); n.classList.toggle('is-open', open); }
+    btn.addEventListener('click', function (e) { e.stopPropagation(); tog(); });
+    d.addEventListener('click', function (e) { if (!n.contains(e.target)) tog(false); });
+    n.addEventListener('keydown', function (e) { if (e.key === 'Escape') { tog(false); btn.focus(); } });
   });
-  // Pestañas (nested tabs)
   d.querySelectorAll('.e-n-tabs').forEach(function (w) {
     var titles = w.querySelectorAll(':scope > .e-n-tabs-heading > .e-n-tab-title');
     var panels = w.querySelectorAll(':scope > .e-n-tabs-content > .e-con');
