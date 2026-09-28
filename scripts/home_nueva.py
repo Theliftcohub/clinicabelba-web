@@ -88,6 +88,8 @@ DOCS = [
      '«No se trata de hacer más cirugía, sino de hacer la adecuada.»',
      'Con amplia experiencia en cirugía plástica y reparadora, destaca por su criterio médico y su enfoque conservador cuando el caso lo permite. En mamoplastia, trabaja con técnicas que reducen el impacto quirúrgico, minimizan el tiempo de recuperación y favorecen una evolución postoperatoria controlada, siempre dentro del entorno hospitalario seguro del Grupo Teknon y el Hospital Tres Torres.'),
 ]
+import datetime
+YEAR = datetime.date.today().year
 NAP = {'dir1': 'Via Augusta, 281, planta 4A', 'dir2': '08017 Barcelona', 'tel': '+34 613 16 34 47', 'tel_href': 'tel:34613163447',
        'wa': 'https://api.whatsapp.com/send?phone=34613163447', 'email': 'info@clinicabelba.com',
        'horario': 'Lunes a jueves: 10:00–14:00 y 16:00–20:00 · Viernes: 10:00–14:00',
@@ -98,6 +100,11 @@ ti = S.find(class_='ti-widget')
 TRUSTINDEX = re.sub(r'data-css-url="[^"]*"', 'data-css-url="/css/trustindex-google-widget.css"', str(ti.find_parent(class_='k-widget-container') or ti))
 ti_head = re.search(r'A base de\s*(\d+)\s*rese', BeautifulSoup(TRUSTINDEX, 'html.parser').get_text(' ', strip=True))
 N_RESENAS = ti_head.group(1) if ti_head else ''
+
+# Botón flotante de WhatsApp: el mismo widget literal del pie del WordPress
+_lay = json.load(open(B + '/src/content/layout/es.json'))
+_wa = BeautifulSoup(_lay['footer'], 'html.parser').select_one('section.k-element-1a3720f')
+WA_FLOTANTE = str(_wa) if _wa else ''
 
 def card(t, href, img):
     return f'<a class="hn-card" href="{href}"><img src="{img}" alt="{e(t)}" loading="lazy" decoding="async"><span>{e(t)}</span></a>'
@@ -133,7 +140,7 @@ def body():
     </div>
     <div class="hn-hero__form" id="valoracion">
       <p class="hn-hero__formtitle">{e(CTA)}</p>
-      <p class="hn-hero__formsub">Unas preguntas rápidas y te llama nuestro equipo médico. Sin compromiso.</p>
+      <p class="hn-hero__formsub">Unas preguntas rápidas y nuestro equipo te escribirá para asesorarte. Sin compromiso.</p>
       {form_hero}
     </div>
   </div>
@@ -229,6 +236,43 @@ def body():
     <iframe class="hn-mapa__iframe" loading="lazy" src="{NAP['embed']}" title="Clínica Belba en Google Maps" aria-label="Clínica Belba"></iframe>
   </div>
 </section>
+
+<footer class="hn-footer">
+  <div class="hn-wrap hn-footer__grid">
+    <div class="hn-footer__brand">
+      <a href="/"><img src="/images/2024/12/clinica-belba-200.webp" alt="Clinica Cirugía Plástica Barcelona" width="192" height="58" loading="lazy" decoding="async"></a>
+      <p>Cirujanos Plásticos Barcelona | Clínica Belba</p>
+      <p><a href="{NAP['maps']}" target="_blank" rel="noopener">{e(NAP['dir1'])}, {e(NAP['dir2'])}</a></p>
+    </div>
+    <div><p class="hn-footer__h">Cirugía plástica</p><ul>
+      <li><a href="/cirugia-de-la-mama/">Cirugía de la mama</a></li>
+      <li><a href="/cirugia-corporal/">Cirugía corporal</a></li>
+      <li><a href="/cirugia-facial/">Cirugía facial</a></li>
+      <li><a href="/cirugia-intima/">Cirugía intima</a></li>
+      <li><a href="/precio-cirugia-estetica-barcelona/">Precio de cirugías plásticas</a></li>
+    </ul></div>
+    <div><p class="hn-footer__h">Clínica</p><ul>
+      <li><a href="/quienes-somos/">Quienes somos</a></li>
+      <li><a href="/cirujanos-plasticos-barcelona/">Cirujanos plásticos Barcelona</a></li>
+      <li><a href="/guia-del-paciente/">Guía del paciente</a></li>
+      <li><a href="/test-paciente/">Test paciente</a></li>
+      <li><a href="/consulta-online/">Consulta online</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul></div>
+    <div><p class="hn-footer__h">Contacto</p><ul>
+      <li><a href="{NAP['tel_href']}">{e(NAP['tel'])}</a></li>
+      <li><a href="{NAP['wa']}" target="_blank" rel="noopener">O Llámanos vía Whatsapp</a></li>
+      <li><a href="mailto:{NAP['email']}">{NAP['email']}</a></li>
+      <li>{e(NAP['horario'])}</li>
+    </ul></div>
+  </div>
+  <div class="hn-wrap hn-footer__bottom">
+    <p>Clínica Belba © Todos los derechos {YEAR}.</p>
+    <ul class="hn-footer__legal"><li><a href="/aviso-legal/">Aviso legal</a></li><li><a href="/politica-de-cookies/">Política de cookies</a></li><li><a href="/politica-de-privacidad/">Política de privacidad</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul>
+  </div>
+  <div class="hn-wrap hn-footer__eu-row"><img class="hn-footer__eu" src="/images/2022/12/financiado-por-la-union-europea.webp" alt="Financiado por la Unión Europea - NextGenerationEU." width="250" height="63" loading="lazy" decoding="async"></div>
+</footer>
+{WA_FLOTANTE}
 </div>
 '''
 
@@ -311,10 +355,22 @@ CSS = '''
 .hn-mapa__grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center}
 .hn-mapa .hn-cta{background:#fff;color:var(--teal)}
 .hn-mapa__iframe{width:100%;height:380px;border:0;border-radius:20px;display:block}
+/* pie compacto (solo en esta página; el resto de la web conserva el pie literal del WordPress) */
+.hn-footer{background:var(--navy);color:#c9d3df;padding:56px 0 90px;font-size:14px}
+.hn-footer a{color:#e6f2f2;text-decoration:none}.hn-footer a:hover{color:#9fd8d9}
+.hn-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+.hn-footer__brand img{height:44px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px}
+.hn-footer__brand p{margin:0 0 6px}
+.hn-footer__h{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#9fd8d9;font-weight:700;margin:0 0 12px}
+.hn-footer ul{list-style:none;margin:0;padding:0}.hn-footer li{padding:4px 0}
+.hn-footer__bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:13px}
+.hn-footer__bottom p{margin:0}.hn-footer__legal{display:flex;flex-wrap:wrap;gap:6px 18px}
+.hn .hn-footer__eu{height:56px!important;width:auto!important;max-width:none;background:#fff;border-radius:8px;padding:6px 10px;flex:0 0 auto}
+.hn-footer__eu-row{margin-top:18px}
 @media(max-width:1024px){.hn-cards{grid-template-columns:repeat(3,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:820px){.hn h1{font-size:32px}.hn h2{font-size:26px}.hn section{padding:52px 0}
 .hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-hosp__grid,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
-.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}}
+.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}.hn-footer__grid{grid-template-columns:1fr 1fr;gap:28px}}
 '''
 
 JS = '''
@@ -331,7 +387,7 @@ var pre=d.querySelector('.hn input[name=sel_persona][value='+(s==='hombre'?'Homb
 
 def main():
     doc = {
-        'path': '/home-nueva/', 'lang': 'es', 'kind': 'page', 'layout': 'default',
+        'path': '/home-nueva/', 'lang': 'es', 'kind': 'page', 'layout': 'header',
         'seo': {'title': home['seo']['title'], 'description': home['seo']['description'], 'canonical': 'https://clinicabelba.com/home-nueva/',
                 'robots': 'noindex, nofollow', 'ogImage': '/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp'},
         'alternates': None, 'post': None, 'root': {'class': 'k', 'data-kt': 'wp-page'},

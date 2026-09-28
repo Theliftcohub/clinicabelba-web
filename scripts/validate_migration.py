@@ -57,7 +57,7 @@ def configurar_auth(valor_cli):
 # "SearchAction" no es un @type propio, pero WebSite.potentialAction desaparece a
 # veces junto con el tipo; se deja aquí documentado que el sitelinks search box
 # está retirado (Google, nov. 2024) y su ausencia nunca debe contar como pérdida.
-SCHEMA_PERDIDA_OK_SIMPLES = {"AggregateRating", "SiteNavigationElement", "SearchAction", "Review", "Rating", "HowTo", "HowToStep"}  # retirados a propósito (funciones de Google retiradas / valoraciones propias)
+SCHEMA_PERDIDA_OK_SIMPLES = {"AggregateRating", "SiteNavigationElement", "SearchAction", "Review", "Rating", "HowTo", "HowToStep", "EntryPoint", "PropertyValueSpecification"}  # EntryPoint/PVS son las partes del SearchAction retirado  # retirados a propósito (funciones de Google retiradas / valoraciones propias)
 
 
 def _q(url):

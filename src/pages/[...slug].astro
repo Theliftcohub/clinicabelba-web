@@ -10,7 +10,9 @@ export function getStaticPaths() {
   });
 }
 const { doc } = Astro.props;
-const lay = doc.layout === 'default' ? layoutFor(doc.lang) : null;
+// 'default' = cabecera y pie del WordPress; 'header' = solo cabecera (la página trae su propio pie)
+const lay = doc.layout === 'default' || doc.layout === 'header' ? layoutFor(doc.lang) : null;
+const withFooter = doc.layout === 'default';
 const rootCls = doc.root?.class || 'k';
 ---
 <Base doc={doc}>
@@ -20,6 +22,6 @@ const rootCls = doc.root?.class || 'k';
       {doc.blocks.map((b) => <Fragment set:html={b.html} />)}
     </div>
   </main>
-  {lay && <Fragment set:html={lay.footer} />}
+  {lay && withFooter && <Fragment set:html={lay.footer} />}
   <LangSwitcher doc={doc} />
 </Base>
