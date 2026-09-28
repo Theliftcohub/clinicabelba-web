@@ -1,5 +1,5 @@
 
-Entorno: staging · PASS 1354  WARN 170  FAIL 0  (de 1354 URLs)
+Entorno: staging · PASS 1354  WARN 172  FAIL 0  (de 1354 URLs)
 
 WARN /test-paciente/
   sin metadescripción (tampoco la tenía)
@@ -37,6 +37,8 @@ WARN /dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/
   sin metadescripción (tampoco la tenía)
 WARN /consulta-online/
   sin metadescripción (tampoco la tenía)
+WARN /de/
+  H1 distinto
 WARN /ru/%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f-%d1%85%d0%b8%d1%80%d1%83%d1%80%d0%b3%d0%b8%d1%8f-%d0%b4%d0%be%d0%ba%d1%82%d0%be%d1%80%d0%b0-%d0%b4%d1%8e-%d0%b2%d0%b5%d0%b1/%d1%81%d0%bf%d0%b0%d1%81%d0%b8%d0%b1%d0%be/
   sin metadescripción (tampoco la tenía)
 WARN /uk/%d0%ba%d0%bb%d1%96%d0%bd%d1%96%d0%ba%d0%b0-%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d1%87%d0%bd%d0%be%d1%97-%d1%85%d1%96%d1%80%d1%83%d1%80%d0%b3%d1%96%d1%97-%d0%b4%d0%be%d0%ba%d1%82%d0%be%d1%80%d0%b0/%d0%b4%d1%8f%d0%ba%d1%83%d1%8e/
@@ -341,6 +343,8 @@ WARN [apache] ?p=18507&utm_source=test
   esperaba 301, da 410
 WARN [apache] /_astro/
   no se ha encontrado ningún asset /_astro/ en la portada para comprobar el cache
+WARN [fechas] /
+  no se detecta <time> visible en el HTML (fechas solo en JSON-LD, no en el texto)
 
 Medios muestreados: 20, con FAIL: 0
 
