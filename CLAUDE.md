@@ -9,8 +9,10 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - Dominio canónico: `https://clinicabelba.com/` (sin www, barra final: sí). Cloudflare delante: el DNS se cambia en Cloudflare.
 - Idiomas: se conservan LOS 9 (decisión Oscar 27/09, vistos los datos de GSC): es (por defecto, sin prefijo), ca, en, fr, de, it, nl, ru, uk con prefijo `/xx/`. Slugs traducidos: sí (TranslatePress). Mapa en `migracion/i18n-map.json`. hreflang recíproco + x-default → es.
 - Tipo de negocio para schema: MedicalClinic (confirmar sede principal y NAP con la ficha de Google Business Profile).
-- Formularios: hoy MetForm → Kommo (integración a replicar y probar antes del DNS; detalle PENDIENTE).
-- Analítica actual: GTM-M6RC6ST + GTM-TCR5FXL (dos contenedores: decidir cuál queda), GA4 G-K8WB1WZK6H, píxel de Meta, Cookiebot como CMP.
+- Formularios (decisión Oscar 28/09): **todos nativos, nada de Typeform**. Los 5 Typeform se rehacen como formularios por pasos con sus preguntas literales (`scripts/forms_native.py`, datos en `migracion/typeform_forms.json`); los de Elementor se conservan. Todos envían a `/form-handler.php` → **n8n** (webhook en `secrets/`, fuera del repo) y, si n8n falla o no está configurado, email a los destinatarios del WordPress. Nunca se pierde un lead: último recurso `secrets/leads-no-enviados.log`.
+- Medición de leads: todos los formularios lanzan `dataLayer.push({event:'lead_form_submit', form_id, form_name, form_page, form_lang, lead_source, lead_medium})` y mandan a n8n la atribución (UTM, gclid, fbclid, ad_id, primera fuente/medio/landing/referrer de los últimos 90 días y client_id de GA4). En GTM hay que crear el activador de ese evento antes del DNS (ver `migracion/tracking_decisiones.md`).
+- Hoy (WordPress) los formularios NO llegaban a Kommo: solo email (y el de las páginas de mama, solo a la base de datos). 1 de cada 6 emails fallaba.
+- Analítica: solo GTM-TCR5FXL (M6RC6ST era de felixchavarria.es). GA4 y píxel de Meta solo vía GTM (antes se duplicaban por plugins). Cookiebot lo carga GTM, como hoy.
 - Política de bots de IA en robots.txt: permitir bots de búsqueda; bots de entrenamiento: permitir (por defecto, pendiente confirmar).
 - Fecha de lanzamiento prevista: PENDIENTE.
 - Datos médicos en schema (colegiado, credenciales): solo si figuran literalmente en la web.

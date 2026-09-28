@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const pg = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await pg.route(/googletagmanager|trustindex|youtube|google\.com\/maps/, (r) => r.abort());
+await pg.goto('http://localhost:4321' + (process.argv[2] || '/consulta-online/'), { waitUntil: 'load' });
+const f = pg.locator('form.belba-form').first();
+await f.scrollIntoViewIfNeeded();
+await pg.waitForTimeout(300);
+await f.screenshot({ path: '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/form_step.jpg', type: 'jpeg', quality: 70 });
+await b.close();

@@ -60,7 +60,13 @@ def configurar_auth(valor_cli):
 SCHEMA_PERDIDA_OK_SIMPLES = {"AggregateRating", "SiteNavigationElement"}
 
 
+def _q(url):
+    from urllib.parse import quote
+    return quote(url, safe=":/?#[]@!$&'()*+,;=%~")
+
+
 def get(url, metodo="GET"):
+    url = _q(url)
     req = urllib.request.Request(url, headers={**UA, **AUTH_HEADERS}, method=metodo)
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -76,7 +82,8 @@ def head_noredirect(url):
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *a, **k):
             return None
-    op = urllib.request.build_opener(NoRedirect)
+    op = urllib.request.build_opener(NoRedirect, urllib.request.ProxyHandler({}))
+    url = _q(url)
     req = urllib.request.Request(url, headers={**UA, **AUTH_HEADERS}, method="HEAD")
     try:
         with op.open(req, timeout=30) as r:

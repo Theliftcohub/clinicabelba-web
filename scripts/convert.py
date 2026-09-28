@@ -79,7 +79,7 @@ def local_media(u):
     o = original_of(u)
     if '/wp-content/uploads/' not in o:
         return None
-    rel = unquote(o.split('/wp-content/uploads/', 1)[1])
+    rel = unquote(o.split('/wp-content/uploads/', 1)[1]).split('?')[0].split('#')[0]
     rel = re.sub(r'^elementor/thumbs/', 'thumbs/', rel)
     root, ext = os.path.splitext(rel)
     ext = ext.lower()
@@ -129,7 +129,8 @@ def ren_css(css):
     css = re.sub(r'url\(([^)]+)\)', u, css)
     return css
 
-ALLOWED_SCRIPT = re.compile(r'embed\.typeform\.com|cdn\.trustindex\.io|trustindex', re.I)
+ALLOWED_SCRIPT = re.compile(r'cdn\.trustindex\.io|trustindex', re.I)
+import forms_native
 
 def yt_id(url):
     m = re.search(r'(?:youtu\.be/|v=|shorts/|embed/)([\w-]{11})', url or '')
@@ -182,6 +183,12 @@ def fix_ld(o, warn, parent_type=None):
 LOG = {}
 
 def clean(soup, page_path, lang, warn, posts_index):
+    # Typeform -> formulario nativo (decisión 28/09)
+    for tfn in soup.find_all(attrs={'data-tf-live': True}) + soup.find_all(attrs={'data-tf-widget': True}):
+        tid = tfn.get('data-tf-live') or tfn.get('data-tf-widget')
+        nf = BeautifulSoup(forms_native.render(tid, lang, page_path), 'html.parser')
+        tfn.replace_with(nf)
+        warn.append('Typeform %s sustituido por formulario nativo' % tid)
     # comentarios
     for c in soup.find_all(string=lambda t: isinstance(t, Comment)):
         c.extract()
@@ -284,6 +291,10 @@ def clean(soup, page_path, lang, warn, posts_index):
                 f.insert(0, hp)
                 pg = soup.new_tag('input', type='hidden'); pg['name'] = 'page'; pg['value'] = page_path; f.insert(0, pg)
                 lg = soup.new_tag('input', type='hidden'); lg['name'] = 'lang'; lg['value'] = lang; f.insert(0, lg)
+                f['data-form-id'] = 'el-' + ((f.find('input', attrs={'name': 'form_id'}) or {}).get('value') or '')
+                f['data-form-name'] = f.get('name') or 'Formulario'
+                for hn in forms_native.HIDDEN:
+                    hi = soup.new_tag('input', type='hidden'); hi['name'] = hn; f.insert(0, hi)
         elif wt == 'nav-menu.default':
             pass
         if st.get('sticky') in ('top',) :
@@ -298,6 +309,11 @@ def clean(soup, page_path, lang, warn, posts_index):
         if st.get('background_slideshow_gallery'):
             warn.append('fondo con pase de diapositivas (se usa la primera imagen)')
     # formularios MetForm (si queda alguno)
+    # clases que Elementor añade por JS en el navegador (sin ellas se ocultan fondos o se descuadran rejillas)
+    for t in soup.find_all(class_=['e-con', 'elementor-section', 'elementor-column']):
+        t['class'] = t.get('class', []) + ['e-lazyloaded']
+    for t in soup.find_all(class_='elementor-posts-container'):
+        t['class'] = t.get('class', []) + ['elementor-has-item-ratio']
     # imágenes: elegir el mejor candidato del srcset como fuente (algunos src del original dan 404)
     for img in soup.find_all(['img', 'source']):
         ss = img.get('srcset') or img.get('data-srcset') or ''
@@ -317,7 +333,7 @@ def clean(soup, page_path, lang, warn, posts_index):
     for t in soup.find_all(True):
         attrs = {}
         for k, v in t.attrs.items():
-            if k in ('data-settings', 'data-e-type', 'data-element_type', 'data-widget_type', 'data-id', 'data-elementor-id',
+            if k in ('data-settings', 'data-e-type', 'data-widget_type', 'data-id', 'data-elementor-id',
                      'data-elementor-post-type', 'data-elementor-settings', 'data-no-translation', 'data-trp-original-href', 'data-model-cid',
                      'data-trp-placeholder', 'data-trpgettextoriginal', 'data-rocket-lazyload', 'srcset', 'sizes', 'data-alt-src', 'data-srcset') and not (k == 'sizes' and t.name == 'source'):
                 if k == 'data-elementor-type':

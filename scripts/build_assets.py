@@ -99,6 +99,35 @@ details.k-accordion-item>.k-tab-content{display:block}
 .k-nav-menu--dropdown li.open>.sub-menu{display:block}
 .form-aviso{padding:.8em 1em;border:1px solid #008488;color:#143852;background:#D3E4EA;margin:0 0 1em;font-size:14px}
 .form-ok{padding:1em;background:#e8f6ef;color:#14532d;border:1px solid #86c9a3;margin-top:1em}
+/* Formularios nativos (sustituyen a Typeform) */
+.belba-form{max-width:640px;margin:0 auto;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 6px 28px rgba(23,34,57,.10);font-family:Montserrat,sans-serif;color:#172239;text-align:left}
+.belba-form [hidden]{display:none!important}
+.bf-progress{height:4px;background:#EEEEEE;border-radius:4px;margin-bottom:22px;overflow:hidden}
+.bf-progress span{display:block;height:100%;width:0;background:#008488;transition:width .3s}
+.bf-count{margin:0 0 6px;font-size:13px;color:#008488;font-weight:600}
+.bf-title{display:block;margin:0 0 16px;font-size:20px;line-height:1.35;font-weight:600;color:#172239}
+.bf-text{font-size:16px;line-height:1.55;margin:0 0 18px}
+.bf-fieldset{border:0;margin:0;padding:0;min-width:0}
+.bf-choices{display:grid;gap:10px}
+.bf-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1.5px solid #D3E4EA;border-radius:10px;cursor:pointer;font-size:15px;transition:border-color .15s,background .15s}
+.bf-choice:hover{border-color:#008488}
+.bf-choice input{accent-color:#008488;width:18px;height:18px;margin:0;flex:none}
+.bf-choice:has(input:checked){border-color:#008488;background:#E9F5F5}
+.bf-input,.bf-sub input{width:100%;box-sizing:border-box;padding:12px 14px;border:1.5px solid #D3E4EA;border-radius:10px;font:inherit;font-size:16px;color:#172239;background:#fff}
+.bf-input:focus,.bf-sub input:focus{outline:none;border-color:#008488;box-shadow:0 0 0 3px rgba(0,132,136,.15)}
+.bf-subs{display:grid;gap:12px}
+.bf-sub span{display:block;font-size:13px;font-weight:600;margin-bottom:4px}
+.bf-nav{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+.bf-next,.bf-submit{margin-left:auto;background:#008488;color:#fff;border:0;border-radius:14px;padding:12px 26px;font:600 15px Montserrat,sans-serif;cursor:pointer}
+.bf-next:hover,.bf-submit:hover{background:#006d70}
+.bf-back{background:transparent;color:#143852;border:1.5px solid #D3E4EA;border-radius:14px;padding:12px 20px;font:600 15px Montserrat,sans-serif;cursor:pointer}
+.bf-submit[disabled]{opacity:.6;cursor:wait}
+.bf-invalid .bf-choices,.bf-invalid .bf-input,.bf-invalid .bf-subs input:invalid{outline:2px solid #c0392b;outline-offset:2px;border-radius:10px}
+.bf-legal{font-size:12px;color:#555;margin:14px 0 0}
+.bf-legal a{color:#008488}
+.bf-thanks p{font-size:18px;line-height:1.5;font-weight:600;color:#008488;margin:0}
+.bf-error{color:#c0392b;font-size:14px;margin:12px 0 0}
+@media (max-width:600px){.belba-form{padding:20px 16px}.bf-title{font-size:18px}}
 '''
 
 def main():

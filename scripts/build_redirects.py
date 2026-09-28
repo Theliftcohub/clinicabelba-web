@@ -154,8 +154,12 @@ def redirecciones_medios(media_fn, dirs, contrato_mantener=frozenset(), ahrefs=N
     return r301, r410, len(r301), len(r410)
 
 
+NEW_ROUTES = None
+
+
 def route_exists(dist, path):
-    p = path.strip("/")
+    from urllib.parse import unquote as _uq
+    p = _uq(path).strip("/")  # las rutas con %xx (ruso, ucraniano) se sirven desde carpetas UTF-8
     cands = [os.path.join(dist, p, "index.html"), os.path.join(dist, p + ".html"),
              os.path.join(dist, p)] if p else [os.path.join(dist, "index.html")]
     return any(os.path.isfile(c) for c in cands)
@@ -393,6 +397,8 @@ def escribir_apache(inv, modelo, domain, con_www, barra_final, sin_rss, out_fn):
         if it.get("tipo") != "sistema":
             continue
         path = path_of(it["url"])
+        if NEW_ROUTES and route_exists(NEW_ROUTES, path):
+            continue  # el contrato la mantiene y existe en la build: no se redirige
         if bc.SISTEMA_PAGE.search(path):
             raiz = re.sub(r"/page/\d+/?$", "/", path) or "/"
             ruta_re = re.escape(path.lstrip("/"))
@@ -556,6 +562,8 @@ def main():
     contrato = leer_contrato(a.contract)
     ahrefs = json.load(open(a.ahrefs, encoding="utf-8")) if a.ahrefs and os.path.exists(a.ahrefs) else {}
 
+    global NEW_ROUTES
+    NEW_ROUTES = a.new_routes
     modelo = construir_modelo(inv, a.new_routes, mapping, legacy, gone_extra, a.media, a.public,
                                contrato=contrato, ahrefs=ahrefs)
 

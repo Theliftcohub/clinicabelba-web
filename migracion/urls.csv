@@ -971,41 +971,41 @@ url,decision,destino,estado_esperado,title,robots,tipo,backlinks,trafico,notas
 /fr/metform-form/new-form-1777668110/,410,,410,New Form # 1777668110 | Clinica Belba,"noindex,nofollow",sitemap_only,0,0,"Página de prueba/plantilla/formulario sin contenido real, 0 clics, 0 backlinks · OK Oscar 27/09: 410"
 /en/metform-form/new-form-1777668110/,410,,410,New Form # 1777668110 | Clinica Belba,"noindex,nofollow",sitemap_only,0,0,"Página de prueba/plantilla/formulario sin contenido real, 0 clics, 0 backlinks · OK Oscar 27/09: 410"
 /author/nicols/,301,/blog/,301,"nicols, autor en Clinica Belba",,sistema,0,0,
-/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d0%b8%d0%ba%d0%be%d0%bb%d1%8b/,mantener,/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d0%b8%d0%ba%d0%be%d0%bb%d1%8b/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d1%96%d0%ba%d0%be%d0%bb%d1%81/,mantener,/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d1%96%d0%ba%d0%be%d0%bb%d1%81/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/de/autor/nikolaus/,mantener,/de/autor/nikolaus/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/it/autore/nicols/,mantener,/it/autore/nicols/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/nl/auteur/nicols/,mantener,/nl/auteur/nicols/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/ca/autor/nicolas/,mantener,/ca/autor/nicolas/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/fr/auteur/nicols/,mantener,/fr/auteur/nicols/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
-/en/author/nicols/,mantener,/en/author/nicols/,200,"nicols, autor en Clinica Belba",,sitemap_only,0,0,
+/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d0%b8%d0%ba%d0%be%d0%bb%d1%8b/,301,/ru/%d0%b1%d0%bb%d0%be%d0%b3/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d1%96%d0%ba%d0%be%d0%bb%d1%81/,301,/uk/%d0%b1%d0%bb%d0%be%d0%b3/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/de/autor/nikolaus/,301,/de/blog/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/it/autore/nicols/,301,/it/blog/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/nl/auteur/nicols/,301,/nl/blog/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/ca/autor/nicolas/,301,/ca/bloc/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/fr/auteur/nicols/,301,/fr/blog/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/en/author/nicols/,301,/en/blog/,301,"nicols, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
 /author/seo2/,301,/blog/,301,"Diego, autor en Clinica Belba",,sistema,0,0,
-/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/,mantener,/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/,mantener,/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/de/autor/seo2/,mantener,/de/autor/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/it/autore/seo2/,mantener,/it/autore/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/nl/auteur/seo2/,mantener,/nl/auteur/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/ca/autor/seo2/,mantener,/ca/autor/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/fr/auteur/seo2/,mantener,/fr/auteur/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
-/en/author/seo2/,mantener,/en/author/seo2/,200,"Diego, autor en Clinica Belba",,sitemap_only,0,0,
+/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/,301,/ru/%d0%b1%d0%bb%d0%be%d0%b3/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/,301,/uk/%d0%b1%d0%bb%d0%be%d0%b3/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/de/autor/seo2/,301,/de/blog/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/it/autore/seo2/,301,/it/blog/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/nl/auteur/seo2/,301,/nl/blog/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/ca/autor/seo2/,301,/ca/bloc/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/fr/auteur/seo2/,301,/fr/blog/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/en/author/seo2/,301,/en/blog/,301,"Diego, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
 /author/webbelba/,mantener,/author/webbelba/,200,Artículos del Dr. Mike Dewever | Clínica Belba,,sistema,0,4,"GSC: 4 clics / 333 impresiones — no perder en silencio · Es el archivo de autor del Dr. Mike Dewever: propuesta mantener como página de autor (E-E-A-T, autor de BlogPosting) · OK Oscar 27/09: se mantiene literal"
 /ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/,mantener,/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/,200,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,sitemap_only,0,0,
 /uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/,mantener,/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/,200,Статті доктора Майка Девевера | Клініка «Белба»,,sitemap_only,0,0,
 /de/autor/webbelba/,mantener,/de/autor/webbelba/,200,Artikel von Dr. Mike Dewever | Belba Klinik,,sitemap_only,0,0,
 /it/autore/bellissima/,mantener,/it/autore/bellissima/,200,Articoli del Dott. Mike Dewever | Clinica Belba,,sitemap_only,0,0,
-/nl/auteur/webbel/,mantener,/nl/auteur/webbel/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,sitemap_only,0,0,
+/nl/auteur/webbel/,mantener,/nl/auteur/webbel/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,sitemap_only,0,0,Traducción NL del archivo del Dr. Mike Dewever (webbelba)
 /ca/autor/webbelba/,mantener,/ca/autor/webbelba/,200,Articles del Dr. Mike Dewever | Clínica Belba,,sitemap_only,0,0,
 /fr/auteur/webbelba/,mantener,/fr/auteur/webbelba/,200,Articles du Dr Mike Dewever | Clinique Belba,,sitemap_only,0,0,
 /en/author/webbelba/,mantener,/en/author/webbelba/,200,Articles by Dr. Mike Dewever | Belba Clinic,,sitemap_only,0,0,
 /author/alejandro_yhi4p50l/,301,/blog/,301,"admin, autor en Clinica Belba",,sistema,0,0,
-/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/,mantener,/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/,mantener,/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/de/autor/alejandro_yhi4p50l/,mantener,/de/autor/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/it/autore/alejandro_yhi4p50l/,mantener,/it/autore/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/nl/auteur/alejandro_yhi4p50l/,mantener,/nl/auteur/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/ca/autor/alejandro_yhi4p50l/,mantener,/ca/autor/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/fr/auteur/alejandro_yhi4p50l/,mantener,/fr/auteur/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
-/en/author/alejandro_yhi4p50l/,mantener,/en/author/alejandro_yhi4p50l/,200,"admin, autor en Clinica Belba",,sitemap_only,0,0,
+/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/,301,/ru/%d0%b1%d0%bb%d0%be%d0%b3/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/,301,/uk/%d0%b1%d0%bb%d0%be%d0%b3/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/de/autor/alejandro_yhi4p50l/,301,/de/blog/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/it/autore/alejandro_yhi4p50l/,301,/it/blog/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/nl/auteur/alejandro_yhi4p50l/,301,/nl/blog/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/ca/autor/alejandro_yhi4p50l/,301,/ca/bloc/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/fr/auteur/alejandro_yhi4p50l/,301,/fr/blog/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
+/en/author/alejandro_yhi4p50l/,301,/en/blog/,301,"admin, autor en Clinica Belba",,sitemap_only,0,0,28/09: archivo de autor sin contenido propio → blog del idioma (mismo criterio que ES en la fase 1)
 /nl/online-consult/,mantener,/nl/online-consult/,200,Online consult | Clinica Belba,,screamingfrog_only,0,0,
 /nl/test-patient/,mantener,/nl/test-patient/,200,Test patiënt | Kliniek Belba,,screamingfrog_only,0,0,"28/09: NO es página de prueba: es el ""Test paciente"" enlazado en el menú de todas las páginas. Se corrige el 410 de la fase 1"
 /nl/gezichtsoperatie/,mantener,/nl/gezichtsoperatie/,200,Gezichtsbehandelingen in Spanje | Clínica Belba,,screamingfrog_only,0,0,
@@ -1126,49 +1126,49 @@ url,decision,destino,estado_esperado,title,robots,tipo,backlinks,trafico,notas
 /author/webbelba/page/2/,301,/author/webbelba/,301,Artículos del Dr. Mike Dewever | Clínica Belba,,sistema,0,0,
 /fr/aumento-de-mama-hibrido/,mantener,/fr/aumento-de-mama-hibrido/,200,Aumento de mama híbrido | Clinica Belba,,screamingfrog_only,0,0,
 /author/webbelba/page/3/,301,/author/webbelba/,301,Artículos del Dr. Mike Dewever | Clínica Belba,,sistema,0,0,
-/ru/автор/веббелба/страница/2/,mantener,/ru/автор/веббелба/страница/2/,200,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,
-/ca/autor/webbelba/pagina/2/,mantener,/ca/autor/webbelba/pagina/2/,200,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,
+/ru/автор/веббелба/страница/2/,301,/ru/автор/веббелба/,301,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ca/autor/webbelba/pagina/2/,301,/ca/autor/webbelba/,301,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /fr/auteur/webbelba/page/2/,301,/fr/auteur/webbelba/,301,Articles du Dr Mike Dewever | Clinique Belba,,sistema,0,0,
-/uk/автор/webbelba/сторінка/2/,mantener,/uk/автор/webbelba/сторінка/2/,200,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,
-/de/autor/webbelba/seite/2/,mantener,/de/autor/webbelba/seite/2/,200,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,
+/uk/автор/webbelba/сторінка/2/,301,/uk/автор/webbelba/,301,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/de/autor/webbelba/seite/2/,301,/de/autor/webbelba/,301,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /en/author/webbelba/page/2/,301,/en/author/webbelba/,301,Articles by Dr. Mike Dewever | Belba Clinic,,sistema,0,0,
-/nl/auteur/webbel/pagina/2/,mantener,/nl/auteur/webbel/pagina/2/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,
-/it/autore/bellissima/pagina/2/,mantener,/it/autore/bellissima/pagina/2/,200,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,
+/nl/auteur/webbel/pagina/2/,301,/nl/auteur/webbel/,301,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/it/autore/bellissima/pagina/2/,301,/it/autore/bellissima/,301,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /fr/auteur/webbelba/page/3/,301,/fr/auteur/webbelba/,301,Articles du Dr Mike Dewever | Clinique Belba,,sistema,0,0,
-/de/autor/webbelba/seite/3/,mantener,/de/autor/webbelba/seite/3/,200,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,
+/de/autor/webbelba/seite/3/,301,/de/autor/webbelba/,301,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /en/author/webbelba/page/3/,301,/en/author/webbelba/,301,Articles by Dr. Mike Dewever | Belba Clinic,,sistema,0,1,GSC: 1 clics / 3 impresiones — no perder en silencio · OK Oscar 27/09: 301 a equivalente
-/it/autore/bellissima/pagina/3/,mantener,/it/autore/bellissima/pagina/3/,200,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,
-/ru/автор/веббелба/страница/3/,mantener,/ru/автор/веббелба/страница/3/,200,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,
+/it/autore/bellissima/pagina/3/,301,/it/autore/bellissima/,301,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ru/автор/веббелба/страница/3/,301,/ru/автор/веббелба/,301,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /author/webbelba/page/4/,301,/author/webbelba/,301,Artículos del Dr. Mike Dewever | Clínica Belba,,sistema,0,0,
-/nl/auteur/webbel/pagina/3/,mantener,/nl/auteur/webbel/pagina/3/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,
-/ca/autor/webbelba/pagina/3/,mantener,/ca/autor/webbelba/pagina/3/,200,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,
-/uk/автор/webbelba/сторінка/3/,mantener,/uk/автор/webbelba/сторінка/3/,200,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,
+/nl/auteur/webbel/pagina/3/,301,/nl/auteur/webbel/,301,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ca/autor/webbelba/pagina/3/,301,/ca/autor/webbelba/,301,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/uk/автор/webbelba/сторінка/3/,301,/uk/автор/webbelba/,301,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /author/webbelba/page/5/,301,/author/webbelba/,301,Artículos del Dr. Mike Dewever | Clínica Belba,,sistema,0,0,
-/nl/auteur/webbel/pagina/4/,mantener,/nl/auteur/webbel/pagina/4/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,
-/uk/автор/webbelba/сторінка/4/,mantener,/uk/автор/webbelba/сторінка/4/,200,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,
-/ca/autor/webbelba/pagina/4/,mantener,/ca/autor/webbelba/pagina/4/,200,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,
-/ru/автор/веббелба/страница/4/,mantener,/ru/автор/веббелба/страница/4/,200,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,
-/it/autore/bellissima/pagina/4/,mantener,/it/autore/bellissima/pagina/4/,200,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,
+/nl/auteur/webbel/pagina/4/,301,/nl/auteur/webbel/,301,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/uk/автор/webbelba/сторінка/4/,301,/uk/автор/webbelba/,301,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ca/autor/webbelba/pagina/4/,301,/ca/autor/webbelba/,301,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ru/автор/веббелба/страница/4/,301,/ru/автор/веббелба/,301,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/it/autore/bellissima/pagina/4/,301,/it/autore/bellissima/,301,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /en/author/webbelba/page/4/,301,/en/author/webbelba/,301,Articles by Dr. Mike Dewever | Belba Clinic,,sistema,0,0,
 /fr/auteur/webbelba/page/4/,301,/fr/auteur/webbelba/,301,Articles du Dr Mike Dewever | Clinique Belba,,sistema,0,0,
-/de/autor/webbelba/seite/4/,mantener,/de/autor/webbelba/seite/4/,200,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,
-/de/autor/webbelba/seite/5/,mantener,/de/autor/webbelba/seite/5/,200,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,
-/it/autore/bellissima/pagina/5/,mantener,/it/autore/bellissima/pagina/5/,200,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,
+/de/autor/webbelba/seite/4/,301,/de/autor/webbelba/,301,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/de/autor/webbelba/seite/5/,301,/de/autor/webbelba/,301,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/it/autore/bellissima/pagina/5/,301,/it/autore/bellissima/,301,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /en/author/webbelba/page/5/,301,/en/author/webbelba/,301,Articles by Dr. Mike Dewever | Belba Clinic,,sistema,0,0,
 /fr/auteur/webbelba/page/5/,301,/fr/auteur/webbelba/,301,Articles du Dr Mike Dewever | Clinique Belba,,sistema,0,0,
-/nl/auteur/webbel/pagina/5/,mantener,/nl/auteur/webbel/pagina/5/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,
-/ca/autor/webbelba/pagina/5/,mantener,/ca/autor/webbelba/pagina/5/,200,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,
+/nl/auteur/webbel/pagina/5/,301,/nl/auteur/webbel/,301,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ca/autor/webbelba/pagina/5/,301,/ca/autor/webbelba/,301,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /author/webbelba/page/6/,301,/author/webbelba/,301,Artículos del Dr. Mike Dewever | Clínica Belba,,sistema,0,0,
-/ru/автор/веббелба/страница/5/,mantener,/ru/автор/веббелба/страница/5/,200,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,
-/uk/автор/webbelba/сторінка/5/,mantener,/uk/автор/webbelba/сторінка/5/,200,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,
-/nl/auteur/webbel/pagina/6/,mantener,/nl/auteur/webbel/pagina/6/,200,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,
-/ca/autor/webbelba/pagina/6/,mantener,/ca/autor/webbelba/pagina/6/,200,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,
-/uk/автор/webbelba/сторінка/6/,mantener,/uk/автор/webbelba/сторінка/6/,200,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,
-/ru/автор/веббелба/страница/6/,mantener,/ru/автор/веббелба/страница/6/,200,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,
+/ru/автор/веббелба/страница/5/,301,/ru/автор/веббелба/,301,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/uk/автор/webbelba/сторінка/5/,301,/uk/автор/webbelba/,301,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/nl/auteur/webbel/pagina/6/,301,/nl/auteur/webbel/,301,Artikelen van Dr. Mike Dewever | Clinique Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ca/autor/webbelba/pagina/6/,301,/ca/autor/webbelba/,301,Articles del Dr. Mike Dewever | Clínica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/uk/автор/webbelba/сторінка/6/,301,/uk/автор/webbelba/,301,Статті доктора Майка Девевера | Клініка «Белба»,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/ru/автор/веббелба/страница/6/,301,/ru/автор/веббелба/,301,Статьи д-ра Майка ДеВервиля | Клиника Бельба,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /fr/auteur/webbelba/page/6/,301,/fr/auteur/webbelba/,301,Articles du Dr Mike Dewever | Clinique Belba,,sistema,0,0,
 /en/author/webbelba/page/6/,301,/en/author/webbelba/,301,Articles by Dr. Mike Dewever | Belba Clinic,,sistema,0,0,
-/it/autore/bellissima/pagina/6/,mantener,/it/autore/bellissima/pagina/6/,200,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,
-/de/autor/webbelba/seite/6/,mantener,/de/autor/webbelba/seite/6/,200,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,
+/it/autore/bellissima/pagina/6/,301,/it/autore/bellissima/,301,Articoli del Dott. Mike Dewever | Clinica Belba,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
+/de/autor/webbelba/seite/6/,301,/de/autor/webbelba/,301,Artikel von Dr. Mike Dewever | Belba Klinik,,screamingfrog_only,0,0,28/09: paginación de autor → página 1 (mismo criterio que ES/EN en la fase 1)
 /en/preserve-breast-augmentation/,301,/en/breast-augmentation-preserve/,301,,,legacy,0,25,Redirección que ya existe hoy · GSC 3m: 25 clics / 1611 impr · backlinks 0
 /ca/seroma-tras-cirugia-que-es-como-prevenir/,301,/seroma-tras-cirugia-que-es-como-prevenir/,301,,,legacy,0,22,Redirección que ya existe hoy · GSC 3m: 22 clics / 1868 impr · backlinks 0
 /en/costal-remodeling/,301,/en/rib-remodeling/,301,,,legacy,0,21,Redirección que ya existe hoy · GSC 3m: 21 clics / 1147 impr · backlinks 0

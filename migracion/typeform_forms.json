@@ -1,0 +1,509 @@
+{
+ "iOSo1PBX": {
+  "id": "iOSo1PBX",
+  "title": "Belba Gral",
+  "lang": "es",
+  "fields": [
+   {
+    "ref": "6166b8f8-bdd1-4dec-85b7-746bf6b7b268",
+    "type": "short_text",
+    "title": "Primero, lo más importante: ¿Cómo te llamas?",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "01GWHK7YSZRNVEWQ4CJ8A1QHCY",
+    "type": "picture_choice",
+    "title": "Que Cirugía Necesitas:",
+    "required": true,
+    "choices": [
+     "Cirugía de pecho",
+     "Cirugía corporal",
+     "Cirugía facial",
+     "Cirugía genital",
+     "Otra"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "b831239a-1012-4caa-b187-792ef1623e0f",
+    "type": "multiple_choice",
+    "title": "¿Cuándo tienes pensado operarte?",
+    "required": true,
+    "choices": [
+     "Lo antes posible",
+     "En los próximos 1–3 meses",
+     "En 3–6 meses",
+     "Aún estoy evaluando, no tengo fecha definida"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "4ba1355f-8f3e-4e0f-937d-c9586ce9e319",
+    "type": "email",
+    "title": "Tu email",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "6f928afb-49ce-4261-9bf6-67e082e4c8f8",
+    "type": "phone_number",
+    "title": "Tu móvil",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   }
+  ],
+  "hidden": [
+   "utm_source",
+   "utm_campaign",
+   "utm_term",
+   "utm_content",
+   "utm_medium",
+   "gclid",
+   "fbclid",
+   "ad_id",
+   "adgroup_id",
+   "campaign_id"
+  ],
+  "logic": false,
+  "thankyou": [
+   "¡Gracias por enviar la información!\nNos pondremos en contacto contigo muy pronto. \nMientras tanto, puedes visitar nuestra página web.",
+   "¡Todo completado! Gracias por su tiempo."
+  ],
+  "thanks_text": "¡Gracias por enviar la información!\nNos pondremos en contacto contigo muy pronto. \nMientras tanto, puedes visitar nuestra página web.",
+  "thanks_desc": "",
+  "redirect": "https://www.clinicabelba.com",
+  "welcome": [
+   "*Da el primer paso para resolver tus dudas con un cirujano.*"
+  ]
+ },
+ "BdYhxQFV": {
+  "id": "BdYhxQFV",
+  "title": "Dr Mike Dewever",
+  "lang": "es",
+  "fields": [
+   {
+    "ref": "1bf7812f-473f-4be5-8f85-602c56ba1d3b",
+    "type": "multiple_choice",
+    "title": "Selecciona que necesitas:",
+    "required": true,
+    "choices": [
+     "Consulta",
+     "Primera visita",
+     "Presupuesto Express",
+     "Promociones disponibles"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "6166b8f8-bdd1-4dec-85b7-746bf6b7b268",
+    "type": "short_text",
+    "title": "Primero, lo más importante. ¿Cómo te llamas?",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "01GWHK7YSZRNVEWQ4CJ8A1QHCY",
+    "type": "picture_choice",
+    "title": "Que Cirugía necesitas:",
+    "required": true,
+    "choices": [
+     "Cirugía de pecho",
+     "Cirugía corporal",
+     "Cirugía facial",
+     "Cirugía genital",
+     "Otra"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "1f925f21-ff5b-4049-b567-d4db8004f674",
+    "type": "multiple_choice",
+    "title": "¿Cuándo tienes pensado operarte?",
+    "required": true,
+    "choices": [
+     "Lo antes posible",
+     "En los próximos 1–3 meses",
+     "En 3–6 meses",
+     "Aún estoy evaluando, no tengo fecha definida"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "4ba1355f-8f3e-4e0f-937d-c9586ce9e319",
+    "type": "email",
+    "title": "Tu email",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "6f928afb-49ce-4261-9bf6-67e082e4c8f8",
+    "type": "phone_number",
+    "title": "Tu móvil",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   }
+  ],
+  "hidden": [
+   "utm_source",
+   "utm_campaign",
+   "utm_medium",
+   "utm_term",
+   "utm_content",
+   "gclid",
+   "fbclid",
+   "ad_id",
+   "adgroup_id",
+   "campaign_id"
+  ],
+  "logic": false,
+  "thankyou": [
+   "{{hidden:utm_source}}",
+   "Gracias por completar este typeform. \n*Crea ahora el tuyo*. ¡Es gratis, fácil y bonito!"
+  ],
+  "thanks_text": "{{hidden:utm_source}}",
+  "thanks_desc": "",
+  "redirect": "https://recomendado.cirujanoplasticogirona.com/drdewevercirugiaplastica/gracias/",
+  "welcome": []
+ },
+ "vwHofvjc": {
+  "id": "vwHofvjc",
+  "title": "Dr Felix Chavarria",
+  "lang": "es",
+  "fields": [
+   {
+    "ref": "1bf7812f-473f-4be5-8f85-602c56ba1d3b",
+    "type": "multiple_choice",
+    "title": "Selecciona que necesitas:",
+    "required": false,
+    "choices": [
+     "Consulta",
+     "Primera visita",
+     "Presupuesto Express"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "6166b8f8-bdd1-4dec-85b7-746bf6b7b268",
+    "type": "short_text",
+    "title": "Primero, lo más importante. ¿Cómo te llamas?",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "01GWHK7YSZRNVEWQ4CJ8A1QHCY",
+    "type": "picture_choice",
+    "title": "Que Cirugía necesitas:",
+    "required": true,
+    "choices": [
+     "Cirugía de pecho",
+     "Cirugía corporal",
+     "Cirugía facial",
+     "Cirugía genital"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "7953cdc6-ef33-4cad-8103-2c1a6226a886",
+    "type": "multiple_choice",
+    "title": "¿Cuándo tienes pensado operarte?",
+    "required": true,
+    "choices": [
+     "Lo antes posible",
+     "En los próximos 1–3 meses",
+     "En 3–6 meses",
+     "Aún estoy evaluando, no tengo fecha definida"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "4ba1355f-8f3e-4e0f-937d-c9586ce9e319",
+    "type": "email",
+    "title": "Tu email",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "6f928afb-49ce-4261-9bf6-67e082e4c8f8",
+    "type": "phone_number",
+    "title": "Tu móvil",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   }
+  ],
+  "hidden": [
+   "utm_source",
+   "utm_campaign",
+   "utm_term",
+   "utm_content",
+   "utm_medium",
+   "gclid",
+   "fbclid",
+   "ad_id",
+   "adgroup_id",
+   "campaign_id"
+  ],
+  "logic": false,
+  "thankyou": [
+   "https://clinicabelba.com/drfelixchavarriacirugiaplastica/gracias",
+   "Gracias por completar este typeform. \n*Crea ahora el tuyo*. ¡Es gratis, fácil y bonito!"
+  ],
+  "thanks_text": "https://clinicabelba.com/drfelixchavarriacirugiaplastica/gracias",
+  "thanks_desc": "",
+  "redirect": "https://clinicabelba.com/drfelixchavarriacirugiaplastica/gracias",
+  "welcome": []
+ },
+ "eQ3VBLE2": {
+  "id": "eQ3VBLE2",
+  "title": "Paciente ideal",
+  "lang": "es",
+  "fields": [
+   {
+    "ref": "59697849-925b-4b91-a216-899d7282eeb7",
+    "type": "picture_choice",
+    "title": "¿Qué intervención te estás planteando principalmente?",
+    "required": false,
+    "choices": [
+     "Cirugía de pecho",
+     "Abdominoplastia",
+     "Liposucción",
+     "Rinoplastia",
+     "Blefaroplastia (párpados)"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "b3c50b14-06e8-4f27-b96b-367cd23dc465",
+    "type": "multiple_choice",
+    "title": "¿Cuál es el principal motivo por el que te planteas esta cirugía?",
+    "required": false,
+    "choices": [
+     "Sentirme mejor conmigo misma/o",
+     "Corregir cambios tras embarazo o pérdida de peso",
+     "Estoy en un momento de cambio personal importante",
+     "Principalmente estético / por influencia externa"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "46295451-97ef-42b2-a08c-54cdc91fa694",
+    "type": "multiple_choice",
+    "title": "En cuanto al resultado, ¿con qué frase te identificas más?",
+    "required": false,
+    "choices": [
+     "Busco una mejora natural y proporcionada",
+     "Quiero un cambio visible pero acorde a mi cuerpo",
+     "Busco un resultado muy marcado o llamativo",
+     "Busco un resultado muy marcado o llamativo"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "c4e127c1-318b-45b0-9b64-50e75464395c",
+    "type": "multiple_choice",
+    "title": "¿En qué punto del proceso te encuentras ahora mismo?",
+    "required": false,
+    "choices": [
+     "Estoy informándome seriamente",
+     "Quiero hacerlo en los próximos meses",
+     "Estoy comparando clínicas",
+     "Solo quiero información general por ahora"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "5d571e43-95ba-44e7-afb8-50797ef65ab1",
+    "type": "multiple_choice",
+    "title": "La consulta médica es un paso clave para valorar tu caso de forma personalizada.",
+    "required": false,
+    "choices": [
+     "Lo considero imprescindible",
+     "Me interesa si es con un especialista de confianza",
+     "Me genera algunas dudas",
+     "Aún no estoy segura/o"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "d10177a9-d621-427d-ae74-f6f534a4df76",
+    "type": "multiple_choice",
+    "title": "¿Hay algún aspecto de tu salud o antecedentes que creas importante comentar?",
+    "required": false,
+    "choices": [
+     "No",
+     "Sí (embarazos, cirugías previas, variaciones de peso, etc.)",
+     "Prefiero comentarlo directamente en consulta"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "e7223fba-bc6f-4440-b384-02c11298a8de",
+    "type": "multiple_choice",
+    "title": "¿Cuándo te gustaría, idealmente, realizar la consulta?",
+    "required": false,
+    "choices": [
+     "Lo antes posible",
+     "En las próximas semanas",
+     "Más adelante, aún no lo tengo decidido"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "a2198c77-bd80-4e33-aee3-4f04acf1946b",
+    "type": "statement",
+    "title": "Gracias por tus respuestas.\n\nPor lo que nos indicas, una valoración médica personalizada puede ayudarte a resolver tus dudas y valorar tu caso con un especialista.\n\nEn Clínica Belba, nuestros doctores te acompañan desde la primera consulta hasta el postoperatorio, dentro del entorno del Grupo Teknon (clínica Premium)\n",
+    "required": null,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "aa215fe5-2a41-454c-b1de-71d6703bcdc2",
+    "type": "contact_info",
+    "title": "Solicta tu visita gratuita valorada en 150€",
+    "required": null,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "c1c7d351-bfb5-42b8-9647-39cd3d6243f7",
+    "type": "short_text",
+    "title": "First name",
+    "required": true,
+    "choices": [],
+    "lvl": 1
+   },
+   {
+    "ref": "c20bf770-305a-4dfa-8a2c-a55900224297",
+    "type": "short_text",
+    "title": "Last name",
+    "required": true,
+    "choices": [],
+    "lvl": 1
+   },
+   {
+    "ref": "f582dd76-50c2-4904-a06a-ebc97a9e114f",
+    "type": "phone_number",
+    "title": "Phone number",
+    "required": true,
+    "choices": [],
+    "lvl": 1
+   },
+   {
+    "ref": "fa21e190-ab1d-4be1-8358-3829257d1ac8",
+    "type": "email",
+    "title": "Email",
+    "required": true,
+    "choices": [],
+    "lvl": 1
+   }
+  ],
+  "hidden": [
+   "gclid",
+   "utm_source",
+   "utm_medium",
+   "utm_campaign",
+   "utm_term",
+   "utm_content",
+   "fbclid",
+   "ad_id",
+   "adgroup_id",
+   "campaign_id"
+  ],
+  "logic": false,
+  "thankyou": [
+   "El equipo médico te contactará",
+   "",
+   "¡Todo completado! Gracias por su tiempo."
+  ],
+  "thanks_text": "El equipo médico te contactará",
+  "thanks_desc": "Para tu visita gratuita valorada en 150€\n\nMientras puedes visitar nuesta web",
+  "redirect": "https://clinicabelba.com/",
+  "welcome": [
+   "¿Eres candidata/o ideal para una cirugía estética?"
+  ]
+ },
+ "tCXPyaGW": {
+  "id": "tCXPyaGW",
+  "title": "Consulta online",
+  "lang": "es",
+  "fields": [
+   {
+    "ref": "01GWHK7YSZRNVEWQ4CJ8A1QHCY",
+    "type": "picture_choice",
+    "title": "Que Cirugía necesitas:",
+    "required": true,
+    "choices": [
+     "Cirugía de pecho",
+     "Cirugía corporal",
+     "Cirugía facial",
+     "Cirugía genital",
+     "Otra"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "6166b8f8-bdd1-4dec-85b7-746bf6b7b268",
+    "type": "short_text",
+    "title": "Lo más importante. ¿Cómo te llamas?",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "4ba1355f-8f3e-4e0f-937d-c9586ce9e319",
+    "type": "email",
+    "title": "Tu email",
+    "required": false,
+    "choices": [],
+    "lvl": 0
+   },
+   {
+    "ref": "406947f3-b33e-48af-8690-02eab5212f88",
+    "type": "multiple_choice",
+    "title": "¿Cuándo tienes pensado operarte?",
+    "required": false,
+    "choices": [
+     "Lo antes posible",
+     "En los próximos 1–3 meses",
+     "En 3–6 meses",
+     "Aún estoy evaluando, no tengo fecha definida"
+    ],
+    "lvl": 0
+   },
+   {
+    "ref": "6f928afb-49ce-4261-9bf6-67e082e4c8f8",
+    "type": "phone_number",
+    "title": "Tu móvil",
+    "required": true,
+    "choices": [],
+    "lvl": 0
+   }
+  ],
+  "hidden": [
+   "utm_source",
+   "utm_campaign",
+   "utm_medium",
+   "utm_term",
+   "utm_content",
+   "gclid"
+  ],
+  "logic": false,
+  "thankyou": [
+   "¡Gracias por tu consulta!\nEn breve nos pondremos en contacto contigo.",
+   "¡Todo completado! Gracias por su tiempo."
+  ],
+  "thanks_text": "¡Gracias por tu consulta!\nEn breve nos pondremos en contacto contigo.",
+  "thanks_desc": "Mientras puedes visitar nuestra web",
+  "redirect": "https://clinicabelba.com",
+  "welcome": []
+ }
+}

@@ -38,3 +38,29 @@ Etiquetas base (All Pages): GA4 G-K8WB1WZK6H y G-8FPT6PRR5K, Google Ads AW-10839
 - Dos GA4 en todas las páginas (G-K8WB1WZK6H y G-8FPT6PRR5K), y "GA4 - G-K8WB1WZK6H" aparece dos veces (como etiqueta de Google y en "Initialization").
 - La versión 62 la publicó hoy **benitezjcruz@gmail.com**. Confirmad que es alguien del equipo.
 - El contenedor ha llegado al límite de áreas de trabajo (quedan 0).
+
+## Paridad de IDs con la web vieja (validador, 28/09)
+| ID en la web vieja | Cómo se cargaba | En la web nueva |
+|---|---|---|
+| GTM-TCR5FXL | snippet en `<head>` | **igual** (Base.astro) |
+| GTM-M6RC6ST | snippet en `<head>` | **retirado** (contenedor de felixchavarria.es, ver arriba) |
+| G-K8WB1WZK6H | `gtag.js` directo en el HTML (plugin) **y** etiqueta en TCR5FXL | solo vía GTM TCR5FXL (evita el doble conteo) |
+| 1101212624029420 (píxel de Meta) | plugin PixelYourSite **y** etiqueta "Pixel Belba 9420" en TCR5FXL | solo vía GTM TCR5FXL (evita el doble conteo) |
+| G-ED | falso positivo del extractor: bytes de una imagen en caché, no es un ID | — |
+| analytics.ahrefs.com | script directo | retirado: Ahrefs Web Analytics no se usa para decisiones (Windsor/GA4). Si se quiere, se añade como etiqueta en GTM |
+
+## Formularios nativos (28/09): qué cambia en GTM antes del DNS
+Los Typeform se sustituyen por formularios nativos en el propio dominio. Motivo: con Typeform (iframe de otro dominio) GA4 no atribuía bien los leads, sobre todo el orgánico.
+
+Todos los formularios de la web (nativos y los de Elementor que se conservan) lanzan **un único evento**:
+```js
+dataLayer.push({ event: 'lead_form_submit', form_id, form_name, form_page, form_lang, lead_source, lead_medium })
+```
+Hay que hacer esto en TCR5FXL (en un área de trabajo nueva, publicar el día del cambio de DNS):
+1. Variables de capa de datos: `form_id`, `form_name`, `form_page`, `lead_source`, `lead_medium`.
+2. Activador "Evento personalizado = lead_form_submit".
+3. Etiqueta GA4 `generate_lead` (parámetros: form_id, form_name, form_page) y marcarlo como **evento clave** en GA4.
+4. Conversión de Google Ads (AW-10839002536) y evento `Lead` de Meta con ese mismo activador.
+5. Retirar los activadores de Typeform (`Activador Typeform Enviado`, eventos del embed) cuando el DNS ya apunte a la web nueva. Las páginas de gracias del Dr. Dewever (`/drdewevercirugiaplastica/gracias/?ref=form`) y del Dr. Chavarría (`/drfelixchavarriacirugiaplastica/gracias/`) se mantienen: el formulario redirige ahí, así que sus activadores actuales siguen disparando.
+
+Hallazgo: el Typeform del Dr. Dewever (BdYhxQFV) redirigía al terminar a **recomendado.cirujanoplasticogirona.com**, un dominio ajeno. El formulario nativo redirige a la página de gracias de clinicabelba.com.

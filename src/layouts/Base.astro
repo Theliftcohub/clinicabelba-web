@@ -7,7 +7,7 @@ const seo = doc.seo;
 let robots = (seo.robots || '').trim();
 const indexable = !/noindex/i.test(robots);
 if (!prod) robots = 'noindex, nofollow';
-else if (indexable) robots = [robots || 'index, follow', 'max-image-preview:large', 'max-snippet:-1', 'max-video-preview:-1'].join(', ');
+else if (indexable) { const parts = (robots || 'index, follow').split(',').map((x) => x.trim()).filter(Boolean); for (const x of ['max-image-preview:large', 'max-snippet:-1', 'max-video-preview:-1']) if (!parts.some((p) => p.startsWith(x.split(':')[0]))) parts.push(x); robots = parts.join(', '); }
 const alts = doc.alternates || null;
 const ogImage = seo.ogImage ? (seo.ogImage.startsWith('http') ? seo.ogImage : SITE.domain + seo.ogImage) : SITE.domain + SITE.logo;
 const htmlLang = HREFLANG[doc.lang] || 'es-ES';
