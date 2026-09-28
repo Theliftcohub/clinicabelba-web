@@ -73,3 +73,13 @@ Decisión Oscar 28/09: TODA la migración con Opus 5.5 (también fases 3-7). Sin
 - El equipo NO llama a los leads: les escribe para asesorarles. Nunca "te llamamos / te llama nuestro equipo"; siempre "nuestro equipo te escribirá para asesorarte".
 - Home y landings "conversacionales": el visitante avanza respondiendo preguntas (formulario por pasos) y entra en Kommo vía n8n; todo lead lleva atribución orgánico/pago.
 - En la web actual NO existe ningún logo de red.es/Kit Digital: solo la imagen "Financiado por la Unión Europea + Plan de Recuperación". Si hay que añadir red.es, la clínica tiene que enviar el logo.
+- 28/09 · 549 imágenes con máscara circular de Elementor (`mask-image: url(.../plugins/elementor/assets/mask-shapes/circle.svg)`) salían invisibles: el conversor dejaba `url("")` y una máscara vacía oculta la imagen · los assets de plugins referenciados desde CSS se copian a `public/images/mask-shapes/` (convert.py `rewrite_url`). Al validar visualmente, mirar `mask-image` si una imagen "carga" pero no se ve.
+- 28/09 · El acordeón clásico de Elementor abre el primer elemento con JS; en `<details>` hay que ponerlo `open` en el HTML y sincronizar `k-active` (site.js).
+- 28/09 · H1: una página = un H1. `postprocess.py` degrada H1 repetidos a H2, promueve el primer H2 a H1 si no hay, y en páginas que solo son formulario añade un H1 oculto con el título. Todo anotado en NO_LITERAL.md (mismo texto, solo cambia la etiqueta).
+- 28/09 · Validación local: Apache (:8443) se para cuando el contenedor se recicla → `service apache2 start` antes de validar; y no dar por terminada una validación por un `FIN` de una ejecución anterior (comparar fechas del log).
+
+## Formularios conversacionales (28/09)
+- Formularios largos de Elementor: site.js los convierte en pasos (pregunta primero, datos de contacto al final). Hoy todos los largos visibles son nativos; la mejora queda para cualquiera que se añada.
+- Formularios cortos (nombre + teléfono, landings de cirugía): el lead se captura al instante y después se hace UNA pregunta opcional literal del formulario general ("¿Cuándo tienes pensado operarte?") → segundo POST `tipo: cualificacion` con el mismo `lead_ref`. Solo en español (no hay traducción literal).
+- Eventos: `lead_form_start`, `lead_form_submit`, `lead_form_qualify`, `home_selector`.
+- Hallazgo: los formularios "Consulta online" del WordPress tienen en "Email 2" `trabajos@comp1.gestionespowerdns.com` (resto de la instalación de 2023, sin envíos en el log). La web nueva NO lo usa.

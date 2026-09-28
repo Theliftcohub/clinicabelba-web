@@ -1,0 +1,22 @@
+// Formulario corto (nombre + teléfono) → envío → pregunta de cualificación → eventos.
+import { chromium } from 'playwright';
+const base = process.argv[2] || 'http://localhost:4321';
+const ruta = process.argv[3] || '/abdominoplastia-barcelona/';
+const w = +(process.argv[4] || 390);
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const pg = await b.newPage({ viewport: { width: w, height: 900 } });
+await pg.route(/googletagmanager|trustindex|youtube|google\.com\/maps/, (r) => r.abort());
+await pg.goto(base + ruta + '?utm_source=google&utm_medium=organic', { waitUntil: 'load' });
+const f = pg.locator('form.k-form:not(.is-steps):visible').first();
+await f.scrollIntoViewIfNeeded();
+await f.locator('input[type=text]:visible').first().fill('Prueba');
+await f.locator('input[type=tel]:visible').first().fill('600000000');
+await f.locator('[type=submit]').click();
+await pg.waitForTimeout(600);
+const SC = '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/';
+await f.screenshot({ path: SC + `short_follow_${w}.jpg`, type: 'jpeg', quality: 60 });
+await f.locator('.bf-follow .bf-choice').nth(1).click();
+await pg.waitForTimeout(300);
+await f.screenshot({ path: SC + `short_done_${w}.jpg`, type: 'jpeg', quality: 60 });
+console.log(JSON.stringify(await pg.evaluate(() => (window.dataLayer || []).filter((x) => /lead_form/.test(x.event))), null, 1));
+await b.close();

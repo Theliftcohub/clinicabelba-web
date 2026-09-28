@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const [,, url, sel] = process.argv;
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const pg = await b.newPage({ viewport: { width: 1366, height: 900 } });
+await pg.route(/googletagmanager|trustindex/, (r) => r.abort());
+await pg.goto(url, { waitUntil: 'load' });
+const el = pg.locator(sel).first(); await el.scrollIntoViewIfNeeded(); await pg.waitForTimeout(800);
+console.log(JSON.stringify(await pg.evaluate((sel) => { const i = document.querySelector(sel); const r = i.getBoundingClientRect(); const cs = getComputedStyle(i);
+  const top = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
+  return { r: [r.x, r.y, r.width, r.height], filter: cs.filter, clip: cs.clipPath, mask: cs.maskImage, mix: cs.mixBlendMode, of: cs.objectFit, bgc: cs.backgroundColor, cv: cs.contentVisibility, top: top && (top.tagName + '.' + top.className), outer: i.outerHTML.slice(0, 300) }; }, sel), null, 1));
+await b.close();

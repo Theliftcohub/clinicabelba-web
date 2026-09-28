@@ -52,6 +52,13 @@
     sw.addEventListener('touchstart', function () { clearInterval(auto); }, { passive: true });
   });
   // Índice de contenidos plegable
+  // Acordeones de Elementor (<details>): estado activo para su CSS y, como en el WordPress, uno abierto a la vez
+  d.querySelectorAll('.k-accordion').forEach(function (acc) {
+    var items = acc.querySelectorAll('details.k-accordion-item');
+    function sync() { items.forEach(function (it) { var t = it.querySelector('.k-tab-title'); if (t) { t.classList.toggle('k-active', it.open); t.setAttribute('aria-expanded', it.open ? 'true' : 'false'); } }); }
+    items.forEach(function (it) { it.addEventListener('toggle', function () { if (it.open) items.forEach(function (o) { if (o !== it) o.open = false; }); sync(); }); });
+    sync();
+  });
   d.querySelectorAll('.k-toc__header').forEach(function (h) {
     h.addEventListener('click', function () { var w = h.closest('.k-widget-table-of-contents'); if (w) w.classList.toggle('k-toc--collapsed'); });
   });
@@ -96,6 +103,7 @@
     function show(i) {
       steps.forEach(function (s, j) { s.hidden = j !== i; });
       cur = i; if (bar) bar.style.width = Math.round(100 * (i + 1) / steps.length) + '%';
+      if (i === 1 && !f._started) { f._started = true; window.dataLayer.push({ event: 'lead_form_start', form_id: f.getAttribute('data-form-id') || '', form_page: location.pathname }); }
       var first = steps[i].querySelector('input:not([type=hidden]),button'); if (first && i > 0) first.focus({ preventScroll: true });
     }
     function valid(i) {
@@ -120,6 +128,85 @@
     show(0);
   });
 
+  // ---- Formularios de Elementor largos → conversación por pasos (decisión Oscar 28/09) ----
+  // Mismos campos y textos; solo cambia la presentación: primero la pregunta (doctor, mensaje),
+  // después los datos de contacto de dos en dos y al final la aceptación + enviar. Sin JS, el formulario se ve entero.
+  var NAV = { es: ['Siguiente', 'Atrás'], ca: ['Següent', 'Enrere'], en: ['Next', 'Back'], fr: ['Suivant', 'Retour'], de: ['Weiter', 'Zurück'], it: ['Avanti', 'Indietro'], nl: ['Volgende', 'Terug'], ru: ['Далее', 'Назад'], uk: ['Далі', 'Назад'] };
+  d.querySelectorAll('form.k-form[data-belba-form]').forEach(function (f) {
+    var wrap = f.querySelector('.k-form-fields-wrapper'); if (!wrap) return;
+    var groups = [].slice.call(wrap.querySelectorAll(':scope > .k-field-group'));
+    var submit = groups.filter(function (g) { return g.classList.contains('k-field-type-submit'); })[0];
+    var fields = groups.filter(function (g) { return g !== submit && !g.classList.contains('k-field-type-hidden'); });
+    if (fields.length < 4 || !submit) return; // formularios cortos (nombre + teléfono) se quedan en una línea
+    var isQ = function (g) { return /k-field-type-(select|radio|textarea|checkbox)\b/.test(g.className) && !g.classList.contains('k-field-type-acceptance'); };
+    var acc = fields.filter(function (g) { return g.classList.contains('k-field-type-acceptance'); });
+    var qs_ = fields.filter(isQ), contact = fields.filter(function (g) { return !isQ(g) && acc.indexOf(g) < 0; });
+    var plan = qs_.map(function (g) { return [g]; });
+    for (var i = 0; i < contact.length; i += 2) plan.push(contact.slice(i, i + 2));
+    if (!plan.length) return;
+    plan[plan.length - 1] = plan[plan.length - 1].concat(acc, [submit]);
+    var L = NAV[(d.documentElement.lang || 'es').slice(0, 2)] || NAV.es;
+    f.classList.add('is-steps');
+    var bar = d.createElement('div'); bar.className = 'bf-progress'; bar.setAttribute('aria-hidden', 'true'); bar.appendChild(d.createElement('span'));
+    wrap.parentNode.insertBefore(bar, wrap);
+    var steps = plan.map(function (gs, n) {
+      var s = d.createElement('div'); s.className = 'k-step'; s.setAttribute('data-kstep', '');
+      var c = d.createElement('p'); c.className = 'bf-count'; c.textContent = (n + 1) + ' / ' + plan.length; s.appendChild(c);
+      gs.forEach(function (g) { s.appendChild(g); });
+      var nav = d.createElement('div'); nav.className = 'bf-nav';
+      if (n > 0) { var b = d.createElement('button'); b.type = 'button'; b.className = 'bf-back'; b.textContent = L[1]; nav.appendChild(b); }
+      if (n < plan.length - 1) { var nx = d.createElement('button'); nx.type = 'button'; nx.className = 'bf-next'; nx.textContent = L[0]; nav.appendChild(nx); }
+      if (nav.children.length) s.appendChild(nav);
+      wrap.appendChild(s); return s;
+    });
+    var cur = 0;
+    function show(i) {
+      steps.forEach(function (s, j) { s.hidden = j !== i; }); cur = i;
+      bar.firstChild.style.width = Math.round(100 * (i + 1) / steps.length) + '%';
+      if (i > 0) { var el = steps[i].querySelector('input:not([type=hidden]),select,textarea'); if (el) el.focus({ preventScroll: true }); }
+    }
+    function valid(i) {
+      var ok = true;
+      steps[i].querySelectorAll('input,select,textarea').forEach(function (el) { if (!el.checkValidity() || (el.required && el.type !== 'checkbox' && !String(el.value).trim())) ok = false; });
+      if (!ok) { var bad = steps[i].querySelector(':invalid'); if (bad && bad.reportValidity) bad.reportValidity(); }
+      return ok;
+    }
+    f.addEventListener('click', function (e) {
+      if (e.target.closest('.bf-next')) { e.preventDefault(); if (valid(cur)) { show(cur + 1); if (cur === 1) window.dataLayer.push({ event: 'lead_form_start', form_id: f.getAttribute('data-form-id') || '', form_page: location.pathname }); } }
+      if (e.target.closest('.bf-back')) { e.preventDefault(); if (cur > 0) show(cur - 1); }
+    });
+    f.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.tagName === 'INPUT' && cur < steps.length - 1) { e.preventDefault(); if (valid(cur)) show(cur + 1); } });
+    show(0);
+  });
+
+  // ---- Formularios cortos (nombre + teléfono): el lead ya está capturado; después, UNA pregunta opcional ----
+  // Pregunta y opciones literales del formulario general "Belba Gral" (Typeform iOSo1PBX). Solo en español (no existe traducción).
+  var FOLLOW = { es: { q: '¿Cuándo tienes pensado operarte?', o: ['Lo antes posible', 'En los próximos 1–3 meses', 'En 3–6 meses', 'Aún estoy evaluando, no tengo fecha definida'], skip: 'Ahora no', thanks: '¡Gracias por enviar la información! Nos pondremos en contacto contigo muy pronto.' } };
+  function followUp(f, data, info) {
+    var T = FOLLOW[(d.documentElement.lang || '').slice(0, 2)]; if (!T) return false;
+    var box = d.createElement('div'); box.className = 'bf-follow belba-form belba-form--compact'; box.setAttribute('role', 'group');
+    var okm = d.createElement('p'); okm.className = 'bf-ok'; okm.textContent = '✓'; box.appendChild(okm);
+    var p = d.createElement('p'); p.className = 'bf-title'; p.textContent = T.q; box.appendChild(p);
+    var ch = d.createElement('div'); ch.className = 'bf-choices';
+    T.o.forEach(function (o) { var b = d.createElement('button'); b.type = 'button'; b.className = 'bf-choice'; b.textContent = o; ch.appendChild(b); });
+    box.appendChild(ch);
+    var sk = d.createElement('button'); sk.type = 'button'; sk.className = 'bf-back bf-skip'; sk.textContent = T.skip; box.appendChild(sk);
+    f.appendChild(box);
+    var fin = function () { box.innerHTML = ''; var t = d.createElement('p'); t.className = 'bf-thanks-txt'; t.textContent = T.thanks; box.appendChild(t); };
+    sk.addEventListener('click', fin);
+    ch.addEventListener('click', function (e) {
+      var b = e.target.closest('.bf-choice'); if (!b) return;
+      var fd = new FormData();
+      data.forEach(function (v, k) { if (k !== 'form_id') fd.append(k, v); });
+      fd.set('form_id', (f.getAttribute('data-form-id') || 'el') + '-cualificacion');
+      fd.set('q_cuando_tienes_pensado_operarte', b.textContent);
+      window.dataLayer.push({ event: 'lead_form_qualify', form_id: info.form_id, form_page: info.form_page, answer: b.textContent, lead_source: info.lead_source, lead_medium: info.lead_medium });
+      fin();
+      if (!PREVIEW) fetch(f.getAttribute('action') || '/form-handler.php', { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } }).catch(function () {});
+    });
+    return true;
+  }
+
   // ---- Envío de TODOS los formularios (nativos y los antiguos de Elementor) ----
   var PREVIEW = d.body.getAttribute('data-entorno') === 'preview';
   d.querySelectorAll('form[data-belba-form]').forEach(function (f) {
@@ -130,6 +217,9 @@
       if (f.classList.contains('belba-form')) { var st = f.querySelectorAll('[data-step]'); for (var i = 0; i < st.length; i++) if (!st[i].hidden) { var reqs = st[i].querySelectorAll('input[required]'), ok = true; reqs.forEach(function (r) { if (r.type === 'radio' ? !f.querySelector('input[name="' + r.name + '"]:checked') : !r.value.trim() || !r.checkValidity()) ok = false; }); if (!ok) { st[i].classList.add('bf-invalid'); return; } } }
       else if (!f.checkValidity()) { f.reportValidity(); return; }
       fillAttr(f);
+      var ref_ = f.querySelector('input[name="lead_ref"]');
+      if (!ref_) { ref_ = d.createElement('input'); ref_.type = 'hidden'; ref_.name = 'lead_ref'; f.appendChild(ref_); }
+      ref_.value = (Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10));
       var btn = f.querySelector('[type=submit]'), err = f.querySelector('.bf-error');
       if (btn) { btn.disabled = true; btn.dataset.txt = btn.textContent; btn.textContent = f.getAttribute('data-sending') || '…'; }
       var data = new FormData(f);
@@ -138,8 +228,10 @@
         window.dataLayer.push(info);
         var red = f.getAttribute('data-redirect');
         if (red) { setTimeout(function () { location.href = red; }, 300); return; }
-        f.querySelectorAll('[data-step], .bf-progress, .k-form-fields-wrapper').forEach(function (s) { s.hidden = true; });
-        var th = f.querySelector('.bf-thanks'); if (th) th.hidden = false; else { var ok = d.createElement('p'); ok.className = 'form-ok'; ok.textContent = '✓'; f.appendChild(ok); }
+        f.querySelectorAll('[data-step], .bf-progress, .k-form-fields-wrapper, .form-aviso').forEach(function (s) { s.hidden = true; s.style.setProperty('display', 'none', 'important'); });
+        var th = f.querySelector('.bf-thanks');
+        if (th) th.hidden = false;
+        else if (!(f.classList.contains('k-form') && !f.classList.contains('is-steps') && followUp(f, data, info))) { var ok = d.createElement('p'); ok.className = 'form-ok'; ok.textContent = '✓'; f.appendChild(ok); }
       }
       function fail() {
         if (btn) { btn.disabled = false; btn.textContent = btn.dataset.txt; }

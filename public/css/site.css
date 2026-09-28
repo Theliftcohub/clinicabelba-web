@@ -1037,3 +1037,18 @@ details.k-accordion-item>.k-tab-content{display:block}
 .bf-thanks p{font-size:18px;line-height:1.5;font-weight:600;color:#008488;margin:0}
 .bf-error{color:#c0392b;font-size:14px;margin:12px 0 0}
 @media (max-width:600px){.belba-form{padding:20px 16px}.bf-title{font-size:18px}}
+/* Formularios de Elementor largos, por pasos (site.js añade .is-steps) */
+.k-form.is-steps .k-step{width:100%;display:flex;flex-wrap:wrap;align-items:flex-end}
+.k-form.is-steps .k-step[hidden]{display:none!important}
+.k-form.is-steps .bf-count,.k-form.is-steps .bf-nav{width:100%;padding:0 calc(var(--column-gap,10px)/2)}
+.k-form.is-steps .bf-progress{width:100%}
+.k-form.is-steps .k-field-type-submit{margin-top:6px}
+.bf-follow{margin-top:14px;padding:20px}
+.bf-follow .bf-title{font-size:17px;margin-bottom:12px}
+.k-form [hidden]{display:none!important}
+.bf-follow{box-sizing:border-box;width:100%}
+.bf-follow .bf-choice{width:100%;box-sizing:border-box;white-space:normal;background:#fff;text-align:left;font:500 15px Montserrat,sans-serif;color:#172239}
+.bf-follow .bf-choice:hover,.bf-follow .bf-choice:focus-visible{border-color:#008488;background:#E9F5F5;outline:none}
+.bf-follow .bf-skip{margin-top:12px;padding:8px 16px;font-size:14px}
+.bf-ok{margin:0 0 6px;color:#008488;font-weight:700;font-size:18px}
+.bf-thanks-txt{margin:0;font-size:16px;font-weight:600;color:#008488;line-height:1.5}

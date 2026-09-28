@@ -84,3 +84,129 @@
 | (pie, idioma fr) | enlace | /fr/precio cirugía plástica-barcelona/ | /fr/prix-chirurgie-esthetique-barcelone/ | Enlace roto (404) en el WordPress: errata en la URL del pie |
 | (pie, idioma it) | enlace | /it/precio cirugía plástica-barcelona/ | /it/prezzo-chirurgia-estetica-barcelona/ | Enlace roto (404) en el WordPress: errata en la URL del pie |
 | (pie, idioma nl) | enlace | /nl/precio cirugía plástica-barcelona/ | /nl/prijs-cosmetische-chirurgie-barcelona/ | Enlace roto (404) en el WordPress: errata en la URL del pie |
+| /de/rhinoplastik-mann-vorher-und-nachher-verbessert/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /de/vaginale-lippen-was-sie-sind-arten-pflege-und-wann-ein-arzt-aufgesucht-werden-sollte/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /en/rhinoplasty-male-before-and-after-improved/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /en/labia-what-they-are-types-care-and-when-to-consult-a-doctor/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /ca/rinoplastia-home-abans-i-despres-millorat/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /ca/llavis-vaginals-quins-son-tipus-cures-i-quan-consultar/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /rinoplastia-hombre-antes-y-despues-mejorado/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /labios-vaginales-que-son-tipos-cuidados-y-cuando-consultar/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /ru/ринопластика-мужчина-до-и-после-улучш/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /ru/половой-жизни-являющиеся-типами-уход/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /uk/ринопластика-у-чоловіків-до-і-післ/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /uk/статеві-губи-як-доглядати-за-ними-та-ко/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /fr/levres-vaginales-quest-ce-que-cest-types-soins-et-quand-consulter/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /fr/rhinoplastie-homme-avant-et-apres-ameliore/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /it/labbra-vaginali-cosa-sono-tipologie-cura-e-quando-consultare-un-medico/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /it/rinoplastica-uomo-prima-e-dopo-migliorata/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /nl/rhinoplastiek-man-voor-en-na-verbeterd/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /nl/labios-vaginales-que-son-tipos-cuidados-y-cuando-consultar/ | encabezado | 2 H1 (título repetido) | el segundo H1 pasa a H2 (mismo texto) | una página debe tener un solo H1 |
+| /de/plastischer-chirurg/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dr. Mike Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/dr-dewever-plastische-chirurgie/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/aumento-de-mama-hibrido/ | encabezado | sin H1 (primer encabezado era H2: «¿Qué es la cirugía de aumento de Senos híbrido?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/dr-felix-chavarria-plastische-chirurgie/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/aumento-de-mama-hibrido/ | encabezado | sin H1 (primer encabezado era H2: «¿Qué es la cirugía de aumento de Senos híbrido?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/drdewevercosmeticsurgery/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/plastic-surgeon/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dr. Mike Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/drfelixchavarriacirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/drfelixchavarriacirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/aumento-de-mama-hibrido/ | encabezado | sin H1 (primer encabezado era H2: «¿Qué es la cirugía de aumento de Senos híbrido?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/cirurgia-plastic/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dr. Miquel Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/drdewevercirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /drfelixchavarriacirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /drdewevercirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /cirujano-plastico/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dr. Mike Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /cirujano-plastico/nosotros/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Nuestra Filosofía») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/aumento-de-mama-hibrido/ | encabezado | sin H1 (primer encabezado era H2: «¿Qué es la cirugía de aumento de Senos híbrido?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/ждрдеверхирургияпластическая/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/дрфеликсчаварриацируджиапластика/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/пластический-хирург/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Доктор Майк Девевер») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/гібридне-збільшення-грудей/ | encabezado | sin H1 (primer encabezado era H2: «Що таке гібридна операція з збільшення грудей?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/drfelixchavarriacirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/пластичний-хірург/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Д-р Майк Девевер») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/drdeweverпластичнахірургія/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/drdeweverplasticsurgery/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/aumento-de-mama-hibrido/ | encabezado | sin H1 (primer encabezado era H2: «¿Qué es la cirugía de aumento de Senos híbrido?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/chirurgien-plasticien/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dr. Mike Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/drfelixchavarriacirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/dr-felix-chavarria-chirurgia-plastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/chirurgo-plastico/dott-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dott. Mike Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/drdeweverchirurgiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/aumento-de-mama-hibrido/ | encabezado | sin H1 (primer encabezado era H2: «¿Qué es la cirugía de aumento de Senos híbrido?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dermolipectomia de Br») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/encuentra-tu-hueco-calendario-de-descuentos/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -2000») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/hybride-borstvergroting/ | encabezado | sin H1 (primer encabezado era H2: «Wat is cosmetische borstvergroting met hybride implantaten?») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/plastisch-chirurg/dr-mike-dewever/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dr. Mike Dewever») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/drdeweverplastischechirurgie/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/drfelixchavarriacirugiaplastica/gracias/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">¡Gracias») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/dr-dewever-chirurgie-plastique/merci/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Merci») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/encuentra-tu-hueco/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Consigue  hasta -800€») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /de/patiententest/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Testpatient» | página sin H1 |
+| /en/test-patient/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Patient Test» | página sin H1 |
+| /en/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /ca/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /ca/prova-pacient/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Prova del pacient» | página sin H1 |
+| /pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /test-paciente/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Test paciente» | página sin H1 |
+| /ru/тест-пациента/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Тест пациента» | página sin H1 |
+| /ru/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /uk/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /uk/тест-пацієнта/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Тест для пацієнтів» | página sin H1 |
+| /fr/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /fr/patient-test/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Test de patiente» | página sin H1 |
+| /it/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /it/paziente-di-prova/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Test Paziente» | página sin H1 |
+| /nl/test-patient/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Test patiënt» | página sin H1 |
+| /nl/pre/ | encabezado | sin ningún encabezado (solo formulario) | H1 oculto con el título de la página: «Pre» | página sin H1 |
+| /de/dr-de-wever-plastische-chirurgie/danke-schon/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Danke schön») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /de/dr-felix-chavarrias-erfahrungen/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/dr-dewever-plastic-surgery/thank-you/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Thank you») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /en/dr-felix-chavarria-experiences/ | encabezado | sin H1 (primer encabezado era H2: «Testimonials from our patients») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/dr-felix-chavarria-experiencias/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ca/cirurgia-plastica-dr-deweaver/gracies/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Thank you») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /dr-dewever-plastic-surgery/thank-you/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Thank you») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /dr-felix-chavarria-experiencias/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/пластическая-хирургия-доктора-дю-веб/спасибо/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Спасибо») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /ru/доктор-феликс-чаварриа-опыт/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/доктор-фелікс-чаваррія-досвід/ | encabezado | sin H1 (primer encabezado era H2: «Відгуки наших пацієнтів») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /uk/клініка-пластичної-хірургії-доктора/дякую/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Thank you») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/dr-felix-chavarria-experiences/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /fr/dr-dewever-plastic-surgery/thank-you/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Thank you») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/chirurgia-plastica-dr-dewever/grazie/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">La ringrazio») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /it/dr-felix-chavarria-esperienze/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/dr-felix-chavarria-ervaringen/ | encabezado | sin H1 (primer encabezado era H2: «Testimonios de nuestros pacientes») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |
+| /nl/dr-de-wever-plastische-chirurgie/dank-u/ | encabezado | sin H1 (primer encabezado era H2: «class="k-heading-title k-size-default">Dank u») | ese encabezado pasa a H1 (mismo texto) | página sin H1 |

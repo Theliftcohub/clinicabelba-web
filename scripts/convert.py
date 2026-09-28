@@ -99,6 +99,9 @@ def rewrite_url(u):
         if p.startswith('/wp-content/uploads/'):
             lm = local_media(p)
             return lm or p
+        mk = re.match(r'^/wp-content/plugins/(?:elementor|kel)/assets/mask-shapes/([\w-]+\.svg)$', p)
+        if mk:  # máscaras de imagen de Elementor (círculo...): copia local en public/images/mask-shapes/
+            return '/images/mask-shapes/' + mk.group(1)
         if p.startswith('/wp-content/') or p.startswith('/wp-includes/'):
             return None
         return resolve_internal(p)[0]
@@ -230,10 +233,12 @@ def clean(soup, page_path, lang, warn, posts_index):
             else:
                 warn.append('video sin youtube_url')
         elif wt == 'accordion.default':
-            for item in w.find_all(class_='elementor-accordion-item'):
+            # el acordeón de Elementor abre el primer elemento al cargar (lo hacía su JS): aquí, <details open>
+            for n_item, item in enumerate(w.find_all(class_='elementor-accordion-item')):
                 title = item.find(class_='elementor-tab-title'); content = item.find(class_='elementor-tab-content')
                 if not (title and content): continue
                 d = soup.new_tag('details'); d['class'] = ['k-accordion-item']
+                if n_item == 0: d['open'] = ''
                 sm = soup.new_tag('summary'); sm['class'] = ['k-tab-title']
                 a = title.find(class_='elementor-accordion-title')
                 ico = title.find(class_='elementor-accordion-icon')

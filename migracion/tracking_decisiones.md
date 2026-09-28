@@ -64,3 +64,10 @@ Hay que hacer esto en TCR5FXL (en un área de trabajo nueva, publicar el día de
 5. Retirar los activadores de Typeform (`Activador Typeform Enviado`, eventos del embed) cuando el DNS ya apunte a la web nueva. Las páginas de gracias del Dr. Dewever (`/drdewevercirugiaplastica/gracias/?ref=form`) y del Dr. Chavarría (`/drfelixchavarriacirugiaplastica/gracias/`) se mantienen: el formulario redirige ahí, así que sus activadores actuales siguen disparando.
 
 Hallazgo: el Typeform del Dr. Dewever (BdYhxQFV) redirigía al terminar a **recomendado.cirujanoplasticogirona.com**, un dominio ajeno. El formulario nativo redirige a la página de gracias de clinicabelba.com.
+
+## Eventos del embudo conversacional (28/09)
+Además de `lead_form_submit`, la web empuja:
+- `lead_form_start` {form_id, form_page}: el visitante supera el primer paso de un formulario por pasos (mide el arranque del asistente; sirve para ver dónde se abandona).
+- `lead_form_qualify` {form_id, form_page, answer, lead_source, lead_medium}: responde la pregunta de cualificación tras un formulario corto.
+- `home_selector` {selector: mujer|hombre}: elección en la home nueva.
+En GTM: activadores de evento personalizado para los tres y enviarlos a GA4 como eventos (no como conversión; la conversión sigue siendo `lead_form_submit` → generate_lead). Embudo en GA4: page_view → lead_form_start → lead_form_submit → lead_form_qualify, segmentado por `lead_source`/`lead_medium`.

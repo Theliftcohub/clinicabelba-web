@@ -1,10 +1,10 @@
 paginas 1196 layouts ['es', 'en', 'ru', 'uk', 'de', 'it', 'nl', 'ca', 'fr'] medios 781 paginas con avisos 1196
 ok 772 fallos 9
-imagenes retiradas 64 | recursos locales que faltan 0 | enlaces internos rotos 0
+cambios no literales (imágenes retiradas + encabezados) 190 | recursos locales que faltan 0 | enlaces internos rotos 0
 home-nueva ok · reseñas Google: 196
-site.css 264264
+site.css 265364
 ok 12 formularios
-11:33:52 [build] Complete!
+12:56:36 [build] Complete!
 public/_redirects: 73 respuestas 410, 4396 redirecciones 301 (netlify) · public/_headers: noindex
 public/.htaccess: 73 respuestas 410, 4574 redirecciones 301 (apache) · public/_astro/.htaccess: cache immutable
 patrones decodificados 37 destinos con NE 26
