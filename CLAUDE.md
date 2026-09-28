@@ -17,6 +17,9 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - Fecha de lanzamiento prevista: PENDIENTE.
 - Datos médicos en schema (colegiado, credenciales): solo si figuran literalmente en la web.
 
+- Home nueva (decisión Oscar 28/09, a partir de su diseño de Figma): se construye como `/home-nueva/` (noindex) con `scripts/home_nueva.py`; pasará a `/` cuando la apruebe, ya con la migración lanzada. Hero = foto real de quirófano + asistente conversacional (las preguntas literales del Typeform "Belba Gral" precedidas de Mujer/Hombre → `sel_persona`), selector que filtra procedimientos y manda `home_selector` al dataLayer. Cero datos inventados: el diseño traía médicos, dirección, teléfono, cifras y reseñas falsos; se sustituyeron por los reales. Pendiente de la clínica: fotos de hombre (no hay ninguna) y quirófano en alta resolución.
+- 184 traducciones de páginas `noindex` no estaban en sitemap ni rastreo (solo en hreflang); se añadieron al inventario/contrato con la misma decisión que su versión ES (48 → 410, resto → mantener noindex). Entre ellas las páginas de gracias por idioma, que GTM usa como conversión.
+
 ## Reglas de contenido
 1. Los textos son **literales** del WordPress. Cualquier cambio de texto se registra en `NO_LITERAL.md` (URL, campo, original, nuevo, motivo). Sin excepciones.
 2. Las URLs no cambian. Si una URL nueva es inevitable, se añade a `migracion/urls.csv` y se regeneran las redirecciones.

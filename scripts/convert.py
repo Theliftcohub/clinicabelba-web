@@ -524,6 +524,20 @@ def main():
         if warn: LOG[path] = warn
         n += 1
         if n % 100 == 0: print(n, flush=True)
+    # CSS de cabecera y pie (ids 38 y 135 de Elementor) para páginas sin CSS propio (404/410, home nueva)
+    try:
+        css_es = ren_css(page_css(load_html(next(p for p in P if p['path'] == '/')))[0])
+        keep = []
+        for blk in re.findall(r'@media[^{]+\{(?:[^{}]+\{[^{}]*\})+\s*\}|[^{}@]+\{[^{}]*\}', css_es):
+            if re.search(r'\.k-(38|135)\b', blk) or re.search(r'\.k-kit-5\b|:root', blk):
+                if blk.startswith('@media'):
+                    inner = ''.join(r for r in re.findall(r'[^{}]+\{[^{}]*\}', blk[blk.index('{') + 1:]) if re.search(r'\.k-(38|135)\b', r))
+                    if inner: keep.append(blk[:blk.index('{') + 1] + inner + '}')
+                else:
+                    keep.append(blk)
+        open(B + '/migracion/layout.css', 'w').write('\n'.join(keep))
+    except StopIteration:
+        pass
     os.makedirs(B + '/src/content/layout', exist_ok=True)
     for lg, l in layouts.items():
         json.dump(l, open(f'{B}/src/content/layout/{lg}.json', 'w'), ensure_ascii=False)

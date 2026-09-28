@@ -104,7 +104,8 @@ details.k-accordion-item>.k-tab-content{display:block}
 .belba-form [hidden]{display:none!important}
 .bf-progress{height:4px;background:#EEEEEE;border-radius:4px;margin-bottom:22px;overflow:hidden}
 .bf-progress span{display:block;height:100%;width:0;background:#008488;transition:width .3s}
-.bf-count{margin:0 0 6px;font-size:13px;color:#008488;font-weight:600}
+.bf-count{display:block;margin:0 0 6px;font-size:13px;color:#008488;font-weight:600}
+.bf-legend{padding:0;margin:0 0 16px;display:block;width:100%}.bf-legend .bf-title{margin:0}
 .bf-title{display:block;margin:0 0 16px;font-size:20px;line-height:1.35;font-weight:600;color:#172239}
 .bf-text{font-size:16px;line-height:1.55;margin:0 0 18px}
 .bf-fieldset{border:0;margin:0;padding:0;min-width:0}
@@ -136,6 +137,9 @@ def main():
         css = open(W + f, encoding='utf-8', errors='replace').read()
         css = re.sub(r'@import[^;]+;', '', css)
         parts.append(f'/* {f} */\n' + ren_css(css))
+    lc = B + '/migracion/layout.css'
+    if os.path.exists(lc):
+        parts.append('/* cabecera y pie (Elementor 38/135) */\n' + open(lc).read())
     cc = B + '/migracion/wp_custom_css.css'
     if os.path.exists(cc):
         parts.append('/* wp-custom-css */\n' + open(cc).read())

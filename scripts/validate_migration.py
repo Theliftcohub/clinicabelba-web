@@ -57,7 +57,7 @@ def configurar_auth(valor_cli):
 # "SearchAction" no es un @type propio, pero WebSite.potentialAction desaparece a
 # veces junto con el tipo; se deja aquí documentado que el sitelinks search box
 # está retirado (Google, nov. 2024) y su ausencia nunca debe contar como pérdida.
-SCHEMA_PERDIDA_OK_SIMPLES = {"AggregateRating", "SiteNavigationElement"}
+SCHEMA_PERDIDA_OK_SIMPLES = {"AggregateRating", "SiteNavigationElement", "SearchAction", "Review", "Rating", "HowTo", "HowToStep"}  # retirados a propósito (funciones de Google retiradas / valoraciones propias)
 
 
 def _q(url):
@@ -157,13 +157,21 @@ def parse_jsonld_objetos(h):
 
 
 def tipos_de(objetos):
+    """Todos los @type, también los anidados (el inventario de extract_wp.py los cuenta así)."""
     tipos = set()
-    for o in objetos:
-        t = o.get("@type")
-        if isinstance(t, list):
-            tipos.update(x for x in t if isinstance(x, str))
-        elif isinstance(t, str):
-            tipos.add(t)
+    def walk(o):
+        if isinstance(o, dict):
+            t = o.get("@type")
+            if isinstance(t, list):
+                tipos.update(x for x in t if isinstance(x, str))
+            elif isinstance(t, str):
+                tipos.add(t)
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for x in o:
+                walk(x)
+    walk(objetos)
     return tipos
 
 

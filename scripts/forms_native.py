@@ -54,16 +54,19 @@ def resolve_id(tf_id):
     tf_id = LIVE.get(tf_id, tf_id)
     return ROTOS.get(tf_id, tf_id)
 
-def render(tf_id, lang, page_path, uid=''):
+def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
+    """pre_steps: [(pregunta, [opciones], name)] que se añaden al principio (p. ej. Mujer/Hombre en la home)."""
     fid = resolve_id(tf_id)
     f = TF.get(fid) or TF['iOSo1PBX']
+    if pre_steps:
+        f = dict(f); f['fields'] = [{'ref': n, 'type': 'multiple_choice', 'title': q, 'required': True, 'choices': ch, 'lvl': 0} for q, ch, n in pre_steps] + f['fields']
     ui = UI.get(lang, UI['es'])
     uid = uid or hashlib.sha1((fid + page_path).encode()).hexdigest()[:6]
     steps = []
     fields = f['fields']
     i = 0
     n_q = sum(1 for x in fields if x['type'] not in ('statement', 'contact_info') and x['lvl'] == 0) + sum(1 for x in fields if x['type'] == 'contact_info')
-    welcome = f.get('welcome') or []
+    welcome = [] if compact else (f.get('welcome') or [])
     if welcome and welcome[0]:
         steps.append(f'<div class="bf-step bf-intro" data-step><p class="bf-title">{md(welcome[0])}</p>'
                      f'<div class="bf-nav"><button type="button" class="bf-next">{e(ui[0])}</button></div></div>')
@@ -74,13 +77,13 @@ def render(tf_id, lang, page_path, uid=''):
             i += 1; continue
         t = x['type']; title = x['title'] or ''
         req = ' required' if x.get('required') else ''
-        name = 'q_' + re.sub(r'[^a-z0-9]+', '_', unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode().lower())[:48].strip('_')
+        name = x['ref'] if (x.get('ref') or '').startswith('sel_') else 'q_' + re.sub(r'[^a-z0-9]+', '_', unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode().lower())[:48].strip('_')
         if t == 'statement':
             steps.append(f'<div class="bf-step bf-statement" data-step><p class="bf-text">{md(title)}</p>'
                          f'<div class="bf-nav"><button type="button" class="bf-back">{e(ui[1])}</button><button type="button" class="bf-next">{e(ui[0])}</button></div></div>')
             i += 1; continue
         qn += 1
-        head = f'<p class="bf-count">{qn} / {n_q}</p><label class="bf-title" for="{uid}-{name}">{md(title)}</label>' if t not in ('multiple_choice', 'picture_choice', 'contact_info') else f'<p class="bf-count">{qn} / {n_q}</p><legend class="bf-title">{md(title)}</legend>'
+        head = f'<p class="bf-count">{qn} / {n_q}</p><label class="bf-title" for="{uid}-{name}">{md(title)}</label>' if t not in ('multiple_choice', 'picture_choice', 'contact_info') else f'<legend class="bf-legend"><span class="bf-count">{qn} / {n_q}</span><span class="bf-title">{md(title)}</span></legend>'
         if t in ('multiple_choice', 'picture_choice'):
             opts = []
             seen = set()
@@ -119,7 +122,7 @@ def render(tf_id, lang, page_path, uid=''):
     if thanks.startswith('http') or '{{' in thanks:
         thanks = ''
     redirect = REDIRECT.get(fid, '')
-    return (f'<form class="belba-form" id="form-{uid}" data-belba-form data-form-id="tf-{fid}" data-form-name="{e(f["title"])}" '
+    return (f'<form class="belba-form{" belba-form--compact" if compact else ""}" id="form-{uid}" data-belba-form data-form-id="tf-{fid}" data-form-name="{e(f["title"])}" '
             f'data-redirect="{e(redirect)}" data-error="{e(ui[8])}" data-sending="{e(ui[7])}" action="/form-handler.php" method="post" novalidate>'
             f'<input type="hidden" name="form_id" value="tf-{fid}"><input type="hidden" name="form_name" value="{e(f["title"])}">'
             f'<input type="hidden" name="page" value="{e(page_path)}"><input type="hidden" name="lang" value="{lang}">{hidden}'

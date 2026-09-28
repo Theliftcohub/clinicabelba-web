@@ -104,6 +104,7 @@ def card(t, href, img):
 
 def body():
     form = forms_native.render('iOSo1PBX', 'es', '/home-nueva/', uid='hnform')
+    form_hero = forms_native.render('iOSo1PBX', 'es', '/home-nueva/', uid='hero', compact=True, pre_steps=[('¿Para quién buscas información?', ['Mujer', 'Hombre'], 'sel_persona')])
     cards_m = ''.join(card(*c) for c in CARDS_MUJER)
     cards_h = ''.join(card(*c) for c in CARDS_HOMBRE)
     trat = ''.join(
@@ -118,25 +119,23 @@ def body():
     return f'''
 <div class="hn">
 <section class="hn-hero">
+  <div class="hn-hero__bg" aria-hidden="true"></div>
   <div class="hn-wrap hn-hero__grid">
     <div class="hn-hero__txt">
       <p class="hn-eyebrow">Barcelona · Grupo Teknon · Cirujanos certificados SECPRE</p>
       <h1>{e(HERO_H1)}</h1>
       <p class="hn-hero__sub">{e(HERO_SUB)}</p>
       <p class="hn-hero__p">{e(HERO_P)}</p>
-      <div class="hn-sel" role="tablist" aria-label="Elige para quién buscas información">
-        <button type="button" class="hn-sel__btn is-on" data-sel="mujer" role="tab" aria-selected="true">Mujer</button>
-        <button type="button" class="hn-sel__btn" data-sel="hombre" role="tab" aria-selected="false">Hombre</button>
-      </div>
       <nav class="hn-pills" aria-label="Áreas de cirugía">
         <a href="/cirugia-facial/">Cirugía facial</a><a href="/cirugia-de-la-mama/">Cirugía de la mama</a><a href="/cirugia-corporal/">Cirugía corporal</a><a href="/cirugia-intima/" data-only="mujer">Cirugía íntima</a><a href="/ginecomastia-barcelona/" data-only="hombre">Ginecomastia</a>
       </nav>
-      <a class="k-button k-button-link k-size-sm hn-cta" id="cita-banner" href="#valoracion"><span class="k-button-text">{e(CTA)}</span></a>
-      <p class="hn-hero__proof"><a href="#resenas">Excelente · {N_RESENAS} reseñas en Google</a></p>
+      <p class="hn-hero__proof"><a href="#resenas">Excelente · {N_RESENAS} reseñas en Google</a> · <a href="#procedimientos">Ver procedimientos</a></p>
     </div>
-    <figure class="hn-hero__img">
-      <img src="/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp" alt="Cirujanos de Clínica Belba en quirófano" width="682" height="682" fetchpriority="high" decoding="async">
-    </figure>
+    <div class="hn-hero__form" id="valoracion">
+      <p class="hn-hero__formtitle">{e(CTA)}</p>
+      <p class="hn-hero__formsub">Unas preguntas rápidas y te llama nuestro equipo médico. Sin compromiso.</p>
+      {form_hero}
+    </div>
   </div>
   <div class="hn-wrap hn-logos"><span>Colaboramos con</span><img src="/images/2025/12/quiron-salud-tekon.webp" alt="Quirónsalud y Centro Médico Teknon" loading="lazy" decoding="async"></div>
 </section>
@@ -202,7 +201,7 @@ def body():
   <div class="hn-wrap"><p class="hn-eyebrow">Reseñas</p><h2>Lo que dicen nuestros pacientes</h2>{TRUSTINDEX}</div>
 </section>
 
-<section class="hn-form" id="valoracion">
+<section class="hn-form" id="contacto-rapido">
   <div class="hn-wrap hn-form__grid">
     <div>
       <p class="hn-eyebrow">Primer paso</p>
@@ -246,12 +245,19 @@ CSS = '''
 .hn section{padding:72px 0}
 .hn [hidden]{display:none!important}
 /* hero */
-.hn-hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding-bottom:0!important}
+.hn-hero{position:relative;background:var(--navy);color:#fff;padding-bottom:0!important;overflow:hidden}
+.hn-hero__bg{position:absolute;inset:0;background:url(/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp) center 30%/cover no-repeat;filter:saturate(.85);opacity:.6;transform:scale(1.02)}
+.hn-hero__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,34,57,.95) 0%,rgba(23,34,57,.82) 50%,rgba(20,56,82,.35) 100%)}
+.hn-hero .hn-wrap{position:relative}
+.hn-hero__form{background:#fff;border-radius:22px;padding:22px 22px 8px;box-shadow:0 30px 60px rgba(0,0,0,.35);color:var(--text)}
+.hn-hero__formtitle{font-weight:700;color:var(--navy);font-size:20px;margin:0 0 4px}.hn-hero__formsub{font-size:13px;color:#666;margin:0 0 10px}
+.hn-hero__form .belba-form{box-shadow:none;padding:0 0 12px;max-width:none}
+.belba-form--compact .bf-title{font-size:17px}.belba-form--compact .bf-choice{padding:10px 12px;font-size:14px}.belba-form--compact .bf-choices{grid-template-columns:1fr 1fr}
+.belba-form--compact .bf-progress{margin-bottom:14px}
 .hn-hero h1{color:#fff}.hn-hero .hn-eyebrow{color:#9fd8d9}
 .hn-hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-bottom:56px}
 .hn-hero__sub{font-size:20px;font-weight:500;color:#e6f2f2}.hn-hero__p{color:#d3e4ea;font-size:16px}
-.hn-hero__img{margin:0}.hn-hero__img img{width:100%;height:auto;max-width:560px;border-radius:24px;display:block;margin-left:auto;box-shadow:0 30px 60px rgba(0,0,0,.35)}
-.hn-hero__proof{margin-top:14px;font-size:14px}.hn-hero__proof a{color:#e6f2f2}
+.hn-hero__proof{margin-top:6px;font-size:14px}.hn-hero__proof a{color:#e6f2f2}
 .hn-sel{display:inline-flex;background:rgba(255,255,255,.12);border-radius:999px;padding:4px;margin:8px 0 14px}
 .hn-sel__btn{border:0;background:transparent;color:#fff;font:600 14px Montserrat,sans-serif;padding:8px 20px;border-radius:999px;cursor:pointer}
 .hn-sel__btn.is-on{background:#fff;color:var(--navy)}
@@ -308,7 +314,7 @@ CSS = '''
 @media(max-width:1024px){.hn-cards{grid-template-columns:repeat(3,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:820px){.hn h1{font-size:32px}.hn h2{font-size:26px}.hn section{padding:52px 0}
 .hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-hosp__grid,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
-.hn-hero__img img{margin:0 auto}.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}}
+.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}}
 '''
 
 JS = '''
@@ -318,7 +324,9 @@ d.querySelectorAll('.hn [data-only]').forEach(function(a){a.hidden=a.getAttribut
 try{localStorage.setItem('belba_sel',v);}catch(e){}
 if(window.dataLayer)window.dataLayer.push({event:'home_selector',selector:v});}
 d.querySelectorAll('.hn .hn-sel__btn').forEach(function(b){b.addEventListener('click',function(){sel(b.getAttribute('data-sel'));});});
-var s=null;try{s=localStorage.getItem('belba_sel');}catch(e){}if(s==='hombre')sel('hombre');else sel('mujer');})();
+d.querySelectorAll('.hn input[name=sel_persona]').forEach(function(r){r.addEventListener('change',function(){sel(r.value==='Hombre'?'hombre':'mujer');});});
+var s=null;try{s=localStorage.getItem('belba_sel');}catch(e){}if(s==='hombre')sel('hombre');else sel('mujer');
+var pre=d.querySelector('.hn input[name=sel_persona][value='+(s==='hombre'?'Hombre':'Mujer')+']');if(pre&&s){pre.checked=true;}})();
 '''
 
 def main():

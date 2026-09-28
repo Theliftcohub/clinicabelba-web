@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const pg = await b.newPage({ viewport: { width: 1440, height: 900 } });
+await pg.goto('http://localhost:4321/home-nueva/', { waitUntil: 'load' });
+await pg.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await pg.waitForTimeout(1200);
+console.log(await pg.evaluate(() => { const im = document.querySelector('.k-element-dba8352 img'); const r = im.getBoundingClientRect(); return { w: r.width, h: r.height, complete: im.complete }; }));
+await pg.screenshot({ path: '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/hn-footer2.jpg', type: 'jpeg', quality: 60 });
+await pg.evaluate(() => window.scrollTo(0, 0)); await pg.waitForTimeout(500);
+await pg.screenshot({ path: '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/hn-hero2.jpg', type: 'jpeg', quality: 60 });
+await b.close();

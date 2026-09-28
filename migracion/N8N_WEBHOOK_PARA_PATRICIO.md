@@ -43,5 +43,9 @@ define('SMTP_HOST', '…'); define('SMTP_PORT', 587); define('SMTP_USER', '…')
 2. Avisar a los destinatarios de `destinatarios` (sustituye al email de WordPress).
 3. Responder 200.
 
+## Campos que vienen de la home nueva
+- `sel_persona`: "Mujer" | "Hombre" (primer paso del asistente). Útil como campo en Kommo para segmentar.
+- El resto de preguntas del asistente llegan con nombre `q_...` (p. ej. `q_que_cirugia_necesitas`, `q_cuando_tienes_pensado_operarte`) más `nombre`, `email`, `telefono`.
+
 ## Formularios y preguntas
 Están en `migracion/typeform_forms.json` (5 antiguos Typeform) y `migracion/forms_elementor.json` (los de Elementor). Cada campo llega con su nombre en `datos`.
