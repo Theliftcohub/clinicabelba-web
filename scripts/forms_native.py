@@ -10,11 +10,12 @@ Cada formulario:
   primera fuente, referrer, landing, client_id de GA4);
 - al terminar hace dataLayer.push({event:'lead_form_submit', ...}) y muestra el mensaje de
   gracias literal o redirige a la página de gracias que ya mide GTM."""
-import json, html, re, hashlib, unicodedata
+import json, html, re, hashlib, unicodedata, os
+import forms_i18n  # preguntas traducidas para mostrar; los valores que van a n8n siguen en ES
 
-B = '/home/claude/belba'
-TF = json.load(open(B + '/migracion/typeform_forms.json'))
-PRIV = json.load(open(B + '/migracion/i18n-map.json')).get('/politica-de-privacidad/', {})
+B = os.environ.get('BELBA_ROOT', '/home/claude/belba')
+TF = json.load(open(B + '/migracion/typeform_forms.json', encoding='utf-8'))
+PRIV = json.load(open(B + '/migracion/i18n-map.json', encoding='utf-8')).get('/politica-de-privacidad/', {})
 LIVE = {  # data-tf-live -> id del formulario
     '01JEVNSW0E50QTP28CV7GMGQ2P': 'iOSo1PBX',
     '01KEF5HK8JC590A93QPQFYQ2FM': 'eQ3VBLE2',
@@ -68,16 +69,16 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
     n_q = sum(1 for x in fields if x['type'] not in ('statement', 'contact_info') and x['lvl'] == 0) + sum(1 for x in fields if x['type'] == 'contact_info')
     welcome = [] if compact else (f.get('welcome') or [])
     if welcome and welcome[0]:
-        steps.append(f'<div class="bf-step bf-intro" data-step><p class="bf-title">{md(welcome[0])}</p>'
+        steps.append(f'<div class="bf-step bf-intro" data-step><p class="bf-title">{md(forms_i18n.tr(lang, welcome[0]))}</p>'
                      f'<div class="bf-nav"><button type="button" class="bf-next">{e(ui[0])}</button></div></div>')
     qn = 0
     while i < len(fields):
         x = fields[i]
         if x['lvl'] > 0:
             i += 1; continue
-        t = x['type']; title = x['title'] or ''
+        t = x['type']; title_es = x['title'] or ''; title = forms_i18n.tr(lang, title_es)
         req = ' required' if x.get('required') else ''
-        name = x['ref'] if (x.get('ref') or '').startswith('sel_') else 'q_' + re.sub(r'[^a-z0-9]+', '_', unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode().lower())[:48].strip('_')
+        name = x['ref'] if (x.get('ref') or '').startswith('sel_') else 'q_' + re.sub(r'[^a-z0-9]+', '_', unicodedata.normalize('NFKD', title_es).encode('ascii', 'ignore').decode().lower())[:48].strip('_')
         if t == 'statement':
             steps.append(f'<div class="bf-step bf-statement" data-step><p class="bf-text">{md(title)}</p>'
                          f'<div class="bf-nav"><button type="button" class="bf-back">{e(ui[1])}</button><button type="button" class="bf-next">{e(ui[0])}</button></div></div>')
@@ -88,7 +89,7 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
             opts = []
             seen = set()
             for j, c in enumerate(x['choices']):
-                val, lbl = (c if isinstance(c, (tuple, list)) else (c, c))  # (valor, etiqueta): el valor va a n8n, la etiqueta se traduce
+                val, lbl = (c if isinstance(c, (tuple, list)) else (c, forms_i18n.tr(lang, c)))  # (valor, etiqueta): el valor va a n8n, la etiqueta se traduce
                 if val in seen: continue
                 seen.add(val)
                 opts.append(f'<label class="bf-choice"><input type="radio" name="{name}" value="{e(val)}"{req if j == 0 else ""}><span>{e(lbl)}</span></label>')
@@ -100,7 +101,7 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
                 s = fields[k]; stitle = s['title']
                 typ = {'email': 'email', 'phone_number': 'tel'}.get(s['type'], 'text')
                 sname = {'First name': 'nombre', 'Last name': 'apellidos', 'Phone number': 'telefono', 'Email': 'email'}.get(stitle, 'q_' + re.sub(r'[^a-z0-9]+', '_', stitle.lower()))
-                lbl = {'First name': 'Nombre', 'Last name': 'Apellidos', 'Phone number': 'Teléfono', 'Email': 'Email'}.get(stitle, stitle)
+                lbl = forms_i18n.tr(lang, {'First name': 'Nombre', 'Last name': 'Apellidos', 'Phone number': 'Teléfono', 'Email': 'Email'}.get(stitle, stitle))
                 ac = {'nombre': 'given-name', 'apellidos': 'family-name', 'telefono': 'tel', 'email': 'email'}.get(sname, 'on')
                 subs.append(f'<label class="bf-sub"><span>{e(lbl)}</span><input type="{typ}" name="{sname}" autocomplete="{ac}"{" required" if s.get("required") else ""}></label>')
                 k += 1
@@ -109,7 +110,7 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
             i = k - 1
         else:
             typ = {'email': 'email', 'phone_number': 'tel'}.get(t, 'text')
-            fname = {'email': 'email', 'phone_number': 'telefono'}.get(t, 'nombre' if 'llamas' in title.lower() else name)
+            fname = {'email': 'email', 'phone_number': 'telefono'}.get(t, 'nombre' if 'llamas' in title_es.lower() else name)
             ac = {'email': 'email', 'telefono': 'tel', 'nombre': 'name'}.get(fname, 'on')
             body = f'{head}<input class="bf-input" id="{uid}-{name}" type="{typ}" name="{fname}" autocomplete="{ac}"{req}>'
         last = i >= len(fields) - 1 or all(y['lvl'] > 0 for y in fields[i + 1:])
@@ -122,6 +123,7 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
     thanks = f.get('thanks_text') or ''
     if thanks.startswith('http') or '{{' in thanks:
         thanks = ''
+    thanks = forms_i18n.tr(lang, thanks)
     redirect = REDIRECT.get(fid, '')
     return (f'<form class="belba-form{" belba-form--compact" if compact else ""}" id="form-{uid}" data-belba-form data-form-id="tf-{fid}" data-form-name="{e(f["title"])}" '
             f'data-redirect="{e(redirect)}" data-error="{e(ui[8])}" data-sending="{e(ui[7])}" action="/form-handler.php" method="post" novalidate>'

@@ -4,9 +4,10 @@ con TODOS los textos, datos, fotos y reseñas sacados de la web actual (nada inv
 Cambios respecto al diseño, decididos con Oscar: hero con foto real de quirófano en vez de la modelo;
 selector Mujer / Hombre que filtra las tarjetas de procedimientos; sin cifras ni reseñas inventadas;
 médicos, dirección y teléfono reales; formulario nativo (sin Typeform)."""
-import json, glob, html, re, os, sys
+import json, glob, html, re, os, sys, io, functools
 from bs4 import BeautifulSoup
-B = '/home/claude/belba'
+open = functools.partial(io.open, encoding='utf-8')  # en Windows open() usa cp1252 por defecto
+B = os.environ.get('BELBA_ROOT', '/home/claude/belba')
 sys.path.insert(0, B + '/scripts')
 import forms_native
 from home_i18n import T

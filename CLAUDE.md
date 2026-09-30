@@ -54,6 +54,8 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - Antes de cada commit: `npm run build` sin errores y validación de enlaces.
 - Credenciales solo en `.env` / `secrets/` (ignorados por git). Nunca leerlas en el chat ni imprimirlas.
 - Medics no se toca.
+- Los scripts de `scripts/` toman la raíz del repo de la variable `BELBA_ROOT` (por defecto `/home/claude/belba`, el contenedor Linux de Claude). En Windows: `BELBA_ROOT=$PWD python -X utf8 scripts/<script>.py` (sin `-X utf8`, Python abre los JSON en cp1252 y rompe los acentos).
+- `scripts/rerender_forms.py` regenera in situ los formularios rehechos desde Typeform en todas las páginas (menos las portadas, que regenera `home_nueva.py`) sin rehacer el pipeline completo. Tras tocar `forms_native.py` o `forms_i18n.py`: ejecutarlo, luego `home_nueva.py`, luego `npm run build`.
 
 ## Errores ya cometidos y sus reglas
 <!-- fecha · qué pasó · regla -->
@@ -66,6 +68,8 @@ Web estática de Clínica Belba migrada desde WordPress (Elementor + MetForm, Yo
 - 28/09 · Restos del hackeo de agosto en httpdocs: `_CUARENTENA_HACK_20260806/`, `hitam.html.quar0903`, `wp-singup.php` (0 B, 02/09), `mantenimiento.html`, `clinicabelba.com_all.zip` (5,1 GB) · no tocar en la migración; anotar como posible siguiente paso (limpieza + revisar wp-login.php/wp-signup.php modificados el 03/09).
 
 - 28/09 · La fase 1 marcó `/test-paciente/` (y 4 traducciones) como 410 por el patrón `test-`, pero es el botón "Test paciente" del menú de todas las páginas · antes de un 410, comprobar que la URL no está enlazada desde cabecera, pie o páginas `mantener` (el conversor lo avisa como "enlace a URL 410").
+- 30/09 · Los 5 formularios rehechos desde Typeform salían con las preguntas en ESPAÑOL en las 8 traducciones (29 páginas por idioma, 232 en total; el WordPress también los tenía solo en ES). Ahora `forms_native.py` muestra las preguntas traducidas (`scripts/forms_i18n.py`) y conserva los VALORES en ES para n8n · al añadir un formulario o una pregunta, ejecutar `python scripts/forms_i18n.py`: lista lo que falta por traducir (debe devolver `[]`). Cualquier texto de interfaz que se genere por script se comprueba en los 9 idiomas, no solo en ES.
+- 30/09 · Para localizar formularios en el HTML de las páginas no fiarse del orden de atributos: BeautifulSoup (convert.py) los ordena alfabéticamente y serializa los booleanos como `data-belba-form=""`.
 
 ## Modelos
 Decisión Oscar 28/09: TODA la migración con Opus 5.5 (también fases 3-7). Sin subagentes.
