@@ -8,3 +8,4 @@ extract.log
 prefetch.log
 migracion/media_orig/
 .astro/
+__pycache__/
