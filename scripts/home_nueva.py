@@ -103,7 +103,7 @@ DOCS = [
      'Con amplia experiencia en cirugía plástica y reparadora, destaca por su criterio médico y su enfoque conservador cuando el caso lo permite. En mamoplastia, trabaja con técnicas que reducen el impacto quirúrgico, minimizan el tiempo de recuperación y favorecen una evolución postoperatoria controlada, siempre dentro del entorno hospitalario seguro del Grupo Teknon y el Hospital Tres Torres.'),
 ]
 # palabras del H1 que van en turquesa (solo un <em>, el texto no cambia)
-HL = {'es': 'cirugía plástica', 'ca': 'cirurgia plàstica', 'en': 'Plastic surgery', 'fr': 'chirurgie plastique', 'de': 'plastische Chirurgie',
+HL = {'es': 'cirugía plástica', 'ca': 'cirurgia plàstica', 'en': 'Plastic surgery', 'fr': 'chirurgie plastique', 'de': 'Plastische Chirurgie',
       'it': 'chirurgia plastica', 'nl': 'plastische chirurgie', 'ru': 'пластической хирургии', 'uk': 'пластичної хірургії'}
 import datetime
 YEAR = datetime.date.today().year

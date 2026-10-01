@@ -213,7 +213,7 @@ T['fr'] = dict(
 
 T['de'] = dict(
     hero_eyebrow='Barcelona · Teknon-Gruppe · SECPRE-zertifizierte Chirurgen',
-    hero_h1='Klinik für plastische Chirurgie in Barcelona',
+    hero_h1='Plastische Chirurgie Klinik in Barcelona',  # H1 literal del WordPress en alemán
     hero_sub='Echte ärztliche Begleitung vor, während und nach der Operation',
     hero_p='In der Clínica Belba verstehen wir plastische Chirurgie als medizinischen Prozess, nicht als Produkt. Deshalb ist der Chirurg, der Sie beurteilt, derselbe, der Sie operiert und während der gesamten Nachsorge begleitet – in einem führenden Krankenhausumfeld in Barcelona.',
     cta='Ärztliche Beurteilung anfragen',
