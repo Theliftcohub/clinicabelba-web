@@ -7,7 +7,7 @@ Anota el cambio en NO_LITERAL.md."""
 import json, html, re, os, sys, datetime
 from urllib.parse import unquote
 from bs4 import BeautifulSoup
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 sys.path.insert(0, B + '/scripts')
 from home_i18n import T
 
@@ -90,7 +90,7 @@ def main():
                 nav.insert_after(BeautifulSoup('<!--LS-->', 'html.parser'))
                 L['header'] = str(Hs)
         json.dump(L, open(p, 'w'), ensure_ascii=False)
-        rows.append('| %s | pie de página | pie del WordPress (CTA + contacto + mapa + 27 enlaces) | pie compacto: marca, 3 columnas de enlaces, legal, logo UE, WhatsApp | decisión Oscar 28/09: toda la web con el estilo de la home nueva; textos traducidos por Claude, revisar |' % href('/', lang))
+        rows.append('| %s | pie de página | pie del WordPress (CTA + contacto + mapa + 27 enlaces) | pie compacto: marca, 3 columnas de enlaces, legal, logo UE, WhatsApp | decisión Oscar 28/09: toda la web con el estilo de la home nueva; textos traducidos por la agencia, revisar |' % href('/', lang))
     nl = B + '/NO_LITERAL.md'
     cur = open(nl).read() if os.path.exists(nl) else ''
     with open(nl, 'a') as fo:

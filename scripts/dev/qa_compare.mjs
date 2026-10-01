@@ -1,7 +1,7 @@
 // QA visual: la misma página en WordPress (en vivo) y en la web nueva (local), escritorio y móvil.
 import { chromium } from 'playwright';
 const PAGES = process.argv.slice(2).length ? process.argv.slice(2) : ['/', '/aumento-pecho-barcelona/', '/blog/', '/rinoplastia-hombre-antes-y-despues-mejorado/', '/contacto/', '/en/', '/cirujanos-plasticos-barcelona/', '/precio-cirugia-estetica-barcelona/'];
-const SC = '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/qa/';
+const SC = 'migracion/screenshots/qa/';
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
 const out = [];
 for (const [vw, vh, tag] of [[1366, 900, 'd'], [390, 844, 'm']]) {

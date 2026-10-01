@@ -3,7 +3,7 @@
 una errata) para que apunten directamente al destino final, y añade esas URLs al contrato como 301."""
 import json, glob, csv, re, subprocess, os
 from urllib.parse import unquote, quote
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 res = json.load(open(B + '/migracion/broken_resolved.json'))
 i18n = json.load(open(B + '/migracion/i18n-map.json'))
 grp = {}

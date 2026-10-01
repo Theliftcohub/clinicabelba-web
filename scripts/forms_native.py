@@ -10,10 +10,10 @@ Cada formulario:
   primera fuente, referrer, landing, client_id de GA4);
 - al terminar hace dataLayer.push({event:'lead_form_submit', ...}) y muestra el mensaje de
   gracias literal o redirige a la página de gracias que ya mide GTM."""
-import json, html, re, hashlib, unicodedata, os
+import os, json, html, re, hashlib, unicodedata, os
 import forms_i18n  # preguntas traducidas para mostrar; los valores que van a n8n siguen en ES
 
-B = os.environ.get('BELBA_ROOT', '/home/claude/belba')
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 TF = json.load(open(B + '/migracion/typeform_forms.json', encoding='utf-8'))
 PRIV = json.load(open(B + '/migracion/i18n-map.json', encoding='utf-8')).get('/politica-de-privacidad/', {})
 LIVE = {  # data-tf-live -> id del formulario

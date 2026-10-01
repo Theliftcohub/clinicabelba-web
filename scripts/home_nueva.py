@@ -7,7 +7,7 @@ médicos, dirección y teléfono reales; formulario nativo (sin Typeform)."""
 import json, glob, html, re, os, sys, io, functools
 from bs4 import BeautifulSoup
 open = functools.partial(io.open, encoding='utf-8')  # en Windows open() usa cp1252 por defecto
-B = os.environ.get('BELBA_ROOT', '/home/claude/belba')
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 sys.path.insert(0, B + '/scripts')
 import forms_native
 from home_i18n import T
@@ -613,7 +613,7 @@ def main():
         doc['seo']['ogImage'] = '/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp'
         json.dump(doc, open(f, 'w'), ensure_ascii=False)
         rows.append('| %s | página completa | portada del WordPress | home nueva (diseño Figma de Oscar, datos reales) %s | decisión Oscar 28/09; %s |' % (
-            unquote(doc['path']), '' if lang == 'es' else 'traducida por Claude', 'textos originales en ES' if lang == 'es' else 'traducción pendiente de revisión de la clínica'))
+            unquote(doc['path']), '' if lang == 'es' else 'traducida por la agencia', 'textos originales en ES' if lang == 'es' else 'traducción pendiente de revisión de la clínica'))
     for f in glob.glob(B + '/src/content/pages/*/zz-home-nueva.json'):
         os.remove(f)
     nl = B + '/NO_LITERAL.md'

@@ -51,6 +51,25 @@
     titles.forEach(function (t, i) { t.addEventListener('click', function () { show(i); }); });
     if (titles.length) show(0);
   });
+  // Vídeos de YouTube: póster propio (miniatura vertical u horizontal, a sangre) y el reproductor solo se carga al pulsar.
+  // Con srcdoc el navegador no pide el src: la caja y el CSS del iframe no cambian, se ahorra ~1 MB por vídeo y no hay cookies de YouTube hasta que el visitante pulsa.
+  d.querySelectorAll('iframe[src*="youtube.com/embed/"],iframe[src*="youtube-nocookie.com/embed/"]').forEach(function (fr) {
+    var src = fr.getAttribute('src') || '', m = /embed\/([\w-]{6,})/.exec(src); if (!m) return;
+    var id = m[1], r = fr.getBoundingClientRect(), vert = r.height > r.width;
+    var play = src + (src.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1';
+    var th = 'https://i.ytimg.com/vi/' + id + (vert ? '/oar2.jpg' : '/maxresdefault.jpg'), fb = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
+    var allow = fr.getAttribute('allow') || ''; if (allow.indexOf('autoplay') < 0) fr.setAttribute('allow', (allow ? allow + '; ' : '') + 'autoplay; encrypted-media; picture-in-picture');
+    var css = 'html,body{margin:0;height:100%;overflow:hidden;background:#000}a{position:absolute;inset:0;display:block}img{width:100%;height:100%;object-fit:cover;display:block}' +
+      'b{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;background:rgba(23,34,57,.85);border-radius:14px;transition:background .2s}' +
+      'b:after{content:"";position:absolute;left:27px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}a:hover b{background:#e00}';
+    fr.setAttribute('srcdoc', '<!doctype html><html><head><meta charset="utf-8"><style>' + css + '</style></head><body><a href="' + play + '" aria-label="YouTube">' +
+      '<img src="' + th + '" alt="" onerror="this.onerror=null;this.src=&quot;' + fb + '&quot;"><b></b></a></body></html>');
+  });
+  // Tablas anchas (comparativas de técnicas, precios): en móvil se desplazan dentro de su caja en vez de desbordar la página
+  d.querySelectorAll('main table').forEach(function (t) {
+    if (t.parentNode.classList && t.parentNode.classList.contains('tbl-scroll')) return;
+    var w = d.createElement('div'); w.className = 'tbl-scroll'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
   // Carruseles: desplazamiento con flechas y autoplay suave
   d.querySelectorAll('.swiper').forEach(function (sw) {
     var wrap = sw.querySelector('.swiper-wrapper'); if (!wrap) return;

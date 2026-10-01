@@ -37,5 +37,5 @@ const r = await pg.evaluate(() => ({
   atribucion: Object.fromEntries([...document.querySelectorAll('form.belba-form input[type=hidden]')].map((i) => [i.name, i.value]).filter((x) => x[1])),
 }));
 console.log(JSON.stringify(r, null, 1));
-await pg.screenshot({ path: '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/form_done.jpg', type: 'jpeg', quality: 60 });
+await pg.screenshot({ path: 'migracion/screenshots/qa/form_done.jpg', type: 'jpeg', quality: 60 });
 await b.close();

@@ -10,7 +10,7 @@ await pg.goto(base + ruta + '?utm_source=google&utm_medium=cpc', { waitUntil: 'l
 const f = pg.locator('form.k-form.is-steps:visible').first();
 console.log('formularios por pasos:', await pg.locator('form.k-form.is-steps').count());
 await f.scrollIntoViewIfNeeded();
-const SC = '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/';
+const SC = 'migracion/screenshots/qa/';
 for (let i = 0; i < 8; i++) {
   const st = f.locator('.k-step:not([hidden])');
   if (i < 2) await st.screenshot({ path: SC + `kstep${i}_${w}.jpg`, type: 'jpeg', quality: 60 });

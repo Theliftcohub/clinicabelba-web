@@ -13,7 +13,7 @@ await f.locator('input[type=text]:visible').first().fill('Prueba');
 await f.locator('input[type=tel]:visible').first().fill('600000000');
 await f.locator('[type=submit]').click();
 await pg.waitForTimeout(600);
-const SC = '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad/';
+const SC = 'migracion/screenshots/qa/';
 await f.screenshot({ path: SC + `short_follow_${w}.jpg`, type: 'jpeg', quality: 60 });
 await f.locator('.bf-follow .bf-choice').nth(1).click();
 await pg.waitForTimeout(300);

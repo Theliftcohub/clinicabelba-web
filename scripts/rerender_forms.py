@@ -3,7 +3,7 @@
 páginas menos las portadas (esas las regenera home_nueva.py). Sirve para aplicar cambios de forms_native.py /
 forms_i18n.py sin rehacer todo el pipeline. Uso: BELBA_ROOT=. python scripts/rerender_forms.py"""
 import json, glob, re, os, sys
-B = os.environ.get('BELBA_ROOT', '/home/claude/belba')
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 sys.path.insert(0, B + '/scripts')
 import forms_native
 

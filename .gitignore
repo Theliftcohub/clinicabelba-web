@@ -9,3 +9,4 @@ prefetch.log
 migracion/media_orig/
 .astro/
 __pycache__/
+migracion/qa_render.jsonl

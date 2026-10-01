@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Genera public/css/site.css (CSS local renombrado + fuentes locales) y copia las fuentes."""
 import json, os, re, shutil, glob, sys
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 sys.path.insert(0, B + '/scripts')
 from convert import ren_css
 
@@ -339,6 +339,21 @@ header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consult
 header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online.menu-item-9010>a.k-item{color:#008488!important}
 header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online>.sub-menu{background:transparent!important;margin-top:4px}
 header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online>.sub-menu a.k-sub-item{color:#fff!important;justify-content:center!important;padding:8px 20px!important}
+}
+/* QA de render 30/09 (rastreo de las 1198 páginas en 390 y 1440 px): desbordes horizontales en 176 páginas móviles.
+   Causas: márgenes negativos y anchos fijos del kit en móvil, tablas de 4 columnas, palabras largas (DE/NL/RU) y una rejilla
+   de proceso fija. `overflow-x:clip` en html/body es la red de seguridad (clip no crea contenedor de scroll: la cabecera sticky sigue funcionando). */
+html,body{overflow-x:clip}
+.swiper,.swiper-container{overflow:hidden}
+.tbl-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl-scroll>table{margin-bottom:0}
+@media(max-width:1024px){
+.k .k-widget>.k-widget-container{margin-left:0!important;margin-right:0!important}
+.k .k-widget{max-width:100%!important}
+.k h1,.k h2,.k h3,.k h4,.k p,.k li,.k a,.k span,.k strong,.k em{overflow-wrap:anywhere}
+.k td,.k th{overflow-wrap:normal}.tbl-scroll>table{min-width:560px}
+.k .k-button{max-width:100%;box-sizing:border-box;white-space:normal}
+.process-grid{grid-template-columns:1fr!important}.process-item{min-width:0}
 }
 '''
 

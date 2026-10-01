@@ -2,9 +2,10 @@
 """Ajusta public/.htaccess para rutas no ASCII (ruso, ucraniano, acentos):
 mod_rewrite compara el patrón con la ruta YA decodificada, así que el patrón se escribe en UTF-8;
 y los destinos con %xx llevan [NE] para que Apache no los vuelva a codificar (%25d0...)."""
+import os
 import re
 from urllib.parse import unquote
-fn = '/home/claude/belba/public/.htaccess'
+fn = os.path.join(os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public', '.htaccess')
 out = []; n1 = n2 = 0
 for line in open(fn, encoding='utf-8'):
     m = re.match(r'^(RewriteRule\s+)(.+?)(\s+)(\S+)(\s+\[)([^\]]*)(\].*)$', line.rstrip('\n'))

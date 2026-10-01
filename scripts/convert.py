@@ -12,10 +12,10 @@ import csv, json, os, re, sys, hashlib, html as H
 from urllib.parse import unquote, quote, urlparse, parse_qs
 from bs4 import BeautifulSoup, Comment, NavigableString
 
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 DOM = 'https://clinicabelba.com'
-sys.path.insert(0, '/tmp/claude-0/-home-claude/aae1ead6-8dc9-546f-ae1d-382cc271829d/scratchpad')
-from pages import pages as load_pages, html as load_html
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from wp_cache import pages as load_pages, html as load_html  # caché del WordPress (.fetchcache/, la llena scripts/fase1/prefetch.py)
 
 LANGS = {'es-ES': 'es', 'ca': 'ca', 'en-US': 'en', 'fr-FR': 'fr', 'de-DE': 'de', 'it-IT': 'it', 'nl-NL': 'nl', 'ru-RU': 'ru', 'uk': 'uk'}
 

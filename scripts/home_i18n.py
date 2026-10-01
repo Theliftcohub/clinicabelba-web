@@ -1,6 +1,7 @@
+import os
 #!/usr/bin/env python3
 """Textos de la home nueva en los 9 idiomas (decisión Oscar 28/09: la home nueva pasa a ser la portada en todos
-los idiomas; las traducciones las hace Claude y las revisa la clínica antes de indexar — quedan anotadas en NO_LITERAL.md).
+los idiomas; las traducciones son de la agencia y las revisa la clínica antes de indexar — quedan anotadas en NO_LITERAL.md).
 El español es el original. Los nombres de menú (cirugías, páginas) se toman del menú traducido del WordPress
 (home_nueva.py los lee de la cabecera de cada idioma); aquí solo van los textos propios de la home."""
 

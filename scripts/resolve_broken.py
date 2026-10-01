@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Resuelve contra la web en vivo los enlaces internos que no existen en la web nueva."""
+import os
 import json, subprocess, concurrent.futures as cf
 from urllib.parse import quote, unquote
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 pp = json.load(open(B + '/migracion/postprocess.json'))['broken']
 def res(h):
     u = 'https://clinicabelba.com' + quote(unquote(h), safe='/%')

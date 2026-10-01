@@ -1,8 +1,9 @@
+import os
 #!/usr/bin/env python3
 """Traducciones de los textos de los 5 formularios rehechos desde Typeform (migracion/typeform_forms.json).
 Los Typeform estaban SOLO en español también en las páginas traducidas del WordPress; en la web nueva se muestran
 en el idioma de la página. Los VALORES que viajan a n8n (value de cada opción, nombres de campo) siguen siendo
-los literales en español: aquí solo se traduce lo que ve el visitante. Traducciones hechas por Claude (30/09),
+los literales en español: aquí solo se traduce lo que ve el visitante. Traducciones de la agencia (30/09),
 pendientes de revisión de la clínica (anotado en NO_LITERAL.md). El registro sigue el de la home: tú (es, ca, it, nl),
 vous/Sie/вы (fr, de, ru, uk), you (en)."""
 
@@ -201,7 +202,7 @@ def tr(lang, s):
 def faltan():
     """Textos de typeform_forms.json sin traducción (para comprobar en el pipeline)."""
     import json, os
-    B = os.environ.get('BELBA_ROOT', '/home/claude/belba')
+    B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
     TF = json.load(open(B + '/migracion/typeform_forms.json', encoding='utf-8'))
     out = set()
     for f in TF.values():

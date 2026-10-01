@@ -6,7 +6,7 @@ import json, os, sys, io, subprocess, concurrent.futures as cf
 from urllib.parse import quote
 from PIL import Image, ImageOps
 
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 CACHE = B + '/migracion/media_orig'
 os.makedirs(CACHE, exist_ok=True)
 need = json.load(open(B + '/migracion/media_needed.json'))

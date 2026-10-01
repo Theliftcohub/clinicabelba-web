@@ -5,7 +5,7 @@
  - lista enlaces internos a rutas que no existen en la web nueva ni en el contrato."""
 import json, glob, os, re, csv
 from urllib.parse import unquote
-B = '/home/claude/belba'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
 fail = {f[0] for f in json.load(open(B + '/migracion/media_fail.json'))}
 need = json.load(open(B + '/migracion/media_needed.json'))
 failed_local = {need[u] for u in fail if u in need}

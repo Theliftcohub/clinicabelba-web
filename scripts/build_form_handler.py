@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Genera public/form-handler.php a partir de la plantilla de la skill y de la configuración
 de formularios de Elementor (migracion/forms_elementor.json, sacada del SQL)."""
+import os
 import json
-B = '/home/claude/belba'
-TPL = '/root/.claude/skills/synced/cda2b152-b6b2-4e27-9ef1-c7f2e7529a97_6810d0a6-7c92-4367-a0e3-d22dc8af911f/migracion-wp-theliftv2/assets/form-handler.php'
+B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo (o BELBA_ROOT)
+TPL = os.path.join(B, 'scripts', 'form-handler.template.php')  # plantilla de la skill migracion-wp-theliftv2, copiada al repo
 F = json.load(open(B + '/migracion/forms_elementor.json'))
 def php(s):
     return "'" + str(s).replace('\\', '\\\\').replace("'", "\\'") + "'"
