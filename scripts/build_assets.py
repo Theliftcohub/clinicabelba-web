@@ -156,17 +156,19 @@ main .k-widget-table-of-contents .k-toc__header{border-radius:12px 12px 0 0}
 main .k-widget-table-of-contents{border-radius:12px;border-color:#e6ecee}
 /* cabecera: sin el margen negativo (compensaba la barra de TranslatePress, que ya no existe); sticky en tablet/móvil como en el WP */
 .k-38 .k-element.k-element-ce67a94{margin-top:0!important}
-@media(max-width:1024px){header.k-38{position:sticky;top:0;z-index:9998;background:#fff;box-shadow:0 2px 12px rgba(23,34,57,.08)}
-/* menú móvil a todo el ancho bajo la cabecera (lo hacía el JS de Elementor) */
-header.k-38 .k-section,header.k-38 .k-container,header.k-38 .k-column,header.k-38 .k-widget-wrap,header.k-38 .k-widget-nav-menu,header.k-38 .k-widget-nav-menu>.k-widget-container{position:static}
-header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--dropdown{position:absolute;left:0;right:0;width:100%;top:100%;margin-top:0!important;max-height:calc(100vh - 90px);overflow:auto;z-index:9999}
-.k-nav-menu--dropdown .menu-item-has-children>.sub-menu{position:static;width:100%;min-width:0;max-width:none;display:none;background:rgba(0,0,0,.08)}
-.k-nav-menu--dropdown li.open>.sub-menu{display:block}}
+/* (el menú desplegable de tablet/móvil está más abajo, en «cabecera (30/09)») */
 /* desplegables del menú: ancho al contenido (el JS de Elementor lo hacía en tiempo real) y sin cortes */
-.k-nav-menu--main .k-nav-menu ul{width:auto;min-width:12em;max-width:22em}
+.k-nav-menu--main .k-nav-menu ul{width:auto;min-width:12em;max-width:none}
 .k-nav-menu--main .k-nav-menu--dropdown a{white-space:nowrap;padding:12px 18px}
 .k-nav-menu--main li.open>.sub-menu{display:block}
-.k-nav-menu--main .sub-menu{box-shadow:0 12px 32px rgba(23,34,57,.16);border-radius:0 0 10px 10px;overflow:hidden}
+.k-nav-menu--main .sub-menu{box-shadow:0 12px 32px rgba(23,34,57,.16);border-radius:0 0 10px 10px}
+/* 3.er y 4.º nivel del menú de escritorio: se abren a la derecha, como en el WP (30/09; antes los tapaba overflow:hidden) */
+.k-nav-menu--main .sub-menu li{position:relative}
+.k-nav-menu--main .sub-menu>li:first-child>a{border-radius:0}
+.k-nav-menu--main .sub-menu>li:last-child>a{border-radius:0 0 10px 10px}
+.k-nav-menu--layout-horizontal .k-nav-menu>li .sub-menu .sub-menu{top:0!important;left:100%!important;inset-inline-start:100%!important;margin:0!important;border-radius:0 10px 10px 10px}
+.k-nav-menu--main .sub-menu .sub-menu>li:first-child>a{border-radius:0 10px 0 0}
+.k-nav-menu--main .sub-menu .menu-item-has-children>a .sub-arrow{margin-left:auto;padding-left:14px}
 /* selector de idioma en la cabecera */
 .k-38 .ls-widget{width:auto;margin-left:12px;position:relative;z-index:101}
 .ls{position:relative;font-family:Montserrat,sans-serif}
@@ -178,7 +180,107 @@ header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--drop
 .ls__list[hidden]{display:none}
 .ls__list a{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;color:#172239;text-decoration:none;font-size:14px;white-space:nowrap}
 .ls__list a:hover{background:#E9F5F5;color:#008488}
-@media(max-width:1024px){.k-38 .ls-widget{margin-left:8px}.ls__code{display:none}.ls__cur{padding:7px 8px}}
+/* cabecera (30/09): completa y en una fila en escritorio, sin depender del CSS del kit de cada página (la home nueva no lo trae) */
+header.k-38 .k-section-boxed>.k-container{max-width:1280px}
+header.k-38 .k-element.k-element-ce67a94{padding:10px 0!important;border-bottom:1px solid #eef2f3}
+header.k-38 .k-widget-wrap{align-items:center!important;flex-wrap:nowrap!important;gap:0 14px}
+header.k-38 .k-widget-theme-site-logo{flex:0 0 auto}
+header.k-38 .k-widget-theme-site-logo img{width:176px;height:auto;display:block}
+header.k-38 .k-widget-nav-menu{margin-left:auto;min-width:0}
+header.k-38 .ls-widget{flex:0 0 auto;margin-left:0;position:relative;z-index:101}
+header.k-38 .k-nav-menu--main .k-nav-menu{flex-wrap:nowrap}
+header.k-38 .k-nav-menu--main .k-nav-menu>li{flex-grow:0}
+header.k-38 .k-nav-menu--main .k-nav-menu>li>.k-item{white-space:nowrap;justify-content:center}
+/* los dos botones: principal (Consulta online) y secundario (Test paciente), con las esquinas del resto de la web */
+header.k-38 .k-nav-menu--main .btn_consulta_online{border-radius:10px;margin:0 0 0 8px!important;transition:background .2s}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.k-item{padding-left:16px!important;padding-right:16px!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online:hover{background:#006d70}
+header.k-38 .k-nav-menu--main .btn_consulta_online>a:hover,header.k-38 .k-nav-menu--main .btn_consulta_online>a:focus{color:#fff!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online>a .sub-arrow svg{fill:currentColor}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010{background:#fff;box-shadow:inset 0 0 0 1.5px #008488}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010>a{color:#008488!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010:hover{background:#E9F5F5}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010>a:hover{color:#006d70!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu{border-radius:10px}
+@media(min-width:1440px){header.k-38 .k-section-boxed>.k-container{max-width:1360px}
+html[lang|=ru] header.k-38 .k-section-boxed>.k-container,html[lang|=uk] header.k-38 .k-section-boxed>.k-container{max-width:1400px}
+html[lang|=ru] header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item,html[lang|=uk] header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item{padding-left:7px;padding-right:7px;font-size:12px}
+html[lang|=ru] header.k-38 .k-widget-theme-site-logo img,html[lang|=uk] header.k-38 .k-widget-theme-site-logo img{width:150px}
+html[lang|=ru] header.k-38 .ls__code,html[lang|=uk] header.k-38 .ls__code{display:none}}
+/* portátil (1280-1439 px): misma fila, más compacta */
+@media(min-width:1280px) and (max-width:1439px){header.k-38 .k-widget-theme-site-logo img{width:150px}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item{padding-left:7px;padding-right:7px;font-size:12px}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.k-item{padding-left:12px!important;padding-right:12px!important}
+header.k-38 .ls__code{display:none}}
+/* menú desplegable: tablet y móvil como en el WP, y también por debajo de 1280 px (el menú completo no cabe);
+   en ruso y ucraniano, con el menú más largo, por debajo de 1440 px */
+@media(max-width:1279px){
+header.k-38{position:sticky;top:0;z-index:9998;background:#fff;box-shadow:0 2px 12px rgba(23,34,57,.08)}
+header.k-38 .k-section,header.k-38 .k-container,header.k-38 .k-column,header.k-38 .k-widget-wrap,header.k-38 .k-widget-nav-menu,header.k-38 .k-widget-nav-menu>.k-widget-container{position:static}
+header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--dropdown{position:absolute;left:0;right:0;width:100%;top:100%;margin-top:0!important;max-height:calc(100vh - 90px);overflow:auto;z-index:9999}
+.k-nav-menu--dropdown .menu-item-has-children>.sub-menu{position:static;width:100%;min-width:0;max-width:none;display:none;background:rgba(0,0,0,.08)}
+.k-nav-menu--dropdown li.open>.sub-menu{display:block}
+.ls__code{display:none}
+.ls__cur{padding:7px 8px}
+header.k-38 .k-widget-theme-site-logo img{width:150px}
+header.k-38 .ls-widget{order:1;margin-left:auto}
+header.k-38 .k-widget-nav-menu{order:2;margin-left:0}
+header.k-38 .k-element.k-element-c45204a>.k-widget-container{margin:0!important}
+header.k-38 .k-menu-toggle{border-radius:10px;padding:9px}}
+@media(min-width:1025px) and (max-width:1279px){
+header.k-38 .k-nav-menu--dropdown-tablet .k-nav-menu--main{display:none}
+header.k-38 .k-nav-menu--dropdown-tablet .k-menu-toggle{display:flex}
+header.k-38 .k-nav-menu--dropdown-tablet nav.k-nav-menu--dropdown.k-nav-menu__container{display:block}}
+@media(min-width:1280px) and (max-width:1439px){
+html[lang|=ru] header.k-38,html[lang|=uk] header.k-38{position:sticky;top:0;z-index:9998;background:#fff;box-shadow:0 2px 12px rgba(23,34,57,.08)}
+html[lang|=ru] header.k-38 .k-section,html[lang|=ru] header.k-38 .k-container,html[lang|=ru] header.k-38 .k-column,html[lang|=ru] header.k-38 .k-widget-wrap,html[lang|=ru] header.k-38 .k-widget-nav-menu,html[lang|=ru] header.k-38 .k-widget-nav-menu>.k-widget-container,html[lang|=uk] header.k-38 .k-section,html[lang|=uk] header.k-38 .k-container,html[lang|=uk] header.k-38 .k-column,html[lang|=uk] header.k-38 .k-widget-wrap,html[lang|=uk] header.k-38 .k-widget-nav-menu,html[lang|=uk] header.k-38 .k-widget-nav-menu>.k-widget-container{position:static}
+html[lang|=ru] header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--dropdown,html[lang|=uk] header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--dropdown{position:absolute;left:0;right:0;width:100%;top:100%;margin-top:0!important;max-height:calc(100vh - 90px);overflow:auto;z-index:9999}
+html[lang|=ru] .k-nav-menu--dropdown .menu-item-has-children>.sub-menu,html[lang|=uk] .k-nav-menu--dropdown .menu-item-has-children>.sub-menu{position:static;width:100%;min-width:0;max-width:none;display:none;background:rgba(0,0,0,.08)}
+html[lang|=ru] .k-nav-menu--dropdown li.open>.sub-menu,html[lang|=uk] .k-nav-menu--dropdown li.open>.sub-menu{display:block}
+html[lang|=ru] .ls__code,html[lang|=uk] .ls__code{display:none}
+html[lang|=ru] .ls__cur,html[lang|=uk] .ls__cur{padding:7px 8px}
+html[lang|=ru] header.k-38 .k-widget-theme-site-logo img,html[lang|=uk] header.k-38 .k-widget-theme-site-logo img{width:150px}
+html[lang|=ru] header.k-38 .ls-widget,html[lang|=uk] header.k-38 .ls-widget{order:1;margin-left:auto}
+html[lang|=ru] header.k-38 .k-widget-nav-menu,html[lang|=uk] header.k-38 .k-widget-nav-menu{order:2;margin-left:0}
+html[lang|=ru] header.k-38 .k-element.k-element-c45204a>.k-widget-container,html[lang|=uk] header.k-38 .k-element.k-element-c45204a>.k-widget-container{margin:0!important}
+html[lang|=ru] header.k-38 .k-menu-toggle,html[lang|=uk] header.k-38 .k-menu-toggle{border-radius:10px;padding:9px}
+html[lang|=ru] header.k-38 .k-nav-menu--dropdown-tablet .k-nav-menu--main,html[lang|=uk] header.k-38 .k-nav-menu--dropdown-tablet .k-nav-menu--main{display:none}
+html[lang|=ru] header.k-38 .k-nav-menu--dropdown-tablet .k-menu-toggle,html[lang|=uk] header.k-38 .k-nav-menu--dropdown-tablet .k-menu-toggle{display:flex}
+html[lang|=ru] header.k-38 .k-nav-menu--dropdown-tablet nav.k-nav-menu--dropdown.k-nav-menu__container,html[lang|=uk] header.k-38 .k-nav-menu--dropdown-tablet nav.k-nav-menu--dropdown.k-nav-menu__container{display:block}}
+/* cabecera refinada (30/09 noche, petición de Nicols): menú en minúsculas, botones redondos, barra fija con desenfoque */
+header.k-38 .k-element.k-element-ce67a94{padding:14px 0!important;border-bottom:1px solid #ECE7DF;background:rgba(255,255,255,.92)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+header.k-38{position:sticky;top:0;z-index:9998}
+header.k-38 .k-widget-theme-site-logo img{width:160px}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item{text-transform:none;font-size:14px;font-weight:600;letter-spacing:-.1px;color:#172239;padding:10px 12px}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item:hover,header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item.k-item-active,header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item.highlighted,header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-item:focus{color:#008488;fill:#008488}
+header.k-38 .k-nav-menu--main .sub-arrow{opacity:.55}header.k-38 .k-nav-menu--main .sub-arrow svg{width:.8em;height:.8em}
+header.k-38 .k-nav-menu--main .btn_consulta_online{border-radius:999px;margin:0 0 0 10px!important;background:#008488;box-shadow:none}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.k-item{padding:11px 20px!important;color:#fff!important;font-size:14px!important;font-weight:700!important;text-transform:none}
+header.k-38 .k-nav-menu--main .btn_consulta_online:hover{background:#172239}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010{background:transparent;box-shadow:inset 0 0 0 1.5px #172239}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010>a{color:#172239!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010:hover{background:#172239}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010>a:hover{color:#fff!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu{border-radius:14px;margin-top:10px!important;overflow:hidden}
+header.k-38 .k-nav-menu--main .sub-menu{border-radius:14px;background:#fff;box-shadow:0 20px 50px -10px rgba(23,34,57,.25);border:1px solid #ECE7DF}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a{color:#172239;fill:#172239;text-transform:none;font-size:13.5px;font-weight:500;background:#fff}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-nav-menu--dropdown a:hover,header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-nav-menu--dropdown a:focus,header.k-38 .k-element.k-element-c45204a .k-nav-menu--main .k-nav-menu--dropdown a.highlighted{background:#F7F4EF;color:#008488}
+header.k-38 .k-nav-menu--main .btn_consulta_online .sub-menu a{background:#fff}
+header.k-38 .k-nav-menu--main .sub-menu .sub-menu{border-radius:14px}
+header.k-38 .ls__cur{border-radius:999px;border-color:#ECE7DF;color:#172239}
+@media(min-width:1280px){header.k-38 .k-nav-menu--main .k-nav-menu>li:first-child>.k-item{padding-left:0}}
+@media(max-width:1279px){header.k-38 .k-menu-toggle{border-radius:999px;background:#172239}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a{text-transform:none;font-size:15px;font-weight:600;color:#172239;background:#fff}
+header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--dropdown{background:#fff;border-top:1px solid #ECE7DF;box-shadow:0 30px 60px -20px rgba(23,34,57,.3)}
+.k-nav-menu--dropdown .menu-item-has-children>.sub-menu{background:#F7F4EF}}
+/* desplegables: blancos y en minúsculas (misma especificidad que el kit de Elementor) */
+.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown,.k-38 .k-element.k-element-c45204a .k-nav-menu--main .sub-menu{background-color:#fff!important;background:#fff!important;border:1px solid #ECE7DF;border-radius:14px}
+.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a,.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown .k-item,.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown .k-sub-item{color:#172239!important;fill:#172239!important;text-transform:none!important;font-size:13.5px!important;font-weight:500!important;background:transparent!important}
+.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a:hover,.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a:focus,.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a.highlighted,.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a.k-item-active{background:#F7F4EF!important;color:#008488!important}
+.k-38 .k-element.k-element-c45204a .k-nav-menu--main>.k-nav-menu>li>.k-nav-menu--dropdown{margin-top:12px!important}
+@media(max-width:1279px){.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown{border:0;border-radius:0}
+.k-38 .k-element.k-element-c45204a .k-nav-menu--dropdown a{font-size:15px!important;font-weight:600!important}
+.k-nav-menu--dropdown .menu-item-has-children>.sub-menu{background:#F7F4EF!important}}
 /* pie compacto global (build_footer.py) */
 .hn-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .hn-footer{background:var(--b-navy);color:#c9d3df;padding:56px 0 90px;font-size:14px;font-family:Montserrat,sans-serif;line-height:1.6}

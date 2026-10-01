@@ -48,19 +48,21 @@ PROC_H = 'Procedimientos y cirugías plásticas en Barcelona'
 PROC_P = ('En Clínica Belba realizamos cirugías plásticas y reparadoras en Barcelona siempre tras una valoración médica personalizada. '
           'Nuestro objetivo no es transformar, sino mejorar de forma natural, respetando la anatomía y las expectativas reales de cada paciente.')
 # Tarjetas: las de la home actual (mujer) + páginas existentes para hombre
+# Tarjetas: las de la home actual (mujer) + páginas existentes para hombre.
+# Fotos (30/09, petición de Nicols): la imagen propia de la página de destino (versión -800 ya generada), en vez de los iconos de línea.
 CARDS_MUJER = [
-    ('Corporal', '/lipo-vaser/', '/images/2025/12/corporales.webp'),
-    ('Liposucción', '/liposuccion-barcelona/', '/images/2025/12/gluteos.webp'),
-    ('Piernas', '/lifting-de-muslos/', '/images/2025/12/Piernas.webp'),
-    ('Senos', '/aumento-pecho-barcelona/', '/images/2025/12/Senos.webp'),
-    ('Rostro', '/lifting-facial-barcelona/', '/images/2025/12/Rostro.webp'),
-    ('Brazos', '/lifting-de-brazos/', '/images/2025/12/Brazos.webp'),
+    ('Corporal', '/lipo-vaser/', '/images/2026/06/seccion_bg-800.webp'),
+    ('Liposucción', '/liposuccion-barcelona/', '/images/thumbs/liposuccion-barcelona-rh2s3fr124vdy0y4by4q77hk3kznbneg4c7blqzcp4.webp'),
+    ('Piernas', '/lifting-de-muslos/', '/images/2026/03/Lifting-de-muslos-800.webp'),
+    ('Senos', '/aumento-pecho-barcelona/', '/images/2026/01/aumento-de-pecho-en-barcelona-800.webp'),
+    ('Rostro', '/lifting-facial-barcelona/', '/images/2026/03/Lifting-facial-BELBA-800.webp'),
+    ('Brazos', '/lifting-de-brazos/', '/images/2026/03/Lifting-de-brazos-800.webp'),
 ]
 CARDS_HOMBRE = [
-    ('Ginecomastia', '/ginecomastia-barcelona/', '/images/2025/12/hombres.webp'),
-    ('Rinoplastia', '/rinoplastia-barcelona/', '/images/2026/06/Rinoplastia-en-hombre.webp'),
+    ('Ginecomastia', '/ginecomastia-barcelona/', '/images/2025/11/ginecomastia-barcelona-2-800.webp'),
+    ('Rinoplastia', '/rinoplastia-barcelona/', '/images/2026/06/Rinoplastia-en-hombres-800.webp'),
     ('Lipo HD', '/liposuccion-de-alta-definicion/', '/images/2025/11/liposuccion-alta-definicion-barcelona.webp'),
-    ('Blefaroplastia', '/blefaroplastia/', '/images/thumbs/Blefaroplastia-Editado-e1777911355146-rmyxdl8gpty8oq4q9pf2p0hjh447yhorhn83vtig3g.webp'),
+    ('Blefaroplastia', '/blefaroplastia/', '/images/2026/03/BLEFAROPLASTIA-SUPERIOR-800.webp'),
     ('Otoplastia', '/otoplastia/', '/images/thumbs/descarga-20-rkehqg2z3vfiyr9drlgx6wf7q74nzr9uiqk5wuyqyk.webp'),
     ('Mentoplastia', '/mentoplastia-barcelona/', '/images/thumbs/mentoplastia-Barcelona-rifb4486vi7jabtk95kvhyj8hsz56pzbe7akd1dn24.webp'),
 ]
@@ -100,6 +102,9 @@ DOCS = [
      '«No se trata de hacer más cirugía, sino de hacer la adecuada.»',
      'Con amplia experiencia en cirugía plástica y reparadora, destaca por su criterio médico y su enfoque conservador cuando el caso lo permite. En mamoplastia, trabaja con técnicas que reducen el impacto quirúrgico, minimizan el tiempo de recuperación y favorecen una evolución postoperatoria controlada, siempre dentro del entorno hospitalario seguro del Grupo Teknon y el Hospital Tres Torres.'),
 ]
+# palabras del H1 que van en turquesa (solo un <em>, el texto no cambia)
+HL = {'es': 'cirugía plástica', 'ca': 'cirurgia plàstica', 'en': 'Plastic surgery', 'fr': 'chirurgie plastique', 'de': 'plastische Chirurgie',
+      'it': 'chirurgia plastica', 'nl': 'plastische chirurgie', 'ru': 'пластической хирургии', 'uk': 'пластичної хірургії'}
 import datetime
 YEAR = datetime.date.today().year
 NAP = {'dir1': 'Via Augusta, 281, planta 4A', 'dir2': '08017 Barcelona', 'tel': '+34 613 16 34 47', 'tel_href': 'tel:34613163447',
@@ -122,7 +127,8 @@ def card(t, href, img):
     return f'<a class="hn-card" href="{href}"><img src="{img}" alt="{e(t)}" loading="lazy" decoding="async"><span>{e(t)}</span></a>'
 
 def body(lang, t, lb, ti_html, n_res, page_path):
-    """t = textos del idioma (home_i18n.T), lb = etiquetas del menú traducido (href -> texto)."""
+    """t = textos del idioma (home_i18n.T), lb = etiquetas del menú traducido (href -> texto).
+    Diseño editorial premium (30/09, petición de Nicols): estructura y aspecto nuevos; textos, enlaces y formularios literales."""
     H = lambda p: href(p, lang)
     L = lambda p, fb: lb.get(__import__('urllib.parse').parse.unquote(H(p)).lower(), fb)
     form = forms_native.render('iOSo1PBX', lang, page_path, uid='hnform')
@@ -132,49 +138,68 @@ def body(lang, t, lb, ti_html, n_res, page_path):
     cards_h = ''.join(card(n, H(h), img) for n, (_, h, img) in zip(t['cards_h'], CARDS_HOMBRE))
     trat = ''.join(
         f'<article class="hn-trat"><a href="{H(hr)}" class="hn-trat__img"><img src="{img}" alt="{e(L(hr, name))}" loading="lazy" decoding="async"></a>'
-        f'<h3><a href="{H(hr)}">{e(L(hr, name))}</a></h3>' + (f'<p class="hn-trat__claim">{e(claim)}</p>' if claim else '') +
-        '<ul>' + ''.join(f'<li><a href="{H(h2)}">{e(L(h2, n))}</a></li>' for n, h2 in items) + '</ul></article>'
+        f'<div class="hn-trat__body"><h3><a href="{H(hr)}">{e(L(hr, name))}</a></h3>' + (f'<p class="hn-trat__claim">{e(claim)}</p>' if claim else '') +
+        '<ul>' + ''.join(f'<li><a href="{H(h2)}">{e(L(h2, n))}</a></li>' for n, h2 in items) + '</ul></div></article>'
         for (name, hr, _, img, items), claim in zip(TRAT, t['claims']))
     docs = ''.join(
-        f'<article class="hn-doc"><a href="{H(hr)}"><img src="{img}" alt="{e(n)}" loading="lazy" decoding="async"></a>'
+        f'<article class="hn-doc"><a href="{H(hr)}" class="hn-doc__img"><img src="{img}" alt="{e(n)}" loading="lazy" decoding="async"></a>'
         f'<h3><a href="{H(hr)}">{e(n)}</a></h3><p class="hn-doc__rol">{e(rol)}</p>' + (f'<p class="hn-doc__cita">{e(cita)}</p>' if cita else '') +
         f'<p class="hn-doc__bio">{e(bio)}</p></article>'
         for (n, _, img, hr, _, _), (rol, cita, bio) in zip(DOCS, t['docs']))
+    eb = t['hero_eyebrow'].rsplit(' · ', 1)
+    eyebrow = (e(eb[0]) + ' · <span class="hn-badge">' + e(eb[1]) + '</span>') if len(eb) == 2 else e(t['hero_eyebrow'])
+    hl = HL.get(lang)
+    h1 = e(t['hero_h1']).replace(e(hl), '<em>' + e(hl) + '</em>', 1) if hl and hl in t['hero_h1'] else e(t['hero_h1'])
+    avatars = ''.join(f'<img src="{img}" alt="" loading="lazy" decoding="async">' for (_, _, img, _, _, _) in DOCS)
     hosp_p = e(t['hosp_p']).replace('{teknon}', f'<a href="{H("/cirujanos-plasticos-barcelona/")}">{e(t["teknon"])}</a>')
+    filo_items = ''.join(f'<li><p>{e(x)}</p></li>' for x in t['filo_list'])
     return f"""
 <div class="hn">
 <section class="hn-hero">
-  <div class="hn-hero__bg" aria-hidden="true"></div>
   <div class="hn-wrap hn-hero__grid">
     <div class="hn-hero__txt">
-      <p class="hn-eyebrow">{e(t['hero_eyebrow'])}</p>
-      <h1>{e(t['hero_h1'])}</h1>
+      <p class="hn-eyebrow hn-eyebrow--hero">{eyebrow}</p>
+      <h1>{h1}</h1>
       <p class="hn-hero__sub">{e(t['hero_sub'])}</p>
       <p class="hn-hero__p">{e(t['hero_p'])}</p>
+      <p class="hn-hero__actions"><a class="hn-cta hn-cta--lg" href="#valoracion">{e(t['cta'])}<span class="hn-arrow" aria-hidden="true">→</span></a></p>
+      <p class="hn-hero__tel"><a href="{NAP['tel_href']}"><span class="hn-tel-ico" aria-hidden="true"></span>{e(NAP['tel'])}</a></p>
+      <div class="hn-hero__trust">
+        <a class="hn-trust hn-trust--g" href="#resenas"><span class="hn-g" aria-hidden="true">G</span><span class="hn-stars" aria-hidden="true">★★★★★</span><span>{e(t['proof'].format(n=n_res))}</span></a>
+        <a class="hn-trust" href="{H('/cirujanos-plasticos-barcelona/')}"><span class="hn-avatars" aria-hidden="true">{avatars}</span><span>{e(t['equipo_h'])}</span></a>
+        <a class="hn-trust hn-trust--link" href="#procedimientos">{e(t['ver_proc'])}</a>
+      </div>
       <nav class="hn-pills" aria-label="{e(t['areas'])}">
         <a href="{H('/cirugia-facial/')}">{e(L('/cirugia-facial/', 'Cirugía facial'))}</a><a href="{H('/cirugia-de-la-mama/')}">{e(L('/cirugia-de-la-mama/', 'Cirugía de la mama'))}</a><a href="{H('/cirugia-corporal/')}">{e(L('/cirugia-corporal/', 'Cirugía corporal'))}</a><a href="{H('/cirugia-intima/')}" data-only="mujer">{e(L('/cirugia-intima/', 'Cirugía íntima'))}</a><a href="{H('/ginecomastia-barcelona/')}" data-only="hombre">{e(t['gineco'])}</a>
       </nav>
-      <p class="hn-hero__proof"><a href="#resenas">{e(t['proof'].format(n=n_res))}</a> · <a href="#procedimientos">{e(t['ver_proc'])}</a></p>
     </div>
-    <div class="hn-hero__form" id="valoracion">
-      <p class="hn-hero__formtitle">{e(t['cta'])}</p>
-      <p class="hn-hero__formsub">{e(t['form_sub'])}</p>
-      {form_hero}
+    <div class="hn-hero__side">
+      <div class="hn-slider" data-slider aria-hidden="true">
+        <img src="/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp" alt="" class="is-on" loading="eager" decoding="async">
+        <img src="/images/2026/04/Primera-consulta-de-cirugia-estetica-BELBA.webp" alt="" loading="lazy" decoding="async">
+        <img src="/images/2025/12/centro-medico-teknon-1.webp" alt="" loading="lazy" decoding="async">
+        <span class="hn-slider__dots"><i class="is-on"></i><i></i><i></i></span>
+        <span class="hn-logos"><span>{e(t['logos'])}</span><img src="/images/2025/12/quiron-salud-tekon.webp" alt="Quirónsalud y Centro Médico Teknon" loading="lazy" decoding="async"></span>
+      </div>
+      <div class="hn-hero__form" id="valoracion">
+        <p class="hn-hero__formtitle">{e(t['cta'])}</p>
+        <p class="hn-hero__formsub">{e(t['form_sub'])}</p>
+        {form_hero}
+      </div>
     </div>
   </div>
-  <div class="hn-wrap hn-logos"><span>{e(t['logos'])}</span><img src="/images/2025/12/quiron-salud-tekon.webp" alt="Quirónsalud y Centro Médico Teknon" loading="lazy" decoding="async"></div>
 </section>
 
 <section class="hn-filo">
   <div class="hn-wrap hn-filo__grid">
-    <figure class="hn-filo__img"><img src="/images/2026/04/Primera-consulta-de-cirugia-estetica-BELBA.webp" alt="{e(t['filo_alt'])}" loading="lazy" decoding="async"></figure>
-    <div>
+    <div class="hn-filo__txt">
       <p class="hn-eyebrow">{e(t['filo_eyebrow'])}</p>
       <h2>{e(t['filo_h'])}</h2>
-      {''.join(f'<p>{e(p)}</p>' for p in t['filo_p'])}
-      <ul class="hn-checks">{''.join(f'<li>{e(x)}</li>' for x in t['filo_list'])}</ul>
+      {''.join(f'<p class="hn-lead">{e(p)}</p>' for p in t['filo_p'])}
+      <ol class="hn-steps">{filo_items}</ol>
       <p class="hn-strong">{e(t['filo_fin'])}</p>
     </div>
+    <figure class="hn-filo__img"><img src="/images/2026/04/Primera-consulta-de-cirugia-estetica-BELBA.webp" alt="{e(t['filo_alt'])}" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -182,42 +207,43 @@ def body(lang, t, lb, ti_html, n_res, page_path):
   <div class="hn-wrap">
     <div class="hn-proc__head">
       <div><p class="hn-eyebrow">{e(t['proc_eyebrow'])}</p><h2>{e(t['proc_h'])}</h2></div>
-      <div><p>{e(t['proc_p'])}</p>
-        <div class="hn-sel hn-sel--sm" role="tablist"><button type="button" class="hn-sel__btn is-on" data-sel="mujer" role="tab" aria-selected="true">{e(t['mujer'])}</button><button type="button" class="hn-sel__btn" data-sel="hombre" role="tab" aria-selected="false">{e(t['hombre'])}</button></div>
-      </div>
+      <p class="hn-lead">{e(t['proc_p'])}</p>
     </div>
-    <div class="hn-cards" data-for="mujer">{cards_m}</div>
-    <div class="hn-cards" data-for="hombre" hidden>{cards_h}</div>
+    <div class="hn-cards">{cards_m}{cards_h}</div>
   </div>
 </section>
 
 <section class="hn-trats">
   <div class="hn-wrap">
-    <p class="hn-eyebrow">{e(t['trat_eyebrow'])}</p>
-    <h2>{e(t['trat_h'])}</h2>
-    <p class="hn-lead">{e(t['trat_sub'])}</p>
+    <div class="hn-trats__head">
+      <div><p class="hn-eyebrow">{e(t['trat_eyebrow'])}</p><h2>{e(t['trat_h'])}</h2></div>
+      <p class="hn-lead">{e(t['trat_sub'])}</p>
+    </div>
     <div class="hn-trats__grid">{trat}</div>
   </div>
 </section>
 
 <section class="hn-hosp">
-  <div class="hn-wrap hn-hosp__grid">
-    <div>
-      <p class="hn-eyebrow">{e(t['hosp_eyebrow'])}</p>
-      <h2>{e(t['hosp_h'])}</h2>
-      <h3>{e(t['hosp_sub'])}</h3>
-      <p>{hosp_p}</p>
-      <a class="k-button k-button-link k-size-sm hn-cta" href="{H('/consulta-online/')}"><span class="k-button-text">{e(t['cita'])}</span></a>
+  <div class="hn-wrap">
+    <div class="hn-hosp__band">
+      <img src="/images/2025/12/centro-medico-teknon-1.webp" alt="{e(t['hosp_alt'])}" loading="lazy" decoding="async">
+      <div class="hn-hosp__card">
+        <p class="hn-eyebrow">{e(t['hosp_eyebrow'])}</p>
+        <h2>{e(t['hosp_h'])}</h2>
+        <h3>{e(t['hosp_sub'])}</h3>
+        <p>{hosp_p}</p>
+        <a class="k-button k-button-link k-size-sm hn-cta" href="{H('/consulta-online/')}"><span class="k-button-text">{e(t['cita'])}</span></a>
+      </div>
     </div>
-    <figure><img src="/images/2025/12/centro-medico-teknon-1.webp" alt="{e(t['hosp_alt'])}" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
 <section class="hn-equipo">
   <div class="hn-wrap">
-    <p class="hn-eyebrow">{e(t['equipo_eyebrow'])}</p>
-    <h2>{e(t['equipo_h'])}</h2>
-    <p class="hn-lead">{e(t['equipo_p'])}</p>
+    <div class="hn-equipo__head">
+      <div><p class="hn-eyebrow">{e(t['equipo_eyebrow'])}</p><h2>{e(t['equipo_h'])}</h2></div>
+      <p class="hn-lead">{e(t['equipo_p'])}</p>
+    </div>
     <div class="hn-docs">{docs}</div>
   </div>
 </section>
@@ -231,7 +257,7 @@ def body(lang, t, lb, ti_html, n_res, page_path):
     <div>
       <p class="hn-eyebrow">{e(t['form_eyebrow'])}</p>
       <h2>{e(t['form_h'])}</h2>
-      <p>{e(t['form_p'])}</p>
+      <p class="hn-lead">{e(t['form_p'])}</p>
       <ul class="hn-nap">
         <li><a href="{NAP['maps']}" target="_blank" rel="noopener">{e(NAP['dir1'])}, {e(NAP['dir2'])}</a></li>
         <li><a href="{NAP['tel_href']}">{e(NAP['tel'])}</a> · <a href="{NAP['wa']}" target="_blank" rel="noopener">WhatsApp</a></li>
@@ -245,11 +271,11 @@ def body(lang, t, lb, ti_html, n_res, page_path):
 
 <section class="hn-mapa">
   <div class="hn-wrap hn-mapa__grid">
-    <div>
+    <div class="hn-mapa__txt">
       <p class="hn-eyebrow">{e(t['mapa_eyebrow'])}</p>
       <h2>{e(t['mapa_h'])}</h2>
       <p>{e(t['mapa_p'])}</p>
-      <a class="k-button k-button-link k-size-sm hn-cta" href="{NAP['maps']}" target="_blank" rel="noopener"><span class="k-button-text">{e(t['ver_maps'])}</span></a>
+      <a class="k-button k-button-link k-size-sm hn-cta hn-cta--ghost" href="{NAP['maps']}" target="_blank" rel="noopener"><span class="k-button-text">{e(t['ver_maps'])}</span></a>
     </div>
     <iframe class="hn-mapa__iframe" loading="lazy" src="{NAP['embed']}" title="{e(t['mapa_title'])}" aria-label="Clínica Belba"></iframe>
   </div>
@@ -258,88 +284,167 @@ def body(lang, t, lb, ti_html, n_res, page_path):
 """
 
 CSS = '''
-.hn{--navy:#172239;--navy2:#143852;--teal:#008488;--sky:#D3E4EA;--grey:#F3F5F4;--text:#333;font-family:Montserrat,sans-serif;color:var(--text);line-height:1.6}
-.hn .hn-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-.hn h1,.hn h2,.hn h3{font-family:Montserrat,sans-serif;color:var(--navy);margin:0 0 .5em;line-height:1.2}
-.hn h1{font-size:44px;font-weight:700}.hn h2{font-size:32px;font-weight:600}.hn h3{font-size:20px;font-weight:600}
+/* Home · editorial premium (30/09). Solo presentación: textos, enlaces, formularios y medición literales. */
+.hn{--ivory:#F7F4EF;--sand:#EFE9E1;--line:#E3DCD2;--navy:#172239;--navy2:#2C3A52;--teal:#008488;--teal-d:#006d70;--muted:#6B6560;--text:#2E2A26;
+font-family:Montserrat,sans-serif;color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;background:#fff}
+.hn .hn-wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.hn h1,.hn h2,.hn h3{font-family:Montserrat,sans-serif;color:var(--navy);margin:0 0 .5em;line-height:1.1}
+.hn h1{font-size:64px;font-weight:300;letter-spacing:-2.5px}
+.hn h2{font-size:44px;font-weight:300;letter-spacing:-1.6px;max-width:15em}
+.hn h3{font-size:19px;font-weight:500;letter-spacing:-.2px}
 .hn p{margin:0 0 1em}.hn a{color:var(--teal)}
-.hn .hn-eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:12px}
-.hn .hn-lead{font-size:18px;max-width:760px}
-.hn .hn-cta{display:inline-flex;align-items:center;background:var(--teal);color:#fff;border-radius:14px;padding:14px 26px;font-weight:600;text-decoration:none;font-size:15px}
-.hn .hn-cta:hover{background:#006d70;color:#fff}
-.hn section{padding:72px 0}
+.hn .hn-eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:0 0 20px}
+.hn .hn-lead{font-size:16px;color:var(--muted);max-width:34em;font-weight:400}
+.hn .hn-cta{display:inline-flex;align-items:center;background:var(--navy);color:#fff;border-radius:999px;padding:16px 30px;font-weight:500;text-decoration:none;font-size:14px;letter-spacing:.02em;transition:background .25s,color .25s}
+.hn .hn-cta:hover{background:var(--teal);color:#fff}
+.hn .hn-cta--ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.hn .hn-cta--ghost:hover{background:var(--navy);color:#fff}
+.hn section{padding:88px 0}
 .hn [hidden]{display:none!important}
+/* cabeceras de sección a dos columnas */
+.hn-proc__head,.hn-trats__head,.hn-equipo__head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.hn-proc__head h2,.hn-trats__head h2,.hn-equipo__head h2{margin-bottom:0;font-size:38px}
+.hn-proc__head .hn-lead,.hn-trats__head .hn-lead,.hn-equipo__head .hn-lead{margin-bottom:.4em}
 /* hero */
-.hn-hero{position:relative;background:var(--navy);color:#fff;padding-bottom:0!important;overflow:hidden}
-.hn-hero__bg{position:absolute;inset:0;background:url(/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp) center 30%/cover no-repeat;filter:saturate(.85);opacity:.6;transform:scale(1.02)}
-.hn-hero__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,34,57,.95) 0%,rgba(23,34,57,.82) 50%,rgba(20,56,82,.35) 100%)}
-.hn-hero .hn-wrap{position:relative}
-.hn-hero__form{background:#fff;border-radius:22px;padding:22px 22px 8px;box-shadow:0 30px 60px rgba(0,0,0,.35);color:var(--text)}
-.hn-hero__formtitle{font-weight:700;color:var(--navy);font-size:20px;margin:0 0 4px}.hn-hero__formsub{font-size:13px;color:#666;margin:0 0 10px}
-.hn-hero__form .belba-form{box-shadow:none;padding:0 0 12px;max-width:none}
-.belba-form--compact .bf-title{font-size:17px}.belba-form--compact .bf-choice{padding:10px 12px;font-size:14px}.belba-form--compact .bf-choices{grid-template-columns:1fr 1fr}
+.hn-hero{background:var(--ivory);padding:40px 0 48px!important;min-height:calc(100vh - 104px);display:flex;align-items:center;overflow:hidden}
+.hn-hero>.hn-wrap{width:100%}
+.hn-hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hn-hero h1{font-size:62px;font-weight:800;letter-spacing:-2.4px;line-height:.98;margin:0 0 20px;color:var(--navy)}
+.hn-hero h1 em{font-style:normal;color:var(--teal);display:block}
+.hn-eyebrow--hero{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.hn-badge{display:inline-block;background:var(--teal);color:#fff;border-radius:999px;padding:5px 12px;font-size:11px;letter-spacing:.14em}
+.hn-hero__sub{font-size:18px;font-weight:600;color:var(--navy);letter-spacing:-.3px;max-width:26em;margin-bottom:.5em}
+.hn-hero__p{font-size:15px;color:var(--muted);max-width:34em;margin-bottom:18px;line-height:1.6}
+.hn-hero__actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin:0 0 20px}
+.hn .hn-cta--lg{background:var(--teal);font-size:16px;font-weight:700;padding:20px 34px;gap:10px;letter-spacing:0}
+.hn .hn-cta--lg:hover{background:var(--navy)}
+.hn-arrow{font-family:Montserrat,sans-serif;transition:transform .2s}.hn-cta--lg:hover .hn-arrow{transform:translateX(4px)}
+.hn-hero__tel{margin:0}
+.hn-hero__tel a{display:inline-flex;align-items:center;gap:10px;font-size:26px;font-weight:800;letter-spacing:-1px;color:var(--navy);text-decoration:none}
+.hn-hero__tel a:hover{color:var(--teal)}
+.hn-tel-ico{width:20px;height:20px;background:var(--teal);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z'/%3E%3C/svg%3E") center/contain no-repeat}
+.hn-hero__trust{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.hn-trust{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-size:13px;font-weight:600}
+.hn-trust--g{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.hn-trust--link{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
+.hn-g{font-weight:800;font-size:16px;color:#4285F4}.hn-stars{color:#F5B301;letter-spacing:1px;font-size:13px}
+.hn-avatars{display:inline-flex}.hn-avatars img{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid #fff;margin-left:-10px;background:var(--sand)}
+.hn-avatars img:first-child{margin-left:0}
+.hn-pills{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.hn-pills a{color:var(--navy);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.hn-pills a:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+/* columna derecha: slider + formulario */
+.hn-hero__side{position:relative}
+.hn-slider{position:relative;aspect-ratio:16/10;border-radius:16px;overflow:hidden;background:var(--navy)}
+.hn-slider>img{position:absolute;inset:-12% 0;height:124%;width:100%;object-fit:cover;object-position:center 35%;opacity:0;transition:opacity 1.2s ease;will-change:transform}
+.hn-slider>img.is-on{opacity:1}
+.hn-slider__dots{position:absolute;right:18px;bottom:18px;display:flex;gap:6px}
+.hn-slider__dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5);transition:background .3s,width .3s}
+.hn-slider__dots i.is-on{background:#fff;width:20px;border-radius:4px}
+.hn .hn-logos{position:absolute;left:18px;top:18px;display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:8px 12px;border-radius:10px}
+.hn-logos span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.hn-logos img{height:28px;width:auto;display:block}
+.hn-hero__form{position:relative;margin:-48px 24px 0;background:#fff;border-radius:16px;padding:22px 24px 8px;box-shadow:0 1px 0 var(--line),0 30px 60px -20px rgba(23,34,57,.25)}
+.hn-hero__formtitle{font-weight:700;color:var(--navy);font-size:20px;margin:0 0 4px;letter-spacing:-.4px}.hn-hero__formsub{font-size:13px;color:var(--muted);margin:0 0 12px}
+.hn-hero__form .belba-form{box-shadow:none;padding:0 0 12px;max-width:none;border-radius:0}
+.belba-form--compact .bf-title{font-size:17px}.belba-form--compact .bf-choice{padding:11px 14px;font-size:14px}.belba-form--compact .bf-choices{grid-template-columns:1fr 1fr}
 .belba-form--compact .bf-progress{margin-bottom:14px}
-.hn-hero h1{color:#fff}.hn-hero .hn-eyebrow{color:#9fd8d9}
-.hn-hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-bottom:56px}
-.hn-hero__sub{font-size:20px;font-weight:500;color:#e6f2f2}.hn-hero__p{color:#d3e4ea;font-size:16px}
-.hn-hero__proof{margin-top:6px;font-size:14px}.hn-hero__proof a{color:#e6f2f2}
-.hn-sel{display:inline-flex;background:rgba(255,255,255,.12);border-radius:999px;padding:4px;margin:8px 0 14px}
-.hn-sel__btn{border:0;background:transparent;color:#fff;font:600 14px Montserrat,sans-serif;padding:8px 20px;border-radius:999px;cursor:pointer}
-.hn-sel__btn.is-on{background:#fff;color:var(--navy)}
-.hn-sel--sm{background:var(--grey)}.hn-sel--sm .hn-sel__btn{color:var(--navy)}.hn-sel--sm .hn-sel__btn.is-on{background:var(--teal);color:#fff}
-.hn-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
-.hn-pills a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600}
-.hn-pills a:hover{background:#fff;color:var(--navy)}
-.hn-logos{display:flex;align-items:center;gap:24px;padding-top:20px;padding-bottom:20px;border-top:1px solid rgba(255,255,255,.15)}
-.hn-logos span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#9fd8d9}
-.hn-logos img{height:44px;width:auto;background:#fff;border-radius:8px;padding:6px 14px}
 /* filosofía */
-.hn-filo__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
-.hn-filo__img{margin:0}.hn-filo__img img{width:100%;height:auto;border-radius:20px;display:block}
-.hn-checks{list-style:none;padding:0;margin:0 0 18px}.hn-checks li{padding:8px 0 8px 34px;position:relative;font-weight:500}
-.hn-checks li::before{content:"";position:absolute;left:0;top:11px;width:20px;height:20px;border-radius:50%;background:var(--teal);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E") center/70% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E") center/70% no-repeat}
-.hn-strong{font-weight:600;color:var(--navy)}
+.hn-filo__grid{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
+.hn-filo__img{margin:0}.hn-filo__img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;border-radius:6px}
+.hn-steps{list-style:none;padding:0;margin:36px 0 28px;border-top:1px solid var(--line);counter-reset:hnstep}
+.hn-steps li{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);counter-increment:hnstep}
+.hn-steps li::before{content:counter(hnstep,decimal-leading-zero);font-size:12px;letter-spacing:.2em;color:var(--teal);font-weight:600}
+.hn-steps li p{margin:0;font-size:16px;color:var(--navy);font-weight:500;line-height:1.5}
+.hn-strong{font-size:20px;font-weight:300;color:var(--navy);letter-spacing:-.4px}
 /* procedimientos */
-.hn-proc{background:var(--grey)}
-.hn-proc__head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:28px}
-.hn-cards{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.hn-card{position:relative;display:block;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:var(--navy);text-decoration:none}
-.hn-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
-.hn-card:hover img{transform:scale(1.05)}
-.hn-card span{position:absolute;left:0;right:0;bottom:0;padding:44px 14px 14px;color:#fff;font-weight:600;font-size:15px;background:linear-gradient(180deg,transparent,rgba(23,34,57,.9))}
+.hn-proc{background:var(--ivory)}
+.hn-sel{display:inline-flex;gap:36px;margin:-12px 0 36px;border-bottom:1px solid var(--line)}
+.hn-sel__btn{position:relative;border:0;background:none;padding:12px 2px 16px;font:500 15px Montserrat,sans-serif;color:var(--muted);cursor:pointer;transition:color .2s}
+.hn-sel__btn::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--navy);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.hn .hn-sel__btn:hover,.hn .hn-sel__btn:focus{background:none;color:var(--navy)}
+.hn-sel__btn.is-on{color:var(--navy)}.hn-sel__btn.is-on::after{transform:scaleX(1)}
+.hn-cards{display:grid;grid-template-columns:repeat(6,1fr);gap:18px 16px;counter-reset:hncard}
+.hn-card{display:block;text-decoration:none;counter-increment:hncard;min-width:0}
+.hn-card span{overflow-wrap:anywhere}
+.hn-card img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 30%;display:block;border-radius:6px;background:var(--sand);transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.hn-card:hover img{opacity:.92;transform:scale(1.04)}
+.hn-card span{display:flex;align-items:baseline;gap:8px;padding:10px 2px 0;color:var(--navy);font-weight:600;font-size:14px;letter-spacing:-.1px}
+.hn-card span::before{content:counter(hncard,decimal-leading-zero);font-size:11px;letter-spacing:.2em;color:var(--teal);font-weight:600}
 /* tratamientos */
-.hn-trats__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:28px}
-.hn-trat{background:#fff;border:1px solid #e6ecee;border-radius:18px;overflow:hidden}
-.hn-trat__img{display:block;aspect-ratio:4/3;overflow:hidden}.hn-trat__img img{width:100%;height:100%;object-fit:cover;display:block}
-.hn-trat h3{padding:18px 20px 0}.hn-trat h3 a{color:var(--navy);text-decoration:none}
-.hn-trat__claim{padding:0 20px;font-size:14px;color:#666}
-.hn-trat ul{list-style:none;margin:0;padding:6px 20px 20px}.hn-trat li{padding:5px 0;border-top:1px solid #eef2f3;font-size:14px}
-.hn-trat li a{color:var(--navy2);text-decoration:none}.hn-trat li a:hover{color:var(--teal)}
+.hn-trats__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.hn-trat{display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.7,.2,1)}.hn-trat:hover{transform:translateY(-4px)}
+.hn-trat__img{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:6px;background:var(--sand)}
+.hn-trat__img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.hn-trat:hover .hn-trat__img img{transform:scale(1.03)}
+.hn-trat__body{padding-top:18px}
+.hn-trat h3{margin-bottom:6px}.hn-trat h3 a{color:var(--navy);text-decoration:none;transition:color .2s}.hn-trat h3 a:hover{color:var(--teal)}
+.hn-trat__claim{font-size:13px;color:var(--muted);margin-bottom:10px!important;font-style:italic;min-height:2.6em}
+.hn-trat ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.hn-trat li{border-bottom:1px solid var(--line);font-size:13.5px}
+.hn-trat li a{display:block;padding:8px 0;color:var(--navy2);text-decoration:none;transition:color .2s,padding .2s}
+.hn-trat li a:hover{color:var(--teal);padding-left:6px}
 /* hospital */
-.hn-hosp{background:var(--sky)}
-.hn-hosp__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-.hn-hosp figure{margin:0}.hn-hosp img{width:100%;height:auto;border-radius:20px;display:block}
-.hn-hosp h3{font-size:18px;color:var(--teal);font-weight:500}
+.hn-hosp{padding-top:0!important}
+.hn-hosp__band{position:relative;min-height:560px;border-radius:6px;overflow:hidden;display:flex;align-items:center;padding:64px}
+.hn-hosp__band>img{position:absolute;inset:-15% 0;width:100%;height:130%;object-fit:cover;object-position:center;display:block;will-change:transform}
+.hn-hosp__card{position:relative;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:6px;padding:48px 44px 40px;max-width:560px}
+.hn-hosp__card h2{font-size:34px;letter-spacing:-1px}
+.hn-hosp h3{font-size:16px;color:var(--teal);font-weight:500;margin-bottom:16px}
+.hn-hosp p{color:var(--muted);font-size:15px}
 /* equipo */
-.hn-docs{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:28px}
-.hn-doc img{width:100%;aspect-ratio:1;object-fit:cover;object-position:top;border-radius:18px;display:block;margin-bottom:14px;background:var(--grey)}
-.hn-doc h3{font-size:18px}.hn-doc h3 a{color:var(--navy);text-decoration:none}
-.hn-doc__rol{color:var(--teal);font-weight:600;font-size:14px}.hn-doc__cita{font-style:italic;color:var(--navy2);font-size:14px}.hn-doc__bio{font-size:14px;color:#555}
+.hn-docs{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.hn-doc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 14px 22px;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.hn-doc:hover{transform:translateY(-6px);box-shadow:0 30px 60px -24px rgba(23,34,57,.28);border-color:transparent}
+.hn-doc h3,.hn-doc p{padding:0 6px}
+.hn-doc__img{display:block;aspect-ratio:1;overflow:hidden;border-radius:12px;background:var(--sand);margin-bottom:16px}
+.hn-doc__img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.hn-doc:hover .hn-doc__img img{transform:scale(1.03)}
+.hn-doc h3{font-size:17px;margin-bottom:2px}.hn-doc h3 a{color:var(--navy);text-decoration:none}.hn-doc h3 a:hover{color:var(--teal)}
+.hn-doc__rol{color:var(--teal);font-weight:600;font-size:12px;margin-bottom:10px}
+.hn-doc__cita{font-style:italic;color:var(--navy);font-size:14px;font-weight:400;line-height:1.5;padding:12px 14px!important;background:var(--ivory);border-radius:10px;margin:0 0 14px;border:0}
+.hn-doc__bio{font-size:13.5px;color:var(--muted);line-height:1.6;margin:0}
 /* reseñas */
-.hn-resenas{background:var(--grey)}
+.hn-resenas{background:var(--ivory)}
+.hn-resenas h2{margin-bottom:40px}
 /* formulario */
-.hn-form__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.hn-nap{list-style:none;padding:0;margin:0}.hn-nap li{padding:8px 0;border-top:1px solid #eef2f3}
-.hn-form .belba-form{box-shadow:0 12px 40px rgba(23,34,57,.12)}
+.hn-form__grid{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start}
+.hn-nap{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid var(--line)}.hn-nap li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--navy)}
+.hn-nap a{color:var(--navy);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}.hn-nap a:hover{border-color:var(--navy)}
+.hn-form .belba-form{border:1px solid var(--line);box-shadow:none;border-radius:6px;padding:36px 32px;background:#fff}
 /* mapa */
-.hn-mapa{background:var(--teal);color:#fff}.hn-mapa h2{color:#fff}.hn-mapa .hn-eyebrow{color:#cfeeee}
-.hn-mapa__grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center}
-.hn-mapa .hn-cta{background:#fff;color:var(--teal)}
-.hn-mapa__iframe{width:100%;height:380px;border:0;border-radius:20px;display:block}
-@media(max-width:1024px){.hn-cards{grid-template-columns:repeat(3,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:820px){.hn h1{font-size:32px}.hn h2{font-size:26px}.hn section{padding:52px 0}
-.hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-hosp__grid,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
-.hn-cards{grid-template-columns:repeat(2,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:1fr}.hn-logos{flex-wrap:wrap}}
+.hn-mapa{background:var(--sand);padding:0!important}
+.hn-mapa__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:0;align-items:stretch;padding:0 32px}
+.hn-mapa__txt{padding:96px 64px 96px 0}
+.hn-mapa p{color:var(--muted);max-width:26em}
+.hn-mapa__iframe{width:100%;height:100%;min-height:480px;border:0;display:block;filter:saturate(.7);background:var(--line)}
+/* aparición al hacer scroll y parallax (site JS de la home) */
+.hn .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0)*70ms)}
+.hn .rv.in{opacity:1;transform:none}
+.hn .rv.in:hover{transition-delay:0s}
+/* accesibilidad y movimiento */
+.hn a:focus-visible,.hn button:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.hn *{transition:none!important}.hn .rv{opacity:1;transform:none}.hn-card:hover img,.hn-trat:hover .hn-trat__img img,.hn-doc:hover .hn-doc__img img{transform:none}}
+/* responsive */
+@media(max-width:1100px){.hn h1{font-size:52px}.hn h2{font-size:38px}
+.hn-hero h1{font-size:56px;letter-spacing:-2px}.hn-hero__tel a{font-size:24px}
+.hn-cards{grid-template-columns:repeat(4,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:repeat(2,1fr);gap:40px 28px}
+.hn-proc__head h2,.hn-trats__head h2,.hn-equipo__head h2{font-size:32px}
+.hn-filo__grid,.hn-form__grid{gap:56px}.hn-hero__grid{gap:48px}}
+@media(max-width:820px){.hn .hn-wrap{padding:0 20px}.hn h1{font-size:38px;letter-spacing:-1.5px}.hn h2{font-size:30px;letter-spacing:-1px}.hn section{padding:72px 0}
+.hn-hero{padding:40px 0 64px!important;min-height:0;display:block}.hn-hero h1{font-size:42px;letter-spacing:-1.5px;margin-bottom:20px}.hn-hero__tel a{font-size:22px}
+.hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
+.hn-proc__head,.hn-trats__head,.hn-equipo__head{margin-bottom:32px}
+.hn-hero__form{padding:22px 18px 8px;margin:-40px 12px 0}
+.hn-pills a{white-space:normal}.hn-hero__trust{gap:8px 14px}
+.hn-slider{border-radius:12px}.hn .hn-logos{left:12px;top:12px;padding:6px 10px;gap:10px}.hn-logos img{height:22px}
+.hn-filo__grid{display:flex;flex-direction:column-reverse}.hn-filo__img img{aspect-ratio:4/3}
+.hn-cards{grid-template-columns:repeat(3,1fr);gap:12px}.hn-card span{font-size:12px;gap:5px}
+.hn-trats__grid,.hn-docs{grid-template-columns:1fr;gap:40px}
+.hn-hosp__band{min-height:0;padding:0;display:block}.hn-hosp__band>img{position:static;aspect-ratio:4/3;height:auto}
+.hn-hosp__card{padding:28px 22px;border-radius:0 0 6px 6px;max-width:none;background:#fff}
+.hn-mapa__grid{padding:0 20px}.hn-mapa__txt{padding:64px 0 32px}.hn-mapa__iframe{min-height:320px;margin:0 -20px;width:calc(100% + 40px)}
+.hn-form .belba-form{padding:24px 18px}}
 '''
 
 JS = '''
@@ -350,6 +455,13 @@ try{localStorage.setItem('belba_sel',v);}catch(e){}
 if(window.dataLayer)window.dataLayer.push({event:'home_selector',selector:v});}
 d.querySelectorAll('.hn .hn-sel__btn').forEach(function(b){b.addEventListener('click',function(){sel(b.getAttribute('data-sel'));});});
 d.querySelectorAll('.hn input[name=sel_persona]').forEach(function(r){r.addEventListener('change',function(){sel(r.value==='Hombre'?'hombre':'mujer');});});
+d.querySelectorAll('.hn [data-slider]').forEach(function(sl){var im=sl.querySelectorAll('img:not(.hn-logos img)'),dots=sl.querySelectorAll('.hn-slider__dots i'),i=0;im=Array.prototype.filter.call(im,function(x){return x.parentNode===sl;});if(im.length<2||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;setInterval(function(){im[i].classList.remove('is-on');dots[i].classList.remove('is-on');i=(i+1)%im.length;im[i].classList.add('is-on');dots[i].classList.add('is-on');},4500);});
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!rm&&'IntersectionObserver' in window){var rvs='.hn-filo__txt,.hn-filo__img,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-card,.hn-trat,.hn-hosp__band,.hn-doc,.hn-resenas .hn-wrap,.hn-form__grid>*,.hn-mapa__txt,.hn-mapa__iframe';var els=d.querySelectorAll('.hn '+rvs.split(',').join(',.hn '));var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+Array.prototype.forEach.call(els,function(el){var sib=el.parentNode.children,k=Array.prototype.indexOf.call(sib,el);el.style.setProperty('--i',Math.min(k,7));el.classList.add('rv');io.observe(el);});}
+if(!rm){var px=[{el:d.querySelector('.hn-slider'),f:.12,sel:'img'},{el:d.querySelector('.hn-hosp__band'),f:.18,sel:':scope>img'}].filter(function(o){return o.el;}),tick=false;
+function par(){tick=false;var vh=innerHeight;px.forEach(function(o){var r=o.el.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;var c=(r.top+r.height/2-vh/2)/vh;var y=Math.round(-c*o.f*r.height);o.el.querySelectorAll(o.sel).forEach(function(im){if(im.parentNode===o.el)im.style.transform='translate3d(0,'+y+'px,0)';});});}
+addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(par);}},{passive:true});par();}
 var s=null;try{s=localStorage.getItem('belba_sel');}catch(e){}if(s==='hombre')sel('hombre');else sel('mujer');
 var pre=d.querySelector('.hn input[name=sel_persona][value='+(s==='hombre'?'Hombre':'Mujer')+']');if(pre&&s){pre.checked=true;}})();
 '''
