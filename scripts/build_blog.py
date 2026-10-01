@@ -7,6 +7,7 @@ Título, H1, textos, SEO y URL de la página no cambian. Idempotente; va en el p
 import glob, json, os, re
 from datetime import datetime
 from bs4 import BeautifulSoup
+from fix_srcset import srcset_for
 
 B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # formato del widget del WordPress en cada idioma: «{mes} {día}, {año}»
@@ -72,7 +73,11 @@ def main():
                 if img is not None and src:
                     img['src'] = src
                     base, ext = os.path.splitext(src)
-                    img['srcset'] = f'{base}-800{ext} 800w, {src} 1600w' if os.path.exists(B + '/public' + base + '-800' + ext) else src
+                    ss = srcset_for(src)  # anchos reales (fix_srcset.py)
+                    if ss:
+                        img['srcset'] = ss
+                    elif img.has_attr('srcset'):
+                        del img['srcset']
                     img['alt'] = ''
                     for k in ('fetchpriority',):
                         if img.has_attr(k):

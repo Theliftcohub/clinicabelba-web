@@ -1341,3 +1341,12 @@ header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu>li>a.k-sub-item:hov
 .bf-thanks .bf-wa,.form-ok+.bf-wa{margin-top:16px}
 .wa-card{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:9999;background:#fff;border-radius:18px;box-shadow:0 24px 60px -20px rgba(23,34,57,.4);padding:12px 14px}
 .wa-card .bf-wa{margin:0}
+/* Landings de cirugía en móvil (01/10, aviso de Nicols sobre la web ya en producción; 29 landings × 9 idiomas comparten los ids de la plantilla de Elementor) */
+/* 1) Tarjetas de riesgos (.belba-riesgo-card, CSS propio del WordPress): el icono absoluto (40 px en top:40/left:40) pisaba el título en móvil y en escritorio → el contenido empieza debajo del icono */
+.k-widget.belba-riesgo-card{padding-top:100px!important}  /* dos clases: el CSS de la página lleva padding con !important y se carga después */
+/* 2) Imagen de cabecera (widget 1424eb0 en la columna 9b2fc80): en móvil salía al tamaño natural de la miniatura (550 px) con 33 px de margen, pequeña dentro de la mancha de fondo → a todo el ancho de la columna */
+@media(max-width:767px){
+.k .k-element.k-element-1424eb0{width:100%!important;max-width:100%!important;--container-widget-width:100%}
+.k .k-element.k-element-1424eb0>.k-widget-container{margin:0!important}
+.k .k-element.k-element-1424eb0 img{width:100%;height:auto}
+}

@@ -16,6 +16,7 @@ B = os.environ.get('BELBA_ROOT') or os.path.dirname(os.path.dirname(os.path.absp
 DOM = 'https://clinicabelba.com'
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from wp_cache import pages as load_pages, html as load_html  # caché del WordPress (.fetchcache/, la llena scripts/fase1/prefetch.py)
+from fix_srcset import srcset_for  # srcset con anchos reales (fix_srcset.py)
 
 LANGS = {'es-ES': 'es', 'ca': 'ca', 'en-US': 'en', 'fr-FR': 'fr', 'de-DE': 'de', 'it-IT': 'it', 'nl-NL': 'nl', 'ru-RU': 'ru', 'uk': 'uk'}
 
@@ -395,8 +396,12 @@ def clean(soup, page_path, lang, warn, posts_index):
     for img in soup.find_all('img'):
         src = img.get('src', '')
         if src.startswith('/images/') and src.endswith('.webp'):
-            img['srcset'] = f"{src[:-5]}-800.webp 800w, {src} 1600w"
-            img['sizes'] = img.get('sizes') or '(max-width: 800px) 100vw, 800px'
+            ss = srcset_for(src)  # anchos reales; sin srcset si el original mide ≤ 800 px (fix_srcset.py)
+            if ss:
+                img['srcset'] = ss
+                img['sizes'] = img.get('sizes') or '(max-width: 800px) 100vw, 800px'
+            else:
+                img.attrs.pop('srcset', None); img.attrs.pop('sizes', None)
         if not img.get('loading') and not img.get('fetchpriority'):
             img['loading'] = 'lazy'
         img['decoding'] = 'async'
