@@ -10,7 +10,7 @@ for (const [name,url] of [['mob','/'],['mob-ru','/ru/']]) {
   const ctx=await browser.newContext({viewport:{width:390,height:844},deviceScaleFactor:2}); const p=await ctx.newPage();
   await p.goto(base+url,{waitUntil:'load'}); await p.waitForTimeout(600);
   await p.evaluate(()=>document.querySelectorAll('.rv').forEach(e=>e.classList.add('in')));
-  for (const sel of ['.hn-hosp','.hn-equipo','.hn-resenas','.hn-form']) { const el=await p.$(sel); if(!el) continue; await el.scrollIntoViewIfNeeded(); await p.waitForTimeout(400); await el.screenshot({path:`${OUT}/${name}-${sel.slice(4)}.png`}); }
+  for (const sel of ['.hn-hero','.hn-filo','.hn-proc','.hn-trats','.hn-hosp','.hn-equipo','.hn-resenas','.hn-form']) { const el=await p.$(sel); if(!el) continue; await el.scrollIntoViewIfNeeded(); await p.waitForTimeout(400); await el.screenshot({path:`${OUT}/${name}-${sel.slice(4)}.png`}); }
   console.log(name,'scrollW',await p.evaluate(()=>document.documentElement.scrollWidth));
   await ctx.close();
 }

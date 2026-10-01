@@ -23,7 +23,7 @@ async function shot(url, name, vp, opts={}){
   if(opts.hover){ const li=await p.$('header .k-nav-menu--main > li.menu-item-has-children'); if(li){ await li.hover(); await p.waitForTimeout(700); await p.screenshot({path:`${OUT}/${name}-menu.png`,clip:{x:0,y:0,width:vp.width,height:Math.min(640,vp.height)}}); const sub=await p.$('header .k-nav-menu--main > li.menu-item-has-children .sub-menu li.menu-item-has-children'); if(sub){ await sub.hover(); await p.waitForTimeout(600); await p.screenshot({path:`${OUT}/${name}-menu3.png`,clip:{x:0,y:0,width:vp.width,height:Math.min(700,vp.height)}}); } } }
   await ctx.close();
 }
-await shot('/', 'es1440', {width:1440,height:900}, {full:true, hover:true, sections:['.hn-hosp','.hn-equipo','.hn-resenas','.hn-form','.hn-mapa']});
+await shot('/', 'es1440', {width:1440,height:900}, {full:true, hover:true, sections:['.hn-filo','.hn-proc','.hn-trats','.hn-hosp','.hn-equipo','.hn-resenas','.hn-form','.hn-mapa']});
 await shot('/', 'es1366', {width:1366,height:768}, {hover:false});
 await shot('/', 'es1920', {width:1920,height:1080}, {});
 await shot('/de/', 'de1440', {width:1440,height:900}, {hover:true});
