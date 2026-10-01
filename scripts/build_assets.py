@@ -311,6 +311,35 @@ header.k-38 .k-element.k-widget-nav-menu .k-nav-menu__container.k-nav-menu--drop
 .bf-follow .bf-skip{margin-top:12px;padding:8px 16px;font-size:14px}
 .bf-ok{margin:0 0 6px;color:#008488;font-weight:700;font-size:18px}
 .bf-thanks-txt{margin:0;font-size:16px;font-weight:600;color:#008488;line-height:1.5}
+/* cabecera (30/09 noche, corrección Nicols): barra de 84 px, logo en alta resolución, botón de idioma sin el rosa del kit
+   ([type=button]:focus/hover del tema), «Test paciente» con borde fino turquesa y menú móvil como panel blanco con los dos botones */
+header.k-38 .k-element.k-element-ce67a94{padding:8px 0!important}
+header.k-38 .k-column>.k-widget-wrap{padding:6px 10px!important}
+header.k-38 .k-widget-theme-site-logo a{display:block;line-height:0}
+header.k-38 .k-widget-theme-site-logo img{width:190px}
+header.k-38 .ls__cur:hover,header.k-38 .ls__cur:focus,header.k-38 .ls.is-open .ls__cur{background:#fff!important;color:#143852!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.k-item{font-weight:600}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010{background:transparent;box-shadow:inset 0 0 0 1px #008488}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010>a{color:#008488!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010:hover{background:#E9F5F5}
+header.k-38 .k-nav-menu--main .btn_consulta_online.menu-item-9010>a:hover{color:#006d70!important}
+@media(min-width:1280px) and (max-width:1439px){header.k-38 .k-widget-theme-site-logo img{width:164px}}
+html[lang|=ru] header.k-38 .k-widget-theme-site-logo img,html[lang|=uk] header.k-38 .k-widget-theme-site-logo img{width:164px}
+/* menú móvil/tablet (el kit fija colores con !important y 5 clases: hay que superar esa especificidad) */
+@media(max-width:1439px){
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown{background:#fff!important;padding:6px 0 18px!important;border-top:1px solid #ECE7DF}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown>ul>li>a.k-item{justify-content:flex-start!important;padding:14px 24px!important;font-size:15px!important;font-weight:600!important;color:#172239!important;border-bottom:1px solid #F1EEE9!important;text-transform:none!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown .sub-menu{background:#F7F4EF!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown .sub-menu a.k-sub-item{justify-content:flex-start!important;padding:11px 24px 11px 36px!important;font-size:14px!important;font-weight:500!important;color:#2C3A52!important;text-transform:none!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown .sub-menu .sub-menu a.k-sub-item{padding-left:52px!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online{background:#008488!important;border-radius:10px!important;margin:14px 24px 0!important;box-shadow:none!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online>a.k-item{color:#fff!important;justify-content:center!important;border-bottom:0!important;padding:13px 20px!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online>a.k-item .sub-arrow svg{fill:#fff}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online.menu-item-9010{background:#fff!important;box-shadow:inset 0 0 0 1.5px #008488!important;margin-top:10px!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online.menu-item-9010>a.k-item{color:#008488!important}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online>.sub-menu{background:transparent!important;margin-top:4px}
+header.k-38 .k-element.k-element-c45204a nav.k-nav-menu--dropdown li.btn_consulta_online>.sub-menu a.k-sub-item{color:#fff!important;justify-content:center!important;padding:8px 20px!important}
+}
 '''
 
 def write_follow():

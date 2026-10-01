@@ -55,8 +55,9 @@ def resolve_id(tf_id):
     tf_id = LIVE.get(tf_id, tf_id)
     return ROTOS.get(tf_id, tf_id)
 
-def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
-    """pre_steps: [(pregunta, [opciones], name)] que se añaden al principio (p. ej. Mujer/Hombre en la home)."""
+def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False, intro=True):
+    """pre_steps: [(pregunta, [opciones], name)] que se añaden al principio (p. ej. Mujer/Hombre en la home).
+    intro=False omite la pantalla de bienvenida del Typeform (la home la sustituye por el título de la sección)."""
     fid = resolve_id(tf_id)
     f = TF.get(fid) or TF['iOSo1PBX']
     if pre_steps:
@@ -67,7 +68,7 @@ def render(tf_id, lang, page_path, uid='', pre_steps=None, compact=False):
     fields = f['fields']
     i = 0
     n_q = sum(1 for x in fields if x['type'] not in ('statement', 'contact_info') and x['lvl'] == 0) + sum(1 for x in fields if x['type'] == 'contact_info')
-    welcome = [] if compact else (f.get('welcome') or [])
+    welcome = [] if (compact or not intro) else (f.get('welcome') or [])
     if welcome and welcome[0]:
         steps.append(f'<div class="bf-step bf-intro" data-step><p class="bf-title">{md(forms_i18n.tr(lang, welcome[0]))}</p>'
                      f'<div class="bf-nav"><button type="button" class="bf-next">{e(ui[0])}</button></div></div>')

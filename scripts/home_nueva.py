@@ -131,7 +131,7 @@ def body(lang, t, lb, ti_html, n_res, page_path):
     Diseño editorial premium (30/09, petición de Nicols): estructura y aspecto nuevos; textos, enlaces y formularios literales."""
     H = lambda p: href(p, lang)
     L = lambda p, fb: lb.get(__import__('urllib.parse').parse.unquote(H(p)).lower(), fb)
-    form = forms_native.render('iOSo1PBX', lang, page_path, uid='hnform')
+    form = forms_native.render('iOSo1PBX', lang, page_path, uid='hnform', intro=False)
     form_hero = forms_native.render('iOSo1PBX', lang, page_path, uid='hero', compact=True,
                                     pre_steps=[(t['pre_q'], [('Mujer', t['mujer']), ('Hombre', t['hombre'])], 'sel_persona')])
     cards_m = ''.join(card(n, H(h), img) for n, (_, h, img) in zip(t['cards_m'], CARDS_MUJER))
@@ -143,7 +143,7 @@ def body(lang, t, lb, ti_html, n_res, page_path):
         for (name, hr, _, img, items), claim in zip(TRAT, t['claims']))
     docs = ''.join(
         f'<article class="hn-doc"><a href="{H(hr)}" class="hn-doc__img"><img src="{img}" alt="{e(n)}" loading="lazy" decoding="async"></a>'
-        f'<h3><a href="{H(hr)}">{e(n)}</a></h3><p class="hn-doc__rol">{e(rol)}</p>' + (f'<p class="hn-doc__cita">{e(cita)}</p>' if cita else '') +
+        f'<div class="hn-doc__head"><h3><a href="{H(hr)}">{e(n)}</a></h3><p class="hn-doc__rol">{e(rol)}</p>' + (f'<p class="hn-doc__cita">{e(cita)}</p>' if cita else '') + '</div>'
         f'<p class="hn-doc__bio">{e(bio)}</p></article>'
         for (n, _, img, hr, _, _), (rol, cita, bio) in zip(DOCS, t['docs']))
     eb = t['hero_eyebrow'].rsplit(' · ', 1)
@@ -224,17 +224,15 @@ def body(lang, t, lb, ti_html, n_res, page_path):
 </section>
 
 <section class="hn-hosp">
-  <div class="hn-wrap">
-    <div class="hn-hosp__band">
-      <img src="/images/2025/12/centro-medico-teknon-1.webp" alt="{e(t['hosp_alt'])}" loading="lazy" decoding="async">
-      <div class="hn-hosp__card">
-        <p class="hn-eyebrow">{e(t['hosp_eyebrow'])}</p>
-        <h2>{e(t['hosp_h'])}</h2>
-        <h3>{e(t['hosp_sub'])}</h3>
-        <p>{hosp_p}</p>
-        <a class="k-button k-button-link k-size-sm hn-cta" href="{H('/consulta-online/')}"><span class="k-button-text">{e(t['cita'])}</span></a>
-      </div>
+  <div class="hn-wrap hn-hosp__grid">
+    <div class="hn-hosp__txt">
+      <p class="hn-eyebrow">{e(t['hosp_eyebrow'])}</p>
+      <h2>{e(t['hosp_h'])}</h2>
+      <h3>{e(t['hosp_sub'])}</h3>
+      <p>{hosp_p}</p>
+      <a class="k-button k-button-link k-size-sm hn-cta" href="{H('/consulta-online/')}"><span class="k-button-text">{e(t['cita'])}</span></a>
     </div>
+    <figure class="hn-hosp__img"><img src="/images/2025/12/centro-medico-teknon-1.webp" alt="{e(t['hosp_alt'])}" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -249,7 +247,13 @@ def body(lang, t, lb, ti_html, n_res, page_path):
 </section>
 
 <section class="hn-resenas" id="resenas">
-  <div class="hn-wrap"><p class="hn-eyebrow">{e(t['res_eyebrow'])}</p><h2>{e(t['res_h'])}</h2>{ti_html}</div>
+  <div class="hn-wrap">
+    <div class="hn-resenas__head">
+      <div><p class="hn-eyebrow">{e(t['res_eyebrow'])}</p><h2>{e(t['res_h'])}</h2></div>
+      <a class="hn-trust hn-trust--g hn-trust--lg" href="{NAP['maps']}" target="_blank" rel="noopener"><span class="hn-g" aria-hidden="true">G</span><span class="hn-stars" aria-hidden="true">★★★★★</span><span>{e(t['proof'].format(n=n_res))}</span></a>
+    </div>
+    {ti_html}
+  </div>
 </section>
 
 <section class="hn-form" id="contacto-rapido">
@@ -259,10 +263,10 @@ def body(lang, t, lb, ti_html, n_res, page_path):
       <h2>{e(t['form_h'])}</h2>
       <p class="hn-lead">{e(t['form_p'])}</p>
       <ul class="hn-nap">
-        <li><a href="{NAP['maps']}" target="_blank" rel="noopener">{e(NAP['dir1'])}, {e(NAP['dir2'])}</a></li>
-        <li><a href="{NAP['tel_href']}">{e(NAP['tel'])}</a> · <a href="{NAP['wa']}" target="_blank" rel="noopener">WhatsApp</a></li>
-        <li><a href="mailto:{NAP['email']}">{NAP['email']}</a></li>
-        <li>{e(t['horario'])}</li>
+        <li class="hn-nap__dir"><span><a href="{NAP['maps']}" target="_blank" rel="noopener">{e(NAP['dir1'])}, {e(NAP['dir2'])}</a></span></li>
+        <li class="hn-nap__tel"><span><a href="{NAP['tel_href']}">{e(NAP['tel'])}</a> · <a href="{NAP['wa']}" target="_blank" rel="noopener">WhatsApp</a></span></li>
+        <li class="hn-nap__mail"><span><a href="mailto:{NAP['email']}">{NAP['email']}</a></span></li>
+        <li class="hn-nap__hor"><span>{e(t['horario'])}</span></li>
       </ul>
     </div>
     {form}
@@ -384,36 +388,52 @@ font-family:Montserrat,sans-serif;color:var(--text);line-height:1.7;-webkit-font
 .hn-trat li{border-bottom:1px solid var(--line);font-size:13.5px}
 .hn-trat li a{display:block;padding:8px 0;color:var(--navy2);text-decoration:none;transition:color .2s,padding .2s}
 .hn-trat li a:hover{color:var(--teal);padding-left:6px}
-/* hospital */
-.hn-hosp{padding-top:0!important}
-.hn-hosp__band{position:relative;min-height:560px;border-radius:6px;overflow:hidden;display:flex;align-items:center;padding:64px}
-.hn-hosp__band>img{position:absolute;inset:-15% 0;width:100%;height:130%;object-fit:cover;object-position:center;display:block;will-change:transform}
-.hn-hosp__card{position:relative;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:6px;padding:48px 44px 40px;max-width:560px}
-.hn-hosp__card h2{font-size:34px;letter-spacing:-1px}
-.hn-hosp h3{font-size:16px;color:var(--teal);font-weight:500;margin-bottom:16px}
-.hn-hosp p{color:var(--muted);font-size:15px}
-/* equipo */
-.hn-docs{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.hn-doc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 14px 22px;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
-.hn-doc:hover{transform:translateY(-6px);box-shadow:0 30px 60px -24px rgba(23,34,57,.28);border-color:transparent}
-.hn-doc h3,.hn-doc p{padding:0 6px}
-.hn-doc__img{display:block;aspect-ratio:1;overflow:hidden;border-radius:12px;background:var(--sand);margin-bottom:16px}
+/* hospital (Teknon): dos columnas, como la filosofía (30/09, Nicols) */
+.hn-hosp{background:var(--ivory)}
+.hn-hosp__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:96px;align-items:center}
+.hn-hosp__img{margin:0}.hn-hosp__img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;border-radius:6px}
+.hn-hosp h2{font-size:40px}
+.hn-hosp h3{font-size:17px;color:var(--teal);font-weight:500;margin:0 0 18px;letter-spacing:0}
+.hn-hosp__txt>p{color:var(--muted);font-size:16px;max-width:36em}
+.hn-hosp__txt .hn-cta{margin-top:8px}
+/* equipo: filas editoriales (foto | nombre, cargo y cita | biografía) */
+.hn-doc{display:grid;grid-template-columns:260px minmax(0,.9fr) minmax(0,1.1fr);gap:48px;padding:44px 0;border-bottom:1px solid var(--line);align-items:start}
+.hn-doc__img{display:block;aspect-ratio:1;overflow:hidden;border-radius:6px;background:var(--sand)}
 .hn-doc__img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 .hn-doc:hover .hn-doc__img img{transform:scale(1.03)}
-.hn-doc h3{font-size:17px;margin-bottom:2px}.hn-doc h3 a{color:var(--navy);text-decoration:none}.hn-doc h3 a:hover{color:var(--teal)}
-.hn-doc__rol{color:var(--teal);font-weight:600;font-size:12px;margin-bottom:10px}
-.hn-doc__cita{font-style:italic;color:var(--navy);font-size:14px;font-weight:400;line-height:1.5;padding:12px 14px!important;background:var(--ivory);border-radius:10px;margin:0 0 14px;border:0}
-.hn-doc__bio{font-size:13.5px;color:var(--muted);line-height:1.6;margin:0}
-/* reseñas */
+.hn-doc h3{font-size:26px;font-weight:500;letter-spacing:-.6px;margin-bottom:6px}.hn-doc h3 a{color:var(--navy);text-decoration:none}.hn-doc h3 a:hover{color:var(--teal)}
+.hn-doc__rol{color:var(--teal);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.hn-doc__cita{font-size:19px;font-weight:300;color:var(--navy);line-height:1.45;letter-spacing:-.3px;border-left:2px solid var(--teal);padding-left:18px;margin:0}
+.hn-doc__bio{font-size:15px;color:var(--muted);line-height:1.75;margin:0;padding-top:6px}
+/* reseñas: widget de Google (vivo) integrado en el estilo de la página */
 .hn-resenas{background:var(--ivory)}
-.hn-resenas h2{margin-bottom:40px}
-/* formulario */
+.hn-resenas__head{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end;margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.hn-resenas__head h2{margin-bottom:0;font-size:38px}
+.hn .hn-trust--lg{font-size:14px;padding:12px 16px;border-radius:12px;margin-bottom:4px}
+.hn-resenas .ti-widget.ti-goog .ti-footer{display:none!important}
+.hn-resenas .ti-widget.ti-goog .ti-widget-container:not(.ti-col-1) .ti-reviews-container{flex:0 0 100%!important;max-width:100%!important}
+.hn-resenas__head .hn-trust{justify-self:start}
+.hn-resenas .ti-widget.ti-goog .ti-review-item>.ti-inner{background:#fff!important;border:1px solid var(--line)!important;border-radius:6px!important;box-shadow:none!important;padding:26px 26px 22px!important}
+.hn-resenas .ti-widget.ti-goog .ti-profile-img{display:none!important}
+.hn-resenas .ti-widget.ti-goog .ti-name{font:600 15px/1.3 Montserrat,sans-serif!important;color:var(--navy)!important}
+.hn-resenas .ti-widget.ti-goog .ti-date{font:400 12px/1.4 Montserrat,sans-serif!important;color:var(--muted)!important}
+.hn-resenas .ti-widget.ti-goog .ti-review-content{font:400 14.5px/1.65 Montserrat,sans-serif!important;color:var(--text)!important}
+.hn-resenas .ti-widget.ti-goog .ti-read-more{color:var(--teal)!important;font-weight:600!important;font-family:Montserrat,sans-serif!important}
+.hn-resenas .ti-widget.ti-goog .ti-controls .ti-next,.hn-resenas .ti-widget.ti-goog .ti-controls .ti-prev{background:#fff!important;border:1px solid var(--line)!important;box-shadow:none!important}
+/* primer paso: formulario sobre arena, datos de contacto con icono */
+.hn-form{background:var(--sand)}
 .hn-form__grid{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start}
-.hn-nap{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid var(--line)}.hn-nap li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--navy)}
+.hn-nap{list-style:none;padding:0;margin:36px 0 0;border-top:1px solid rgba(23,34,57,.12)}
+.hn-nap li{display:grid;grid-template-columns:22px 1fr;gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid rgba(23,34,57,.12);font-size:15px;color:var(--navy);line-height:1.5}
+.hn-nap li::before{content:"";width:20px;height:20px;margin-top:2px;background:var(--teal);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+.hn-nap__dir{--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E")}
+.hn-nap__tel{--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z'/%3E%3C/svg%3E")}
+.hn-nap__mail{--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E")}
+.hn-nap__hor{--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3.1.8-1.2-4.5-2.7V7z'/%3E%3C/svg%3E")}
 .hn-nap a{color:var(--navy);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}.hn-nap a:hover{border-color:var(--navy)}
 .hn-form .belba-form{border:1px solid var(--line);box-shadow:none;border-radius:6px;padding:36px 32px;background:#fff}
 /* mapa */
-.hn-mapa{background:var(--sand);padding:0!important}
+.hn-mapa{background:var(--ivory);padding:0!important}
 .hn-mapa__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:0;align-items:stretch;padding:0 32px}
 .hn-mapa__txt{padding:96px 64px 96px 0}
 .hn-mapa p{color:var(--muted);max-width:26em}
@@ -428,21 +448,19 @@ font-family:Montserrat,sans-serif;color:var(--text);line-height:1.7;-webkit-font
 /* responsive */
 @media(max-width:1100px){.hn h1{font-size:52px}.hn h2{font-size:38px}
 .hn-hero h1{font-size:56px;letter-spacing:-2px}.hn-hero__tel a{font-size:24px}
-.hn-cards{grid-template-columns:repeat(4,1fr)}.hn-trats__grid,.hn-docs{grid-template-columns:repeat(2,1fr);gap:40px 28px}
+.hn-cards{grid-template-columns:repeat(4,1fr)}.hn-trats__grid{grid-template-columns:repeat(2,1fr);gap:40px 28px}.hn-doc{grid-template-columns:220px 1fr;gap:32px}.hn-doc__bio{grid-column:2}.hn-resenas__head{grid-template-columns:1fr;gap:16px}
 .hn-proc__head h2,.hn-trats__head h2,.hn-equipo__head h2{font-size:32px}
-.hn-filo__grid,.hn-form__grid{gap:56px}.hn-hero__grid{gap:48px}}
+.hn-filo__grid,.hn-form__grid,.hn-hosp__grid{gap:56px}.hn-hero__grid{gap:48px}}
 @media(max-width:820px){.hn .hn-wrap{padding:0 20px}.hn h1{font-size:38px;letter-spacing:-1.5px}.hn h2{font-size:30px;letter-spacing:-1px}.hn section{padding:72px 0}
 .hn-hero{padding:40px 0 64px!important;min-height:0;display:block}.hn-hero h1{font-size:42px;letter-spacing:-1.5px;margin-bottom:20px}.hn-hero__tel a{font-size:22px}
-.hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
+.hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-hosp__grid,.hn-resenas__head,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
 .hn-proc__head,.hn-trats__head,.hn-equipo__head{margin-bottom:32px}
 .hn-hero__form{padding:22px 18px 8px;margin:-40px 12px 0}
 .hn-pills a{white-space:normal}.hn-hero__trust{gap:8px 14px}
 .hn-slider{border-radius:12px}.hn .hn-logos{left:12px;top:12px;padding:6px 10px;gap:10px}.hn-logos img{height:22px}
 .hn-filo__grid{display:flex;flex-direction:column-reverse}.hn-filo__img img{aspect-ratio:4/3}
 .hn-cards{grid-template-columns:repeat(3,1fr);gap:12px}.hn-card span{font-size:12px;gap:5px}
-.hn-trats__grid,.hn-docs{grid-template-columns:1fr;gap:40px}
-.hn-hosp__band{min-height:0;padding:0;display:block}.hn-hosp__band>img{position:static;aspect-ratio:4/3;height:auto}
-.hn-hosp__card{padding:28px 22px;border-radius:0 0 6px 6px;max-width:none;background:#fff}
+.hn-trats__grid{grid-template-columns:1fr;gap:40px}.hn-doc{grid-template-columns:1fr;gap:18px;padding:32px 0}.hn-doc__img{max-width:220px}.hn-doc__bio{grid-column:1}.hn-hosp__img img{aspect-ratio:4/3}
 .hn-mapa__grid{padding:0 20px}.hn-mapa__txt{padding:64px 0 32px}.hn-mapa__iframe{min-height:320px;margin:0 -20px;width:calc(100% + 40px)}
 .hn-form .belba-form{padding:24px 18px}}
 '''
@@ -457,9 +475,9 @@ d.querySelectorAll('.hn .hn-sel__btn').forEach(function(b){b.addEventListener('c
 d.querySelectorAll('.hn input[name=sel_persona]').forEach(function(r){r.addEventListener('change',function(){sel(r.value==='Hombre'?'hombre':'mujer');});});
 d.querySelectorAll('.hn [data-slider]').forEach(function(sl){var im=sl.querySelectorAll('img:not(.hn-logos img)'),dots=sl.querySelectorAll('.hn-slider__dots i'),i=0;im=Array.prototype.filter.call(im,function(x){return x.parentNode===sl;});if(im.length<2||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;setInterval(function(){im[i].classList.remove('is-on');dots[i].classList.remove('is-on');i=(i+1)%im.length;im[i].classList.add('is-on');dots[i].classList.add('is-on');},4500);});
 var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(!rm&&'IntersectionObserver' in window){var rvs='.hn-filo__txt,.hn-filo__img,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-card,.hn-trat,.hn-hosp__band,.hn-doc,.hn-resenas .hn-wrap,.hn-form__grid>*,.hn-mapa__txt,.hn-mapa__iframe';var els=d.querySelectorAll('.hn '+rvs.split(',').join(',.hn '));var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+if(!rm&&'IntersectionObserver' in window){var rvs='.hn-filo__txt,.hn-filo__img,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-card,.hn-trat,.hn-hosp__txt,.hn-hosp__img,.hn-doc,.hn-resenas__head,.hn-form__grid>*,.hn-mapa__txt,.hn-mapa__iframe';var els=d.querySelectorAll('.hn '+rvs.split(',').join(',.hn '));var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
 Array.prototype.forEach.call(els,function(el){var sib=el.parentNode.children,k=Array.prototype.indexOf.call(sib,el);el.style.setProperty('--i',Math.min(k,7));el.classList.add('rv');io.observe(el);});}
-if(!rm){var px=[{el:d.querySelector('.hn-slider'),f:.12,sel:'img'},{el:d.querySelector('.hn-hosp__band'),f:.18,sel:':scope>img'}].filter(function(o){return o.el;}),tick=false;
+if(!rm){var px=[{el:d.querySelector('.hn-slider'),f:.12,sel:'img'}].filter(function(o){return o.el;}),tick=false;
 function par(){tick=false;var vh=innerHeight;px.forEach(function(o){var r=o.el.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;var c=(r.top+r.height/2-vh/2)/vh;var y=Math.round(-c*o.f*r.height);o.el.querySelectorAll(o.sel).forEach(function(im){if(im.parentNode===o.el)im.style.transform='translate3d(0,'+y+'px,0)';});});}
 addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(par);}},{passive:true});par();}
 var s=null;try{s=localStorage.getItem('belba_sel');}catch(e){}if(s==='hombre')sel('hombre');else sel('mujer');
