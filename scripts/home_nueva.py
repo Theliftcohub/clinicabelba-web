@@ -376,14 +376,14 @@ font-family:Montserrat,sans-serif;color:var(--text);line-height:1.7;-webkit-font
 .hn-proc__head h2,.hn-trats__head h2,.hn-equipo__head h2,.hn-resenas__head h2{margin-bottom:0}
 .hn-proc__head .hn-lead,.hn-trats__head .hn-lead,.hn-equipo__head .hn-lead{margin-bottom:.3em}
 /* ---------- hero a pantalla completa ---------- */
-.hn-hero{position:relative;min-height:calc(100vh - 85px);display:flex;flex-direction:column;justify-content:center;padding:56px 0 36px!important;background:var(--navy);color:#fff;overflow:hidden;isolation:isolate}
+.hn-hero{position:relative;min-height:calc(100vh - 85px);display:flex;flex-direction:column;justify-content:center;padding:56px 0 36px!important;background:var(--navy);color:#fff;overflow:clip;isolation:isolate}  /* clip, no hidden: el formulario sticky necesita que el hero no sea contenedor de scroll */
 .hn-hero__bg{position:absolute;inset:0;z-index:-2}
 .hn-hero__bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:0;transition:opacity 1.6s ease;transform:scale(1)}
 .hn-hero__bg img.is-on{opacity:1;animation:hnKb 9s ease-out forwards}
 @keyframes hnKb{from{transform:scale(1)}to{transform:scale(1.08)}}
 .hn-hero__shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,20,36,.9) 0%,rgba(12,20,36,.78) 38%,rgba(12,20,36,.42) 66%,rgba(12,20,36,.3) 100%),linear-gradient(180deg,rgba(12,20,36,.15) 0%,rgba(12,20,36,0) 30%,rgba(12,20,36,.55) 100%)}
 .hn-hero>.hn-wrap{width:100%}
-.hn-hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hn-hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start;flex:1 0 auto}  /* la fila ocupa todo el hero: el formulario fijo acompaña hasta el final */
 .hn-hero h1{font-size:64px;font-weight:800;letter-spacing:-2.6px;line-height:.98;margin:0 0 20px;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.25)}
 .hn-hero h1 em{font-style:normal;color:var(--teal-x);display:block}
 .hn-eyebrow--hero{flex-wrap:wrap;color:#9fd8d9;margin-bottom:18px}.hn-eyebrow--hero::before{display:none}
@@ -406,7 +406,7 @@ font-family:Montserrat,sans-serif;color:var(--text);line-height:1.7;-webkit-font
 .hn-pills{display:flex;flex-wrap:wrap;gap:8px;margin:0}
 .hn-pills a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
 .hn-pills a:hover{background:#fff;border-color:#fff;color:var(--navy)}
-.hn-hero__form{position:relative;background:#fff;border-radius:24px;padding:24px 26px 10px;box-shadow:0 40px 90px -30px rgba(0,0,0,.55);color:var(--text)}
+.hn-hero__form{position:sticky;top:104px;align-self:start;background:#fff;border-radius:24px;padding:24px 26px 10px;box-shadow:0 40px 90px -30px rgba(0,0,0,.55);color:var(--text)}  /* fijo mientras se recorre el hero (decisión Nicols 01/10) */
 .hn-hero__formtitle{font-weight:800;color:var(--navy);font-size:21px;margin:0 0 4px;letter-spacing:-.5px}.hn-hero__formsub{font-size:13px;color:var(--muted);margin:0 0 12px}
 .hn-hero__form .belba-form{box-shadow:none;padding:0 0 12px;max-width:none;border-radius:0}
 .belba-form--compact .bf-title{font-size:17px}.belba-form--compact .bf-choice{padding:11px 14px;font-size:14px}.belba-form--compact .bf-choices{grid-template-columns:1fr 1fr}
@@ -538,7 +538,7 @@ font-family:Montserrat,sans-serif;color:var(--text);line-height:1.7;-webkit-font
 .hn-hero__grid,.hn-filo__grid,.hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-resenas__head,.hn-hosp__grid,.hn-form__grid,.hn-mapa__grid{grid-template-columns:1fr;gap:28px}
 .hn-proc__head,.hn-trats__head,.hn-equipo__head,.hn-resenas__head{margin-bottom:28px}
 .hn-hero__shade{background:linear-gradient(180deg,rgba(12,20,36,.82) 0%,rgba(12,20,36,.72) 60%,rgba(12,20,36,.9) 100%)}
-.hn-hero__form{padding:22px 18px 8px;border-radius:20px}.hn-hero__foot{margin-top:28px;flex-wrap:wrap}
+.hn-hero__form{position:relative;top:auto;padding:22px 18px 8px;border-radius:20px}.hn-hero__foot{margin-top:28px;flex-wrap:wrap}
 .hn-pills a{white-space:normal}.hn-hero__trust{gap:8px 14px}
 .hn .hn-logos{padding:6px 10px;gap:10px}.hn-logos img{height:22px}
 .hn-filo__media{padding:0 28px 28px 0}.hn .hn-filo__big{aspect-ratio:4/4}

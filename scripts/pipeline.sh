@@ -8,6 +8,8 @@ python3 scripts/convert.py > migracion/convert.out 2>&1 && tail -1 migracion/con
 python3 scripts/fetch_media.py | tail -1
 python3 scripts/build_footer.py
 python3 scripts/postprocess.py | head -3
+python3 scripts/fix_lang.py | tail -1
+python3 scripts/build_blog.py
 python3 scripts/home_nueva.py
 python3 scripts/build_assets.py
 python3 scripts/build_form_handler.py

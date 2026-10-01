@@ -48,8 +48,9 @@ $lead = [
 // ---------------------------------------------------------------------------
 // 6) Envío: 1º n8n (webhook fuera del repo, en secrets); si falla o no está, email
 // ---------------------------------------------------------------------------
-$N8N_URL = getenv('N8N_WEBHOOK_URL') ?: (defined('N8N_WEBHOOK_URL') ? N8N_WEBHOOK_URL : null);
-$N8N_TOKEN = getenv('N8N_WEBHOOK_TOKEN') ?: (defined('N8N_WEBHOOK_TOKEN') ? N8N_WEBHOOK_TOKEN : null);
+// Webhook genérico (n8n, Make o cualquier servicio que reciba JSON por POST): WEBHOOK_URL / WEBHOOK_TOKEN, o los nombres antiguos N8N_*
+$N8N_URL = getenv('WEBHOOK_URL') ?: getenv('N8N_WEBHOOK_URL') ?: (defined('WEBHOOK_URL') ? WEBHOOK_URL : (defined('N8N_WEBHOOK_URL') ? N8N_WEBHOOK_URL : null));
+$N8N_TOKEN = getenv('WEBHOOK_TOKEN') ?: getenv('N8N_WEBHOOK_TOKEN') ?: (defined('WEBHOOK_TOKEN') ? WEBHOOK_TOKEN : (defined('N8N_WEBHOOK_TOKEN') ? N8N_WEBHOOK_TOKEN : null));
 function n8n_enviar(string $url, ?string $token, array $lead): bool {
     $cuerpo = json_encode($lead, JSON_UNESCAPED_UNICODE);
     $cab = "Content-Type: application/json\r\n" . ($token ? "X-Belba-Token: {$token}\r\n" : '');
