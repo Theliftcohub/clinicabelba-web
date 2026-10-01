@@ -5,6 +5,7 @@ contenedor de posts de cada página de blog con TODOS los posts de su idioma (lo
 de más reciente a más antiguo, usando el mismo marcado de tarjeta del widget (miniatura, título, fecha, «Leer más»).
 Título, H1, textos, SEO y URL de la página no cambian. Idempotente; va en el pipeline tras postprocess.py y fix_lang.py."""
 import glob, json, os, re
+from urllib.parse import unquote
 from datetime import datetime
 from bs4 import BeautifulSoup
 from fix_srcset import srcset_for
@@ -50,22 +51,36 @@ def main():
     for lang in posts:
         posts[lang].sort(key=lambda d: d['post']['date'], reverse=True)
     for f, d in docs:
-        if not d['path'].endswith('/blog/'):
+        html_total = ''.join(b['html'] for b in d['blocks'])
+        if d.get('kind') == 'post' or 'k-widget-posts' not in html_total:
             continue
+        # página principal del blog de cada idioma: un solo segmento tras el prefijo (/blog/, /ca/bloc/, /ru/блог/…);
+        # las paginaciones (/blog/2/) se dejan como estaban, solo se les quita el target
+        segmentos = [x for x in unquote(d['path']).split('/') if x]
+        if d['lang'] != 'es':
+            segmentos = segmentos[1:]
+        es_blog = len(segmentos) == 1
         lang = d['lang']
         cambiado = False
         for b in d['blocks']:
             if 'k-widget-posts' not in b['html']:
                 continue
             S = BeautifulSoup(b['html'], 'html.parser')
+            # decisión Nicols 01/10: los artículos se abren en la misma pestaña (el widget del WordPress llevaba target=_blank)
+            for a in S.select('article.k-post a[target]'):
+                del a['target']
+                cambiado = True
             cont = S.select_one('.k-widget-posts .k-posts-container')
             modelo = cont.select_one('article.k-post') if cont else None
-            if cont is None or modelo is None:
+            if not es_blog or cont is None or modelo is None:
+                b['html'] = str(S)
                 continue
             plantilla = str(modelo)
             cont.clear()
             for p in posts.get(lang, []):
                 art = BeautifulSoup(plantilla, 'html.parser').select_one('article')
+                for a in art.select('a[target]'):
+                    del a['target']
                 for a in art.select('a'):
                     a['href'] = p['path']
                 img = art.select_one('img')
@@ -95,7 +110,7 @@ def main():
         if cambiado:
             with open(f, 'w', encoding='utf-8') as fh:
                 json.dump(d, fh, ensure_ascii=False)
-            print(f'· {d["path"]}: {len(posts.get(lang, []))} posts')
+            print(f'· {d["path"]}: ' + (f'{len(posts.get(lang, []))} posts' if es_blog else 'sin target=_blank'))
 
 
 if __name__ == '__main__':
