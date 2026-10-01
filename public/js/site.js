@@ -216,7 +216,8 @@
     box.appendChild(ch);
     var sk = d.createElement('button'); sk.type = 'button'; sk.className = 'bf-back bf-skip'; sk.textContent = T.skip; box.appendChild(sk);
     f.appendChild(box);
-    var fin = function () { box.innerHTML = ''; var t = d.createElement('p'); t.className = 'bf-thanks-txt'; t.textContent = T.thanks; box.appendChild(t); };
+    var waMsg = waMensaje(f);
+    var fin = function () { box.innerHTML = ''; var t = d.createElement('p'); t.className = 'bf-thanks-txt'; t.textContent = T.thanks; box.appendChild(t); box.appendChild(waBoton(waMsg)); };
     sk.addEventListener('click', fin);
     ch.addEventListener('click', function (e) {
       var b = e.target.closest('.bf-choice'); if (!b) return;
@@ -231,6 +232,29 @@
     return true;
   }
 
+  // ---- «Continuar por WhatsApp» tras enviar (decisión Nicols 01/10: mientras no haya n8n/Make, el lead también llega al WhatsApp de la clínica) ----
+  var WA_NUM = '34936293550';
+  var WA = { es: ['Continuar por WhatsApp', 'Hola, acabo de enviar el formulario de la web.'], ca: ['Continuar per WhatsApp', "Hola, acabo d'enviar el formulari del web."],
+    en: ['Continue on WhatsApp', 'Hi, I have just sent the form on the website.'], fr: ['Continuer sur WhatsApp', "Bonjour, je viens d'envoyer le formulaire du site."],
+    de: ['Auf WhatsApp fortsetzen', 'Hallo, ich habe gerade das Formular auf der Website abgeschickt.'], it: ['Continua su WhatsApp', 'Ciao, ho appena inviato il modulo del sito.'],
+    nl: ['Verdergaan via WhatsApp', 'Hallo, ik heb zojuist het formulier op de website verstuurd.'], ru: ['Продолжить в WhatsApp', 'Здравствуйте, я только что отправил(а) форму на сайте.'],
+    uk: ['Продовжити у WhatsApp', 'Вітаю, я щойно надіслав(ла) форму на сайті.'] };
+  function waLang() { return WA[(d.documentElement.lang || 'es').slice(0, 2)] || WA.es; }
+  function waMensaje(f) {
+    var lines = [waLang()[1]];
+    f.querySelectorAll('[data-step]').forEach(function (st) {
+      var q = st.querySelector('.bf-title'); if (!q) return; var val = '';
+      var r = st.querySelector('input[type=radio]:checked'); if (r) { var lab = r.closest('label'); val = lab ? lab.textContent.trim() : r.value; }
+      else { st.querySelectorAll('input:not([type=hidden]):not([type=radio]):not([type=checkbox]):not([type=submit]),textarea').forEach(function (i) { if (i.value) val += (val ? ', ' : '') + i.value; }); }
+      if (val) lines.push(q.textContent.replace(/\s+/g, ' ').trim().replace(/:$/, '') + ': ' + val);
+    });
+    if (lines.length === 1) f.querySelectorAll('input:not([type=hidden]):not([type=radio]):not([type=checkbox]):not([type=submit]):not([name=website]),textarea').forEach(function (i) { if (i.value && i.name) { var l = i.id && f.querySelector('label[for="' + i.id + '"]'); lines.push(((l && l.textContent.trim()) || i.placeholder || i.getAttribute('aria-label') || i.name).replace(/:$/, '') + ': ' + i.value); } });
+    return lines.join('\n').slice(0, 900);
+  }
+  function waEnlace(msg) { return 'https://wa.me/' + WA_NUM + '?text=' + encodeURIComponent(msg); }
+  function waBoton(msg) { var a = d.createElement('a'); a.className = 'bf-wa'; a.href = waEnlace(msg); a.target = '_blank'; a.rel = 'noopener'; a.textContent = waLang()[0]; return a; }
+  // en las páginas de gracias (los formularios que redirigen) el botón llega por sessionStorage
+  try { var wq = sessionStorage.getItem('belba_wa'); if (wq) { sessionStorage.removeItem('belba_wa'); var card = d.createElement('div'); card.className = 'wa-card'; card.appendChild(waBoton(wq)); d.body.appendChild(card); } } catch (e) {}
   // ---- Envío de TODOS los formularios (nativos y los antiguos de Elementor) ----
   var PREVIEW = d.body.getAttribute('data-entorno') === 'preview';
   d.querySelectorAll('form[data-belba-form]').forEach(function (f) {
@@ -251,11 +275,11 @@
       function done() {
         window.dataLayer.push(info);
         var red = f.getAttribute('data-redirect');
-        if (red) { setTimeout(function () { location.href = red; }, 300); return; }
+        if (red) { try { sessionStorage.setItem('belba_wa', waMensaje(f)); } catch (e) {} setTimeout(function () { location.href = red; }, 300); return; }
         f.querySelectorAll('[data-step], .bf-progress, .k-form-fields-wrapper, .form-aviso').forEach(function (s) { s.hidden = true; s.style.setProperty('display', 'none', 'important'); });
-        var th = f.querySelector('.bf-thanks');
-        if (th) th.hidden = false;
-        else if (!(f.classList.contains('k-form') && !f.classList.contains('is-steps') && followUp(f, data, info))) { var ok = d.createElement('p'); ok.className = 'form-ok'; ok.textContent = '✓'; f.appendChild(ok); }
+        var th = f.querySelector('.bf-thanks'), waMsg = waMensaje(f);
+        if (th) { th.hidden = false; th.appendChild(waBoton(waMsg)); }
+        else if (!(f.classList.contains('k-form') && !f.classList.contains('is-steps') && followUp(f, data, info))) { var ok = d.createElement('p'); ok.className = 'form-ok'; ok.textContent = '✓'; f.appendChild(ok); f.appendChild(waBoton(waMsg)); }
       }
       function fail() {
         if (btn) { btn.disabled = false; btn.textContent = btn.dataset.txt; }

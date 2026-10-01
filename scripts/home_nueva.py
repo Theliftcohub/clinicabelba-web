@@ -108,7 +108,7 @@ HL = {'es': 'cirugía plástica', 'ca': 'cirurgia plàstica', 'en': 'Plastic sur
 import datetime
 YEAR = datetime.date.today().year
 NAP = {'dir1': 'Via Augusta, 281, planta 4A', 'dir2': '08017 Barcelona', 'tel': '+34 613 16 34 47', 'tel_href': 'tel:34613163447',
-       'wa': 'https://api.whatsapp.com/send?phone=34613163447', 'email': 'info@clinicabelba.com',
+       'wa': 'https://api.whatsapp.com/send?phone=34936293550', 'email': 'info@clinicabelba.com',
        'horario': 'Lunes a jueves: 10:00–14:00 y 16:00–20:00 · Viernes: 10:00–14:00',
        'maps': 'https://www.google.com/maps/place/Cirujano+Pl%C3%A1stico+Barcelona+-+Cl%C3%ADnica+Belba/@41.3975168,2.1273671,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a3ee246f334d:0x2588af9f9008aa3b!8m2!3d41.3975128!4d2.129942!16s%2Fg%2F11h60f9631?entry=ttu',
        'embed': 'https://maps.google.com/maps?q=Clinica%20Belba&t=m&z=14&output=embed&iwloc=near'}
