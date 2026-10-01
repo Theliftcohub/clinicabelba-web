@@ -82,7 +82,7 @@ details.k-accordion-item[open] .k-accordion-icon-opened{display:inline-block}
 details.k-accordion-item[open] .k-accordion-icon-closed{display:none}
 details.k-accordion-item>.k-tab-content{display:block}
 .k-accordion .k-accordion-title{margin:0;font:inherit;color:inherit}
-.k-video-iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.k-video-iframe{width:100%;aspect-ratio:var(--video-aspect-ratio-css,var(--video-aspect-ratio,16/9));border:0;display:block}  /* hereda la proporción de la caja: 9:16 en los Shorts */
 .k-widget-video .k-wrapper{aspect-ratio:var(--video-aspect-ratio-css,16/9)}
 .swiper{overflow:hidden;position:relative}
 .swiper-wrapper{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;transform:none!important}

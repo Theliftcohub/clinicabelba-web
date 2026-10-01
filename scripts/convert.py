@@ -228,6 +228,10 @@ def clean(soup, page_path, lang, warn, posts_index):
                 box.append(BeautifulSoup(f'<iframe class="k-video-iframe" loading="lazy" src="https://www.youtube-nocookie.com/embed/{vid}" title="YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', 'html.parser'))
                 if 'shorts/' in st.get('youtube_url', ''):
                     w['style'] = (w.get('style', '') + ';--video-aspect-ratio:0.5625').strip(';')
+                    # el CSS de Elementor da la proporción de la caja con --video-aspect-ratio-css (su JS la pone al detectar un Short): 9:16 en el .k-wrapper
+                    wrap = w.find(class_='elementor-wrapper') or w.find(class_='k-wrapper')
+                    if wrap is not None:
+                        wrap['style'] = (wrap.get('style', '') + ';--video-aspect-ratio-css:9/16;--video-aspect-ratio:0.5625').strip(';')
             elif st.get('video_type') == 'hosted' and st.get('hosted_url', {}).get('url') if isinstance(st.get('hosted_url'), dict) else False:
                 pass
             else:
