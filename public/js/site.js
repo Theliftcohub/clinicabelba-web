@@ -48,7 +48,11 @@
       titles.forEach(function (t, j) { t.setAttribute('aria-selected', i === j ? 'true' : 'false'); t.tabIndex = i === j ? 0 : -1; });
       panels.forEach(function (p, j) { p.classList.toggle('e-active', i === j); });
     }
-    titles.forEach(function (t, i) { t.addEventListener('click', function () { show(i); }); });
+    // portada de cada pestaña: la primera foto de su panel (la guía del paciente las muestra como tarjetas)
+    titles.forEach(function (t, i) { var imgs = panels[i] ? panels[i].querySelectorAll('img') : []; var img = imgs.length ? imgs[i % imgs.length] : null; if (img && img.getAttribute('src')) t.style.setProperty('--cover', 'url("' + img.getAttribute('src') + '")'); });
+    // el CSS de Elementor mantiene visible el primer panel hasta que el widget lleva .e-activated (lo ponía su JS): sin ella, al cambiar de pestaña se veían dos paneles
+    w.classList.add('e-activated');
+    titles.forEach(function (t, i) { t.addEventListener('click', function () { show(i); if (panels[i] && panels[i].getBoundingClientRect().top > innerHeight * 0.6) panels[i].scrollIntoView({ behavior: 'smooth', block: 'start' }); }); });
     if (titles.length) show(0);
   });
   // Tablas anchas (comparativas de técnicas, precios): en móvil se desplazan dentro de su caja en vez de desbordar la página

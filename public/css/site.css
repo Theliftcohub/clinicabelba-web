@@ -1293,3 +1293,44 @@ header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu>li>a.k-sub-item:hov
 .k-element-b0c5c2a .k-author-box__name{font-size:15px!important;font-weight:700!important}
 .k-element-de534cf .k-widget-heading .k-heading-title,.k-element-b0c5c2a .k-widget-heading .k-heading-title,.k-element-5a37b13 .k-element-7167db2 .k-heading-title{font-weight:800!important;letter-spacing:-.8px}
 .k-element-de534cf,.k-element-b0c5c2a{background-color:#F7F4EF!important}
+/* guia-del-paciente (9 idiomas; pestañas anidadas de Elementor k-element-8b24fe2; 01/10, Nicols): «portadas de capítulo».
+   Las 7 pestañas pasan a tarjetas con la primera foto de su capítulo (site.js pone --cover leyendo el panel) y el capítulo
+   activo se lee debajo con fotos y textos en zigzag. Solo presentación: títulos, textos, fotos, enlaces y pestañas intactos. */
+.k-element-8b24fe2 .e-n-tabs{display:flex!important;flex-direction:column!important;gap:44px}
+.k-element-8b24fe2 .e-n-tabs-heading{display:grid!important;grid-template-columns:repeat(4,1fr);gap:18px;width:100%!important;max-width:none!important;flex:none!important;overflow:visible!important;counter-reset:guiacap}
+.k-element-8b24fe2 .e-n-tab-title{position:relative;display:flex!important;align-items:flex-end;min-height:230px;margin:0!important;padding:18px!important;border:0!important;border-radius:20px!important;overflow:hidden;background:#172239 var(--cover,linear-gradient(135deg,#1f7a7e,#172239)) center/cover no-repeat!important;color:#fff!important;text-align:left!important;cursor:pointer;box-shadow:0 10px 30px -18px rgba(23,34,57,.3);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;isolation:isolate;counter-increment:guiacap}
+.k-element-8b24fe2 .e-n-tab-title::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,34,57,.05) 30%,rgba(23,34,57,.88) 100%);z-index:0;transition:background .3s}
+.k-element-8b24fe2 .e-n-tab-title::after{content:counter(guiacap,decimal-leading-zero);position:absolute;left:16px;top:14px;z-index:1;font:700 11px/1 Montserrat,sans-serif;letter-spacing:.2em;color:#fff;background:rgba(23,34,57,.5);padding:6px 8px;border-radius:999px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.k-element-8b24fe2 .e-n-tab-title .e-n-tab-title-text{position:relative;z-index:1;font:700 17px/1.25 Montserrat,sans-serif!important;color:#fff!important;letter-spacing:-.2px}
+.k-element-8b24fe2 .e-n-tab-title .e-n-tab-icon{display:none}
+.k-element-8b24fe2 .e-n-tab-title:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(23,34,57,.45);background-color:#172239!important}
+.k-element-8b24fe2 .e-n-tab-title[aria-selected="true"]{outline:3px solid #008488;outline-offset:3px}
+.k-element-8b24fe2 .e-n-tab-title[aria-selected="true"]::before{background:linear-gradient(180deg,rgba(0,132,136,.12) 30%,rgba(0,132,136,.9) 100%)}
+.k-element-8b24fe2 .e-n-tabs-content{width:100%!important;max-width:none!important}
+.k-element-8b24fe2 .e-n-tabs-content>.e-con{scroll-margin-top:110px}
+/* capítulo: título a todo el ancho; fotos y textos por parejas, alternando el lado de la foto */
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap{display:grid!important;grid-template-columns:1fr 1fr;gap:28px 48px;align-items:center;padding:0!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget{margin:0!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-heading{grid-column:1/-1;margin-bottom:8px!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-heading .k-heading-title{font-size:34px!important;font-weight:800!important;letter-spacing:-1px;color:#172239!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-image img{width:100%!important;max-width:none!important;aspect-ratio:4/3;object-fit:cover;object-position:center 25%;border-radius:20px!important;box-shadow:0 24px 60px -28px rgba(23,34,57,.28);display:block}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-text-editor,.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-text-editor p{font-size:16px;line-height:1.8;color:#4A4540;text-align:left!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-text-editor h3,.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-text-editor h4,.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-text-editor strong{color:#172239}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-button{grid-column:auto;justify-self:start;margin-top:8px!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(1){order:1}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(2){order:2}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(3){order:3}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(4){order:5}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(5){order:4}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(6){order:6}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(7){order:7}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(8){order:9}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(9){order:8}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(10){order:10}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(11){order:11}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>:nth-child(n+12){order:12}
+@media(max-width:1100px){.k-element-8b24fe2 .e-n-tabs-heading{grid-template-columns:repeat(3,1fr)}.k-element-8b24fe2 .e-n-tab-title{min-height:190px}}
+@media(max-width:820px){.k-element-8b24fe2 .e-n-tabs-heading{grid-template-columns:repeat(2,1fr);gap:12px}.k-element-8b24fe2 .e-n-tab-title{min-height:150px;padding:14px!important}.k-element-8b24fe2 .e-n-tab-title .e-n-tab-title-text{font-size:14px!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap{grid-template-columns:1fr;gap:18px}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>*{order:0!important}
+.k-element-8b24fe2 .e-n-tabs-content .k-widget-shortcode .k-widget-wrap>.k-widget-heading .k-heading-title{font-size:28px!important}}
