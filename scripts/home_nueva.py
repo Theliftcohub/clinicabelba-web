@@ -152,7 +152,7 @@ CARD_IMG = {
     '/mentoplastia-barcelona/': '/images/2026/01/objetivo-mentoplastia-800.webp',
 }
 TRAT_IMG = {'/cirugia-de-la-mama/': '/images/2023/05/cirugia-de-pecho.webp', '/cirugia-corporal/': '/images/2026/06/bg_belba-1-800.webp',
-            '/cirugia-facial/': '/images/2026/06/facial_02-800.webp', '/cirugia-intima/': '/images/2023/01/descarga-24.webp'}
+            '/cirugia-facial/': '/images/2026/06/facial_02-800.webp', '/cirugia-intima/': '/images/thumbs/cirugia-intima-rlo7mqgfd64x4s5yfmxdbvcxmccsf7yq64nclbhh44.webp'}
 # nombre de la clínica tal como aparece en el H2 de la filosofía (solo para colorearlo; el texto no cambia)
 BRAND = {'ru': 'клиника Belba', 'uk': 'клініка Belba'}
 

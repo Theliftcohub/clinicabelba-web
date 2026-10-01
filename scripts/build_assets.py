@@ -355,6 +355,36 @@ html,body{overflow-x:clip}
 .k .k-button{max-width:100%;box-sizing:border-box;white-space:normal}
 .process-grid{grid-template-columns:1fr!important}.process-item{min-width:0}
 }
+/* desplegable del botón «Consulta online» (01/10): su único elemento («LLAMAR +34 …») salía recortado en un panel blanco estrecho; panel turquesa del ancho del texto, como el botón */
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--main li.btn_consulta_online>ul.sub-menu{min-width:max-content!important;width:max-content!important;max-width:none!important;background:#008488!important;border-radius:12px!important;padding:6px!important;margin-top:8px!important;box-shadow:0 12px 32px rgba(23,34,57,.18)!important;overflow:visible!important}
+header.k-38 .k-element.k-element-c45204a .k-nav-menu--main li.btn_consulta_online>ul.sub-menu>li{margin:0!important;padding:0!important}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu>li>a.k-sub-item{color:#fff!important;background:transparent!important;white-space:nowrap;padding:11px 16px!important;border-radius:8px!important;font-weight:600}
+header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu>li>a.k-sub-item:hover,header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu>li>a.k-sub-item:focus{background:rgba(255,255,255,.14)!important;color:#fff!important}
+/* quienes-somos (9 idiomas, mismos ids de Elementor; 01/10, Nicols): doctores en tarjetas con biografía alineada a la izquierda,
+   banda «Nuestro centro» en azul marino, equipo en tarjetas. Solo presentación: textos, enlaces e imágenes intactos. */
+.k-element-8e220ca .k-heading-title{font-weight:800!important;letter-spacing:-1px}
+.k-element-5a37b13 .k-column:has(>.k-widget-wrap>.k-widget-image-box)>.k-widget-wrap{background:#fff;border-radius:24px;box-shadow:0 24px 60px -28px rgba(23,34,57,.28);padding:40px 36px!important;align-content:start}
+.k-element-5a37b13 .k-column:has(>.k-widget-wrap>.k-widget-image-box){padding:12px}
+.k-element-5a37b13 .k-image-box-img img{width:170px!important;height:170px;object-fit:cover;object-position:top;border-radius:50%!important;border:5px solid #E6F3F3}
+.k-element-5a37b13 .k-image-box-title{font-size:26px!important;font-weight:800!important;letter-spacing:-.6px}
+.k-element-5a37b13 .k-image-box-description{color:#008488!important;font-weight:600}
+.k-element-5a37b13 .k-widget-text-editor,.k-element-5a37b13 .k-widget-text-editor p,.k-element-5a37b13 .k-widget-text-editor li{text-align:left!important;color:#5B5550;font-size:15px;line-height:1.75}
+.k-element-5a37b13 .k-widget-text-editor ul{padding-left:22px;margin:0}
+.k-element-5a37b13 .k-widget-text-editor li{margin:0 0 8px}
+.k-element-5a37b13 .k-widget-text-editor li::marker{color:#008488}
+.k-element-080ed11{background:#172239!important}
+.k-element-080ed11 .k-heading-title{color:#fff!important;font-weight:800!important;letter-spacing:-.8px}
+.k-element-080ed11 .k-element-601ea7e .k-heading-title{color:#9fd8d9!important;font-weight:500!important;letter-spacing:0}
+.k-element-080ed11 .k-widget-text-editor,.k-element-080ed11 p,.k-element-080ed11 li{color:rgba(255,255,255,.86)}
+.k-element-080ed11 a{color:#3FC4C7!important}
+.k-element-dad34ed .k-author-box,.k-element-de534cf .k-author-box,.k-element-b0c5c2a .k-author-box{background:#fff;border-radius:20px;box-shadow:0 10px 30px -18px rgba(23,34,57,.22);padding:28px 20px 24px;height:100%;box-sizing:border-box}
+.k-element-dad34ed .k-author-box__avatar img,.k-element-de534cf .k-author-box__avatar img{width:150px!important;height:150px;object-fit:cover;object-position:top;border:4px solid #E6F3F3}
+.k-element-b0c5c2a .k-author-box__avatar img{width:110px!important;height:110px;object-fit:cover;object-position:top;border:3px solid #E6F3F3}
+.k-element-dad34ed .k-author-box__name,.k-element-de534cf .k-author-box__name{font-size:19px!important;font-weight:800!important;letter-spacing:-.4px}
+.k-element-dad34ed .k-author-box__bio,.k-element-de534cf .k-author-box__bio{color:#008488!important;font-weight:600;font-size:13px}
+.k-element-b0c5c2a .k-author-box__name{font-size:15px!important;font-weight:700!important}
+.k-element-de534cf .k-widget-heading .k-heading-title,.k-element-b0c5c2a .k-widget-heading .k-heading-title,.k-element-5a37b13 .k-element-7167db2 .k-heading-title{font-weight:800!important;letter-spacing:-.8px}
+.k-element-de534cf,.k-element-b0c5c2a{background-color:#F7F4EF!important}
 '''
 
 def write_follow():
