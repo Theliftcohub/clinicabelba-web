@@ -271,13 +271,17 @@
       var btn = f.querySelector('[type=submit]'), err = f.querySelector('.bf-error');
       if (btn) { btn.disabled = true; btn.dataset.txt = btn.textContent; btn.textContent = f.getAttribute('data-sending') || '…'; }
       var data = new FormData(f);
+      // Decisión Nicols 01/10: por ahora los leads llegan por WhatsApp. Se abre en el mismo gesto del clic (si se esperase
+      // a la respuesta del servidor, el navegador lo bloquearía como ventana emergente). El POST sigue como red de seguridad.
+      var waMsg = waMensaje(f), waWin = null;
+      try { waWin = window.open(waEnlace(waMsg), '_blank'); if (waWin) waWin.opener = null; } catch (e2) {}
       var info = { event: 'lead_form_submit', form_id: f.getAttribute('data-form-id') || '', form_name: f.getAttribute('data-form-name') || '', form_page: location.pathname, form_lang: d.documentElement.lang, lead_source: first.source, lead_medium: first.medium };
       function done() {
         window.dataLayer.push(info);
         var red = f.getAttribute('data-redirect');
-        if (red) { try { sessionStorage.setItem('belba_wa', waMensaje(f)); } catch (e) {} setTimeout(function () { location.href = red; }, 300); return; }
+        if (red) { try { sessionStorage.setItem('belba_wa', waMsg); } catch (e) {} setTimeout(function () { location.href = red; }, 300); return; }
         f.querySelectorAll('[data-step], .bf-progress, .k-form-fields-wrapper, .form-aviso').forEach(function (s) { s.hidden = true; s.style.setProperty('display', 'none', 'important'); });
-        var th = f.querySelector('.bf-thanks'), waMsg = waMensaje(f);
+        var th = f.querySelector('.bf-thanks');
         if (th) { th.hidden = false; th.appendChild(waBoton(waMsg)); }
         else if (!(f.classList.contains('k-form') && !f.classList.contains('is-steps') && followUp(f, data, info))) { var ok = d.createElement('p'); ok.className = 'form-ok'; ok.textContent = '✓'; f.appendChild(ok); f.appendChild(waBoton(waMsg)); }
       }

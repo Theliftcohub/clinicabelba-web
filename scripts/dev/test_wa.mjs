@@ -6,7 +6,8 @@ const MIME = {'.html':'text/html','.css':'text/css','.js':'text/javascript','.we
 const srv = http.createServer((req,res)=>{ let p=decodeURIComponent(req.url.split('?')[0]); let f=path.join(DIST,p); if(fs.existsSync(f)&&fs.statSync(f).isDirectory()) f=path.join(f,'index.html'); if(!fs.existsSync(f)){res.writeHead(404);return res.end('404');} res.writeHead(200,{'Content-Type':MIME[path.extname(f)]||'application/octet-stream'}); fs.createReadStream(f).pipe(res); });
 await new Promise(r=>srv.listen(0,r)); const base=`http://localhost:${srv.address().port}`;
 const browser = await chromium.launch(); const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
-await ctx.route('**/*', r => r.request().url().startsWith(base) ? r.continue() : r.abort());
+await ctx.route('**/*', r => r.request().url().startsWith(base) ? r.continue() : (r.request().url().startsWith('https://wa.me/') ? r.fulfill({ body: 'wa' }) : r.abort()));
+const abiertas = []; ctx.on('page', pg => pg.waitForLoadState().then(() => abiertas.push(decodeURIComponent(pg.url()).slice(0, 120))).catch(() => {}));
 const p = await ctx.newPage(); const errs = []; p.on('pageerror', e => errs.push(e.message));
 const wa = async () => p.$$eval('.bf-wa', as => as.map(a => ({ txt: a.textContent, href: decodeURIComponent(a.href).slice(0, 400) })));
 // 1) formulario corto de Elementor (nombre + teléfono) → cualificación → gracias + WhatsApp
@@ -40,5 +41,6 @@ await (await f3.$('[data-step]:not([hidden]) input[type=email]')).fill('qa@examp
 await (await f3.$('[data-step]:not([hidden]) input[type=tel]')).fill('600000000'); await next3();
 await p.waitForTimeout(1200); console.log('3 redirección → url:', p.url().replace(base, ''), '| tarjeta:', JSON.stringify(await p.$$eval('.wa-card .bf-wa', as => as.map(a => decodeURIComponent(a.href).slice(0, 400)))));
 await p.screenshot({ path: 'migracion/screenshots/whatsapp-pagina-gracias.png' });
+await p.waitForTimeout(500); console.log('WhatsApp abierto al enviar (' + abiertas.length + '):', JSON.stringify(abiertas));
 console.log('errores JS:', JSON.stringify(errs));
 await browser.close(); srv.close();
