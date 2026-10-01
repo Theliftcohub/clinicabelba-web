@@ -59,6 +59,8 @@ T['es'] = dict(
 )
 
 T['en'] = dict(
+    seo_title='Plastic Surgery Clinic Barcelona | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc='Plastic surgery clinic in Barcelona ▷ Experts in beauty with years of experience as plastic surgeons are waiting to help you improve your image!',
     hero_eyebrow='Barcelona · Teknon Group · SECPRE-certified surgeons',
     hero_h1='Plastic surgery clinic in Barcelona',
     hero_sub='Real medical support before, during and after surgery',
@@ -110,6 +112,8 @@ T['en'] = dict(
 )
 
 T['ca'] = dict(
+    seo_title='Clínica Cirurgia Plàstica Barcelona | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc="Clínica de Cirurgia Plàstica a Barcelona ▷ Experts en bellesa i anys d'experiència com a cirurgians plàstics t'esperen per millorar la teva imatge!",
     hero_eyebrow='Barcelona · Grup Teknon · Cirurgians certificats SECPRE',
     hero_h1='Clínica de cirurgia plàstica a Barcelona',
     hero_sub='Acompanyament mèdic real abans, durant i després de la cirurgia',
@@ -161,6 +165,8 @@ T['ca'] = dict(
 )
 
 T['fr'] = dict(
+    seo_title='Clinique de Chirurgie Plastique Barcelone | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc="Clinique de chirurgie plastique à Barcelone ▷ Des experts en beauté avec des années d'expérience comme chirurgiens plasticiens vous attendent pour améliorer votre image !",
     hero_eyebrow='Barcelone · Groupe Teknon · Chirurgiens certifiés SECPRE',
     hero_h1='Clinique de chirurgie plastique à Barcelone',
     hero_sub='Un accompagnement médical réel avant, pendant et après la chirurgie',
@@ -212,6 +218,8 @@ T['fr'] = dict(
 )
 
 T['de'] = dict(
+    seo_title='Plastische Chirurgie Klinik Barcelona | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc='Klinik für plastische Chirurgie in Barcelona ▷ Experten für Schönheit mit jahrelanger Erfahrung als plastische Chirurgen erwarten Sie, um Ihr Aussehen zu verbessern!',
     hero_eyebrow='Barcelona · Teknon-Gruppe · SECPRE-zertifizierte Chirurgen',
     hero_h1='Plastische Chirurgie Klinik in Barcelona',  # H1 literal del WordPress en alemán
     hero_sub='Echte ärztliche Begleitung vor, während und nach der Operation',
@@ -263,6 +271,8 @@ T['de'] = dict(
 )
 
 T['it'] = dict(
+    seo_title='Clinica di Chirurgia Plastica Barcellona | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc='Clinica di chirurgia plastica a Barcellona ▷ Esperti in bellezza con anni di esperienza come chirurghi plastici ti aspettano per migliorare la tua immagine!',
     hero_eyebrow='Barcellona · Gruppo Teknon · Chirurghi certificati SECPRE',
     hero_h1='Clinica di chirurgia plastica a Barcellona',
     hero_sub='Un accompagnamento medico reale prima, durante e dopo l\'intervento',
@@ -314,6 +324,8 @@ T['it'] = dict(
 )
 
 T['nl'] = dict(
+    seo_title='Kliniek voor Plastische Chirurgie Barcelona | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc='Kliniek voor plastische chirurgie in Barcelona ▷ Experts in schoonheid met jarenlange ervaring als plastisch chirurgen staan klaar om uw uiterlijk te verbeteren!',
     hero_eyebrow='Barcelona · Teknon Groep · SECPRE-gecertificeerde chirurgen',
     hero_h1='Kliniek voor plastische chirurgie in Barcelona',
     hero_sub='Echte medische begeleiding vóór, tijdens en na de operatie',
@@ -365,6 +377,8 @@ T['nl'] = dict(
 )
 
 T['ru'] = dict(
+    seo_title='Клиника пластической хирургии Барселона | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc='Клиника пластической хирургии в Барселоне ▷ Эксперты красоты с многолетним опытом работы пластическими хирургами ждут вас, чтобы улучшить ваш образ!',
     hero_eyebrow='Барселона · Группа Teknon · Хирурги, сертифицированные SECPRE',
     hero_h1='Клиника пластической хирургии в Барселоне',
     hero_sub='Настоящее медицинское сопровождение до, во время и после операции',
@@ -416,6 +430,8 @@ T['ru'] = dict(
 )
 
 T['uk'] = dict(
+    seo_title='Клініка пластичної хірургії Барселона | Clínica Belba',  # title y meta description de la portada: el WordPress servía los de ES en todos los idiomas (traducción de la agencia, 01/10)
+    seo_desc='Клініка пластичної хірургії в Барселоні ▷ Експерти краси з багаторічним досвідом роботи пластичними хірургами чекають на вас, щоб покращити ваш образ!',
     hero_eyebrow='Барселона · Група Teknon · Хірурги, сертифіковані SECPRE',
     hero_h1='Клініка пластичної хірургії в Барселоні',
     hero_sub='Справжній медичний супровід до, під час і після операції',

@@ -611,6 +611,8 @@ def main():
         doc['bodyClass'] = 'home page k-default k-kit-5 k-page'
         doc['needs'] = sorted(set((doc.get('needs') or []) + ['trustindex']))
         doc['seo']['ogImage'] = '/images/2026/03/Honorarios-medicos-quirofano-y-anestesia.webp'
+        if lang != 'es' and t.get('seo_title'):  # el WordPress servía el title y la description en ES en las 9 portadas (NO_LITERAL)
+            doc['seo']['title'] = t['seo_title']; doc['seo']['description'] = t['seo_desc']
         json.dump(doc, open(f, 'w'), ensure_ascii=False)
         rows.append('| %s | página completa | portada del WordPress | home nueva (diseño Figma de Oscar, datos reales) %s | decisión Oscar 28/09; %s |' % (
             unquote(doc['path']), '' if lang == 'es' else 'traducida por la agencia', 'textos originales en ES' if lang == 'es' else 'traducción pendiente de revisión de la clínica'))
