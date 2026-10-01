@@ -10,28 +10,8 @@
   "fr": "/fr/cirugia-intima/",
   "en": "/en/intimate-surgery/"
  },
- "/rinoplastia-en-barcelona-plantilla-facial/": {
-  "es": "/rinoplastia-en-barcelona-plantilla-facial/",
-  "ru": "/ru/rinoplastia-en-barcelona-plantilla-facial/",
-  "uk": "/uk/rinoplastia-en-barcelona-plantilla-facial/",
-  "de": "/de/rinoplastia-en-barcelona-plantilla-facial/",
-  "it": "/it/rinoplastia-en-barcelona-plantilla-facial/",
-  "nl": "/nl/rinoplastia-en-barcelona-plantilla-facial/",
-  "ca": "/ca/rinoplastia-en-barcelona-plantilla-facial/",
-  "fr": "/fr/rinoplastia-en-barcelona-plantilla-facial/",
-  "en": "/en/rinoplastia-en-barcelona-plantilla-facial/"
- },
- "/blefaroplastia-en-barcelona-plantilla-facial/": {
-  "es": "/blefaroplastia-en-barcelona-plantilla-facial/",
-  "ru": "/ru/blefaroplastia-en-barcelona-plantilla-facial/",
-  "uk": "/uk/blefaroplastia-en-barcelona-plantilla-facial/",
-  "de": "/de/blefaroplastia-en-barcelona-plantilla-facial/",
-  "it": "/it/blefaroplastia-en-barcelona-plantilla-facial/",
-  "nl": "/nl/blefaroplastia-en-barcelona-plantilla-facial/",
-  "ca": "/ca/blefaroplastia-en-barcelona-plantilla-facial/",
-  "fr": "/fr/blefaroplastia-en-barcelona-plantilla-facial/",
-  "en": "/en/blefaroplastia-en-barcelona-plantilla-facial/"
- },
+ "/rinoplastia-en-barcelona-plantilla-facial/": {},
+ "/blefaroplastia-en-barcelona-plantilla-facial/": {},
  "/aumento-pecho-barcelona/": {
   "es": "/aumento-pecho-barcelona/",
   "ru": "/ru/%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b3%d1%80%d1%83%d0%b4%d0%b8-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/",
@@ -263,17 +243,7 @@
   "fr": "/fr/lifting-facial-barcelone/",
   "en": "/en/facelift-barcelona/"
  },
- "/elementor-3065/": {
-  "es": "/elementor-3065/",
-  "ru": "/ru/elementor-3065/",
-  "uk": "/uk/elementor-3065/",
-  "de": "/de/elementor-3065/",
-  "it": "/it/elementor-3065/",
-  "nl": "/nl/elementor-3065/",
-  "ca": "/ca/elementor-3065/",
-  "fr": "/fr/elementor-3065/",
-  "en": "/en/elementor-3065/"
- },
+ "/elementor-3065/": {},
  "/rinomodelacion-barcelona/": {
   "es": "/rinomodelacion-barcelona/",
   "ru": "/ru/%d1%80%d0%b8%d0%bd%d0%be%d0%bc%d0%be%d0%b4%d0%b5%d0%bb%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%80%d1%81%d0%b5%d0%bb%d0%be%d0%bd%d0%b0/",
@@ -505,17 +475,7 @@
   "fr": "/fr/chirurgiens-plasticiens-barcelone/",
   "en": "/en/plastic-surgeons-barcelona/"
  },
- "/wpbc-booking/": {
-  "es": "/wpbc-booking/",
-  "ru": "/ru/wpbc-booking/",
-  "uk": "/uk/wpbc-booking/",
-  "de": "/de/wpbc-booking/",
-  "it": "/it/wpbc-booking/",
-  "nl": "/nl/wpbc-booking/",
-  "ca": "/ca/wpbc-booking/",
-  "fr": "/fr/wpbc-booking/",
-  "en": "/en/wpbc-booking/"
- },
+ "/wpbc-booking/": {},
  "/reviews-dr-felix-chavarria/": {
   "es": "/reviews-dr-felix-chavarria/",
   "ru": "/ru/reviews-dr-felix-chavarria/",
@@ -825,15 +785,7 @@
   "en": "/en/dr-chavarrias-comments/"
  },
  "/cirujano-plastico/nosotros/": {
-  "es": "/cirujano-plastico/nosotros/",
-  "ru": "/ru/%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d1%85%d0%b8%d1%80%d1%83%d1%80%d0%b3/%d0%bc%d1%8b/",
-  "uk": "/uk/%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d1%87%d0%bd%d0%b8%d0%b9-%d1%85%d1%96%d1%80%d1%83%d1%80%d0%b3/%d0%bc%d0%b8/",
-  "de": "/de/plastischer-chirurg/wir/",
-  "it": "/it/chirurgo-plastico/noi/",
-  "nl": "/nl/plastisch-chirurg/wij/",
-  "ca": "/ca/cirurgia-plastic/nosaltres/",
-  "fr": "/fr/chirurgien-plasticien/nous/",
-  "en": "/en/plastic-surgeon/we/"
+  "es": "/cirujano-plastico/nosotros/"
  },
  "/cirujano-plastico/dr-mike-dewever/": {
   "es": "/cirujano-plastico/dr-mike-dewever/",
@@ -912,17 +864,7 @@
   "fr": "/fr/abdominoplastie-avant-et-apres/",
   "en": "/en/abdominoplasty-before-and-after/"
  },
- "/prueba-belba-bnb/": {
-  "es": "/prueba-belba-bnb/",
-  "ru": "/ru/prueba-belba-bnb/",
-  "uk": "/uk/prueba-belba-bnb/",
-  "de": "/de/prueba-belba-bnb/",
-  "it": "/it/prueba-belba-bnb/",
-  "nl": "/nl/prueba-belba-bnb/",
-  "ca": "/ca/prueba-belba-bnb/",
-  "fr": "/fr/prueba-belba-bnb/",
-  "en": "/en/prueba-belba-bnb/"
- },
+ "/prueba-belba-bnb/": {},
  "/dr-dewever-chirurgie-plastique/merci/": {
   "es": "/dr-dewever-chirurgie-plastique/merci/",
   "ru": "/ru/dr-dewever-chirurgie-plastique/merci/",
@@ -978,17 +920,7 @@
   "fr": "/fr/pre/",
   "en": "/en/pre/"
  },
- "/wpbc-booking-received/": {
-  "es": "/wpbc-booking-received/",
-  "ru": "/ru/wpbc-booking-received/",
-  "uk": "/uk/wpbc-booking-received/",
-  "de": "/de/wpbc-booking-received/",
-  "it": "/it/wpbc-booking-received/",
-  "nl": "/nl/wpbc-booking-received/",
-  "ca": "/ca/wpbc-booking-received/",
-  "fr": "/fr/wpbc-booking-received/",
-  "en": "/en/wpbc-booking-received/"
- },
+ "/wpbc-booking-received/": {},
  "/encuentra-tu-hueco-calendario-de-descuentos/": {
   "es": "/encuentra-tu-hueco-calendario-de-descuentos/",
   "ru": "/ru/encuentra-tu-hueco-calendario-de-descuentos/",
@@ -1242,17 +1174,7 @@
   "fr": "/fr/qui-sommes-nous/",
   "en": "/en/who-are-we/"
  },
- "/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/": {
-  "es": "/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "ru": "/ru/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "uk": "/uk/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "de": "/de/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "it": "/it/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "nl": "/nl/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "ca": "/ca/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "fr": "/fr/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/",
-  "en": "/en/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/"
- },
+ "/test-post-2193c672-50fa-4ac0-84bf-874e83e57613-c19602556d950424/": {},
  "/asimetria-mamaria-cuando-operar/": {
   "es": "/asimetria-mamaria-cuando-operar/",
   "ru": "/ru/asimetria-mamaria-cuando-operar/",
@@ -1353,7 +1275,7 @@
   "en": "/en/labia/"
  },
  "/rinoplastia/": {
-  "es": "/rinoplastia/",
+  "es": "/rinoplastia-barcelona/",
   "ru": "/ru/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/",
   "uk": "/uk/%d1%80%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/",
   "de": "/de/rhinoplastik/",
@@ -1364,7 +1286,7 @@
   "en": "/en/rhinoplasty/"
  },
  "/abdominoplastia/": {
-  "es": "/abdominoplastia/",
+  "es": "/abdominoplastia-barcelona/",
   "ru": "/ru/%d0%b0%d0%b1%d0%b4%d0%be%d0%bc%d0%b8%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/",
   "uk": "/uk/%d0%b0%d0%b1%d0%b4%d0%be%d0%bc%d1%96%d0%bd%d0%be%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%ba%d0%b0/",
   "de": "/de/bauchdeckenstraffung/",
@@ -1374,38 +1296,28 @@
   "fr": "/fr/abdominoplastie/",
   "en": "/en/tummy-tuck/"
  },
- "/metform-form/new-form-1777668110/": {
-  "es": "/metform-form/new-form-1777668110/",
-  "ru": "/ru/metform-form/new-form-1777668110/",
-  "uk": "/uk/metform-form/new-form-1777668110/",
-  "de": "/de/metformin-form/neues-formular-1777668110/",
-  "it": "/it/metform-form/new-form-1777668110/",
-  "nl": "/nl/metform-form/new-form-1777668110/",
-  "ca": "/ca/metform-form/new-form-1777668110/",
-  "fr": "/fr/metform-form/new-form-1777668110/",
-  "en": "/en/metform-form/new-form-1777668110/"
- },
+ "/metform-form/new-form-1777668110/": {},
  "/author/nicols/": {
-  "es": "/author/nicols/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d0%b8%d0%ba%d0%be%d0%bb%d1%8b/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%bd%d1%96%d0%ba%d0%be%d0%bb%d1%81/",
-  "de": "/de/autor/nikolaus/",
-  "it": "/it/autore/nicols/",
-  "nl": "/nl/auteur/nicols/",
-  "ca": "/ca/autor/nicolas/",
-  "fr": "/fr/auteur/nicols/",
-  "en": "/en/author/nicols/"
+  "es": "/blog/",
+  "ru": "/ru/%d0%b1%d0%bb%d0%be%d0%b3/",
+  "uk": "/uk/%d0%b1%d0%bb%d0%be%d0%b3/",
+  "de": "/de/blog/",
+  "it": "/it/blog/",
+  "nl": "/nl/blog/",
+  "ca": "/ca/bloc/",
+  "fr": "/fr/blog/",
+  "en": "/en/blog/"
  },
  "/author/seo2/": {
-  "es": "/author/seo2/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/seo2/",
-  "de": "/de/autor/seo2/",
-  "it": "/it/autore/seo2/",
-  "nl": "/nl/auteur/seo2/",
-  "ca": "/ca/autor/seo2/",
-  "fr": "/fr/auteur/seo2/",
-  "en": "/en/author/seo2/"
+  "es": "/blog/",
+  "ru": "/ru/%d0%b1%d0%bb%d0%be%d0%b3/",
+  "uk": "/uk/%d0%b1%d0%bb%d0%be%d0%b3/",
+  "de": "/de/blog/",
+  "it": "/it/blog/",
+  "nl": "/nl/blog/",
+  "ca": "/ca/bloc/",
+  "fr": "/fr/blog/",
+  "en": "/en/blog/"
  },
  "/author/webbelba/": {
   "es": "/author/webbelba/",
@@ -1419,15 +1331,15 @@
   "en": "/en/author/webbelba/"
  },
  "/author/alejandro_yhi4p50l/": {
-  "es": "/author/alejandro_yhi4p50l/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/alejandro_yhi4p50l/",
-  "de": "/de/autor/alejandro_yhi4p50l/",
-  "it": "/it/autore/alejandro_yhi4p50l/",
-  "nl": "/nl/auteur/alejandro_yhi4p50l/",
-  "ca": "/ca/autor/alejandro_yhi4p50l/",
-  "fr": "/fr/auteur/alejandro_yhi4p50l/",
-  "en": "/en/author/alejandro_yhi4p50l/"
+  "es": "/blog/",
+  "ru": "/ru/%d0%b1%d0%bb%d0%be%d0%b3/",
+  "uk": "/uk/%d0%b1%d0%bb%d0%be%d0%b3/",
+  "de": "/de/blog/",
+  "it": "/it/blog/",
+  "nl": "/nl/blog/",
+  "ca": "/ca/bloc/",
+  "fr": "/fr/blog/",
+  "en": "/en/blog/"
  },
  "/blog/2/": {
   "es": "/blog/2/",
@@ -1529,7 +1441,7 @@
   "en": "/en/blog/9/"
  },
  "/aumento-de-mama-hibrido/": {
-  "es": "/aumento-de-mama-hibrido/",
+  "es": "/aumento-pecho-barcelona/",
   "ru": "/ru/aumento-de-mama-hibrido/",
   "uk": "/uk/%d0%b3%d1%96%d0%b1%d1%80%d0%b8%d0%b4%d0%bd%d0%b5-%d0%b7%d0%b1%d1%96%d0%bb%d1%8c%d1%88%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b3%d1%80%d1%83%d0%b4%d0%b5%d0%b9/",
   "de": "/de/aumento-de-mama-hibrido/",
@@ -1540,58 +1452,58 @@
   "en": "/en/aumento-de-mama-hibrido/"
  },
  "/author/webbelba/page/2/": {
-  "es": "/author/webbelba/page/2/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0/2/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/%d1%81%d1%82%d0%be%d1%80%d1%96%d0%bd%d0%ba%d0%b0/2/",
-  "de": "/de/autor/webbelba/seite/2/",
-  "it": "/it/autore/bellissima/pagina/2/",
-  "nl": "/nl/auteur/webbel/pagina/2/",
-  "ca": "/ca/autor/webbelba/pagina/2/",
-  "fr": "/fr/auteur/webbelba/page/2/",
-  "en": "/en/author/webbelba/page/2/"
+  "es": "/author/webbelba/",
+  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/",
+  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/",
+  "de": "/de/autor/webbelba/",
+  "it": "/it/autore/bellissima/",
+  "nl": "/nl/auteur/webbel/",
+  "ca": "/ca/autor/webbelba/",
+  "fr": "/fr/auteur/webbelba/",
+  "en": "/en/author/webbelba/"
  },
  "/author/webbelba/page/3/": {
-  "es": "/author/webbelba/page/3/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0/3/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/%d1%81%d1%82%d0%be%d1%80%d1%96%d0%bd%d0%ba%d0%b0/3/",
-  "de": "/de/autor/webbelba/seite/3/",
-  "it": "/it/autore/bellissima/pagina/3/",
-  "nl": "/nl/auteur/webbel/pagina/3/",
-  "ca": "/ca/autor/webbelba/pagina/3/",
-  "fr": "/fr/auteur/webbelba/page/3/",
-  "en": "/en/author/webbelba/page/3/"
+  "es": "/author/webbelba/",
+  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/",
+  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/",
+  "de": "/de/autor/webbelba/",
+  "it": "/it/autore/bellissima/",
+  "nl": "/nl/auteur/webbel/",
+  "ca": "/ca/autor/webbelba/",
+  "fr": "/fr/auteur/webbelba/",
+  "en": "/en/author/webbelba/"
  },
  "/author/webbelba/page/4/": {
-  "es": "/author/webbelba/page/4/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0/4/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/%d1%81%d1%82%d0%be%d1%80%d1%96%d0%bd%d0%ba%d0%b0/4/",
-  "de": "/de/autor/webbelba/seite/4/",
-  "it": "/it/autore/bellissima/pagina/4/",
-  "nl": "/nl/auteur/webbel/pagina/4/",
-  "ca": "/ca/autor/webbelba/pagina/4/",
-  "fr": "/fr/auteur/webbelba/page/4/",
-  "en": "/en/author/webbelba/page/4/"
+  "es": "/author/webbelba/",
+  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/",
+  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/",
+  "de": "/de/autor/webbelba/",
+  "it": "/it/autore/bellissima/",
+  "nl": "/nl/auteur/webbel/",
+  "ca": "/ca/autor/webbelba/",
+  "fr": "/fr/auteur/webbelba/",
+  "en": "/en/author/webbelba/"
  },
  "/author/webbelba/page/5/": {
-  "es": "/author/webbelba/page/5/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0/5/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/%d1%81%d1%82%d0%be%d1%80%d1%96%d0%bd%d0%ba%d0%b0/5/",
-  "de": "/de/autor/webbelba/seite/5/",
-  "it": "/it/autore/bellissima/pagina/5/",
-  "nl": "/nl/auteur/webbel/pagina/5/",
-  "ca": "/ca/autor/webbelba/pagina/5/",
-  "fr": "/fr/auteur/webbelba/page/5/",
-  "en": "/en/author/webbelba/page/5/"
+  "es": "/author/webbelba/",
+  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/",
+  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/",
+  "de": "/de/autor/webbelba/",
+  "it": "/it/autore/bellissima/",
+  "nl": "/nl/auteur/webbel/",
+  "ca": "/ca/autor/webbelba/",
+  "fr": "/fr/auteur/webbelba/",
+  "en": "/en/author/webbelba/"
  },
  "/author/webbelba/page/6/": {
-  "es": "/author/webbelba/page/6/",
-  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0/6/",
-  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/%d1%81%d1%82%d0%be%d1%80%d1%96%d0%bd%d0%ba%d0%b0/6/",
-  "de": "/de/autor/webbelba/seite/6/",
-  "it": "/it/autore/bellissima/pagina/6/",
-  "nl": "/nl/auteur/webbel/pagina/6/",
-  "ca": "/ca/autor/webbelba/pagina/6/",
-  "fr": "/fr/auteur/webbelba/page/6/",
-  "en": "/en/author/webbelba/page/6/"
+  "es": "/author/webbelba/",
+  "ru": "/ru/%d0%b0%d0%b2%d1%82%d0%be%d1%80/%d0%b2%d0%b5%d0%b1%d0%b1%d0%b5%d0%bb%d0%b1%d0%b0/",
+  "uk": "/uk/%d0%b0%d0%b2%d1%82%d0%be%d1%80/webbelba/",
+  "de": "/de/autor/webbelba/",
+  "it": "/it/autore/bellissima/",
+  "nl": "/nl/auteur/webbel/",
+  "ca": "/ca/autor/webbelba/",
+  "fr": "/fr/auteur/webbelba/",
+  "en": "/en/author/webbelba/"
  }
 }

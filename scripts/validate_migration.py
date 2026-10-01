@@ -118,7 +118,7 @@ def links_only(dist):
     for root, _, files in os.walk(dist):
         for f in files:
             if f.endswith(".html"):
-                rel = os.path.relpath(os.path.join(root, f), dist)
+                rel = os.path.relpath(os.path.join(root, f), dist).replace(os.sep, "/")  # en Windows relpath usa barras invertidas
                 routes.add("/" + rel.replace("index.html", "").replace(".html", ""))
     routes = {r if r.endswith("/") or "." in r.split("/")[-1] else r + "/" for r in routes} | {"/"}
     for root, _, files in os.walk(dist):
@@ -127,9 +127,10 @@ def links_only(dist):
                 continue
             h = open(os.path.join(root, f), encoding="utf-8", errors="ignore").read()
             for href in re.findall(r'href="(/[^"#?]*)', h):
+                href = unquote(href)  # los slugs RU/UK van codificados en %xx en el HTML y decodificados en disco
                 t = href if href.endswith("/") or "." in href.split("/")[-1] else href + "/"
                 if t not in routes and not os.path.exists(os.path.join(dist, href.lstrip("/"))):
-                    fails.append(f"{os.path.relpath(os.path.join(root,f),dist)} -> {href}")
+                    fails.append(f"{os.path.relpath(os.path.join(root,f),dist).replace(os.sep, '/')} -> {href}")
     print(f"{len(routes)} rutas, {len(fails)} enlaces internos rotos")
     print("\n".join("  " + x for x in fails[:200]))
     return 1 if fails else 0

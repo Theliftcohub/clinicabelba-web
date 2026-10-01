@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node -e \"require('fs').copyFileSync('dist/410/index.html','dist/410.html')\"",
     "preview": "astro preview"
   },
   "dependencies": {
