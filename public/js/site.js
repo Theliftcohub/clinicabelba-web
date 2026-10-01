@@ -9,11 +9,18 @@
     t.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(); } });
   });
   // Desplegables del menú de escritorio: abrir al pasar y cerrar con retardo (como SmartMenus en el WP), sin parpadeos
+  // Al abrir un elemento se cierran YA sus hermanos abiertos (si no, con el retardo, el panel del anterior se solapa con el nuevo)
   d.querySelectorAll('.k-nav-menu--main .menu-item-has-children').forEach(function (li) {
-    var t;
-    li.addEventListener('mouseenter', function () { clearTimeout(t); li.classList.add('open'); });
-    li.addEventListener('mouseleave', function () { t = setTimeout(function () { li.classList.remove('open'); }, 350); });
-    li.addEventListener('focusin', function () { li.classList.add('open'); });
+    function open() {
+      clearTimeout(li._t);
+      Array.prototype.forEach.call(li.parentNode.children, function (s) {
+        if (s !== li && s.classList.contains('open')) { clearTimeout(s._t); s.classList.remove('open'); s.querySelectorAll('li.open').forEach(function (x) { x.classList.remove('open'); }); }
+      });
+      li.classList.add('open');
+    }
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', function () { li._t = setTimeout(function () { li.classList.remove('open'); }, 350); });
+    li.addEventListener('focusin', open);
     li.addEventListener('focusout', function () { setTimeout(function () { if (!li.contains(d.activeElement)) li.classList.remove('open'); }, 100); });
   });
   // Submenús en el menú desplegable (móvil)
