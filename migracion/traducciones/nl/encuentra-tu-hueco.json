@@ -1,0 +1,41 @@
+{
+ "lang": "nl",
+ "slug": "encuentra-tu-hueco",
+ "path": "/nl/encuentra-tu-hueco/",
+ "src": [
+  "Encuentra tu hueco ",
+  "DESCUENTOS ESPECIALES",
+  "Consigue  hasta -800€ de descuento en tu tratamiento estético",
+  "Consigue  ",
+  "hasta -800€ de descuento",
+  "en tu tratamiento estético",
+  "En busca de la excelencia en cirugía plástica y reparadora"
+ ],
+ "idx": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  48
+ ],
+ "ctx": {
+  "4": "Encuentra tu hueco DESCUENTOS ESPECIALES",
+  "5": "Encuentra tu hueco DESCUENTOS ESPECIALES",
+  "6": "Consigue hasta -800€ de descuento en tu tratamiento estético",
+  "7": "Consigue hasta -800€ de descuento en tu tratamiento estético",
+  "8": "Consigue hasta -800€ de descuento en tu tratamiento estético",
+  "9": "Consigue hasta -800€ de descuento en tu tratamiento estético"
+ },
+ "total": 50,
+ "dst": [
+  "Vind uw plek ",
+  "SPECIALE KORTINGEN",
+  "Ontvang tot -800€ korting op uw esthetische behandeling",
+  "Ontvang  ",
+  "tot -800€ korting",
+  "op uw esthetische behandeling",
+  "Op zoek naar excellentie in plastische en reconstructieve chirurgie"
+ ]
+}

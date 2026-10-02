@@ -1,0 +1,17 @@
+{
+ "job": 140,
+ "lang": "uk",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\drfelixchavarriacirugiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\абдомінопластика-до-і-після.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\вартість-збільшення-грудей.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\ціна-на-лікування-гінекомастії.json"
+ ],
+ "slugs": [
+  "drfelixchavarriacirugiaplastica/gracias",
+  "абдомінопластика-до-і-після",
+  "вартість-збільшення-грудей",
+  "ціна-на-лікування-гінекомастії"
+ ],
+ "palabras": 33
+}

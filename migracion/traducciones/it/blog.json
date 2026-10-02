@@ -1,0 +1,16 @@
+{
+ "lang": "it",
+ "slug": "blog",
+ "path": "/it/blog/",
+ "src": [
+  "Blog especializado en cirugía plástica con información sobre tratamientos, resultados y cuidados. Resuelve tus dudas. ¡Visítanos!"
+ ],
+ "idx": [
+  1
+ ],
+ "ctx": {},
+ "total": 30,
+ "dst": [
+  "Blog specializzato in chirurgia plastica con informazioni su trattamenti, risultati e cure. Risolva i suoi dubbi. Ci visiti!"
+ ]
+}

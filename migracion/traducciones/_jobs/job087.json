@@ -1,0 +1,41 @@
+{
+ "job": 87,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__4.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__5.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\lipovaser-que-es.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\dr-dewever-plastic-surgery__thank-you.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\drdeweverplasticsurgery__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\drfelixchavarriacirugiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\chirurgien-plasticien__dr-mike-dewever.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\asimetria-mamaria-cuando-operar.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\pezones-invertidos-correccion.json"
+ ],
+ "slugs": [
+  "blog/2",
+  "blog/3",
+  "blog/4",
+  "blog/5",
+  "blog/6",
+  "blog/7",
+  "blog/8",
+  "blog/9",
+  "lipovaser-que-es",
+  "dr-dewever-chirurgie-plastique/merci",
+  "dr-dewever-plastic-surgery/thank-you",
+  "drdeweverplasticsurgery/gracias",
+  "drfelixchavarriacirugiaplastica/gracias",
+  "chirurgien-plasticien/dr-mike-dewever",
+  "asimetria-mamaria-cuando-operar",
+  "pezones-invertidos-correccion"
+ ],
+ "palabras": 217
+}

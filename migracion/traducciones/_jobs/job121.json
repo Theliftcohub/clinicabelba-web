@@ -1,0 +1,17 @@
+{
+ "job": 121,
+ "lang": "ru",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\цена-ультразвуковой-ринопластики.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\памятка-для-пациента.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\автор__веббелба.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\цена-косметической-операции-барсело.json"
+ ],
+ "slugs": [
+  "цена-ультразвуковой-ринопластики",
+  "памятка-для-пациента",
+  "автор/веббелба",
+  "цена-косметической-операции-барсело"
+ ],
+ "palabras": 2077
+}

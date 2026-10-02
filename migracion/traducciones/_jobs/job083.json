@@ -1,0 +1,29 @@
+{
+ "job": 83,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\avis-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\temoignages-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\dr-felix-chavarria-avis.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\experiencias-positivas-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\abdominoplastie-avant-et-apres.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\valoraciones-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\comentarios-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\rhinoplastie-avant-et-apres.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\rhinoplastie-homme-avant-et-apres-ameliore.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\feedback-positivo-dr-chavarria.json"
+ ],
+ "slugs": [
+  "avis-dr-felix-chavarria",
+  "temoignages-dr-felix-chavarria",
+  "dr-felix-chavarria-avis",
+  "experiencias-positivas-dr-chavarria",
+  "abdominoplastie-avant-et-apres",
+  "valoraciones-dr-chavarria",
+  "comentarios-chavarria",
+  "rhinoplastie-avant-et-apres",
+  "rhinoplastie-homme-avant-et-apres-ameliore",
+  "feedback-positivo-dr-chavarria"
+ ],
+ "palabras": 2062
+}

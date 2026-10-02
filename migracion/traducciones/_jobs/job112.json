@@ -1,0 +1,41 @@
+{
+ "job": 112,
+ "lang": "nl",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\drdeweverplastischechirurgie__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\drfelixchavarriacirugiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\borstvergroting-prijs.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\labios-vaginales-que-son-tipos-cuidados-y-cuando-consultar.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\asimetria-mamaria-cuando-operar.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\cicatriz-cesarea-correccion.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\buikwandcorrectie-voor-en-na.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\contact.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\online-consult.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\rinoplastiek-ultratonisch-prijs.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\plastisch-chirurg__dr-mike-dewever.json"
+ ],
+ "slugs": [
+  "blog/6",
+  "blog/7",
+  "blog/8",
+  "blog/9",
+  "dr-dewever-chirurgie-plastique/merci",
+  "drdeweverplastischechirurgie/gracias",
+  "drfelixchavarriacirugiaplastica/gracias",
+  "borstvergroting-prijs",
+  "labios-vaginales-que-son-tipos-cuidados-y-cuando-consultar",
+  "asimetria-mamaria-cuando-operar",
+  "cicatriz-cesarea-correccion",
+  "buikwandcorrectie-voor-en-na",
+  "contact",
+  "online-consult",
+  "rinoplastiek-ultratonisch-prijs",
+  "plastisch-chirurg/dr-mike-dewever"
+ ],
+ "palabras": 181
+}

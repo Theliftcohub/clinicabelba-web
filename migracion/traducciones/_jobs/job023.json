@@ -1,0 +1,41 @@
+{
+ "job": 23,
+ "lang": "ca",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\testimonis-xavaria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\trabajo-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\dr-felix-chavarria-experiencias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\experiencias-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\abdominoplastia-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\testimonios-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\comentaris-i-feedback-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\rinoplastia-ultrasonica-avantatges-limits.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\opinions-reals-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\cirurgia-de-mama.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\cirurgians-plastics-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\resenas-y-testimonios-del-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\blefaroplastia-sense-cirurgia.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\qui-som.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\augment-de-pit-barcelona.json"
+ ],
+ "slugs": [
+  "testimonis-xavaria",
+  "trabajo-dr-chavarria",
+  "dr-felix-chavarria-experiencias",
+  "experiencias-dr-felix-chavarria",
+  "abdominoplastia-barcelona",
+  "testimonios-dr-felix-chavarria-2",
+  "comentaris-i-feedback-dr-felix-chavarria",
+  "dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural",
+  "rinoplastia-ultrasonica-avantatges-limits",
+  "opinions-reals-dr-felix-chavarria",
+  "cirurgia-de-mama",
+  "cirurgians-plastics-barcelona",
+  "resenas-y-testimonios-del-dr-felix-chavarria",
+  "blefaroplastia-sense-cirurgia",
+  "qui-som",
+  "augment-de-pit-barcelona"
+ ],
+ "palabras": 1219
+}

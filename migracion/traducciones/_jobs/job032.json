@@ -1,0 +1,17 @@
+{
+ "job": 32,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\patientenleitfaden.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\wer-wir-sind.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\autor__webbelba.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-chavarria-meinungen.json"
+ ],
+ "slugs": [
+  "patientenleitfaden",
+  "wer-wir-sind",
+  "autor/webbelba",
+  "dr-chavarria-meinungen"
+ ],
+ "palabras": 2061
+}

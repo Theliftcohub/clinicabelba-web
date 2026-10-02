@@ -1,0 +1,41 @@
+{
+ "job": 37,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\minilifting-gesicht-preis.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blepharoplastik.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\fettabsaugung-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\gesasvergroserung-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\hochdefinitions-fettabsaugung.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\lipo-vaser.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\rhinoplastik-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\bewertungen-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\lobuloplastik-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\mini-lifting-gesicht-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\rinomodellierung-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\tipos-de-aumento-de-pecho.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\ginekomastie-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\echte-meinungen-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__10.json"
+ ],
+ "slugs": [
+  "minilifting-gesicht-preis",
+  "blepharoplastik",
+  "fettabsaugung-barcelona",
+  "gesasvergroserung-barcelona",
+  "hochdefinitions-fettabsaugung",
+  "lipo-vaser",
+  "rhinoplastik-barcelona",
+  "bewertungen-dr-felix-chavarria",
+  "lobuloplastik-barcelona",
+  "mini-lifting-gesicht-barcelona",
+  "rinomodellierung-barcelona",
+  "tipos-de-aumento-de-pecho",
+  "ginekomastie-barcelona",
+  "echte-meinungen-dr-felix-chavarria",
+  "blog",
+  "blog/10"
+ ],
+ "palabras": 394
+}

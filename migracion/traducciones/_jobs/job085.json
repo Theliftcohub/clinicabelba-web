@@ -1,0 +1,41 @@
+{
+ "job": 85,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\vaginoplastie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\levres-vaginales-quest-ce-que-cest-types-soins-et-quand-consulter.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\mastopexie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\critiques-positives-du-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\chirurgie-mammaire.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\cicatrice-minimale.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\reduction-dareole.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\remplacement-de-prothese.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\chirurgiens-plasticiens-barcelone.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\temoignages-du-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\prix-abdominoplastie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\qui-sommes-nous.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\augmentation-des-fessiers-barcelone.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\encuentra-tu-hueco-calendario-de-descuentos.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\augmentation-sublime.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\lifting-des-bras.json"
+ ],
+ "slugs": [
+  "vaginoplastie",
+  "levres-vaginales-quest-ce-que-cest-types-soins-et-quand-consulter",
+  "mastopexie",
+  "critiques-positives-du-dr-felix-chavarria",
+  "chirurgie-mammaire",
+  "cicatrice-minimale",
+  "reduction-dareole",
+  "remplacement-de-prothese",
+  "chirurgiens-plasticiens-barcelone",
+  "temoignages-du-dr-felix-chavarria-2",
+  "prix-abdominoplastie",
+  "qui-sommes-nous",
+  "augmentation-des-fessiers-barcelone",
+  "encuentra-tu-hueco-calendario-de-descuentos",
+  "augmentation-sublime",
+  "lifting-des-bras"
+ ],
+ "palabras": 979
+}

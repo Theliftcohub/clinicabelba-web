@@ -1,0 +1,41 @@
+{
+ "job": 125,
+ "lang": "ru",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\липосакция-высокой-четкости.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\пластический-хирург__доктор-феликс-чаваррия.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блефаропластика.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\липосакция-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\липо-вазер.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\лобулопластика-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\мини-лифтинг-лица-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\риномоделирование-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\ринопластика-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\увеличение-яго.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\tipos-de-aumento-de-pecho.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\замена-протеза.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\минимальный-шрам.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\подтяжка-груди.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\редукция-ареолы.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\гинекомастия-барселона.json"
+ ],
+ "slugs": [
+  "липосакция-высокой-четкости",
+  "пластический-хирург/доктор-феликс-чаваррия",
+  "блефаропластика",
+  "липосакция-барселона",
+  "липо-вазер",
+  "лобулопластика-барселона",
+  "мини-лифтинг-лица-барселона",
+  "риномоделирование-барселона",
+  "ринопластика-барселона",
+  "увеличение-яго",
+  "tipos-de-aumento-de-pecho",
+  "замена-протеза",
+  "минимальный-шрам",
+  "подтяжка-груди",
+  "редукция-ареолы",
+  "гинекомастия-барселона"
+ ],
+ "palabras": 359
+}

@@ -1,0 +1,41 @@
+{
+ "job": 126,
+ "lang": "ru",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__10.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__4.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__5.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блог__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\дрфеликсчаварриацируджиапластика__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\ждрдеверхирургияпластическая__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\маммопластика-в-испании.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\абдоминопластика-до-и-после.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\увеличение-груди-цена.json"
+ ],
+ "slugs": [
+  "блог",
+  "блог/10",
+  "блог/2",
+  "блог/3",
+  "блог/4",
+  "блог/5",
+  "блог/6",
+  "блог/7",
+  "блог/8",
+  "блог/9",
+  "dr-dewever-chirurgie-plastique/merci",
+  "дрфеликсчаварриацируджиапластика/gracias",
+  "ждрдеверхирургияпластическая/gracias",
+  "маммопластика-в-испании",
+  "абдоминопластика-до-и-после",
+  "увеличение-груди-цена"
+ ],
+ "palabras": 230
+}

@@ -1,0 +1,41 @@
+{
+ "job": 58,
+ "lang": "en",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\chavarria-comments.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\dr-felix-chavarria-reviews-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\rhinoplasty-male-before-and-after-improved.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\dr-chavarrias-comments.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\drdewevercosmeticsurgery.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\rib-remodeling.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\body-surgery.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\plastic-surgeon__dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\testimonios-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\trabajo-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\opiniones-reales-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\experiencias-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\ultrasonic-rhinoplasty-advantages-limitations.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\comments-and-feedback-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\mons-pubis-liposuction.json"
+ ],
+ "slugs": [
+  "chavarria-comments",
+  "dr-felix-chavarria-reviews-2",
+  "rhinoplasty-male-before-and-after-improved",
+  "dr-chavarrias-comments",
+  "drdewevercosmeticsurgery",
+  "rib-remodeling",
+  "body-surgery",
+  "plastic-surgeon/dr-felix-chavarria",
+  "testimonios-chavarria",
+  "trabajo-dr-chavarria",
+  "opiniones-reales-dr-felix-chavarria",
+  "experiencias-dr-felix-chavarria",
+  "ultrasonic-rhinoplasty-advantages-limitations",
+  "comments-and-feedback-dr-felix-chavarria",
+  "dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural",
+  "mons-pubis-liposuction"
+ ],
+ "palabras": 1834
+}

@@ -1,0 +1,15 @@
+{
+ "job": 81,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\prix-de-la-rhinoplastie-a-ultrasons.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\guide-du-patient.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\aviso-legal.json"
+ ],
+ "slugs": [
+  "prix-de-la-rhinoplastie-a-ultrasons",
+  "guide-du-patient",
+  "aviso-legal"
+ ],
+ "palabras": 2041
+}

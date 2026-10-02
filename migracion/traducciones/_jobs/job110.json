@@ -1,0 +1,41 @@
+{
+ "job": 110,
+ "lang": "nl",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\liposuctie-prijs.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\minimale-litteken.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\prothese-wisseling.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\reductie-van-de-areola.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\lifting-van-de-dijen.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\labiaplastiek.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\mommy-makeover-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\gynecomastie-prijs.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\labia-minora.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\otoplastie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\armen-heffen.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\hybride-borstvergroting.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\liposuctie-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\rinoplastiek-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\encuentra-tu-hueco.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\rinomodelacion-barcelona.json"
+ ],
+ "slugs": [
+  "liposuctie-prijs",
+  "minimale-litteken",
+  "prothese-wisseling",
+  "reductie-van-de-areola",
+  "lifting-van-de-dijen",
+  "labiaplastiek",
+  "mommy-makeover-barcelona",
+  "gynecomastie-prijs",
+  "labia-minora",
+  "otoplastie",
+  "armen-heffen",
+  "hybride-borstvergroting",
+  "liposuctie-barcelona",
+  "rinoplastiek-barcelona",
+  "encuentra-tu-hueco",
+  "rinomodelacion-barcelona"
+ ],
+ "palabras": 668
+}

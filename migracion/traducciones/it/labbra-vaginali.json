@@ -1,0 +1,29 @@
+{
+ "lang": "it",
+ "slug": "labbra-vaginali",
+ "path": "/it/labbra-vaginali/",
+ "src": [
+  "\n\t\t\t\tAsimetría mamaria: por qué un pecho es más grande y cuándo se corrige\t\t\t",
+  "\n\t\t\t\tPezones invertidos: por qué pasan, grados y cómo corregirlos\t\t\t",
+  "\n\t\t\t\tCicatriz de cesárea abultada o molesta: por qué pasa y qué hacer\t\t\t",
+  "Abdominoplastia-recuperación"
+ ],
+ "idx": [
+  343,
+  346,
+  349,
+  360
+ ],
+ "ctx": {
+  "343": "Asimetría mamaria: por qué un pecho es más grande y cuándo se corrige",
+  "346": "Pezones invertidos: por qué pasan, grados y cómo corregirlos",
+  "349": "Cicatriz de cesárea abultada o molesta: por qué pasa y qué hacer"
+ },
+ "total": 361,
+ "dst": [
+  "\n\t\t\t\tAsimmetria mammaria: perché un seno è più grande dell'altro e quando si corregge\t\t\t",
+  "\n\t\t\t\tCapezzoli invertiti: perché accade, gradi e come correggerli\t\t\t",
+  "\n\t\t\t\tCicatrice del cesareo rilevata o fastidiosa: perché accade e cosa fare\t\t\t",
+  "Addominoplastica-recupero"
+ ]
+}

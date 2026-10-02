@@ -1,0 +1,41 @@
+{
+ "job": 99,
+ "lang": "it",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blefaroplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\lipo-vaser.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\lipoaspirazione-ad-alta-definizione.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\liposuzione-barcellona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\mini-lifting-facciale-barcellona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\rinoplastica-a-barcellona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\ginecomastia-prezzo.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\ginecomastia-barcellona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\pareri-reali-del-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\aumento-seno-prezzo.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__10.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__4.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__5.json"
+ ],
+ "slugs": [
+  "blefaroplastica",
+  "lipo-vaser",
+  "lipoaspirazione-ad-alta-definizione",
+  "liposuzione-barcellona",
+  "mini-lifting-facciale-barcellona",
+  "rinoplastica-a-barcellona",
+  "ginecomastia-prezzo",
+  "ginecomastia-barcellona",
+  "pareri-reali-del-dr-felix-chavarria",
+  "aumento-seno-prezzo",
+  "blog",
+  "blog/10",
+  "blog/2",
+  "blog/3",
+  "blog/4",
+  "blog/5"
+ ],
+ "palabras": 337
+}

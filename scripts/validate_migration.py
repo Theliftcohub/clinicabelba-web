@@ -109,7 +109,7 @@ def load_no_literal(fn):
         for line in open(fn, encoding="utf-8"):
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
             if len(cells) >= 2 and cells[0].startswith(("http", "/")):
-                ok.add((urlparse(cells[0]).path, cells[1].lower()))
+                ok.add((unquote(urlparse(cells[0]).path).lower(), cells[1].lower()))  # RU/UK: el inventario mezcla %xx, %XX y cirílico
     return ok
 
 
@@ -777,13 +777,13 @@ def main():
                 nt, nd = m(h, r"<title[^>]*>(.*?)</title>"), m(h, r'<meta\s+name="description"\s+content="([^"]*)"')
                 if seo.get("title"):
                     contadores["titles_total"] += 1
-                if norm(nt) != norm(seo.get("title")) and (path, "title") not in allowed:
+                if norm(nt) != norm(seo.get("title")) and (unquote(path).lower(), "title") not in allowed:
                     F.append(f"title distinto: '{seo.get('title')}' → '{nt}'")
                 elif seo.get("title"):
                     contadores["titles_ok"] += 1
                 if seo.get("meta_description"):
                     contadores["desc_total"] += 1
-                if seo.get("meta_description") and norm(nd) != norm(seo["meta_description"]) and (path, "meta_description") not in allowed:
+                if seo.get("meta_description") and norm(nd) != norm(seo["meta_description"]) and (unquote(path).lower(), "meta_description") not in allowed:
                     F.append(f"description distinta")
                 elif seo.get("meta_description"):
                     contadores["desc_ok"] += 1
@@ -800,7 +800,7 @@ def main():
                 h1s = re.findall(r"<h1[^>]*>(.*?)</h1>", h, re.I | re.S)
                 if len(h1s) != 1:
                     F.append(f"{len(h1s)} H1")
-                elif seo.get("h1") and norm(re.sub("<[^>]+>", "", h1s[0])) != norm(seo["h1"]) and (path, "h1") not in allowed:
+                elif seo.get("h1") and norm(re.sub("<[^>]+>", "", h1s[0])) != norm(seo["h1"]) and (unquote(path).lower(), "h1") not in allowed:
                     W.append("H1 distinto")
                 if LEFTOVERS.search(h):
                     F.append("restos de WordPress/constructor en el HTML")

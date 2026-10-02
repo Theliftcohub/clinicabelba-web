@@ -1,0 +1,41 @@
+{
+ "job": 86,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\otoplastie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\labioplastie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\rhinoplastie-barcelone.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\prix-de-la-liposuccion.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\levres-vaginales.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\lobuloplastia-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\lifting-de-cuisse.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\encuentra-tu-hueco.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\avis-sur-le-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\prix-minilifting-facial.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\avis-dr-felix-chavarria-3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\chirurgien-plasticien__docteur-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\avis-reels-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\augmentation-mammaire-prix.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\blog__10.json"
+ ],
+ "slugs": [
+  "otoplastie",
+  "labioplastie",
+  "rhinoplastie-barcelone",
+  "prix-de-la-liposuccion",
+  "levres-vaginales",
+  "lobuloplastia-barcelona",
+  "lifting-de-cuisse",
+  "encuentra-tu-hueco",
+  "avis-sur-le-dr-chavarria",
+  "prix-minilifting-facial",
+  "avis-dr-felix-chavarria-3",
+  "chirurgien-plasticien/docteur-felix-chavarria",
+  "avis-reels-dr-felix-chavarria",
+  "augmentation-mammaire-prix",
+  "blog",
+  "blog/10"
+ ],
+ "palabras": 508
+}

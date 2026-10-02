@@ -1,0 +1,21 @@
+{
+ "job": 62,
+ "lang": "en",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\drfelixchavarriacirugiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\abdominoplasty-before-and-after.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\breast-augmentation-price.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\gynecomastia-cost.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\plastic-surgeon__dr-mike-dewever.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\ultrasonic-rhinoplasty-price.json"
+ ],
+ "slugs": [
+  "drfelixchavarriacirugiaplastica/gracias",
+  "abdominoplasty-before-and-after",
+  "breast-augmentation-price",
+  "gynecomastia-cost",
+  "plastic-surgeon/dr-mike-dewever",
+  "ultrasonic-rhinoplasty-price"
+ ],
+ "palabras": 41
+}

@@ -1,0 +1,33 @@
+{
+ "job": 95,
+ "lang": "it",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\opinioni-sul-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\testimonianze-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\valutazioni-dott-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\comentarios-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\rinoplastica-uomo-prima-e-dopo-migliorata.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\feedback-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\esperienze-positive-del-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\dr-felix-chavarria-chirurgia-plastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\commenti-del-dott-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\chirurgia-del-corpo.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\drdeweverchirurgiaplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\valoraciones-dr-felix-chavarria.json"
+ ],
+ "slugs": [
+  "opinioni-sul-dr-felix-chavarria",
+  "testimonianze-dr-felix-chavarria",
+  "valutazioni-dott-chavarria",
+  "comentarios-chavarria",
+  "rinoplastica-uomo-prima-e-dopo-migliorata",
+  "feedback-dr-felix-chavarria",
+  "esperienze-positive-del-dr-chavarria",
+  "dr-felix-chavarria-chirurgia-plastica",
+  "commenti-del-dott-chavarria",
+  "chirurgia-del-corpo",
+  "drdeweverchirurgiaplastica",
+  "valoraciones-dr-felix-chavarria"
+ ],
+ "palabras": 2100
+}

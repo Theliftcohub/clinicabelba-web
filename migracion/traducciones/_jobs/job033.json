@@ -1,0 +1,29 @@
+{
+ "job": 33,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\preis-schonheitsoperation-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\valoraciones-positivas-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\meinungen-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\rezensionen-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\zeugenaussagen-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-felix-chavarria-meinungen.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\positive-erfahrungen-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\kommentare-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\bewertungen-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-felix-chavarria-plastische-chirurgie.json"
+ ],
+ "slugs": [
+  "preis-schonheitsoperation-barcelona",
+  "valoraciones-positivas-dr-felix-chavarria",
+  "meinungen-dr-felix-chavarria",
+  "rezensionen-dr-chavarria",
+  "zeugenaussagen-dr-felix-chavarria",
+  "dr-felix-chavarria-meinungen",
+  "positive-erfahrungen-dr-chavarria",
+  "kommentare-chavarria",
+  "bewertungen-dr-chavarria",
+  "dr-felix-chavarria-plastische-chirurgie"
+ ],
+ "palabras": 2174
+}

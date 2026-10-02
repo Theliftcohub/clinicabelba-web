@@ -1,0 +1,41 @@
+{
+ "job": 84,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\drdeweverplasticsurgery.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\commentaires-du-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\drfelixchavarriacirugiaplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\evaluations-du-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\chirurgie-corporelle.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\liposuccion-du-mont-de-venus.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\augmentation-mammaire-barcelone.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\trabajo-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\dr-felix-chavarria-experiences.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\experiences-du-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\abdominoplastie-barcelone.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\augmentation-mammaire-sans-alteration-de-laspect-naturel.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\commentaires-et-retours-du-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\comentarios-dr-felix-chavarria-de-pacientes.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\reduction-mammaire.json"
+ ],
+ "slugs": [
+  "drdeweverplasticsurgery",
+  "commentaires-du-dr-chavarria",
+  "drfelixchavarriacirugiaplastica",
+  "evaluations-du-dr-felix-chavarria",
+  "chirurgie-corporelle",
+  "liposuccion-du-mont-de-venus",
+  "augmentation-mammaire-barcelone",
+  "trabajo-dr-chavarria",
+  "dr-felix-chavarria-experiences",
+  "experiences-du-dr-felix-chavarria-2",
+  "abdominoplastie-barcelone",
+  "augmentation-mammaire-sans-alteration-de-laspect-naturel",
+  "commentaires-et-retours-du-dr-felix-chavarria",
+  "dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural",
+  "comentarios-dr-felix-chavarria-de-pacientes",
+  "reduction-mammaire"
+ ],
+ "palabras": 1694
+}

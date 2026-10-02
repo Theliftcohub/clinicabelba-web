@@ -1,0 +1,21 @@
+{
+ "job": 106,
+ "lang": "nl",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\patienten-gids.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\auteur__webbel.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\liposuctie-monte-venus-prijs.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\dr-chavarria-meningen.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\prijs-cosmetische-chirurgie-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\testimonios-dr-felix-chavarria.json"
+ ],
+ "slugs": [
+  "patienten-gids",
+  "auteur/webbel",
+  "liposuctie-monte-venus-prijs",
+  "dr-chavarria-meningen",
+  "prijs-cosmetische-chirurgie-barcelona",
+  "testimonios-dr-felix-chavarria"
+ ],
+ "palabras": 2130
+}

@@ -1,0 +1,21 @@
+{
+ "job": 82,
+ "lang": "fr",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\rinomodelacion-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\auteur__webbelba.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\resection-costale.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\dr-chavarria-avis.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\prix-chirurgie-esthetique-barcelone.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\fr\\mentoplastia-barcelona.json"
+ ],
+ "slugs": [
+  "rinomodelacion-barcelona",
+  "auteur/webbelba",
+  "resection-costale",
+  "dr-chavarria-avis",
+  "prix-chirurgie-esthetique-barcelone",
+  "mentoplastia-barcelona"
+ ],
+ "palabras": 2108
+}

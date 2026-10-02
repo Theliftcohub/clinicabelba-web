@@ -1,0 +1,33 @@
+{
+ "job": 22,
+ "lang": "ca",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\preu-cirurgia-estetica-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\ressenyes-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\rinoplastia-abans-i-despres.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\experiencias-positivas-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\valoracions-del-doctor-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\comentaris-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\opinions-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\drfelixchavarriacirugiaplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\rinoplastia-home-abans-i-despres-millorat.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\drdewevercirugiaplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\resum-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\cirurgia-plastic__dr-felix-chavarria.json"
+ ],
+ "slugs": [
+  "preu-cirurgia-estetica-barcelona",
+  "ressenyes-dr-chavarria",
+  "rinoplastia-abans-i-despres",
+  "experiencias-positivas-dr-chavarria",
+  "valoracions-del-doctor-chavarria",
+  "comentaris-chavarria",
+  "opinions-dr-felix-chavarria-2",
+  "drfelixchavarriacirugiaplastica",
+  "rinoplastia-home-abans-i-despres-millorat",
+  "drdewevercirugiaplastica",
+  "resum-dr-felix-chavarria",
+  "cirurgia-plastic/dr-felix-chavarria"
+ ],
+ "palabras": 2150
+}

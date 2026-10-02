@@ -1,0 +1,23 @@
+{
+ "job": 57,
+ "lang": "en",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\labia-what-they-are-types-care-and-when-to-consult-a-doctor.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\author__webbelba.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\dr-chavarria-reviews.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\cosmetic-surgery-prices-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\positive-reviews-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\experiencias-positivas-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\reviews-dr-chavarria.json"
+ ],
+ "slugs": [
+  "labia-what-they-are-types-care-and-when-to-consult-a-doctor",
+  "author/webbelba",
+  "dr-chavarria-reviews",
+  "cosmetic-surgery-prices-barcelona",
+  "positive-reviews-dr-felix-chavarria-2",
+  "experiencias-positivas-dr-chavarria",
+  "reviews-dr-chavarria"
+ ],
+ "palabras": 2141
+}

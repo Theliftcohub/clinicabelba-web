@@ -1,0 +1,41 @@
+{
+ "job": 139,
+ "lang": "uk",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\мінімальний-рубець.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\підтяжка-грудей.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__10.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__4.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__5.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\блог__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\клініка-пластичної-хірургії-доктора__дякую.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\пластична-хірургія-грудей-в-іспанії.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\drdeweverпластичнахірургія__gracias.json"
+ ],
+ "slugs": [
+  "мінімальний-рубець",
+  "підтяжка-грудей",
+  "блог",
+  "блог/10",
+  "блог/2",
+  "блог/3",
+  "блог/4",
+  "блог/5",
+  "блог/6",
+  "блог/7",
+  "блог/8",
+  "блог/9",
+  "dr-dewever-chirurgie-plastique/merci",
+  "клініка-пластичної-хірургії-доктора/дякую",
+  "пластична-хірургія-грудей-в-іспанії",
+  "drdeweverпластичнахірургія/gracias"
+ ],
+ "palabras": 250
+}

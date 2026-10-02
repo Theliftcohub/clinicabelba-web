@@ -1,0 +1,41 @@
+{
+ "job": 38,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__4.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__5.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blog__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\ginekomastie-preis.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustoperation-in-spanien.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-dewever-plastische-chirurgie__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-felix-chavarria-plastische-chirurgie__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\bauchdeckenstraffung-vorher-und-nachher.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustvergroserung-preis.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\asimetria-mamaria-cuando-operar.json"
+ ],
+ "slugs": [
+  "blog/2",
+  "blog/3",
+  "blog/4",
+  "blog/5",
+  "blog/6",
+  "blog/7",
+  "blog/8",
+  "blog/9",
+  "dr-dewever-chirurgie-plastique/merci",
+  "ginekomastie-preis",
+  "brustoperation-in-spanien",
+  "dr-dewever-plastische-chirurgie/gracias",
+  "dr-felix-chavarria-plastische-chirurgie/gracias",
+  "bauchdeckenstraffung-vorher-und-nachher",
+  "brustvergroserung-preis",
+  "asimetria-mamaria-cuando-operar"
+ ],
+ "palabras": 218
+}

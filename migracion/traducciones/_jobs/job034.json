@@ -1,0 +1,41 @@
+{
+ "job": 34,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\rhinoplastik-mann-vorher-und-nachher-verbessert.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\rippenrekonstruktion.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-dewever-plastische-chirurgie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\korperchirurgie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\plastischer-chirurg__dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\bewertungen-von-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\testimonios-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\trabajo-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\intimchirurgie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\ultraschall-rhinoplastik-vorteile-grenzen.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustvergroserung-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\mentoplastik-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\bauchdeckenstraffung-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\fettabsaugung-am-venushugel.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\gesichtsoperation.json"
+ ],
+ "slugs": [
+  "rhinoplastik-mann-vorher-und-nachher-verbessert",
+  "rippenrekonstruktion",
+  "dr-dewever-plastische-chirurgie",
+  "korperchirurgie",
+  "plastischer-chirurg/dr-felix-chavarria",
+  "bewertungen-von-dr-felix-chavarria",
+  "testimonios-chavarria",
+  "trabajo-dr-chavarria",
+  "intimchirurgie",
+  "ultraschall-rhinoplastik-vorteile-grenzen",
+  "brustvergroserung-barcelona",
+  "mentoplastik-barcelona",
+  "bauchdeckenstraffung-barcelona",
+  "dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural",
+  "fettabsaugung-am-venushugel",
+  "gesichtsoperation"
+ ],
+ "palabras": 1600
+}

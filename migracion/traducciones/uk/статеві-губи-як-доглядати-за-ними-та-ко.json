@@ -1,0 +1,29 @@
+{
+ "lang": "uk",
+ "slug": "статеві-губи-як-доглядати-за-ними-та-ко",
+ "path": "/uk/%d1%81%d1%82%d0%b0%d1%82%d0%b5%d0%b2%d1%96-%d0%b3%d1%83%d0%b1%d0%b8-%d1%8f%d0%ba-%d0%b4%d0%be%d0%b3%d0%bb%d1%8f%d0%b4%d0%b0%d1%82%d0%b8-%d0%b7%d0%b0-%d0%bd%d0%b8%d0%bc%d0%b8-%d1%82%d0%b0-%d0%ba%d0%be/",
+ "src": [
+  "\n\t\t\t\tAsimetría mamaria: por qué un pecho es más grande y cuándo se corrige\t\t\t",
+  "\n\t\t\t\tPezones invertidos: por qué pasan, grados y cómo corregirlos\t\t\t",
+  "\n\t\t\t\tCicatriz de cesárea abultada o molesta: por qué pasa y qué hacer\t\t\t",
+  "Abdominoplastia-recuperación"
+ ],
+ "idx": [
+  268,
+  271,
+  274,
+  284
+ ],
+ "ctx": {
+  "268": "Asimetría mamaria: por qué un pecho es más grande y cuándo se corrige",
+  "271": "Pezones invertidos: por qué pasan, grados y cómo corregirlos",
+  "274": "Cicatriz de cesárea abultada o molesta: por qué pasa y qué hacer"
+ },
+ "total": 285,
+ "dst": [
+  "\n\t\t\t\tАсиметрія молочних залоз: чому одна грудь більша за іншу і коли її коригують\t\t\t",
+  "\n\t\t\t\tВтягнуті соски: чому це трапляється, ступені та як їх виправити\t\t\t",
+  "\n\t\t\t\tВипнутий або болісний рубець після кесаревого розтину: чому так буває і що робити\t\t\t",
+  "Абдомінопластика-відновлення"
+ ]
+}

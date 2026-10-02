@@ -1,0 +1,47 @@
+{
+ "lang": "fr",
+ "slug": "encuentra-tu-hueco-calendario-de-descuentos",
+ "path": "/fr/encuentra-tu-hueco-calendario-de-descuentos/",
+ "src": [
+  "Encuentra tu hueco ",
+  "DESCUENTOS ESPECIALES",
+  "Consigue  hasta -2000€ de descuento en tu tratamiento estético",
+  "Consigue  ",
+  "hasta -2000€ de descuento",
+  "en tu tratamiento estético",
+  " Fecha sujeta a confirmación de Clínica Belba.",
+  "La confirmación de la fecha se garantiza con precio previo pago de la reserva.",
+  "En busca de la excelencia en cirugía plástica y reparadora"
+ ],
+ "idx": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  11,
+  12,
+  14
+ ],
+ "ctx": {
+  "4": "Encuentra tu hueco DESCUENTOS ESPECIALES",
+  "5": "Encuentra tu hueco DESCUENTOS ESPECIALES",
+  "6": "Consigue hasta -2000€ de descuento en tu tratamiento estético",
+  "7": "Consigue hasta -2000€ de descuento en tu tratamiento estético",
+  "8": "Consigue hasta -2000€ de descuento en tu tratamiento estético",
+  "9": "Consigue hasta -2000€ de descuento en tu tratamiento estético"
+ },
+ "total": 16,
+ "dst": [
+  "Trouvez votre créneau ",
+  "RÉDUCTIONS SPÉCIALES",
+  "Obtenez jusqu'à -2000€ de réduction sur votre traitement esthétique",
+  "Obtenez  ",
+  "jusqu'à -2000€ de réduction",
+  "sur votre traitement esthétique",
+  " Date sous réserve de confirmation par Clínica Belba.",
+  "La confirmation de la date est garantie après paiement préalable de l'acompte de réservation.",
+  "À la recherche de l'excellence en chirurgie plastique et réparatrice"
+ ]
+}

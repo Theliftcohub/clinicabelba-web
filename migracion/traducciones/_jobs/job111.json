@@ -1,0 +1,41 @@
+{
+ "job": 111,
+ "lang": "nl",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\prijs-faciale-minilifting.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\biljartkeu-grens.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\beoordelingen-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\plastisch-chirurg__dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blefaroplastiek.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\high-definition-liposuctie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\lipo-vaser.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\lobuloplastiek-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\mini-facelift-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\tipos-de-aumento-de-pecho.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__10.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__4.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blog__5.json"
+ ],
+ "slugs": [
+  "prijs-faciale-minilifting",
+  "biljartkeu-grens",
+  "beoordelingen-dr-felix-chavarria-2",
+  "plastisch-chirurg/dr-felix-chavarria",
+  "blefaroplastiek",
+  "high-definition-liposuctie",
+  "lipo-vaser",
+  "lobuloplastiek-barcelona",
+  "mini-facelift-barcelona",
+  "tipos-de-aumento-de-pecho",
+  "blog",
+  "blog/10",
+  "blog/2",
+  "blog/3",
+  "blog/4",
+  "blog/5"
+ ],
+ "palabras": 352
+}

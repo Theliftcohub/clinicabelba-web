@@ -1,0 +1,19 @@
+{
+ "job": 94,
+ "lang": "it",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\labioplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\guida-del-paziente.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\autore__bellissima.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\prezzo-chirurgia-estetica-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\valoraciones-positivas-dr-felix-chavarria.json"
+ ],
+ "slugs": [
+  "labioplastica",
+  "guida-del-paziente",
+  "autore/bellissima",
+  "prezzo-chirurgia-estetica-barcelona",
+  "valoraciones-positivas-dr-felix-chavarria"
+ ],
+ "palabras": 2163
+}

@@ -1,0 +1,17 @@
+{
+ "job": 21,
+ "lang": "ca",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\labioplastia.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\guia-del-pacient.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\autor__webbelba.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\opinions-dr-chavarria.json"
+ ],
+ "slugs": [
+  "labioplastia",
+  "guia-del-pacient",
+  "autor/webbelba",
+  "opinions-dr-chavarria"
+ ],
+ "palabras": 1946
+}

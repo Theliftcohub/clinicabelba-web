@@ -1,0 +1,41 @@
+{
+ "job": 109,
+ "lang": "nl",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\borstoperatie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\borstvergroting-bewaren.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\borstvergroting-techniek-brst.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\borstverkleining.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\reviews-del-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\blefaroplastiek-zonder-chirurgie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\plastisch-chirurgen-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\aumento-armonia.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\ervaringen-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\aumento-sublime.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\wie-zijn-wij.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\abdominoplastiek-prijs.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\gezichtsbehandeling-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\encuentra-tu-hueco-calendario-de-descuentos.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\recensies-en-testimonials-van-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\borstvergroting.json"
+ ],
+ "slugs": [
+  "borstoperatie",
+  "borstvergroting-bewaren",
+  "borstvergroting-techniek-brst",
+  "borstverkleining",
+  "reviews-del-dr-chavarria",
+  "blefaroplastiek-zonder-chirurgie",
+  "plastisch-chirurgen-barcelona",
+  "aumento-armonia",
+  "ervaringen-dr-felix-chavarria",
+  "aumento-sublime",
+  "wie-zijn-wij",
+  "abdominoplastiek-prijs",
+  "gezichtsbehandeling-barcelona",
+  "encuentra-tu-hueco-calendario-de-descuentos",
+  "recensies-en-testimonials-van-dr-felix-chavarria",
+  "borstvergroting"
+ ],
+ "palabras": 945
+}

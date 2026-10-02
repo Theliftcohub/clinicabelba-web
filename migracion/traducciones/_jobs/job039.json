@@ -1,0 +1,17 @@
+{
+ "job": 39,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\cicatriz-cesarea-correccion.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\aumento-elegance.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\aumento-magnifico.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\ultraschall-nasenkorrektur-preis.json"
+ ],
+ "slugs": [
+  "cicatriz-cesarea-correccion",
+  "aumento-elegance",
+  "aumento-magnifico",
+  "ultraschall-nasenkorrektur-preis"
+ ],
+ "palabras": 20
+}

@@ -1,0 +1,41 @@
+{
+ "job": 100,
+ "lang": "it",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\blog__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\chirurgia-mammaria-in-spagna.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\dr-felix-chavarria-chirurgia-plastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\drdeweverchirurgiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\addominoplastica-prima-e-dopo.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\cicatriz-cesarea-correccion.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\asimetria-mamaria-cuando-operar.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\chirurgo-plastico__dott-mike-dewever.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\prezzo-rinoplastica-a-ultrasuoni.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\tipi-di-aumento-del-seno.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\tipologie-di-mastoplastica-additiva.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\it\\pezones-invertidos-correccion.json"
+ ],
+ "slugs": [
+  "blog/6",
+  "blog/7",
+  "blog/8",
+  "blog/9",
+  "dr-dewever-chirurgie-plastique/merci",
+  "chirurgia-mammaria-in-spagna",
+  "dr-felix-chavarria-chirurgia-plastica/gracias",
+  "drdeweverchirurgiaplastica/gracias",
+  "addominoplastica-prima-e-dopo",
+  "cicatriz-cesarea-correccion",
+  "asimetria-mamaria-cuando-operar",
+  "chirurgo-plastico/dott-mike-dewever",
+  "prezzo-rinoplastica-a-ultrasuoni",
+  "tipi-di-aumento-del-seno",
+  "tipologie-di-mastoplastica-additiva",
+  "pezones-invertidos-correccion"
+ ],
+ "palabras": 153
+}

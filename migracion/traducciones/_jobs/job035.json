@@ -1,0 +1,41 @@
+{
+ "job": 35,
+ "lang": "de",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\kommentare-von-patienten-uber-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\plastischer-chirurg__dr-mike-dewever.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\vaginoplastik.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\dr-felix-chavarrias-erfahrungen.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\criticas-positivas-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustoperation.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustvergroserung-erhalten.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustvergroserungstechnik.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\brustverkleinerung.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\plastische-chirurgen-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\aumento-armonia.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\blepharoplastik-ohne-operation.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\aumento-sublime.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\lipovaser-was-ist.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\encuentra-tu-hueco-calendario-de-descuentos.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\de\\fettabsaugung-preis.json"
+ ],
+ "slugs": [
+  "kommentare-von-patienten-uber-dr-felix-chavarria",
+  "plastischer-chirurg/dr-mike-dewever",
+  "vaginoplastik",
+  "dr-felix-chavarrias-erfahrungen",
+  "criticas-positivas-dr-felix-chavarria",
+  "brustoperation",
+  "brustvergroserung-erhalten",
+  "brustvergroserungstechnik",
+  "brustverkleinerung",
+  "plastische-chirurgen-barcelona",
+  "aumento-armonia",
+  "blepharoplastik-ohne-operation",
+  "aumento-sublime",
+  "lipovaser-was-ist",
+  "encuentra-tu-hueco-calendario-de-descuentos",
+  "fettabsaugung-preis"
+ ],
+ "palabras": 1019
+}

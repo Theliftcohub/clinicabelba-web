@@ -1,0 +1,21 @@
+{
+ "job": 134,
+ "lang": "uk",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\посібник-для-пацієнта.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\автор__webbelba.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\хірургія-інтимних-органів.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\відгуки-про-доктора-чаваррію.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\ціна-на-пластичну-операцію-в-барселон.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\uk\\resenas-dr-chavarria.json"
+ ],
+ "slugs": [
+  "посібник-для-пацієнта",
+  "автор/webbelba",
+  "хірургія-інтимних-органів",
+  "відгуки-про-доктора-чаваррію",
+  "ціна-на-пластичну-операцію-в-барселон",
+  "resenas-dr-chavarria"
+ ],
+ "palabras": 2109
+}

@@ -1,0 +1,25 @@
+{
+ "lang": "it",
+ "slug": "aumento-seno-prezzo",
+ "path": "/it/aumento-seno-prezzo/",
+ "src": [
+  "Clinica Cirugía Plástica Barcelona",
+  "clínicas de cirugías plásticas",
+  "4.500 € a 10.000 €",
+  "5.000 € a 6.000 €"
+ ],
+ "idx": [
+  12,
+  38,
+  92,
+  169
+ ],
+ "ctx": {},
+ "total": 185,
+ "dst": [
+  "Clinica Chirurgia Plastica Barcellona",
+  "cliniche di chirurgia plastica",
+  "da 4.500 € a 10.000 €",
+  "da 5.000 € a 6.000 €"
+ ]
+}

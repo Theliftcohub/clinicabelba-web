@@ -1,0 +1,41 @@
+{
+ "job": 60,
+ "lang": "en",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\otoplasty.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\breast-augmentation-brst-technique.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\breast-augmentation-preserve.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\breast-reduction.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\encuentra-tu-hueco.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\dr-chavarria-reviews-3.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\facelift-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\high-definition-liposuction.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\liposuction-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\lobuloplasty-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\rhinomodeling-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\rhinoplasty-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\types-of-breast-augmentation.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\areola-reduction.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\breast-lift.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\minimal-scar.json"
+ ],
+ "slugs": [
+  "otoplasty",
+  "breast-augmentation-brst-technique",
+  "breast-augmentation-preserve",
+  "breast-reduction",
+  "encuentra-tu-hueco",
+  "dr-chavarria-reviews-3",
+  "facelift-barcelona",
+  "high-definition-liposuction",
+  "liposuction-barcelona",
+  "lobuloplasty-barcelona",
+  "rhinomodeling-barcelona",
+  "rhinoplasty-barcelona",
+  "types-of-breast-augmentation",
+  "areola-reduction",
+  "breast-lift",
+  "minimal-scar"
+ ],
+ "palabras": 444
+}

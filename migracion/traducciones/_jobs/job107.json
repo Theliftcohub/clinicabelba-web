@@ -1,0 +1,37 @@
+{
+ "job": 107,
+ "lang": "nl",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\resenas-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\meningen-over-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\meningen-dr-felix-chavarria-2.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\waarderingen-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\lichaamschirurgie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\comentarios-dr-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\drfelixchavarriacirugiaplastica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\rhinoplastiek-man-voor-en-na-verbeterd.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\buikwandcorrectie-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\gezichtsoperatie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\ribreconstructie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\drdeweverplastischechirurgie.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\recensies-dr-felix-chavarria.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\nl\\reacties-en-feedback-dr-felix-chavarria.json"
+ ],
+ "slugs": [
+  "resenas-dr-chavarria",
+  "meningen-over-dr-felix-chavarria",
+  "meningen-dr-felix-chavarria-2",
+  "waarderingen-dr-chavarria",
+  "lichaamschirurgie",
+  "comentarios-dr-chavarria",
+  "drfelixchavarriacirugiaplastica",
+  "rhinoplastiek-man-voor-en-na-verbeterd",
+  "buikwandcorrectie-barcelona",
+  "gezichtsoperatie",
+  "ribreconstructie",
+  "drdeweverplastischechirurgie",
+  "recensies-dr-felix-chavarria",
+  "reacties-en-feedback-dr-felix-chavarria"
+ ],
+ "palabras": 2187
+}

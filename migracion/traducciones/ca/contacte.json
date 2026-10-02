@@ -1,0 +1,22 @@
+{
+ "lang": "ca",
+ "slug": "contacte",
+ "path": "/ca/contacte/",
+ "src": [
+  "a Augusta 281 Barcelona.",
+  "En metro: Les Tres Torres L6, S7, S7T",
+  "Autobús: 68, V9, V7, 70, H6, V11"
+ ],
+ "idx": [
+  40,
+  49,
+  50
+ ],
+ "ctx": {},
+ "total": 52,
+ "dst": [
+  "a Augusta 281 Barcelona.",
+  "En metro: Les Tres Torres L6, S7, S7T",
+  "Autobús: 68, V9, V7, 70, H6, V11"
+ ]
+}

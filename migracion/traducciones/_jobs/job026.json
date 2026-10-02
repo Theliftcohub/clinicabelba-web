@@ -1,0 +1,41 @@
+{
+ "job": 26,
+ "lang": "ca",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\bloc__5.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\bloc__6.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\bloc__7.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\bloc__8.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\bloc__9.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\dr-dewever-chirurgie-plastique__merci.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\preu-de-la-ginecomastia.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\cirurgia-mamaria-a-espanya.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\cirurgia-plastica-dr-deweaver__gracies.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\drdewevercirugiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\drfelixchavarriacirugiaplastica__gracias.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\preu-rinoplastia-ultrasonica.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\abdominoplastia-abans-i-despres.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\cirurgia-plastic__dr-mike-dewever.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\asimetria-mamaria-cuando-operar.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ca\\blefaroplastia-abans-i-despres.json"
+ ],
+ "slugs": [
+  "bloc/5",
+  "bloc/6",
+  "bloc/7",
+  "bloc/8",
+  "bloc/9",
+  "dr-dewever-chirurgie-plastique/merci",
+  "preu-de-la-ginecomastia",
+  "cirurgia-mamaria-a-espanya",
+  "cirurgia-plastica-dr-deweaver/gracies",
+  "drdewevercirugiaplastica/gracias",
+  "drfelixchavarriacirugiaplastica/gracias",
+  "preu-rinoplastia-ultrasonica",
+  "abdominoplastia-abans-i-despres",
+  "cirurgia-plastic/dr-mike-dewever",
+  "asimetria-mamaria-cuando-operar",
+  "blefaroplastia-abans-i-despres"
+ ],
+ "palabras": 194
+}

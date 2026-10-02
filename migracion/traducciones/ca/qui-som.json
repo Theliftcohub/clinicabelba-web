@@ -1,0 +1,28 @@
+{
+ "lang": "ca",
+ "slug": "qui-som",
+ "path": "/ca/qui-som/",
+ "src": [
+  " Especialistas de renombre en medicina y cirugía plástica ",
+  "Fue el número 75 del examen MIR, de entre mas de 13.000 participantes. Este logro le permitió realizar su residencia en el Hospital Universitario de Bellvitge. Allí se especializó en cirugía mamaria, plástica y reconstructiva.",
+  "Clínica de cirugía plástica",
+  "Cirugía plástica",
+  "Especialista en procedimientos de estética facial y corporal"
+ ],
+ "idx": [
+  4,
+  11,
+  38,
+  40,
+  55
+ ],
+ "ctx": {},
+ "total": 79,
+ "dst": [
+  " Especialistes de renom en medicina i cirurgia plàstica ",
+  "Va ser el número 75 de l'examen MIR, d'entre més de 13.000 participants. Aquest assoliment li va permetre fer la residència a l'Hospital Universitari de Bellvitge. Allà es va especialitzar en cirurgia mamària, plàstica i reconstructiva.",
+  "Clínica de cirurgia plàstica",
+  "Cirurgia plàstica",
+  "Especialista en procediments d'estètica facial i corporal"
+ ]
+}

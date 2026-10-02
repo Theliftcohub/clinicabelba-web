@@ -1,0 +1,21 @@
+{
+ "lang": "fr",
+ "slug": "drfelixchavarriacirugiaplastica/gracias",
+ "path": "/fr/drfelixchavarriacirugiaplastica/gracias/",
+ "src": [
+  "¡Gracias ",
+  "Ya hemos recibido toda la información y nos pondremos en contacto contigo"
+ ],
+ "idx": [
+  2,
+  3
+ ],
+ "ctx": {
+  "2": "¡Gracias"
+ },
+ "total": 8,
+ "dst": [
+  "Merci ",
+  "Nous avons bien reçu toutes les informations et nous vous contacterons très prochainement"
+ ]
+}

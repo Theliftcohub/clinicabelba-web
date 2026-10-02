@@ -1,0 +1,15 @@
+{
+ "job": 56,
+ "lang": "en",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\thigh-lift.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\mentoplasty-barcelona.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\en\\patient-guide.json"
+ ],
+ "slugs": [
+  "thigh-lift",
+  "mentoplasty-barcelona",
+  "patient-guide"
+ ],
+ "palabras": 1935
+}

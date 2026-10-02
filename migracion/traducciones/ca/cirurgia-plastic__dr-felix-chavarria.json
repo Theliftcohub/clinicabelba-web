@@ -1,0 +1,42 @@
+{
+ "lang": "ca",
+ "slug": "cirurgia-plastic/dr-felix-chavarria",
+ "path": "/ca/cirurgia-plastic/dr-felix-chavarria/",
+ "src": [
+  "El Dr. Chavarría especialista en cirugía plástica y reparadora. Desde el 2016 ha sido pionero en las técnicas de lipoescultura de alta definición",
+  "Clinica Cirugía Plástica Barcelona",
+  "El Dr. Chavarría ",
+  ", reparadora y estética.",
+  "Trabajo como médico adjunto en la Unidad Funcional de Mama del Instituto Catalán de Oncología (ICO) donde profundizó en todas las patologías asociadas al pecho femenino y realizó recontrucciones microquirúrgicas.",
+  "Desde el 2016 ha sido pionero en las técnicas de ",
+  "lipoescultura de alta definición",
+  ". Impartiendo cursos para cirujanos que quieren empezar a realizarlas y ponencias sobre su experiencia en congresos nacionales.",
+  "Testimonios de Mis pacientes"
+ ],
+ "idx": [
+  1,
+  8,
+  12,
+  14,
+  15,
+  16,
+  17,
+  18,
+  21
+ ],
+ "ctx": {
+  "21": "Testimonios de Mis pacientes"
+ },
+ "total": 28,
+ "dst": [
+  "El Dr. Chavarría, especialista en cirurgia plàstica i reparadora. Des del 2016 ha estat pioner en les tècniques de lipoescultura d'alta definició",
+  "Clínica Cirurgia Plàstica Barcelona",
+  "El Dr. Chavarría ",
+  ", reparadora i estètica.",
+  "Va treballar com a metge adjunt a la Unitat Funcional de Mama de l'Institut Català d'Oncologia (ICO), on va aprofundir en totes les patologies associades al pit femení i va realitzar reconstruccions microquirúrgiques.",
+  "Des del 2016 ha estat pioner en les tècniques de ",
+  "lipoescultura d'alta definició",
+  ". Imparteix cursos per a cirurgians que volen començar a fer-les i ponències sobre la seva experiència en congressos nacionals.",
+  "Testimonis dels meus pacients"
+ ]
+}

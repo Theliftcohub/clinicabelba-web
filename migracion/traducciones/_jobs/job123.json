@@ -1,0 +1,41 @@
+{
+ "job": 123,
+ "lang": "ru",
+ "files": [
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\ментопластика-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\абдоминопластика-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\челюстно-лицевая-хирургия.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\реальные-отзывы-доктор-феликс-чаварр.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\вагинопластика.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\пластический-хирург__dr-mike-dewever.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\маммопластика.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\пластические-хирурги-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\увеличить-грудь-сохранить.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\aumento-sublime.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\кто-мы.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\encuentra-tu-hueco-calendario-de-descuentos.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\увеличение-груди-барселона.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\блефаропластика-без-хирургического.json",
+  "C:\\Users\\Usuario\\Documents\\TRABAJO\\CLINICA_BELBA_MIGRACION\\migracion\\traducciones\\ru\\отзывы-и-свидетельства-доктора-фелик.json"
+ ],
+ "slugs": [
+  "dermolipectomia-de-brazos-o-muslos-lifting-braquial-crural",
+  "ментопластика-барселона",
+  "абдоминопластика-барселона",
+  "челюстно-лицевая-хирургия",
+  "реальные-отзывы-доктор-феликс-чаварр",
+  "вагинопластика",
+  "пластический-хирург/dr-mike-dewever",
+  "маммопластика",
+  "пластические-хирурги-барселона",
+  "увеличить-грудь-сохранить",
+  "aumento-sublime",
+  "кто-мы",
+  "encuentra-tu-hueco-calendario-de-descuentos",
+  "увеличение-груди-барселона",
+  "блефаропластика-без-хирургического",
+  "отзывы-и-свидетельства-доктора-фелик"
+ ],
+ "palabras": 1054
+}

@@ -1,0 +1,30 @@
+{
+ "lang": "ca",
+ "slug": "resenas-y-testimonios-del-dr-felix-chavarria",
+ "path": "/ca/resenas-y-testimonios-del-dr-felix-chavarria/",
+ "src": [
+  "Reseñas y testimonios de pacientes | Clínica Belba",
+  "Reseñas y Testimonios del Dr. Felix Chavarría",
+  "– Opiniones – Comentarios – Feedback – Review –",
+  "En el video, podéis encontrar algunas de las reseñas de pacientes operados por el Dr. Felix Chavarría.",
+  "Estos comentarios han sido recopilados para facilitaros la comprensión de lo que opinan los pacientes sobre el Dr. Chavarría."
+ ],
+ "idx": [
+  0,
+  2,
+  3,
+  4,
+  5
+ ],
+ "ctx": {
+  "2": "Reseñas y Testimonios del Dr. Felix Chavarría"
+ },
+ "total": 6,
+ "dst": [
+  "Ressenyes i testimonis de pacients | Clínica Belba",
+  "Ressenyes i Testimonis del Dr. Felix Chavarría",
+  "– Opinions – Comentaris – Feedback – Review –",
+  "En el vídeo, podeu trobar algunes de les ressenyes de pacients operats pel Dr. Felix Chavarría.",
+  "Aquests comentaris han estat recopilats per facilitar-vos la comprensió del que opinen els pacients sobre el Dr. Chavarría."
+ ]
+}
