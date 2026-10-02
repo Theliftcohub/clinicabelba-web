@@ -442,6 +442,13 @@ header.k-38 .k-nav-menu--main .btn_consulta_online>.sub-menu>li>a.k-sub-item:hov
 .k .k-element.k-element-1424eb0>.k-widget-container{margin:0!important}
 .k .k-element.k-element-1424eb0 img{width:100%;height:auto}
 }
+/* 3) Imagen de cabecera en marco cuadrado (02/10, aviso de Nicols): 25 de las 29 landings usan foto cuadrada, pero /lipo-vaser/ es vertical (500×948, casi un metro de alto) y /rinomodelacion-barcelona/ y /lifting-facial-barcelona/ panorámicas (2,4:1 y 1,9:1) → mismo marco 1:1 para todas, recortando al centro; la imagen y su alt no cambian */
+.k .k-element.k-element-1424eb0 img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center}
+/* 4) /ginecomastia-barcelona/ (9 idiomas) es la única landing que el WordPress pintaba dentro de la plantilla «página simple» del tema (k-808, sección encajada a 1280 px): fondo del hero, banda turquesa y demás secciones no llegaban al borde → sus secciones salen de la caja a todo el ancho, como en las otras 28 */
+.k-location-single>.k-section:has(.k-element-1424eb0){padding-top:0!important;padding-bottom:0!important}
+.k-location-single>.k-section:has(.k-element-1424eb0)>.k-container>.k-column>.k-widget-wrap{padding:0!important}
+.k-location-single .kt-wp-page:has(.k-element-1424eb0)>*{width:100vw!important;max-width:100vw!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important}
+.hospital-hero>.k-background-overlay{background-size:cover;background-position:center}  /* banda «Grupo Teknon y Hospital Tres Torres»: la foto no traía tamaño y a todo el ancho se cortaba a 1600 px */
 '''
 
 def write_follow():
